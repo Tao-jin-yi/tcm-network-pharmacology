@@ -16,6 +16,8 @@ import json
 from pathlib import Path
 from typing import Dict, List, Set
 
+import altair as alt
+import numpy as np
 import pandas as pd
 import requests
 import streamlit as st
@@ -23,11 +25,14 @@ import streamlit.components.v1 as components
 from st_link_analysis import EdgeStyle, NodeStyle, st_link_analysis
 
 from herb_info import HERB_INFO, get_herb_info
+from pkpd import (fit_dose_response, fit_pk, hill_emax, pk_metrics,
+                  simulate_dose_response, simulate_effect_time, simulate_pk)
 from topology import cyto_nca_filter, elements_to_graph
 
 HERE = Path(__file__).parent
 DATA_FILE = HERE / "network.json"
 TARGET_INFO_FILE = HERE / "target_info.json"  # 由 fetch_target_info.py 生成（UniProt）
+LITERATURE_FILE = HERE / "literature.json"    # 由 fetch_literature.py 生成（PubMed）
 
 LAYOUTS = ["cose", "fcose", "breadthfirst", "circle", "concentric", "grid", "cola", "dagre"]
 
@@ -159,8 +164,9 @@ col3.metric("靶点", n_targets)
 col4.metric("关系（边）", len(elements["edges"]))
 
 # ------------------------------------------------------------------ 主体
-tab_graph, tab_synergy, tab_core, tab_target, tab_compound = st.tabs(
-    ["网络图", "配伍协同分析", "核心靶点（CytoNCA）", "靶点详情（蛋白 / 定位 / 结构）", "成分明细"]
+tab_graph, tab_synergy, tab_core, tab_target, tab_lit, tab_pk, tab_compound = st.tabs(
+    ["网络图", "配伍协同分析", "核心靶点（CytoNCA）", "靶点详情（蛋白 / 定位 / 结构）",
+     "文献机制（PubMed）", "药动学 / 量-效-时", "成分明细"]
 )
 core_targets: List[str] = []
 
@@ -357,7 +363,234 @@ with tab_target:
                 st.bar_chart(dist)
                 st.caption("同一蛋白可定位于多个区室，故计数之和大于核心靶点数。")
 
-# ------------------------------------------------------------- 5. 成分明细
+# ---------------------------------------------- 5. 文献机制（PubMed 抓取与抽取）
+with tab_lit:
+    if not LITERATURE_FILE.exists():
+        st.info("未找到 literature.json，请先运行 `python fetch_literature.py` "
+                "从 PubMed 抓取文献。")
+    else:
+        lit = json.loads(LITERATURE_FILE.read_text(encoding="utf-8"))
+        herb_options = ["全部中药"] + sorted(lit)
+        picked_herb = st.selectbox("选择中药", herb_options)
+        scope = (lit if picked_herb == "全部中药"
+                 else {picked_herb: lit.get(picked_herb, [])})
+        articles = [dict(a, herb=h) for h, arts in scope.items() for a in arts]
+
+        if not articles:
+            st.warning("该药暂无抓取到的文献。")
+        else:
+            c1, c2, c3 = st.columns(3)
+            c1.metric("文献数", len(articles))
+            c2.metric("含机制标注", sum(1 for a in articles if a.get("mechanisms")))
+            c3.metric("涉及靶点数",
+                      len({t for a in articles for t in a.get("targets", [])}))
+
+            mech_rows = [{"机制": m} for a in articles for m in a.get("mechanisms", [])]
+            if mech_rows:
+                st.markdown("**机制 / 通路分布**")
+                mech_count = (pd.DataFrame(mech_rows).value_counts("机制")
+                              .rename("文献数").reset_index()
+                              .sort_values("文献数", ascending=False))
+                st.altair_chart(
+                    alt.Chart(mech_count).mark_bar(cornerRadiusEnd=3).encode(
+                        x=alt.X("文献数:Q"), y=alt.Y("机制:N", sort="-x"),
+                        color=alt.Color("文献数:Q", scale=alt.Scale(scheme="oranges")),
+                        tooltip=["机制", "文献数"],
+                    ).properties(height=max(160, 26 * len(mech_count))),
+                    use_container_width=True)
+
+            target_rows = [{"靶点": t} for a in articles for t in a.get("targets", [])]
+            if target_rows:
+                st.markdown("**文献中出现的靶点（与本方靶点交集）**")
+                t_count = (pd.DataFrame(target_rows).value_counts("靶点")
+                           .rename("文献数").reset_index()
+                           .sort_values("文献数", ascending=False).head(20))
+                st.altair_chart(
+                    alt.Chart(t_count).mark_bar(cornerRadiusEnd=3).encode(
+                        x=alt.X("文献数:Q"), y=alt.Y("靶点:N", sort="-x"),
+                        color=alt.Color("文献数:Q", scale=alt.Scale(scheme="teals")),
+                        tooltip=["靶点", "文献数"],
+                    ).properties(height=max(160, 24 * len(t_count))),
+                    use_container_width=True)
+
+            st.markdown("**文献列表**")
+            table = pd.DataFrame([{
+                "中药": a["herb"], "年份": a.get("year"), "期刊": a.get("journal"),
+                "题目": a.get("title"), "机制": "、".join(a.get("mechanisms", [])),
+                "靶点": "、".join(a.get("targets", [])),
+                "PMID": a.get("pmid"),
+            } for a in articles]).sort_values("年份", ascending=False)
+            st.dataframe(table, hide_index=True, use_container_width=True)
+
+            with st.expander("查看摘要（前 5 篇）"):
+                for a in articles[:5]:
+                    st.markdown(f"**{a.get('title')}**　{a.get('year')}　{a.get('journal')}")
+                    st.caption(f"机制：{'、'.join(a.get('mechanisms', [])) or '未标注'}　"
+                               f"靶点：{'、'.join(a.get('targets', [])) or '未命中'}")
+                    st.write(a.get("abstract", "")[:600] + " ...")
+                    st.markdown(f"[PubMed {a.get('pmid')}]({a.get('url')})")
+
+# --------------------------------------- 6. 药动学（PK）与量-效-时（PD）曲线
+with tab_pk:
+    st.caption("一室一级吸收 PK 模型 + Hill 量-效方程；可用参数正向模拟，"
+               "也可上传实验测得数据反推参数。")
+    mode = st.radio("模式", ["参数模拟", "上传实验数据拟合"], horizontal=True)
+
+    if mode == "参数模拟":
+        st.markdown("**药动学参数**")
+        p1, p2, p3, p4, p5 = st.columns(5)
+        dose = p1.number_input("剂量 D (mg/kg)", 1.0, 1000.0, 100.0, 10.0)
+        f_bio = p2.number_input("生物利用度 F", 0.01, 1.0, 0.40, 0.05)
+        vd = p3.number_input("表观分布容积 V (L/kg)", 0.1, 100.0, 5.0, 0.5)
+        ka = p4.number_input("吸收速率 ka (1/h)", 0.05, 5.0, 1.20, 0.05)
+        ke = p5.number_input("消除速率 ke (1/h)", 0.01, 2.0, 0.25, 0.01)
+
+        st.markdown("**量-效参数**")
+        q1, q2, q3, q4 = st.columns(4)
+        e0 = q1.number_input("基线效应 E0 (%)", -100.0, 100.0, 5.0, 1.0)
+        emax = q2.number_input("最大效应 Emax (%)", 0.0, 200.0, 95.0, 5.0)
+        ec50 = q3.number_input("半数有效量 EC50 (mg/L)", 0.1, 500.0, 15.0, 1.0)
+        hill = q4.number_input("Hill 系数 h", 0.2, 8.0, 1.2, 0.1)
+
+        pk_df, cmax, tmax = simulate_pk(dose, f_bio, vd, ka, ke)
+        metrics = pk_metrics(ka, ke, dose, f_bio, vd)
+        m1, m2, m3, m4 = st.columns(4)
+        m1.metric("Cmax (mg/L)", f"{metrics['Cmax']:.2f}")
+        m2.metric("Tmax (h)", f"{metrics['Tmax']:.2f}")
+        m3.metric("AUC₀₋t (mg·h/L)", f"{metrics['AUC0-t']:.1f}")
+        m4.metric("消除半衰期 (h)", f"{metrics['t1/2(ke)']:.2f}")
+
+        col_a, col_b = st.columns(2)
+        with col_a:
+            st.markdown("**血药浓度 - 时间曲线（PK）**")
+            st.altair_chart(
+                alt.Chart(pk_df).mark_line(color="#2A629A").encode(
+                    x=alt.X("时间 (h):Q"), y=alt.Y("血药浓度 (mg/L):Q")),
+                use_container_width=True)
+            st.markdown("**剂量 - 效应曲线（量-效）**")
+            dr_df = simulate_dose_response(e0, emax, ec50, hill,
+                                           d_max=max(200.0, dose * 3))
+            st.altair_chart(
+                alt.Chart(dr_df).mark_line(color="#FF7F3E").encode(
+                    x=alt.X("剂量 (mg/kg):Q"), y=alt.Y("效应 (%):Q")),
+                use_container_width=True)
+        with col_b:
+            st.markdown("**效应 - 时间曲线（时-效，PK 驱动）**")
+            et_df = simulate_effect_time(dose, f_bio, vd, ka, ke, e0, emax, ec50, hill)
+            st.altair_chart(
+                alt.Chart(et_df).mark_line(color="#3CB371").encode(
+                    x=alt.X("时间 (h):Q"), y=alt.Y("效应 (%):Q")),
+                use_container_width=True)
+            st.markdown("**多剂量 PK 比较**")
+            multi = []
+            for d in [dose * 0.5, dose, dose * 2]:
+                frame, _, _ = simulate_pk(d, f_bio, vd, ka, ke)
+                frame["剂量"] = f"{d:.0f} mg/kg"
+                multi.append(frame)
+            st.altair_chart(
+                alt.Chart(pd.concat(multi)).mark_line().encode(
+                    x=alt.X("时间 (h):Q"), y=alt.Y("血药浓度 (mg/L):Q"),
+                    color=alt.Color("剂量:N")),
+                use_container_width=True)
+    else:
+        st.markdown("上传 CSV：一列自变量（剂量或时间），一列因变量（效应或浓度）。")
+        up = st.file_uploader("实验数据 CSV", type=["csv"])
+        if up is not None:
+            data = pd.read_csv(up)
+            st.dataframe(data, hide_index=True, use_container_width=True)
+            kind = st.radio("数据类型", ["量-效（剂量 vs 效应）", "药-时（时间 vs 浓度）"],
+                            horizontal=True)
+            xcol = st.selectbox("自变量列", data.columns)
+            ycol = st.selectbox("因变量列", data.columns)
+            if st.button("拟合曲线"):
+                if kind.startswith("量"):
+                    params, r2 = fit_dose_response(data[xcol], data[ycol])
+                else:
+                    params, r2 = fit_pk(data[xcol], data[ycol])
+                if not params:
+                    st.error("拟合失败：数据点太少或噪声过大（至少需要 4 个点）。")
+                else:
+                    st.success(f"拟合完成，R² = {r2:.4f}")
+                    st.write({k: round(float(v), 4) for k, v in params.items()})
+                    xs = np.linspace(float(data[xcol].min()), float(data[xcol].max()), 200)
+                    if kind.startswith("量"):
+                        ys = hill_emax(xs, params["E0"], params["Emax"],
+                                       params["EC50"], params["h"])
+                    else:
+                        ys = params["A"] * (np.exp(-params["ke"] * xs)
+                                            - np.exp(-params["ka"] * xs))
+                    fit_df = pd.DataFrame({xcol: xs, "拟合值": ys})
+                    base = alt.Chart(data).mark_circle(size=70, color="#2A629A").encode(
+                        x=f"{xcol}:Q", y=f"{ycol}:Q")
+                    line = alt.Chart(fit_df).mark_line(color="#FF7F3E").encode(
+                        x=f"{xcol}:Q", y="拟合值:Q")
+                    st.altair_chart(base + line, use_container_width=True)
+
+    st.markdown("---")
+    st.markdown("### 实验动物模型")
+    st.caption("默认示例为可编辑模板，请按真实实验方案修改；时间轴与分组可直接导出。")
+    a1, a2, a3, a4 = st.columns(4)
+    strain = a1.text_input("动物品系", "C57BL/6J 小鼠（雄性，8 周龄）")
+    model = a2.text_input("造模方法", "高脂饮食（HFD）诱导 8 周")
+    route = a3.text_input("给药途径", "灌胃（ig），每日 1 次")
+    endpoint = a4.text_input("主要检测指标", "体重、血脂四项、肝脏 TNF/IL6、HE 染色")
+
+    st.markdown(
+        f"<div style='display:flex;gap:10px;flex-wrap:wrap'>"
+        f"<div style='padding:8px 12px;border:1px solid #ddd;border-radius:6px'>"
+        f"品系<br><b>{strain}</b></div>"
+        f"<div style='padding:8px 12px;border:1px solid #ddd;border-radius:6px'>"
+        f"造模<br><b>{model}</b></div>"
+        f"<div style='padding:8px 12px;border:1px solid #ddd;border-radius:6px'>"
+        f"给药<br><b>{route}</b></div>"
+        f"<div style='padding:8px 12px;border:1px solid #ddd;border-radius:6px'>"
+        f"终点指标<br><b>{endpoint}</b></div></div>",
+        unsafe_allow_html=True,
+    )
+
+    stages = pd.DataFrame([
+        {"阶段": "适应期", "开始": -7, "结束": 0},
+        {"阶段": "造模期", "开始": 0, "结束": 56},
+        {"阶段": "给药干预", "开始": 28, "结束": 56},
+        {"阶段": "取材与检测", "开始": 56, "结束": 60},
+    ])
+    st.altair_chart(
+        alt.Chart(stages).mark_bar(size=26, cornerRadius=4).encode(
+            x=alt.X("开始:Q", title="实验天数（天）"), x2="结束:Q",
+            y=alt.Y("阶段:N", sort=None, title=None),
+            color=alt.Color("阶段:N", legend=None),
+            tooltip=["阶段", "开始", "结束"],
+        ).properties(height=180),
+        use_container_width=True)
+
+    default_groups = pd.DataFrame([
+        {"组别": "空白对照组", "动物数": 12, "造模": "普通饲料", "剂量 (mg/kg)": 0,
+         "给药": "溶剂灌胃"},
+        {"组别": "模型组", "动物数": 12, "造模": "高脂饮食", "剂量 (mg/kg)": 0,
+         "给药": "溶剂灌胃"},
+        {"组别": "受试药低剂量", "动物数": 12, "造模": "高脂饮食", "剂量 (mg/kg)": 50,
+         "给药": "灌胃"},
+        {"组别": "受试药中剂量", "动物数": 12, "造模": "高脂饮食", "剂量 (mg/kg)": 100,
+         "给药": "灌胃"},
+        {"组别": "受试药高剂量", "动物数": 12, "造模": "高脂饮食", "剂量 (mg/kg)": 200,
+         "给药": "灌胃"},
+        {"组别": "阳性药组", "动物数": 12, "造模": "高脂饮食", "剂量 (mg/kg)": 10,
+         "给药": "灌胃"},
+    ])
+    groups = st.data_editor(default_groups, num_rows="dynamic",
+                            use_container_width=True)
+    st.altair_chart(
+        alt.Chart(groups).mark_bar(cornerRadiusEnd=3).encode(
+            x=alt.X("剂量 (mg/kg):Q"), y=alt.Y("组别:N", sort=None),
+            color=alt.Color("动物数:Q", scale=alt.Scale(scheme="blues")),
+            tooltip=list(groups.columns),
+        ).properties(height=220),
+        use_container_width=True)
+    st.download_button("下载分组方案 CSV",
+                       data=groups.to_csv(index=False).encode("utf-8-sig"),
+                       file_name="animal_groups.csv", mime="text/csv")
+
+# ------------------------------------------------------------- 7. 成分明细
 with tab_compound:
     if compounds_df.empty:
         st.warning("当前阈值下没有成分。")

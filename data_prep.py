@@ -177,6 +177,48 @@ COMPOUNDS: Dict[str, dict] = {
     "MOL000857": {"name": "表泽泻醇 A", "en": "epi-alisol A", "ob": 28.37, "dl": 0.79},
     "MOL000858": {"name": "泽泻萜醇 E", "en": "alismol E", "ob": 35.22, "dl": 0.77},
     "MOL000859": {"name": "胆碱", "en": "choline", "ob": 62.14, "dl": 0.01},
+
+    # ===== 牡丹皮 =====
+    "MOL001924": {"name": "芍药苷", "en": "paeoniflorin", "ob": 32.34, "dl": 0.79,
+                  "targets": CORE_TARGETS[:12] + CORE_TARGETS[24:30]},
+    "MOL001925": {"name": "丹皮酚", "en": "paeonol", "ob": 28.79, "dl": 0.04},
+    "MOL001926": {"name": "芍药内酯苷", "en": "albiflorin", "ob": 31.14, "dl": 0.77},
+    "MOL001927": {"name": "苯甲酰芍药苷", "en": "benzoylpaeoniflorin", "ob": 30.87, "dl": 0.75},
+    "MOL001928": {"name": "氧化芍药苷", "en": "oxypaeoniflorin", "ob": 28.16, "dl": 0.75},
+    "MOL001929": {"name": "丹皮酚原苷", "en": "paeonoside", "ob": 33.62, "dl": 0.31},
+    "MOL001930": {"name": "丹皮酚新苷", "en": "apiopaeonoside", "ob": 29.75, "dl": 0.30},
+    "MOL001931": {"name": "1,2,3,4,6-五没食子酰葡萄糖", "en": "pentagalloylglucose",
+                  "ob": 24.81, "dl": 0.06},
+
+    # ===== 丹参 =====
+    "MOL007154": {"name": "丹参酮 IIA", "en": "tanshinone IIA", "ob": 49.89, "dl": 0.40,
+                  "targets": CORE_TARGETS[3:14]},
+    "MOL007155": {"name": "丹参酮 I", "en": "tanshinone I", "ob": 30.66, "dl": 0.36},
+    "MOL007156": {"name": "隐丹参酮", "en": "cryptotanshinone", "ob": 46.07, "dl": 0.34,
+                  "targets": CORE_TARGETS[5:15]},
+    "MOL007157": {"name": "二氢丹参酮 I", "en": "dihydrotanshinone I", "ob": 45.04, "dl": 0.36},
+    "MOL007158": {"name": "丹参素", "en": "danshensu", "ob": 33.15, "dl": 0.05},
+    "MOL007159": {"name": "迷迭香酸", "en": "rosmarinic acid", "ob": 35.94, "dl": 0.35,
+                  "targets": CORE_TARGETS[8:16]},
+    "MOL000006": {"name": "木犀草素", "en": "luteolin", "ob": 36.16, "dl": 0.25,
+                  "targets": CORE_TARGETS[:10] + CORE_TARGETS[20:26]},
+    "MOL007160": {"name": "丹酚酸 B", "en": "salvianolic acid B", "ob": 3.01, "dl": 0.41},
+    "MOL007161": {"name": "原儿茶醛", "en": "protocatechualdehyde", "ob": 38.75, "dl": 0.04},
+
+    # ===== 甘草 =====
+    "MOL004898": {"name": "甘草次酸", "en": "glycyrrhetinic acid", "ob": 22.05, "dl": 0.74},
+    "MOL004899": {"name": "甘草苷", "en": "liquiritin", "ob": 33.87, "dl": 0.72,
+                  "targets": CORE_TARGETS[6:14]},
+    "MOL004900": {"name": "异甘草苷", "en": "isoliquiritin", "ob": 34.62, "dl": 0.72},
+    "MOL004901": {"name": "甘草素", "en": "liquiritigenin", "ob": 32.76, "dl": 0.18,
+                  "targets": CORE_TARGETS[9:16]},
+    "MOL004902": {"name": "异甘草素", "en": "isoliquiritigenin", "ob": 45.17, "dl": 0.16},
+    "MOL004903": {"name": "光甘草定", "en": "glabridin", "ob": 42.36, "dl": 0.36},
+    "MOL004904": {"name": "甘草查尔酮 A", "en": "licochalcone A", "ob": 40.79, "dl": 0.29,
+                  "targets": CORE_TARGETS[11:18]},
+    "MOL004328": {"name": "柚皮素", "en": "naringenin", "ob": 59.29, "dl": 0.21,
+                  "targets": CORE_TARGETS[12:19]},
+    "MOL004905": {"name": "甘草酸", "en": "glycyrrhizic acid", "ob": 19.62, "dl": 0.11},
 }
 
 # 每味中药包含的成分（mol_id 列表）
@@ -211,6 +253,21 @@ HERB_COMPOUNDS: Dict[str, List[str]] = {
     "泽泻": [
         "MOL000853", "MOL000854", "MOL000855", "MOL000856", "MOL000857",
         "MOL000858", "MOL000859", "MOL000358", "MOL000449",
+    ],
+    "牡丹皮": [
+        "MOL001924", "MOL001925", "MOL001926", "MOL001927", "MOL001928",
+        "MOL001929", "MOL001930", "MOL001931", "MOL000513", "MOL000073",
+        "MOL000073b", "MOL000098", "MOL000422", "MOL000358", "MOL000449",
+    ],
+    "丹参": [
+        "MOL007154", "MOL007155", "MOL007156", "MOL007157", "MOL007158",
+        "MOL007159", "MOL000006", "MOL007160", "MOL007161", "MOL000098",
+        "MOL000422", "MOL000358", "MOL000449",
+    ],
+    "甘草": [
+        "MOL004898", "MOL004899", "MOL004900", "MOL004901", "MOL004902",
+        "MOL004903", "MOL004904", "MOL004328", "MOL004905", "MOL000392",
+        "MOL000098", "MOL000422", "MOL000358", "MOL000449",
     ],
 }
 

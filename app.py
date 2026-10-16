@@ -24,7 +24,11 @@ import streamlit as st
 import streamlit.components.v1 as components
 from st_link_analysis import EdgeStyle, NodeStyle, st_link_analysis
 
+from animal_view import (ANIMALS, compartment_of, organ_target_map, render_animal,
+                         render_cell)
 from herb_info import HERB_INFO, get_herb_info
+from pathways import (KIND_STYLE, PATHWAYS, pathway_elements, pathways_of_target,
+                      target_class)
 from pkpd import (fit_dose_response, fit_pk, hill_emax, pk_metrics,
                   simulate_dose_response, simulate_effect_time, simulate_pk)
 from topology import cyto_nca_filter, elements_to_graph
@@ -164,9 +168,9 @@ col3.metric("靶点", n_targets)
 col4.metric("关系（边）", len(elements["edges"]))
 
 # ------------------------------------------------------------------ 主体
-tab_graph, tab_synergy, tab_core, tab_target, tab_lit, tab_pk, tab_compound = st.tabs(
+tab_graph, tab_synergy, tab_core, tab_target, tab_lit, tab_pk, tab_animal, tab_compound = st.tabs(
     ["网络图", "配伍协同分析", "核心靶点（CytoNCA）", "靶点详情（蛋白 / 定位 / 结构）",
-     "文献机制（PubMed）", "药动学 / 量-效-时", "成分明细"]
+     "文献机制（PubMed）", "药动学 / 量-效-时", "动物模型模拟实验", "成分明细"]
 )
 core_targets: List[str] = []
 
@@ -590,7 +594,98 @@ with tab_pk:
                        data=groups.to_csv(index=False).encode("utf-8-sig"),
                        file_name="animal_groups.csv", mime="text/csv")
 
-# ------------------------------------------------------------- 7. 成分明细
+# --------------------------------------- 7. 动物模型模拟实验（器官 / 受体 / 通路）
+with tab_animal:
+    info = load_target_info()
+    if not info:
+        st.info("未找到 target_info.json，请先运行 `python fetch_target_info.py`。")
+    else:
+        st.caption("器官点位依据 UniProt 组织特异性注释，受体点位依据亚细胞定位注释，"
+                   "通路图依据 pathways.py 中整理的信号通路拓扑。")
+        all_genes = sorted({n["data"]["name"] for n in elements["nodes"]
+                            if n["data"]["label"] == "TARGET"})
+        scope = st.radio("靶点范围", ["核心靶点", "全方靶点"], horizontal=True)
+        genes = core_targets if (scope == "核心靶点" and core_targets) else all_genes
+
+        subset = {g: info[g.upper()] for g in genes if g.upper() in info}
+        o_map = organ_target_map(subset)
+        counts = {organ: len(v) for organ, v in o_map.items()}
+
+        left, right = st.columns([1.2, 1])
+        animal = left.selectbox("实验动物", list(ANIMALS))
+        organs_sorted = sorted(counts, key=lambda o: -counts[o])
+        picked_organ = right.selectbox("选择器官 / 组织", organs_sorted or ["（暂无）"])
+        with left:
+            components.html(render_animal(animal, counts, picked_organ), height=360)
+            st.caption("圆点大小与颜色深浅 = 该器官相关靶点数；红框为当前选中器官。"
+                       "器官位置为示意布局，非解剖学精确作图。")
+
+        with right:
+            organ_genes = o_map.get(picked_organ, [])
+            st.markdown(f"**{picked_organ}** 相关靶点：{len(organ_genes)} 个")
+            if organ_genes:
+                st.dataframe(pd.DataFrame([{
+                    "靶点": g,
+                    "蛋白": subset[g].get("protein", ""),
+                    "类别": target_class(g, subset[g]),
+                    "亚细胞定位": "、".join(subset[g].get("locations", [])[:2]),
+                    "组织特异性": subset[g].get("tissue", "")[:60],
+                } for g in organ_genes]), hide_index=True, use_container_width=True)
+            else:
+                st.caption("该器官在当前靶点范围内没有 UniProt 组织特异性注释支持。")
+
+        st.markdown("---")
+        st.markdown("### 受体点位（细胞分区）")
+        pool = organ_genes or genes
+        picked_gene = st.selectbox("选择靶点", pool)
+        gene_item = info.get(picked_gene.upper(), {})
+        show_all = st.checkbox("显示当前靶点范围全部靶点的细胞分布", value=False)
+
+        if show_all:
+            pairs = [(g, loc) for g in genes
+                     for loc in (info.get(g.upper(), {}).get("locations") or [])]
+        else:
+            pairs = [(picked_gene, loc)
+                     for loc in (gene_item.get("locations") or ["未标注"])]
+
+        cell_left, cell_right = st.columns([1.3, 1])
+        with cell_left:
+            components.html(render_cell(pairs), height=340)
+        with cell_right:
+            st.markdown(f"**{picked_gene}**　{gene_item.get('protein', '-')}")
+            st.metric("功能类别", target_class(picked_gene, gene_item))
+            st.metric("UniProt", gene_item.get("accession", "-"))
+            locs = gene_item.get("locations") or []
+            if locs:
+                st.markdown("**亚细胞定位**")
+                for loc in locs:
+                    st.markdown(f"- `{loc}` → **{compartment_of(loc)}**")
+            else:
+                st.caption("UniProt 未提供亚细胞定位注释。")
+
+        st.markdown("---")
+        st.markdown("### 作用机制通路图")
+        pw_names = pathways_of_target(picked_gene)
+        options = list(PATHWAYS)
+        default_index = options.index(pw_names[0]) if pw_names else 0
+        picked_pw = st.selectbox("选择通路", options, index=default_index)
+        if pw_names:
+            st.caption(f"{picked_gene} 直接参与的通路：{'、'.join(pw_names)}；"
+                       f"下方展示的是所选通路拓扑。")
+        st.write(PATHWAYS[picked_pw]["desc"])
+
+        layout_pw = st.selectbox("通路布局", ["breadthfirst", "dagre", "cose", "grid"],
+                                 index=0)
+        node_styles_pw = [NodeStyle(kind, color, "name") for kind, (_, color)
+                          in KIND_STYLE.items()]
+        st_link_analysis(pathway_elements(picked_pw), layout_pw, node_styles_pw,
+                         [EdgeStyle("PATH_STEP", "#8a8a8a", "name", directed=True)],
+                         height=430, key="pathway_network")
+        st.markdown("　".join(f"<span style='color:{color}'>■ {label}</span>"
+                              for label, color in KIND_STYLE.values()),
+                    unsafe_allow_html=True)
+
+# ------------------------------------------------------------- 8. 成分明细
 with tab_compound:
     if compounds_df.empty:
         st.warning("当前阈值下没有成分。")

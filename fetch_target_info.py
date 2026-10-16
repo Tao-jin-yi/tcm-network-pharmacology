@@ -24,7 +24,7 @@ OUTPUT_FILE = HERE / "target_info.json"
 
 UNIPROT = "https://rest.uniprot.org/uniprotkb/search"
 FIELDS = ("accession,id,protein_name,gene_names,organism_name,length,"
-          "cc_subcellular_location,cc_function")
+          "cc_subcellular_location,cc_function,cc_tissue_specificity")
 CHUNK = 25  # 每批发查询的基因数，避免 URL 过长
 
 
@@ -61,10 +61,14 @@ def parse_entry(entry: dict) -> dict:
     if entry.get("genes"):
         gene = entry["genes"][0].get("geneName", {}).get("value", "")
 
-    locations, function = [], ""
+    locations, function, tissue = [], "", ""
     for comment in entry.get("comments", []):
         ctype = comment.get("commentType")
-        if ctype == "SUBCELLULAR LOCATION":
+        if ctype == "TISSUE SPECIFICITY" and not tissue:
+            texts = comment.get("texts", [])
+            if texts:
+                tissue = texts[0].get("value", "")
+        elif ctype == "SUBCELLULAR LOCATION":
             for loc in comment.get("subcellularLocations", []):
                 value = loc.get("location", {}).get("value")
                 if value:
@@ -85,6 +89,7 @@ def parse_entry(entry: dict) -> dict:
         "organism": entry.get("organism", {}).get("scientificName", ""),
         "length": entry.get("sequence", {}).get("length"),
         "locations": sorted(set(locations)),
+        "tissue": tissue[:400] + ("…" if len(tissue) > 400 else ""),
         "function": function[:500] + ("…" if len(function) > 500 else ""),
         "uniprot_url": f"https://www.uniprot.org/uniprotkb/"
                        f"{entry.get('primaryAccession', '')}/entry",

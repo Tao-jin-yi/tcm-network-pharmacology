@@ -14,6 +14,8 @@
 | `compound_structures.json` | 上一步的产物，被 `data_prep.py` 自动合并进网络 | 结构式缓存 |
 | `herb_info.py` | 中药用途：性味归经、功效主治、君臣佐使、分类 | 用途数据 |
 | `import_tcmsp.py` | 导入 TCMSP 导出的 CSV/Excel（支持录入全部 499 味中药） | 批量入库 |
+| `fetch_target_info.py` | 用 UniProt 补全靶点蛋白信息（蛋白名、登录号、亚细胞定位、功能） | 蛋白数据 |
+| `target_info.json` | 上一步的产物，被 `app.py` 直接读取 | 蛋白数据缓存 |
 | `requirements.txt` | 依赖清单 | 部署 |
 
 ## 安装
@@ -61,6 +63,23 @@ python data_prep.py                 # 把结构信息写进 network.json
 
 `herb_info.py` 里按药名维护：性味、归经、功效主治、方中角色（君/臣/佐/使）、分类。
 新增药材时按同样格式加一条即可，应用会自动显示。
+
+## 核心靶点的蛋白信息与三维结构
+
+```bash
+python fetch_target_info.py     # 从 UniProt 抓取靶点蛋白信息 → target_info.json
+```
+
+数据来源：UniProt REST（人源、Swiss-Prot 已审阅）+ AlphaFold DB 预测结构。
+应用内新增「靶点详情」页，展示：
+
+- **蛋白名 / UniProt 登录号 / 物种 / 氨基酸长度**，并给出 UniProt 页面链接；
+- **亚细胞定位**（细胞膜、细胞核、细胞质、线粒体、分泌蛋白等，来自 UniProt 注释）；
+- **蛋白三维结构**：用 3Dmol.js 页面内渲染 AlphaFold 预测模型（PDB 内容内联，可旋转缩放），
+  并提供 PDB 文件下载；
+- **核心靶点的亚细胞定位分布**：柱状图统计核心靶点在各细胞区室的分布。
+
+结构文件按需下载并缓存，不会大量占用仓库体积。
 
 ## 录入更多中药（含 TCMSP 全部 499 味）
 

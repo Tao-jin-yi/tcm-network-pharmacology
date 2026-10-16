@@ -17,7 +17,9 @@ from pathlib import Path
 from typing import Dict, List, Set
 
 import pandas as pd
+import requests
 import streamlit as st
+import streamlit.components.v1 as components
 from st_link_analysis import EdgeStyle, NodeStyle, st_link_analysis
 
 from herb_info import HERB_INFO, get_herb_info
@@ -25,6 +27,7 @@ from topology import cyto_nca_filter, elements_to_graph
 
 HERE = Path(__file__).parent
 DATA_FILE = HERE / "network.json"
+TARGET_INFO_FILE = HERE / "target_info.json"  # 由 fetch_target_info.py 生成（UniProt）
 
 LAYOUTS = ["cose", "fcose", "breadthfirst", "circle", "concentric", "grid", "cola", "dagre"]
 
@@ -43,6 +46,42 @@ def load_network(path_str: str) -> dict:
         st.error(f"找不到数据文件 {path}，请先运行 `python data_prep.py` 生成。")
         st.stop()
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+@st.cache_data(show_spinner=False)
+def load_target_info() -> dict:
+    """读取 UniProt 蛋白信息（蛋白名、登录号、亚细胞定位、功能）。"""
+    if not TARGET_INFO_FILE.exists():
+        return {}
+    return json.loads(TARGET_INFO_FILE.read_text(encoding="utf-8"))
+
+
+@st.cache_data(show_spinner="正在从 AlphaFold 下载蛋白结构 ...")
+def load_alphafold_pdb(accession: str) -> str:
+    """按 UniProt 登录号取 AlphaFold 预测的 PDB 文本，失败返回空串。"""
+    url = f"https://alphafold.ebi.ac.uk/files/AF-{accession}-F1-model_v6.pdb"
+    try:
+        resp = requests.get(url, timeout=45)
+    except Exception:
+        return ""
+    return resp.text if resp.status_code == 200 and "ATOM" in resp.text else ""
+
+
+def render_protein_3d(pdb_text: str, height: int = 430) -> None:
+    """用 3Dmol.js 在页面内渲染蛋白三维结构（PDB 内容直接内联，无需浏览器联网）。"""
+    html = f"""
+<div id="protein-viewer" style="height:{height}px; width:100%; background:#ffffff;"></div>
+<script src="https://3dmol.org/build/3Dmol-min.js"></script>
+<script>
+  const viewer = $3Dmol.createViewer(document.getElementById("protein-viewer"),
+                                     {{backgroundColor: "white"}});
+  viewer.addModel({json.dumps(pdb_text)}, "pdb");
+  viewer.setStyle({{}}, {{cartoon: {{color: "spectrum"}}}});
+  viewer.zoomTo();
+  viewer.render();
+</script>
+"""
+    components.html(html, height=height + 25)
 
 
 def filter_elements(elements: dict, ob_min: float, dl_min: float) -> dict:
@@ -120,9 +159,10 @@ col3.metric("靶点", n_targets)
 col4.metric("关系（边）", len(elements["edges"]))
 
 # ------------------------------------------------------------------ 主体
-tab_graph, tab_synergy, tab_core, tab_compound = st.tabs(
-    ["网络图", "配伍协同分析", "核心靶点（CytoNCA）", "成分明细"]
+tab_graph, tab_synergy, tab_core, tab_target, tab_compound = st.tabs(
+    ["网络图", "配伍协同分析", "核心靶点（CytoNCA）", "靶点详情（蛋白 / 定位 / 结构）", "成分明细"]
 )
+core_targets: List[str] = []
 
 # ---------------------------------------------------------------- 1. 网络图
 with tab_graph:
@@ -240,6 +280,15 @@ with tab_core:
             table = metrics_df.loc[[f"TGT::{t}" for t in core_targets]].copy()
             table.index = core_targets
             table = table.sort_values("DC", ascending=False).round(4)
+            info = load_target_info()
+            if info:
+                table.insert(0, "蛋白名",
+                             [info.get(t, {}).get("protein", "") for t in table.index])
+                table.insert(1, "UniProt",
+                             [info.get(t, {}).get("accession", "") for t in table.index])
+                table.insert(2, "亚细胞定位",
+                             ["、".join(info.get(t, {}).get("locations", [])[:2])
+                              for t in table.index])
             st.markdown("**核心靶点的拓扑指标**")
             st.dataframe(table, use_container_width=True)
             st.download_button(
@@ -250,7 +299,65 @@ with tab_core:
                 mime="text/csv",
             )
 
-# ------------------------------------------------------------- 4. 成分明细
+# --------------------------------- 4. 靶点详情：蛋白信息 / 亚细胞定位 / 三维结构
+with tab_target:
+    info = load_target_info()
+    if not info:
+        st.info("未找到 target_info.json，请先运行 `python fetch_target_info.py` "
+                "从 UniProt 抓取蛋白信息。")
+    else:
+        all_t = sorted({n["data"]["name"] for n in elements["nodes"]
+                        if n["data"]["label"] == "TARGET"})
+        options = core_targets + [t for t in all_t if t not in core_targets]
+        picked = st.selectbox("选择靶点（核心靶点排在前面）", options)
+
+        item = info.get(picked.upper())
+        if not item:
+            st.warning(f"UniProt 中暂无 {picked} 的人源已审阅记录。")
+        else:
+            st.markdown(f"### {picked}　{item['protein']}")
+            c1, c2, c3, c4 = st.columns(4)
+            c1.metric("UniProt 登录号", item["accession"] or "-")
+            c2.metric("物种", item["organism"] or "Homo sapiens")
+            c3.metric("氨基酸长度", item["length"] or "-")
+            c4.metric("是否核心靶点", "是" if picked in core_targets else "否")
+            st.markdown(f"[在 UniProt 打开 {item['accession']}]({item['uniprot_url']})")
+
+            if item["locations"]:
+                st.markdown("**亚细胞定位（UniProt 注释）**")
+                st.markdown("　".join(f"`{loc}`" for loc in item["locations"]))
+            if item["function"]:
+                st.markdown("**功能描述**")
+                st.caption(item["function"])
+
+            st.markdown("**蛋白三维结构**（AlphaFold DB 预测模型，可旋转缩放）")
+            pdb_text = load_alphafold_pdb(item["accession"])
+            if pdb_text:
+                render_protein_3d(pdb_text)
+                st.download_button(
+                    "下载 PDB 结构文件",
+                    data=pdb_text,
+                    file_name=f"AF-{item['accession']}-F1-model_v6.pdb",
+                    mime="chemical/x-pdb",
+                )
+            else:
+                st.info("AlphaFold 暂无该蛋白的预测结构。")
+
+        if core_targets:
+            st.markdown("**核心靶点的亚细胞定位分布**")
+            rows = []
+            for t in core_targets:
+                locs = info.get(t.upper(), {}).get("locations") or ["未标注"]
+                for loc in locs:
+                    rows.append({"靶点": t, "定位": loc.split(",")[0]})
+            if rows:
+                dist = (pd.DataFrame(rows)
+                        .groupby("定位")["靶点"].nunique()
+                        .sort_values(ascending=False))
+                st.bar_chart(dist)
+                st.caption("同一蛋白可定位于多个区室，故计数之和大于核心靶点数。")
+
+# ------------------------------------------------------------- 5. 成分明细
 with tab_compound:
     if compounds_df.empty:
         st.warning("当前阈值下没有成分。")

@@ -1,0 +1,6522 @@
+{
+  "meta": {
+    "source": "TCMSP(示例数据) / UniProt",
+    "ob_min": 30.0,
+    "dl_min": 0.18,
+    "generated_by": "data_prep.py"
+  },
+  "nodes": [
+    {
+      "data": {
+        "id": "HERB::黄芪",
+        "label": "HERB",
+        "name": "黄芪"
+      }
+    },
+    {
+      "data": {
+        "id": "HERB::山茱萸",
+        "label": "HERB",
+        "name": "山茱萸"
+      }
+    },
+    {
+      "data": {
+        "id": "HERB::山药",
+        "label": "HERB",
+        "name": "山药"
+      }
+    },
+    {
+      "data": {
+        "id": "HERB::熟地黄",
+        "label": "HERB",
+        "name": "熟地黄"
+      }
+    },
+    {
+      "data": {
+        "id": "HERB::茯苓",
+        "label": "HERB",
+        "name": "茯苓"
+      }
+    },
+    {
+      "data": {
+        "id": "HERB::泽泻",
+        "label": "HERB",
+        "name": "泽泻"
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000098",
+        "label": "COMPOUND",
+        "name": "槲皮素",
+        "en": "quercetin",
+        "ob": 46.43,
+        "dl": 0.28,
+        "herbs": [
+          "黄芪",
+          "山茱萸",
+          "山药",
+          "熟地黄"
+        ],
+        "n_herbs": 4,
+        "n_targets": 22
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000422",
+        "label": "COMPOUND",
+        "name": "山柰酚",
+        "en": "kaempferol",
+        "ob": 41.88,
+        "dl": 0.24,
+        "herbs": [
+          "黄芪",
+          "山茱萸",
+          "山药",
+          "熟地黄"
+        ],
+        "n_herbs": 4,
+        "n_targets": 17
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000392",
+        "label": "COMPOUND",
+        "name": "芒柄花素",
+        "en": "formononetin",
+        "ob": 69.67,
+        "dl": 0.21,
+        "herbs": [
+          "黄芪"
+        ],
+        "n_herbs": 1,
+        "n_targets": 13
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000417",
+        "label": "COMPOUND",
+        "name": "毛蕊异黄酮",
+        "en": "calycosin",
+        "ob": 47.75,
+        "dl": 0.24,
+        "herbs": [
+          "黄芪"
+        ],
+        "n_herbs": 1,
+        "n_targets": 12
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000354",
+        "label": "COMPOUND",
+        "name": "异鼠李素",
+        "en": "isorhamnetin",
+        "ob": 49.55,
+        "dl": 0.31,
+        "herbs": [
+          "黄芪"
+        ],
+        "n_herbs": 1,
+        "n_targets": 10
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000390",
+        "label": "COMPOUND",
+        "name": "大豆苷元",
+        "en": "daidzein",
+        "ob": 43.83,
+        "dl": 0.2,
+        "herbs": [
+          "黄芪"
+        ],
+        "n_herbs": 1,
+        "n_targets": 8
+      }
+    },
+    {
+      "data": {
+        "id": "MOL008400",
+        "label": "COMPOUND",
+        "name": "黄豆黄素",
+        "en": "glycitein",
+        "ob": 50.48,
+        "dl": 0.24,
+        "herbs": [
+          "黄芪"
+        ],
+        "n_herbs": 1,
+        "n_targets": 6
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000358",
+        "label": "COMPOUND",
+        "name": "β-谷甾醇",
+        "en": "beta-sitosterol",
+        "ob": 36.91,
+        "dl": 0.75,
+        "herbs": [
+          "黄芪",
+          "山茱萸",
+          "山药",
+          "熟地黄",
+          "茯苓",
+          "泽泻"
+        ],
+        "n_herbs": 6,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000449",
+        "label": "COMPOUND",
+        "name": "豆甾醇",
+        "en": "stigmasterol",
+        "ob": 43.83,
+        "dl": 0.76,
+        "herbs": [
+          "黄芪",
+          "山茱萸",
+          "山药",
+          "熟地黄",
+          "茯苓",
+          "泽泻"
+        ],
+        "n_herbs": 6,
+        "n_targets": 12
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000380",
+        "label": "COMPOUND",
+        "name": "刺芒柄花苷",
+        "en": "ononin",
+        "ob": 31.29,
+        "dl": 0.71,
+        "herbs": [
+          "黄芪"
+        ],
+        "n_herbs": 1,
+        "n_targets": 5
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000211",
+        "label": "COMPOUND",
+        "name": "白桦脂酸",
+        "en": "betulinic acid",
+        "ob": 55.38,
+        "dl": 0.78,
+        "herbs": [
+          "黄芪"
+        ],
+        "n_herbs": 1,
+        "n_targets": 5
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000371",
+        "label": "COMPOUND",
+        "name": "常春藤皂苷元",
+        "en": "hederagenin",
+        "ob": 36.91,
+        "dl": 0.75,
+        "herbs": [
+          "黄芪"
+        ],
+        "n_herbs": 1,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000433",
+        "label": "COMPOUND",
+        "name": "叶酸",
+        "en": "folic acid",
+        "ob": 68.94,
+        "dl": 0.71,
+        "herbs": [
+          "黄芪"
+        ],
+        "n_herbs": 1,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "MOL001494",
+        "label": "COMPOUND",
+        "name": "马钱苷",
+        "en": "loganin",
+        "ob": 35.11,
+        "dl": 0.32,
+        "herbs": [
+          "山茱萸"
+        ],
+        "n_herbs": 1,
+        "n_targets": 8
+      }
+    },
+    {
+      "data": {
+        "id": "MOL001495",
+        "label": "COMPOUND",
+        "name": "莫诺苷",
+        "en": "morroniside",
+        "ob": 33.42,
+        "dl": 0.28,
+        "herbs": [
+          "山茱萸"
+        ],
+        "n_herbs": 1,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "MOL001497",
+        "label": "COMPOUND",
+        "name": "山茱萸新苷",
+        "en": "cornuside",
+        "ob": 31.05,
+        "dl": 0.31,
+        "herbs": [
+          "山茱萸"
+        ],
+        "n_herbs": 1,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "MOL001002",
+        "label": "COMPOUND",
+        "name": "鞣花酸",
+        "en": "ellagic acid",
+        "ob": 43.06,
+        "dl": 0.43,
+        "herbs": [
+          "山茱萸"
+        ],
+        "n_herbs": 1,
+        "n_targets": 10
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000073",
+        "label": "COMPOUND",
+        "name": "儿茶素",
+        "en": "catechin",
+        "ob": 54.83,
+        "dl": 0.24,
+        "herbs": [
+          "山茱萸",
+          "山药"
+        ],
+        "n_herbs": 2,
+        "n_targets": 10
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000073b",
+        "label": "COMPOUND",
+        "name": "表儿茶素",
+        "en": "epicatechin",
+        "ob": 48.96,
+        "dl": 0.24,
+        "herbs": [
+          "山茱萸",
+          "山药"
+        ],
+        "n_herbs": 2,
+        "n_targets": 9
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000546",
+        "label": "COMPOUND",
+        "name": "薯蓣皂苷元",
+        "en": "diosgenin",
+        "ob": 80.88,
+        "dl": 0.81,
+        "herbs": [
+          "山药"
+        ],
+        "n_herbs": 1,
+        "n_targets": 20
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000546b",
+        "label": "COMPOUND",
+        "name": "甲基原薯蓣皂苷",
+        "en": "methyl protodioscin",
+        "ob": 35.62,
+        "dl": 0.3,
+        "herbs": [
+          "山药"
+        ],
+        "n_herbs": 1,
+        "n_targets": 8
+      }
+    },
+    {
+      "data": {
+        "id": "MOL001736",
+        "label": "COMPOUND",
+        "name": "山药素 I",
+        "en": "batatasin I",
+        "ob": 32.14,
+        "dl": 0.21,
+        "herbs": [
+          "山药"
+        ],
+        "n_herbs": 1,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000832",
+        "label": "COMPOUND",
+        "name": "毛蕊花糖苷",
+        "en": "acteoside",
+        "ob": 32.42,
+        "dl": 0.31,
+        "herbs": [
+          "熟地黄"
+        ],
+        "n_herbs": 1,
+        "n_targets": 16
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000836",
+        "label": "COMPOUND",
+        "name": "益母草苷",
+        "en": "leonuride",
+        "ob": 30.11,
+        "dl": 0.2,
+        "herbs": [
+          "熟地黄"
+        ],
+        "n_herbs": 1,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000838",
+        "label": "COMPOUND",
+        "name": "地黄素 A",
+        "en": "rehmapicrogenin A",
+        "ob": 33.19,
+        "dl": 0.28,
+        "herbs": [
+          "熟地黄"
+        ],
+        "n_herbs": 1,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000839",
+        "label": "COMPOUND",
+        "name": "焦地黄素 B",
+        "en": "jioglutin B",
+        "ob": 36.74,
+        "dl": 0.31,
+        "herbs": [
+          "熟地黄"
+        ],
+        "n_herbs": 1,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000275",
+        "label": "COMPOUND",
+        "name": "茯苓酸",
+        "en": "pachymic acid",
+        "ob": 30.55,
+        "dl": 0.81,
+        "herbs": [
+          "茯苓"
+        ],
+        "n_herbs": 1,
+        "n_targets": 16
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000276",
+        "label": "COMPOUND",
+        "name": "去氢茯苓酸",
+        "en": "dehydropachymic acid",
+        "ob": 31.12,
+        "dl": 0.8,
+        "herbs": [
+          "茯苓"
+        ],
+        "n_herbs": 1,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000277",
+        "label": "COMPOUND",
+        "name": "乙酰茯苓酸",
+        "en": "acetylpachymic acid",
+        "ob": 34.28,
+        "dl": 0.82,
+        "herbs": [
+          "茯苓"
+        ],
+        "n_herbs": 1,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000278",
+        "label": "COMPOUND",
+        "name": "麦角甾醇",
+        "en": "ergosterol",
+        "ob": 33.32,
+        "dl": 0.72,
+        "herbs": [
+          "茯苓"
+        ],
+        "n_herbs": 1,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000279",
+        "label": "COMPOUND",
+        "name": "齿孔酸",
+        "en": "eburicoic acid",
+        "ob": 36.74,
+        "dl": 0.79,
+        "herbs": [
+          "茯苓"
+        ],
+        "n_herbs": 1,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000282",
+        "label": "COMPOUND",
+        "name": "3-表去氢茯苓酸",
+        "en": "3-epidehydropachymic acid",
+        "ob": 33.06,
+        "dl": 0.8,
+        "herbs": [
+          "茯苓"
+        ],
+        "n_herbs": 1,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000853",
+        "label": "COMPOUND",
+        "name": "泽泻醇 A",
+        "en": "alisol A",
+        "ob": 32.75,
+        "dl": 0.79,
+        "herbs": [
+          "泽泻"
+        ],
+        "n_herbs": 1,
+        "n_targets": 15
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000854",
+        "label": "COMPOUND",
+        "name": "泽泻醇 B",
+        "en": "alisol B",
+        "ob": 33.95,
+        "dl": 0.79,
+        "herbs": [
+          "泽泻"
+        ],
+        "n_herbs": 1,
+        "n_targets": 9
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000855",
+        "label": "COMPOUND",
+        "name": "23-乙酰泽泻醇 B",
+        "en": "alisol B 23-acetate",
+        "ob": 32.52,
+        "dl": 0.81,
+        "herbs": [
+          "泽泻"
+        ],
+        "n_herbs": 1,
+        "n_targets": 9
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000856",
+        "label": "COMPOUND",
+        "name": "泽泻醇 C",
+        "en": "alisol C",
+        "ob": 30.14,
+        "dl": 0.78,
+        "herbs": [
+          "泽泻"
+        ],
+        "n_herbs": 1,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "MOL000858",
+        "label": "COMPOUND",
+        "name": "泽泻萜醇 E",
+        "en": "alismol E",
+        "ob": 35.22,
+        "dl": 0.77,
+        "herbs": [
+          "泽泻"
+        ],
+        "n_herbs": 1,
+        "n_targets": 14
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::ABCB1",
+        "label": "TARGET",
+        "name": "ABCB1",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::ABCG2",
+        "label": "TARGET",
+        "name": "ABCG2",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::ACACA",
+        "label": "TARGET",
+        "name": "ACACA",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::ADIPOQ",
+        "label": "TARGET",
+        "name": "ADIPOQ",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::AKT1",
+        "label": "TARGET",
+        "name": "AKT1",
+        "degree": 5
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::AMPK",
+        "label": "TARGET",
+        "name": "AMPK",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::ANGPT2",
+        "label": "TARGET",
+        "name": "ANGPT2",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::APOE",
+        "label": "TARGET",
+        "name": "APOE",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::AR",
+        "label": "TARGET",
+        "name": "AR",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::ATM",
+        "label": "TARGET",
+        "name": "ATM",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::AURKA",
+        "label": "TARGET",
+        "name": "AURKA",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::BAX",
+        "label": "TARGET",
+        "name": "BAX",
+        "degree": 12
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::BCL2",
+        "label": "TARGET",
+        "name": "BCL2",
+        "degree": 13
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::BIRC5",
+        "label": "TARGET",
+        "name": "BIRC5",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::BRAF",
+        "label": "TARGET",
+        "name": "BRAF",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::BRCA1",
+        "label": "TARGET",
+        "name": "BRCA1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CASP1",
+        "label": "TARGET",
+        "name": "CASP1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CASP3",
+        "label": "TARGET",
+        "name": "CASP3",
+        "degree": 9
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CASP8",
+        "label": "TARGET",
+        "name": "CASP8",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CASP9",
+        "label": "TARGET",
+        "name": "CASP9",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CAT",
+        "label": "TARGET",
+        "name": "CAT",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CAT2",
+        "label": "TARGET",
+        "name": "CAT2",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CCL2",
+        "label": "TARGET",
+        "name": "CCL2",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CCNA2",
+        "label": "TARGET",
+        "name": "CCNA2",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CCND1",
+        "label": "TARGET",
+        "name": "CCND1",
+        "degree": 8
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CDK1",
+        "label": "TARGET",
+        "name": "CDK1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CDK2",
+        "label": "TARGET",
+        "name": "CDK2",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CDK4",
+        "label": "TARGET",
+        "name": "CDK4",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CDKN1A",
+        "label": "TARGET",
+        "name": "CDKN1A",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CDKN2A",
+        "label": "TARGET",
+        "name": "CDKN2A",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CHEK1",
+        "label": "TARGET",
+        "name": "CHEK1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CHEK2",
+        "label": "TARGET",
+        "name": "CHEK2",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CHUK",
+        "label": "TARGET",
+        "name": "CHUK",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::COL1A1",
+        "label": "TARGET",
+        "name": "COL1A1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CPT1A",
+        "label": "TARGET",
+        "name": "CPT1A",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CSF2",
+        "label": "TARGET",
+        "name": "CSF2",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CXCL10",
+        "label": "TARGET",
+        "name": "CXCL10",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CXCL8",
+        "label": "TARGET",
+        "name": "CXCL8",
+        "degree": 13
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CYCS",
+        "label": "TARGET",
+        "name": "CYCS",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CYP19A1",
+        "label": "TARGET",
+        "name": "CYP19A1",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CYP1A1",
+        "label": "TARGET",
+        "name": "CYP1A1",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CYP2C9",
+        "label": "TARGET",
+        "name": "CYP2C9",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CYP2D6",
+        "label": "TARGET",
+        "name": "CYP2D6",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::CYP3A4",
+        "label": "TARGET",
+        "name": "CYP3A4",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::E2F1",
+        "label": "TARGET",
+        "name": "E2F1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::EGFR",
+        "label": "TARGET",
+        "name": "EGFR",
+        "degree": 9
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::EIF4EBP1",
+        "label": "TARGET",
+        "name": "EIF4EBP1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::ERBB2",
+        "label": "TARGET",
+        "name": "ERBB2",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::ESR1",
+        "label": "TARGET",
+        "name": "ESR1",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::F3",
+        "label": "TARGET",
+        "name": "F3",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::FAS",
+        "label": "TARGET",
+        "name": "FAS",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::FASN",
+        "label": "TARGET",
+        "name": "FASN",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::FLT1",
+        "label": "TARGET",
+        "name": "FLT1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::FN1",
+        "label": "TARGET",
+        "name": "FN1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::FOXO1",
+        "label": "TARGET",
+        "name": "FOXO1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::FOXO3",
+        "label": "TARGET",
+        "name": "FOXO3",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::GCGR",
+        "label": "TARGET",
+        "name": "GCGR",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::GCK",
+        "label": "TARGET",
+        "name": "GCK",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::GPX1",
+        "label": "TARGET",
+        "name": "GPX1",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::GSK3B",
+        "label": "TARGET",
+        "name": "GSK3B",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::GSR",
+        "label": "TARGET",
+        "name": "GSR",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::GSTO1",
+        "label": "TARGET",
+        "name": "GSTO1",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::GSTP1",
+        "label": "TARGET",
+        "name": "GSTP1",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::HIF1A",
+        "label": "TARGET",
+        "name": "HIF1A",
+        "degree": 5
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::HK1",
+        "label": "TARGET",
+        "name": "HK1",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::HMGCR",
+        "label": "TARGET",
+        "name": "HMGCR",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::HMOX1",
+        "label": "TARGET",
+        "name": "HMOX1",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::ICAM1",
+        "label": "TARGET",
+        "name": "ICAM1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::IFNG",
+        "label": "TARGET",
+        "name": "IFNG",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::IGF1",
+        "label": "TARGET",
+        "name": "IGF1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::IGF1R",
+        "label": "TARGET",
+        "name": "IGF1R",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::IKBKB",
+        "label": "TARGET",
+        "name": "IKBKB",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::IL10",
+        "label": "TARGET",
+        "name": "IL10",
+        "degree": 6
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::IL13",
+        "label": "TARGET",
+        "name": "IL13",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::IL17A",
+        "label": "TARGET",
+        "name": "IL17A",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::IL18",
+        "label": "TARGET",
+        "name": "IL18",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::IL1B",
+        "label": "TARGET",
+        "name": "IL1B",
+        "degree": 7
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::IL2",
+        "label": "TARGET",
+        "name": "IL2",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::IL4",
+        "label": "TARGET",
+        "name": "IL4",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::IL6",
+        "label": "TARGET",
+        "name": "IL6",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::INS",
+        "label": "TARGET",
+        "name": "INS",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::INSR",
+        "label": "TARGET",
+        "name": "INSR",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::IRAK1",
+        "label": "TARGET",
+        "name": "IRAK1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::IRS1",
+        "label": "TARGET",
+        "name": "IRS1",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::JUN",
+        "label": "TARGET",
+        "name": "JUN",
+        "degree": 13
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::KDR",
+        "label": "TARGET",
+        "name": "KDR",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::KEAP1",
+        "label": "TARGET",
+        "name": "KEAP1",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::KRAS",
+        "label": "TARGET",
+        "name": "KRAS",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::LDHA",
+        "label": "TARGET",
+        "name": "LDHA",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::LDLR",
+        "label": "TARGET",
+        "name": "LDLR",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::LEP",
+        "label": "TARGET",
+        "name": "LEP",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::MAP2K1",
+        "label": "TARGET",
+        "name": "MAP2K1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::MAPK1",
+        "label": "TARGET",
+        "name": "MAPK1",
+        "degree": 13
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::MAPK3",
+        "label": "TARGET",
+        "name": "MAPK3",
+        "degree": 13
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::MDM2",
+        "label": "TARGET",
+        "name": "MDM2",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::MMP1",
+        "label": "TARGET",
+        "name": "MMP1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::MMP2",
+        "label": "TARGET",
+        "name": "MMP2",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::MMP9",
+        "label": "TARGET",
+        "name": "MMP9",
+        "degree": 12
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::MTOR",
+        "label": "TARGET",
+        "name": "MTOR",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::MYC",
+        "label": "TARGET",
+        "name": "MYC",
+        "degree": 9
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::MYD88",
+        "label": "TARGET",
+        "name": "MYD88",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::NFE2L2",
+        "label": "TARGET",
+        "name": "NFE2L2",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::NFKB1",
+        "label": "TARGET",
+        "name": "NFKB1",
+        "degree": 6
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::NLRP3",
+        "label": "TARGET",
+        "name": "NLRP3",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::NOS2",
+        "label": "TARGET",
+        "name": "NOS2",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::NOS3",
+        "label": "TARGET",
+        "name": "NOS3",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::NQO1",
+        "label": "TARGET",
+        "name": "NQO1",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::PARP1",
+        "label": "TARGET",
+        "name": "PARP1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::PDHA1",
+        "label": "TARGET",
+        "name": "PDHA1",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::PFKM",
+        "label": "TARGET",
+        "name": "PFKM",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::PGR",
+        "label": "TARGET",
+        "name": "PGR",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::PIK3CA",
+        "label": "TARGET",
+        "name": "PIK3CA",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::PLAU",
+        "label": "TARGET",
+        "name": "PLAU",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::PLK1",
+        "label": "TARGET",
+        "name": "PLK1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::PPARA",
+        "label": "TARGET",
+        "name": "PPARA",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::PPARG",
+        "label": "TARGET",
+        "name": "PPARG",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::PRDX1",
+        "label": "TARGET",
+        "name": "PRDX1",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::PRKAA1",
+        "label": "TARGET",
+        "name": "PRKAA1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::PTEN",
+        "label": "TARGET",
+        "name": "PTEN",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::PTGS2",
+        "label": "TARGET",
+        "name": "PTGS2",
+        "degree": 10
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::RAF1",
+        "label": "TARGET",
+        "name": "RAF1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::RB1",
+        "label": "TARGET",
+        "name": "RB1",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::RPS6KB1",
+        "label": "TARGET",
+        "name": "RPS6KB1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::RXRA",
+        "label": "TARGET",
+        "name": "RXRA",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::SDHA",
+        "label": "TARGET",
+        "name": "SDHA",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::SELE",
+        "label": "TARGET",
+        "name": "SELE",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::SERPINE1",
+        "label": "TARGET",
+        "name": "SERPINE1",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::SHBG",
+        "label": "TARGET",
+        "name": "SHBG",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::SIRT1",
+        "label": "TARGET",
+        "name": "SIRT1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::SLC22A1",
+        "label": "TARGET",
+        "name": "SLC22A1",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::SLC2A4",
+        "label": "TARGET",
+        "name": "SLC2A4",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::SOD1",
+        "label": "TARGET",
+        "name": "SOD1",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::SPP1",
+        "label": "TARGET",
+        "name": "SPP1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::SQLE",
+        "label": "TARGET",
+        "name": "SQLE",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::SRC",
+        "label": "TARGET",
+        "name": "SRC",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::SREBF1",
+        "label": "TARGET",
+        "name": "SREBF1",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::STAT3",
+        "label": "TARGET",
+        "name": "STAT3",
+        "degree": 13
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::TEK",
+        "label": "TARGET",
+        "name": "TEK",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::THBD",
+        "label": "TARGET",
+        "name": "THBD",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::TIMP2",
+        "label": "TARGET",
+        "name": "TIMP2",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::TLR4",
+        "label": "TARGET",
+        "name": "TLR4",
+        "degree": 5
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::TNF",
+        "label": "TARGET",
+        "name": "TNF",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::TOP2A",
+        "label": "TARGET",
+        "name": "TOP2A",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::TP53",
+        "label": "TARGET",
+        "name": "TP53",
+        "degree": 6
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::TRAF6",
+        "label": "TARGET",
+        "name": "TRAF6",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::TXN",
+        "label": "TARGET",
+        "name": "TXN",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::TXNRD1",
+        "label": "TARGET",
+        "name": "TXNRD1",
+        "degree": 2
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::UCP1",
+        "label": "TARGET",
+        "name": "UCP1",
+        "degree": 4
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::UGT1A1",
+        "label": "TARGET",
+        "name": "UGT1A1",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::VCAM1",
+        "label": "TARGET",
+        "name": "VCAM1",
+        "degree": 1
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::VDR",
+        "label": "TARGET",
+        "name": "VDR",
+        "degree": 3
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::VEGFA",
+        "label": "TARGET",
+        "name": "VEGFA",
+        "degree": 8
+      }
+    },
+    {
+      "data": {
+        "id": "TGT::XIAP",
+        "label": "TARGET",
+        "name": "XIAP",
+        "degree": 2
+      }
+    }
+  ],
+  "edges": [
+    {
+      "data": {
+        "id": "E::黄芪->MOL000098",
+        "source": "HERB::黄芪",
+        "target": "MOL000098",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::黄芪->MOL000422",
+        "source": "HERB::黄芪",
+        "target": "MOL000422",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::黄芪->MOL000392",
+        "source": "HERB::黄芪",
+        "target": "MOL000392",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::黄芪->MOL000417",
+        "source": "HERB::黄芪",
+        "target": "MOL000417",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::黄芪->MOL000354",
+        "source": "HERB::黄芪",
+        "target": "MOL000354",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::黄芪->MOL000390",
+        "source": "HERB::黄芪",
+        "target": "MOL000390",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::黄芪->MOL008400",
+        "source": "HERB::黄芪",
+        "target": "MOL008400",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::黄芪->MOL000358",
+        "source": "HERB::黄芪",
+        "target": "MOL000358",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::黄芪->MOL000449",
+        "source": "HERB::黄芪",
+        "target": "MOL000449",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::黄芪->MOL000380",
+        "source": "HERB::黄芪",
+        "target": "MOL000380",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::黄芪->MOL000211",
+        "source": "HERB::黄芪",
+        "target": "MOL000211",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::黄芪->MOL000371",
+        "source": "HERB::黄芪",
+        "target": "MOL000371",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::黄芪->MOL000433",
+        "source": "HERB::黄芪",
+        "target": "MOL000433",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山茱萸->MOL001494",
+        "source": "HERB::山茱萸",
+        "target": "MOL001494",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山茱萸->MOL001495",
+        "source": "HERB::山茱萸",
+        "target": "MOL001495",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山茱萸->MOL001497",
+        "source": "HERB::山茱萸",
+        "target": "MOL001497",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山茱萸->MOL001002",
+        "source": "HERB::山茱萸",
+        "target": "MOL001002",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山茱萸->MOL000098",
+        "source": "HERB::山茱萸",
+        "target": "MOL000098",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山茱萸->MOL000422",
+        "source": "HERB::山茱萸",
+        "target": "MOL000422",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山茱萸->MOL000073",
+        "source": "HERB::山茱萸",
+        "target": "MOL000073",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山茱萸->MOL000073b",
+        "source": "HERB::山茱萸",
+        "target": "MOL000073b",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山茱萸->MOL000358",
+        "source": "HERB::山茱萸",
+        "target": "MOL000358",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山茱萸->MOL000449",
+        "source": "HERB::山茱萸",
+        "target": "MOL000449",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山药->MOL000546",
+        "source": "HERB::山药",
+        "target": "MOL000546",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山药->MOL000546b",
+        "source": "HERB::山药",
+        "target": "MOL000546b",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山药->MOL001736",
+        "source": "HERB::山药",
+        "target": "MOL001736",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山药->MOL000098",
+        "source": "HERB::山药",
+        "target": "MOL000098",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山药->MOL000422",
+        "source": "HERB::山药",
+        "target": "MOL000422",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山药->MOL000073",
+        "source": "HERB::山药",
+        "target": "MOL000073",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山药->MOL000073b",
+        "source": "HERB::山药",
+        "target": "MOL000073b",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山药->MOL000358",
+        "source": "HERB::山药",
+        "target": "MOL000358",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::山药->MOL000449",
+        "source": "HERB::山药",
+        "target": "MOL000449",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::熟地黄->MOL000832",
+        "source": "HERB::熟地黄",
+        "target": "MOL000832",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::熟地黄->MOL000836",
+        "source": "HERB::熟地黄",
+        "target": "MOL000836",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::熟地黄->MOL000838",
+        "source": "HERB::熟地黄",
+        "target": "MOL000838",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::熟地黄->MOL000839",
+        "source": "HERB::熟地黄",
+        "target": "MOL000839",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::熟地黄->MOL000098",
+        "source": "HERB::熟地黄",
+        "target": "MOL000098",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::熟地黄->MOL000422",
+        "source": "HERB::熟地黄",
+        "target": "MOL000422",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::熟地黄->MOL000358",
+        "source": "HERB::熟地黄",
+        "target": "MOL000358",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::熟地黄->MOL000449",
+        "source": "HERB::熟地黄",
+        "target": "MOL000449",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::茯苓->MOL000275",
+        "source": "HERB::茯苓",
+        "target": "MOL000275",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::茯苓->MOL000276",
+        "source": "HERB::茯苓",
+        "target": "MOL000276",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::茯苓->MOL000277",
+        "source": "HERB::茯苓",
+        "target": "MOL000277",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::茯苓->MOL000278",
+        "source": "HERB::茯苓",
+        "target": "MOL000278",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::茯苓->MOL000279",
+        "source": "HERB::茯苓",
+        "target": "MOL000279",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::茯苓->MOL000282",
+        "source": "HERB::茯苓",
+        "target": "MOL000282",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::茯苓->MOL000358",
+        "source": "HERB::茯苓",
+        "target": "MOL000358",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::茯苓->MOL000449",
+        "source": "HERB::茯苓",
+        "target": "MOL000449",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::泽泻->MOL000853",
+        "source": "HERB::泽泻",
+        "target": "MOL000853",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::泽泻->MOL000854",
+        "source": "HERB::泽泻",
+        "target": "MOL000854",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::泽泻->MOL000855",
+        "source": "HERB::泽泻",
+        "target": "MOL000855",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::泽泻->MOL000856",
+        "source": "HERB::泽泻",
+        "target": "MOL000856",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::泽泻->MOL000858",
+        "source": "HERB::泽泻",
+        "target": "MOL000858",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::泽泻->MOL000358",
+        "source": "HERB::泽泻",
+        "target": "MOL000358",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::泽泻->MOL000449",
+        "source": "HERB::泽泻",
+        "target": "MOL000449",
+        "label": "CONTAINS",
+        "name": "含有"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->TNF",
+        "source": "MOL000098",
+        "target": "TGT::TNF",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->IL6",
+        "source": "MOL000098",
+        "target": "TGT::IL6",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->AKT1",
+        "source": "MOL000098",
+        "target": "TGT::AKT1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->TP53",
+        "source": "MOL000098",
+        "target": "TGT::TP53",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->IL1B",
+        "source": "MOL000098",
+        "target": "TGT::IL1B",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->VEGFA",
+        "source": "MOL000098",
+        "target": "TGT::VEGFA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->CASP3",
+        "source": "MOL000098",
+        "target": "TGT::CASP3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->EGFR",
+        "source": "MOL000098",
+        "target": "TGT::EGFR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->MYC",
+        "source": "MOL000098",
+        "target": "TGT::MYC",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->PTGS2",
+        "source": "MOL000098",
+        "target": "TGT::PTGS2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->MMP9",
+        "source": "MOL000098",
+        "target": "TGT::MMP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->CXCL8",
+        "source": "MOL000098",
+        "target": "TGT::CXCL8",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->STAT3",
+        "source": "MOL000098",
+        "target": "TGT::STAT3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->JUN",
+        "source": "MOL000098",
+        "target": "TGT::JUN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->MAPK1",
+        "source": "MOL000098",
+        "target": "TGT::MAPK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->MAPK3",
+        "source": "MOL000098",
+        "target": "TGT::MAPK3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->BCL2",
+        "source": "MOL000098",
+        "target": "TGT::BCL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->BAX",
+        "source": "MOL000098",
+        "target": "TGT::BAX",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->CCND1",
+        "source": "MOL000098",
+        "target": "TGT::CCND1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->NFKB1",
+        "source": "MOL000098",
+        "target": "TGT::NFKB1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->IL10",
+        "source": "MOL000098",
+        "target": "TGT::IL10",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000098->TLR4",
+        "source": "MOL000098",
+        "target": "TGT::TLR4",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->AKT1",
+        "source": "MOL000422",
+        "target": "TGT::AKT1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->TP53",
+        "source": "MOL000422",
+        "target": "TGT::TP53",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->IL1B",
+        "source": "MOL000422",
+        "target": "TGT::IL1B",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->VEGFA",
+        "source": "MOL000422",
+        "target": "TGT::VEGFA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->CASP3",
+        "source": "MOL000422",
+        "target": "TGT::CASP3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->EGFR",
+        "source": "MOL000422",
+        "target": "TGT::EGFR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->MYC",
+        "source": "MOL000422",
+        "target": "TGT::MYC",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->PTGS2",
+        "source": "MOL000422",
+        "target": "TGT::PTGS2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->MMP9",
+        "source": "MOL000422",
+        "target": "TGT::MMP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->CXCL8",
+        "source": "MOL000422",
+        "target": "TGT::CXCL8",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->STAT3",
+        "source": "MOL000422",
+        "target": "TGT::STAT3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->JUN",
+        "source": "MOL000422",
+        "target": "TGT::JUN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->MAPK1",
+        "source": "MOL000422",
+        "target": "TGT::MAPK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->MAPK3",
+        "source": "MOL000422",
+        "target": "TGT::MAPK3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->BCL2",
+        "source": "MOL000422",
+        "target": "TGT::BCL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->BAX",
+        "source": "MOL000422",
+        "target": "TGT::BAX",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000422->CCND1",
+        "source": "MOL000422",
+        "target": "TGT::CCND1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000392->IL1B",
+        "source": "MOL000392",
+        "target": "TGT::IL1B",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000392->VEGFA",
+        "source": "MOL000392",
+        "target": "TGT::VEGFA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000392->CASP3",
+        "source": "MOL000392",
+        "target": "TGT::CASP3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000392->EGFR",
+        "source": "MOL000392",
+        "target": "TGT::EGFR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000392->MYC",
+        "source": "MOL000392",
+        "target": "TGT::MYC",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000392->PTGS2",
+        "source": "MOL000392",
+        "target": "TGT::PTGS2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000392->MMP9",
+        "source": "MOL000392",
+        "target": "TGT::MMP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000392->CXCL8",
+        "source": "MOL000392",
+        "target": "TGT::CXCL8",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000392->STAT3",
+        "source": "MOL000392",
+        "target": "TGT::STAT3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000392->JUN",
+        "source": "MOL000392",
+        "target": "TGT::JUN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000392->MAPK1",
+        "source": "MOL000392",
+        "target": "TGT::MAPK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000392->MAPK3",
+        "source": "MOL000392",
+        "target": "TGT::MAPK3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000392->BCL2",
+        "source": "MOL000392",
+        "target": "TGT::BCL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000417->CASP3",
+        "source": "MOL000417",
+        "target": "TGT::CASP3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000417->EGFR",
+        "source": "MOL000417",
+        "target": "TGT::EGFR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000417->MYC",
+        "source": "MOL000417",
+        "target": "TGT::MYC",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000417->PTGS2",
+        "source": "MOL000417",
+        "target": "TGT::PTGS2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000417->MMP9",
+        "source": "MOL000417",
+        "target": "TGT::MMP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000417->CXCL8",
+        "source": "MOL000417",
+        "target": "TGT::CXCL8",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000417->STAT3",
+        "source": "MOL000417",
+        "target": "TGT::STAT3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000417->JUN",
+        "source": "MOL000417",
+        "target": "TGT::JUN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000417->MAPK1",
+        "source": "MOL000417",
+        "target": "TGT::MAPK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000417->MAPK3",
+        "source": "MOL000417",
+        "target": "TGT::MAPK3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000417->BCL2",
+        "source": "MOL000417",
+        "target": "TGT::BCL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000417->BAX",
+        "source": "MOL000417",
+        "target": "TGT::BAX",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000354->MYC",
+        "source": "MOL000354",
+        "target": "TGT::MYC",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000354->PTGS2",
+        "source": "MOL000354",
+        "target": "TGT::PTGS2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000354->MMP9",
+        "source": "MOL000354",
+        "target": "TGT::MMP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000354->CXCL8",
+        "source": "MOL000354",
+        "target": "TGT::CXCL8",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000354->STAT3",
+        "source": "MOL000354",
+        "target": "TGT::STAT3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000354->JUN",
+        "source": "MOL000354",
+        "target": "TGT::JUN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000354->MAPK1",
+        "source": "MOL000354",
+        "target": "TGT::MAPK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000354->MAPK3",
+        "source": "MOL000354",
+        "target": "TGT::MAPK3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000354->BCL2",
+        "source": "MOL000354",
+        "target": "TGT::BCL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000354->BAX",
+        "source": "MOL000354",
+        "target": "TGT::BAX",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000390->MMP9",
+        "source": "MOL000390",
+        "target": "TGT::MMP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000390->CXCL8",
+        "source": "MOL000390",
+        "target": "TGT::CXCL8",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000390->STAT3",
+        "source": "MOL000390",
+        "target": "TGT::STAT3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000390->JUN",
+        "source": "MOL000390",
+        "target": "TGT::JUN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000390->MAPK1",
+        "source": "MOL000390",
+        "target": "TGT::MAPK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000390->MAPK3",
+        "source": "MOL000390",
+        "target": "TGT::MAPK3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000390->BCL2",
+        "source": "MOL000390",
+        "target": "TGT::BCL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000390->BAX",
+        "source": "MOL000390",
+        "target": "TGT::BAX",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL008400->STAT3",
+        "source": "MOL008400",
+        "target": "TGT::STAT3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL008400->JUN",
+        "source": "MOL008400",
+        "target": "TGT::JUN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL008400->MAPK1",
+        "source": "MOL008400",
+        "target": "TGT::MAPK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL008400->MAPK3",
+        "source": "MOL008400",
+        "target": "TGT::MAPK3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL008400->BCL2",
+        "source": "MOL008400",
+        "target": "TGT::BCL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL008400->BAX",
+        "source": "MOL008400",
+        "target": "TGT::BAX",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000358->TNF",
+        "source": "MOL000358",
+        "target": "TGT::TNF",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000358->IL6",
+        "source": "MOL000358",
+        "target": "TGT::IL6",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000358->AKT1",
+        "source": "MOL000358",
+        "target": "TGT::AKT1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000358->TP53",
+        "source": "MOL000358",
+        "target": "TGT::TP53",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000358->IL1B",
+        "source": "MOL000358",
+        "target": "TGT::IL1B",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000358->VEGFA",
+        "source": "MOL000358",
+        "target": "TGT::VEGFA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000358->CASP3",
+        "source": "MOL000358",
+        "target": "TGT::CASP3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000358->EGFR",
+        "source": "MOL000358",
+        "target": "TGT::EGFR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000358->PIK3CA",
+        "source": "MOL000358",
+        "target": "TGT::PIK3CA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000358->GSK3B",
+        "source": "MOL000358",
+        "target": "TGT::GSK3B",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000358->PPARG",
+        "source": "MOL000358",
+        "target": "TGT::PPARG",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000358->ESR1",
+        "source": "MOL000358",
+        "target": "TGT::ESR1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000358->NOS3",
+        "source": "MOL000358",
+        "target": "TGT::NOS3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000358->SOD1",
+        "source": "MOL000358",
+        "target": "TGT::SOD1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000449->TNF",
+        "source": "MOL000449",
+        "target": "TGT::TNF",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000449->IL6",
+        "source": "MOL000449",
+        "target": "TGT::IL6",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000449->AKT1",
+        "source": "MOL000449",
+        "target": "TGT::AKT1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000449->TP53",
+        "source": "MOL000449",
+        "target": "TGT::TP53",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000449->IL1B",
+        "source": "MOL000449",
+        "target": "TGT::IL1B",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000449->VEGFA",
+        "source": "MOL000449",
+        "target": "TGT::VEGFA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000449->PPARG",
+        "source": "MOL000449",
+        "target": "TGT::PPARG",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000449->ESR1",
+        "source": "MOL000449",
+        "target": "TGT::ESR1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000449->NOS3",
+        "source": "MOL000449",
+        "target": "TGT::NOS3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000449->SOD1",
+        "source": "MOL000449",
+        "target": "TGT::SOD1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000449->CAT",
+        "source": "MOL000449",
+        "target": "TGT::CAT",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000449->HMOX1",
+        "source": "MOL000449",
+        "target": "TGT::HMOX1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000380->BCL2",
+        "source": "MOL000380",
+        "target": "TGT::BCL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000380->BAX",
+        "source": "MOL000380",
+        "target": "TGT::BAX",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000380->CCND1",
+        "source": "MOL000380",
+        "target": "TGT::CCND1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000380->NFKB1",
+        "source": "MOL000380",
+        "target": "TGT::NFKB1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000380->IL10",
+        "source": "MOL000380",
+        "target": "TGT::IL10",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000211->CCND1",
+        "source": "MOL000211",
+        "target": "TGT::CCND1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000211->NFKB1",
+        "source": "MOL000211",
+        "target": "TGT::NFKB1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000211->IL10",
+        "source": "MOL000211",
+        "target": "TGT::IL10",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000211->TLR4",
+        "source": "MOL000211",
+        "target": "TGT::TLR4",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000211->HIF1A",
+        "source": "MOL000211",
+        "target": "TGT::HIF1A",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000371->SHBG",
+        "source": "MOL000371",
+        "target": "TGT::SHBG",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000371->PGR",
+        "source": "MOL000371",
+        "target": "TGT::PGR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000371->VDR",
+        "source": "MOL000371",
+        "target": "TGT::VDR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000371->RXRA",
+        "source": "MOL000371",
+        "target": "TGT::RXRA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000371->PPARA",
+        "source": "MOL000371",
+        "target": "TGT::PPARA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000371->SREBF1",
+        "source": "MOL000371",
+        "target": "TGT::SREBF1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000371->FASN",
+        "source": "MOL000371",
+        "target": "TGT::FASN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000371->ACACA",
+        "source": "MOL000371",
+        "target": "TGT::ACACA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000371->CPT1A",
+        "source": "MOL000371",
+        "target": "TGT::CPT1A",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000371->UCP1",
+        "source": "MOL000371",
+        "target": "TGT::UCP1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000371->ADIPOQ",
+        "source": "MOL000371",
+        "target": "TGT::ADIPOQ",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000371->LEP",
+        "source": "MOL000371",
+        "target": "TGT::LEP",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000371->INS",
+        "source": "MOL000371",
+        "target": "TGT::INS",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000371->GCGR",
+        "source": "MOL000371",
+        "target": "TGT::GCGR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000433->ACACA",
+        "source": "MOL000433",
+        "target": "TGT::ACACA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000433->CPT1A",
+        "source": "MOL000433",
+        "target": "TGT::CPT1A",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000433->UCP1",
+        "source": "MOL000433",
+        "target": "TGT::UCP1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000433->ADIPOQ",
+        "source": "MOL000433",
+        "target": "TGT::ADIPOQ",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000433->LEP",
+        "source": "MOL000433",
+        "target": "TGT::LEP",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000433->INS",
+        "source": "MOL000433",
+        "target": "TGT::INS",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000433->GCGR",
+        "source": "MOL000433",
+        "target": "TGT::GCGR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000433->APOE",
+        "source": "MOL000433",
+        "target": "TGT::APOE",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000433->LDLR",
+        "source": "MOL000433",
+        "target": "TGT::LDLR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000433->HMGCR",
+        "source": "MOL000433",
+        "target": "TGT::HMGCR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000433->SQLE",
+        "source": "MOL000433",
+        "target": "TGT::SQLE",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000433->ABCB1",
+        "source": "MOL000433",
+        "target": "TGT::ABCB1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000433->ABCG2",
+        "source": "MOL000433",
+        "target": "TGT::ABCG2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000433->CYP3A4",
+        "source": "MOL000433",
+        "target": "TGT::CYP3A4",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001494->IL10",
+        "source": "MOL001494",
+        "target": "TGT::IL10",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001494->TLR4",
+        "source": "MOL001494",
+        "target": "TGT::TLR4",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001494->HIF1A",
+        "source": "MOL001494",
+        "target": "TGT::HIF1A",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001494->MTOR",
+        "source": "MOL001494",
+        "target": "TGT::MTOR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001494->PIK3CA",
+        "source": "MOL001494",
+        "target": "TGT::PIK3CA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001494->GSK3B",
+        "source": "MOL001494",
+        "target": "TGT::GSK3B",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001494->PPARG",
+        "source": "MOL001494",
+        "target": "TGT::PPARG",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001494->ESR1",
+        "source": "MOL001494",
+        "target": "TGT::ESR1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001495->CYP2C9",
+        "source": "MOL001495",
+        "target": "TGT::CYP2C9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001495->CYP1A1",
+        "source": "MOL001495",
+        "target": "TGT::CYP1A1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001495->CYP2D6",
+        "source": "MOL001495",
+        "target": "TGT::CYP2D6",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001495->UGT1A1",
+        "source": "MOL001495",
+        "target": "TGT::UGT1A1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001495->SLC22A1",
+        "source": "MOL001495",
+        "target": "TGT::SLC22A1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001495->GSTP1",
+        "source": "MOL001495",
+        "target": "TGT::GSTP1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001495->GSTO1",
+        "source": "MOL001495",
+        "target": "TGT::GSTO1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001495->KEAP1",
+        "source": "MOL001495",
+        "target": "TGT::KEAP1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001495->CAT2",
+        "source": "MOL001495",
+        "target": "TGT::CAT2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001495->GPX1",
+        "source": "MOL001495",
+        "target": "TGT::GPX1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001495->GSR",
+        "source": "MOL001495",
+        "target": "TGT::GSR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001495->TXN",
+        "source": "MOL001495",
+        "target": "TGT::TXN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001495->TXNRD1",
+        "source": "MOL001495",
+        "target": "TGT::TXNRD1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001495->PRDX1",
+        "source": "MOL001495",
+        "target": "TGT::PRDX1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001497->KEAP1",
+        "source": "MOL001497",
+        "target": "TGT::KEAP1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001497->CAT2",
+        "source": "MOL001497",
+        "target": "TGT::CAT2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001497->GPX1",
+        "source": "MOL001497",
+        "target": "TGT::GPX1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001497->GSR",
+        "source": "MOL001497",
+        "target": "TGT::GSR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001497->TXN",
+        "source": "MOL001497",
+        "target": "TGT::TXN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001497->TXNRD1",
+        "source": "MOL001497",
+        "target": "TGT::TXNRD1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001497->PRDX1",
+        "source": "MOL001497",
+        "target": "TGT::PRDX1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001497->SIRT1",
+        "source": "MOL001497",
+        "target": "TGT::SIRT1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001497->FOXO1",
+        "source": "MOL001497",
+        "target": "TGT::FOXO1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001497->FOXO3",
+        "source": "MOL001497",
+        "target": "TGT::FOXO3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001497->AMPK",
+        "source": "MOL001497",
+        "target": "TGT::AMPK",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001497->PRKAA1",
+        "source": "MOL001497",
+        "target": "TGT::PRKAA1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001497->RPS6KB1",
+        "source": "MOL001497",
+        "target": "TGT::RPS6KB1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001497->EIF4EBP1",
+        "source": "MOL001497",
+        "target": "TGT::EIF4EBP1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001002->VEGFA",
+        "source": "MOL001002",
+        "target": "TGT::VEGFA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001002->CASP3",
+        "source": "MOL001002",
+        "target": "TGT::CASP3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001002->EGFR",
+        "source": "MOL001002",
+        "target": "TGT::EGFR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001002->MYC",
+        "source": "MOL001002",
+        "target": "TGT::MYC",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001002->PTGS2",
+        "source": "MOL001002",
+        "target": "TGT::PTGS2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001002->MMP9",
+        "source": "MOL001002",
+        "target": "TGT::MMP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001002->CXCL8",
+        "source": "MOL001002",
+        "target": "TGT::CXCL8",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001002->STAT3",
+        "source": "MOL001002",
+        "target": "TGT::STAT3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001002->JUN",
+        "source": "MOL001002",
+        "target": "TGT::JUN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001002->MAPK1",
+        "source": "MOL001002",
+        "target": "TGT::MAPK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073->MAPK1",
+        "source": "MOL000073",
+        "target": "TGT::MAPK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073->MAPK3",
+        "source": "MOL000073",
+        "target": "TGT::MAPK3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073->BCL2",
+        "source": "MOL000073",
+        "target": "TGT::BCL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073->BAX",
+        "source": "MOL000073",
+        "target": "TGT::BAX",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073->CCND1",
+        "source": "MOL000073",
+        "target": "TGT::CCND1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073->NFKB1",
+        "source": "MOL000073",
+        "target": "TGT::NFKB1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073->IL10",
+        "source": "MOL000073",
+        "target": "TGT::IL10",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073->TLR4",
+        "source": "MOL000073",
+        "target": "TGT::TLR4",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073->HIF1A",
+        "source": "MOL000073",
+        "target": "TGT::HIF1A",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073->MTOR",
+        "source": "MOL000073",
+        "target": "TGT::MTOR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073b->MAPK3",
+        "source": "MOL000073b",
+        "target": "TGT::MAPK3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073b->BCL2",
+        "source": "MOL000073b",
+        "target": "TGT::BCL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073b->BAX",
+        "source": "MOL000073b",
+        "target": "TGT::BAX",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073b->CCND1",
+        "source": "MOL000073b",
+        "target": "TGT::CCND1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073b->NFKB1",
+        "source": "MOL000073b",
+        "target": "TGT::NFKB1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073b->IL10",
+        "source": "MOL000073b",
+        "target": "TGT::IL10",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073b->TLR4",
+        "source": "MOL000073b",
+        "target": "TGT::TLR4",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073b->HIF1A",
+        "source": "MOL000073b",
+        "target": "TGT::HIF1A",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000073b->MTOR",
+        "source": "MOL000073b",
+        "target": "TGT::MTOR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->TNF",
+        "source": "MOL000546",
+        "target": "TGT::TNF",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->IL6",
+        "source": "MOL000546",
+        "target": "TGT::IL6",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->AKT1",
+        "source": "MOL000546",
+        "target": "TGT::AKT1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->TP53",
+        "source": "MOL000546",
+        "target": "TGT::TP53",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->IL1B",
+        "source": "MOL000546",
+        "target": "TGT::IL1B",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->VEGFA",
+        "source": "MOL000546",
+        "target": "TGT::VEGFA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->CASP3",
+        "source": "MOL000546",
+        "target": "TGT::CASP3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->EGFR",
+        "source": "MOL000546",
+        "target": "TGT::EGFR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->MYC",
+        "source": "MOL000546",
+        "target": "TGT::MYC",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->PTGS2",
+        "source": "MOL000546",
+        "target": "TGT::PTGS2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->MMP9",
+        "source": "MOL000546",
+        "target": "TGT::MMP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->CXCL8",
+        "source": "MOL000546",
+        "target": "TGT::CXCL8",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->NOS3",
+        "source": "MOL000546",
+        "target": "TGT::NOS3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->SOD1",
+        "source": "MOL000546",
+        "target": "TGT::SOD1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->CAT",
+        "source": "MOL000546",
+        "target": "TGT::CAT",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->HMOX1",
+        "source": "MOL000546",
+        "target": "TGT::HMOX1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->NFE2L2",
+        "source": "MOL000546",
+        "target": "TGT::NFE2L2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->NQO1",
+        "source": "MOL000546",
+        "target": "TGT::NQO1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->CASP9",
+        "source": "MOL000546",
+        "target": "TGT::CASP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546->MDM2",
+        "source": "MOL000546",
+        "target": "TGT::MDM2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546b->HIF1A",
+        "source": "MOL000546b",
+        "target": "TGT::HIF1A",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546b->MTOR",
+        "source": "MOL000546b",
+        "target": "TGT::MTOR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546b->PIK3CA",
+        "source": "MOL000546b",
+        "target": "TGT::PIK3CA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546b->GSK3B",
+        "source": "MOL000546b",
+        "target": "TGT::GSK3B",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546b->PPARG",
+        "source": "MOL000546b",
+        "target": "TGT::PPARG",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546b->ESR1",
+        "source": "MOL000546b",
+        "target": "TGT::ESR1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546b->NOS3",
+        "source": "MOL000546b",
+        "target": "TGT::NOS3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000546b->SOD1",
+        "source": "MOL000546b",
+        "target": "TGT::SOD1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001736->TIMP2",
+        "source": "MOL001736",
+        "target": "TGT::TIMP2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001736->SPP1",
+        "source": "MOL001736",
+        "target": "TGT::SPP1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001736->FN1",
+        "source": "MOL001736",
+        "target": "TGT::FN1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001736->PLAU",
+        "source": "MOL001736",
+        "target": "TGT::PLAU",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001736->THBD",
+        "source": "MOL001736",
+        "target": "TGT::THBD",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001736->F3",
+        "source": "MOL001736",
+        "target": "TGT::F3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001736->KDR",
+        "source": "MOL001736",
+        "target": "TGT::KDR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001736->TEK",
+        "source": "MOL001736",
+        "target": "TGT::TEK",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001736->FLT1",
+        "source": "MOL001736",
+        "target": "TGT::FLT1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001736->ANGPT2",
+        "source": "MOL001736",
+        "target": "TGT::ANGPT2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001736->NOS2",
+        "source": "MOL001736",
+        "target": "TGT::NOS2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001736->PTEN",
+        "source": "MOL001736",
+        "target": "TGT::PTEN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001736->KRAS",
+        "source": "MOL001736",
+        "target": "TGT::KRAS",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL001736->BRAF",
+        "source": "MOL001736",
+        "target": "TGT::BRAF",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->CASP3",
+        "source": "MOL000832",
+        "target": "TGT::CASP3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->EGFR",
+        "source": "MOL000832",
+        "target": "TGT::EGFR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->MYC",
+        "source": "MOL000832",
+        "target": "TGT::MYC",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->PTGS2",
+        "source": "MOL000832",
+        "target": "TGT::PTGS2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->MMP9",
+        "source": "MOL000832",
+        "target": "TGT::MMP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->CXCL8",
+        "source": "MOL000832",
+        "target": "TGT::CXCL8",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->STAT3",
+        "source": "MOL000832",
+        "target": "TGT::STAT3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->JUN",
+        "source": "MOL000832",
+        "target": "TGT::JUN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->MAPK1",
+        "source": "MOL000832",
+        "target": "TGT::MAPK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->MAPK3",
+        "source": "MOL000832",
+        "target": "TGT::MAPK3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->CAT",
+        "source": "MOL000832",
+        "target": "TGT::CAT",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->HMOX1",
+        "source": "MOL000832",
+        "target": "TGT::HMOX1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->NFE2L2",
+        "source": "MOL000832",
+        "target": "TGT::NFE2L2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->NQO1",
+        "source": "MOL000832",
+        "target": "TGT::NQO1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->CASP9",
+        "source": "MOL000832",
+        "target": "TGT::CASP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000832->MDM2",
+        "source": "MOL000832",
+        "target": "TGT::MDM2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000836->RAF1",
+        "source": "MOL000836",
+        "target": "TGT::RAF1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000836->MAP2K1",
+        "source": "MOL000836",
+        "target": "TGT::MAP2K1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000836->SRC",
+        "source": "MOL000836",
+        "target": "TGT::SRC",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000836->ERBB2",
+        "source": "MOL000836",
+        "target": "TGT::ERBB2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000836->IGF1",
+        "source": "MOL000836",
+        "target": "TGT::IGF1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000836->IGF1R",
+        "source": "MOL000836",
+        "target": "TGT::IGF1R",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000836->INSR",
+        "source": "MOL000836",
+        "target": "TGT::INSR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000836->IRS1",
+        "source": "MOL000836",
+        "target": "TGT::IRS1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000836->SLC2A4",
+        "source": "MOL000836",
+        "target": "TGT::SLC2A4",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000836->GCK",
+        "source": "MOL000836",
+        "target": "TGT::GCK",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000836->HK1",
+        "source": "MOL000836",
+        "target": "TGT::HK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000836->PFKM",
+        "source": "MOL000836",
+        "target": "TGT::PFKM",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000836->LDHA",
+        "source": "MOL000836",
+        "target": "TGT::LDHA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000836->PDHA1",
+        "source": "MOL000836",
+        "target": "TGT::PDHA1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000838->IRS1",
+        "source": "MOL000838",
+        "target": "TGT::IRS1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000838->SLC2A4",
+        "source": "MOL000838",
+        "target": "TGT::SLC2A4",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000838->GCK",
+        "source": "MOL000838",
+        "target": "TGT::GCK",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000838->HK1",
+        "source": "MOL000838",
+        "target": "TGT::HK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000838->PFKM",
+        "source": "MOL000838",
+        "target": "TGT::PFKM",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000838->LDHA",
+        "source": "MOL000838",
+        "target": "TGT::LDHA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000838->PDHA1",
+        "source": "MOL000838",
+        "target": "TGT::PDHA1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000838->SDHA",
+        "source": "MOL000838",
+        "target": "TGT::SDHA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000838->CYCS",
+        "source": "MOL000838",
+        "target": "TGT::CYCS",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000838->FAS",
+        "source": "MOL000838",
+        "target": "TGT::FAS",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000838->CASP8",
+        "source": "MOL000838",
+        "target": "TGT::CASP8",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000838->XIAP",
+        "source": "MOL000838",
+        "target": "TGT::XIAP",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000838->BIRC5",
+        "source": "MOL000838",
+        "target": "TGT::BIRC5",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000838->RB1",
+        "source": "MOL000838",
+        "target": "TGT::RB1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000839->SDHA",
+        "source": "MOL000839",
+        "target": "TGT::SDHA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000839->CYCS",
+        "source": "MOL000839",
+        "target": "TGT::CYCS",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000839->FAS",
+        "source": "MOL000839",
+        "target": "TGT::FAS",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000839->CASP8",
+        "source": "MOL000839",
+        "target": "TGT::CASP8",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000839->XIAP",
+        "source": "MOL000839",
+        "target": "TGT::XIAP",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000839->BIRC5",
+        "source": "MOL000839",
+        "target": "TGT::BIRC5",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000839->RB1",
+        "source": "MOL000839",
+        "target": "TGT::RB1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000839->ATM",
+        "source": "MOL000839",
+        "target": "TGT::ATM",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000839->CHEK1",
+        "source": "MOL000839",
+        "target": "TGT::CHEK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000839->CHEK2",
+        "source": "MOL000839",
+        "target": "TGT::CHEK2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000839->BRCA1",
+        "source": "MOL000839",
+        "target": "TGT::BRCA1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000839->PARP1",
+        "source": "MOL000839",
+        "target": "TGT::PARP1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000839->TOP2A",
+        "source": "MOL000839",
+        "target": "TGT::TOP2A",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000839->CDK1",
+        "source": "MOL000839",
+        "target": "TGT::CDK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->TP53",
+        "source": "MOL000275",
+        "target": "TGT::TP53",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->IL1B",
+        "source": "MOL000275",
+        "target": "TGT::IL1B",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->VEGFA",
+        "source": "MOL000275",
+        "target": "TGT::VEGFA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->CASP3",
+        "source": "MOL000275",
+        "target": "TGT::CASP3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->EGFR",
+        "source": "MOL000275",
+        "target": "TGT::EGFR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->MYC",
+        "source": "MOL000275",
+        "target": "TGT::MYC",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->PTGS2",
+        "source": "MOL000275",
+        "target": "TGT::PTGS2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->MMP9",
+        "source": "MOL000275",
+        "target": "TGT::MMP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->CXCL8",
+        "source": "MOL000275",
+        "target": "TGT::CXCL8",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->STAT3",
+        "source": "MOL000275",
+        "target": "TGT::STAT3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->JUN",
+        "source": "MOL000275",
+        "target": "TGT::JUN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->CASP9",
+        "source": "MOL000275",
+        "target": "TGT::CASP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->MDM2",
+        "source": "MOL000275",
+        "target": "TGT::MDM2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->CDKN1A",
+        "source": "MOL000275",
+        "target": "TGT::CDKN1A",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->SERPINE1",
+        "source": "MOL000275",
+        "target": "TGT::SERPINE1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000275->COL1A1",
+        "source": "MOL000275",
+        "target": "TGT::COL1A1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000276->CDK2",
+        "source": "MOL000276",
+        "target": "TGT::CDK2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000276->CDK4",
+        "source": "MOL000276",
+        "target": "TGT::CDK4",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000276->CCNA2",
+        "source": "MOL000276",
+        "target": "TGT::CCNA2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000276->PLK1",
+        "source": "MOL000276",
+        "target": "TGT::PLK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000276->AURKA",
+        "source": "MOL000276",
+        "target": "TGT::AURKA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000276->CDKN2A",
+        "source": "MOL000276",
+        "target": "TGT::CDKN2A",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000276->E2F1",
+        "source": "MOL000276",
+        "target": "TGT::E2F1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000276->AR",
+        "source": "MOL000276",
+        "target": "TGT::AR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000276->CYP19A1",
+        "source": "MOL000276",
+        "target": "TGT::CYP19A1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000276->SHBG",
+        "source": "MOL000276",
+        "target": "TGT::SHBG",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000276->PGR",
+        "source": "MOL000276",
+        "target": "TGT::PGR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000276->VDR",
+        "source": "MOL000276",
+        "target": "TGT::VDR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000276->RXRA",
+        "source": "MOL000276",
+        "target": "TGT::RXRA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000276->PPARA",
+        "source": "MOL000276",
+        "target": "TGT::PPARA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000277->AR",
+        "source": "MOL000277",
+        "target": "TGT::AR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000277->CYP19A1",
+        "source": "MOL000277",
+        "target": "TGT::CYP19A1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000277->SHBG",
+        "source": "MOL000277",
+        "target": "TGT::SHBG",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000277->PGR",
+        "source": "MOL000277",
+        "target": "TGT::PGR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000277->VDR",
+        "source": "MOL000277",
+        "target": "TGT::VDR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000277->RXRA",
+        "source": "MOL000277",
+        "target": "TGT::RXRA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000277->PPARA",
+        "source": "MOL000277",
+        "target": "TGT::PPARA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000277->SREBF1",
+        "source": "MOL000277",
+        "target": "TGT::SREBF1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000277->FASN",
+        "source": "MOL000277",
+        "target": "TGT::FASN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000277->ACACA",
+        "source": "MOL000277",
+        "target": "TGT::ACACA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000277->CPT1A",
+        "source": "MOL000277",
+        "target": "TGT::CPT1A",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000277->UCP1",
+        "source": "MOL000277",
+        "target": "TGT::UCP1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000277->ADIPOQ",
+        "source": "MOL000277",
+        "target": "TGT::ADIPOQ",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000277->LEP",
+        "source": "MOL000277",
+        "target": "TGT::LEP",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000278->SREBF1",
+        "source": "MOL000278",
+        "target": "TGT::SREBF1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000278->FASN",
+        "source": "MOL000278",
+        "target": "TGT::FASN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000278->ACACA",
+        "source": "MOL000278",
+        "target": "TGT::ACACA",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000278->CPT1A",
+        "source": "MOL000278",
+        "target": "TGT::CPT1A",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000278->UCP1",
+        "source": "MOL000278",
+        "target": "TGT::UCP1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000278->ADIPOQ",
+        "source": "MOL000278",
+        "target": "TGT::ADIPOQ",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000278->LEP",
+        "source": "MOL000278",
+        "target": "TGT::LEP",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000278->INS",
+        "source": "MOL000278",
+        "target": "TGT::INS",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000278->GCGR",
+        "source": "MOL000278",
+        "target": "TGT::GCGR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000278->APOE",
+        "source": "MOL000278",
+        "target": "TGT::APOE",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000278->LDLR",
+        "source": "MOL000278",
+        "target": "TGT::LDLR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000278->HMGCR",
+        "source": "MOL000278",
+        "target": "TGT::HMGCR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000278->SQLE",
+        "source": "MOL000278",
+        "target": "TGT::SQLE",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000278->ABCB1",
+        "source": "MOL000278",
+        "target": "TGT::ABCB1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000279->INS",
+        "source": "MOL000279",
+        "target": "TGT::INS",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000279->GCGR",
+        "source": "MOL000279",
+        "target": "TGT::GCGR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000279->APOE",
+        "source": "MOL000279",
+        "target": "TGT::APOE",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000279->LDLR",
+        "source": "MOL000279",
+        "target": "TGT::LDLR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000279->HMGCR",
+        "source": "MOL000279",
+        "target": "TGT::HMGCR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000279->SQLE",
+        "source": "MOL000279",
+        "target": "TGT::SQLE",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000279->ABCB1",
+        "source": "MOL000279",
+        "target": "TGT::ABCB1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000279->ABCG2",
+        "source": "MOL000279",
+        "target": "TGT::ABCG2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000279->CYP3A4",
+        "source": "MOL000279",
+        "target": "TGT::CYP3A4",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000279->CYP2C9",
+        "source": "MOL000279",
+        "target": "TGT::CYP2C9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000279->CYP1A1",
+        "source": "MOL000279",
+        "target": "TGT::CYP1A1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000279->CYP2D6",
+        "source": "MOL000279",
+        "target": "TGT::CYP2D6",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000279->UGT1A1",
+        "source": "MOL000279",
+        "target": "TGT::UGT1A1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000279->SLC22A1",
+        "source": "MOL000279",
+        "target": "TGT::SLC22A1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000282->ABCG2",
+        "source": "MOL000282",
+        "target": "TGT::ABCG2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000282->CYP3A4",
+        "source": "MOL000282",
+        "target": "TGT::CYP3A4",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000282->CYP2C9",
+        "source": "MOL000282",
+        "target": "TGT::CYP2C9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000282->CYP1A1",
+        "source": "MOL000282",
+        "target": "TGT::CYP1A1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000282->CYP2D6",
+        "source": "MOL000282",
+        "target": "TGT::CYP2D6",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000282->UGT1A1",
+        "source": "MOL000282",
+        "target": "TGT::UGT1A1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000282->SLC22A1",
+        "source": "MOL000282",
+        "target": "TGT::SLC22A1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000282->GSTP1",
+        "source": "MOL000282",
+        "target": "TGT::GSTP1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000282->GSTO1",
+        "source": "MOL000282",
+        "target": "TGT::GSTO1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000282->KEAP1",
+        "source": "MOL000282",
+        "target": "TGT::KEAP1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000282->CAT2",
+        "source": "MOL000282",
+        "target": "TGT::CAT2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000282->GPX1",
+        "source": "MOL000282",
+        "target": "TGT::GPX1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000282->GSR",
+        "source": "MOL000282",
+        "target": "TGT::GSR",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000282->TXN",
+        "source": "MOL000282",
+        "target": "TGT::TXN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000853->PTGS2",
+        "source": "MOL000853",
+        "target": "TGT::PTGS2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000853->MMP9",
+        "source": "MOL000853",
+        "target": "TGT::MMP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000853->CXCL8",
+        "source": "MOL000853",
+        "target": "TGT::CXCL8",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000853->STAT3",
+        "source": "MOL000853",
+        "target": "TGT::STAT3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000853->JUN",
+        "source": "MOL000853",
+        "target": "TGT::JUN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000853->MAPK1",
+        "source": "MOL000853",
+        "target": "TGT::MAPK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000853->MAPK3",
+        "source": "MOL000853",
+        "target": "TGT::MAPK3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000853->BCL2",
+        "source": "MOL000853",
+        "target": "TGT::BCL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000853->BAX",
+        "source": "MOL000853",
+        "target": "TGT::BAX",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000853->NFE2L2",
+        "source": "MOL000853",
+        "target": "TGT::NFE2L2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000853->NQO1",
+        "source": "MOL000853",
+        "target": "TGT::NQO1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000853->CASP9",
+        "source": "MOL000853",
+        "target": "TGT::CASP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000853->MDM2",
+        "source": "MOL000853",
+        "target": "TGT::MDM2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000853->CDKN1A",
+        "source": "MOL000853",
+        "target": "TGT::CDKN1A",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000853->SERPINE1",
+        "source": "MOL000853",
+        "target": "TGT::SERPINE1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000854->MMP9",
+        "source": "MOL000854",
+        "target": "TGT::MMP9",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000854->CXCL8",
+        "source": "MOL000854",
+        "target": "TGT::CXCL8",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000854->STAT3",
+        "source": "MOL000854",
+        "target": "TGT::STAT3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000854->JUN",
+        "source": "MOL000854",
+        "target": "TGT::JUN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000854->MAPK1",
+        "source": "MOL000854",
+        "target": "TGT::MAPK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000854->MAPK3",
+        "source": "MOL000854",
+        "target": "TGT::MAPK3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000854->BCL2",
+        "source": "MOL000854",
+        "target": "TGT::BCL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000854->BAX",
+        "source": "MOL000854",
+        "target": "TGT::BAX",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000854->CCND1",
+        "source": "MOL000854",
+        "target": "TGT::CCND1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000855->CXCL8",
+        "source": "MOL000855",
+        "target": "TGT::CXCL8",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000855->STAT3",
+        "source": "MOL000855",
+        "target": "TGT::STAT3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000855->JUN",
+        "source": "MOL000855",
+        "target": "TGT::JUN",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000855->MAPK1",
+        "source": "MOL000855",
+        "target": "TGT::MAPK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000855->MAPK3",
+        "source": "MOL000855",
+        "target": "TGT::MAPK3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000855->BCL2",
+        "source": "MOL000855",
+        "target": "TGT::BCL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000855->BAX",
+        "source": "MOL000855",
+        "target": "TGT::BAX",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000855->CCND1",
+        "source": "MOL000855",
+        "target": "TGT::CCND1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000855->NFKB1",
+        "source": "MOL000855",
+        "target": "TGT::NFKB1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000856->IKBKB",
+        "source": "MOL000856",
+        "target": "TGT::IKBKB",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000856->CHUK",
+        "source": "MOL000856",
+        "target": "TGT::CHUK",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000856->MYD88",
+        "source": "MOL000856",
+        "target": "TGT::MYD88",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000856->IRAK1",
+        "source": "MOL000856",
+        "target": "TGT::IRAK1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000856->TRAF6",
+        "source": "MOL000856",
+        "target": "TGT::TRAF6",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000856->NLRP3",
+        "source": "MOL000856",
+        "target": "TGT::NLRP3",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000856->CASP1",
+        "source": "MOL000856",
+        "target": "TGT::CASP1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000856->IL18",
+        "source": "MOL000856",
+        "target": "TGT::IL18",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000856->IL17A",
+        "source": "MOL000856",
+        "target": "TGT::IL17A",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000856->IL2",
+        "source": "MOL000856",
+        "target": "TGT::IL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000856->IL4",
+        "source": "MOL000856",
+        "target": "TGT::IL4",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000856->IL13",
+        "source": "MOL000856",
+        "target": "TGT::IL13",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000856->IFNG",
+        "source": "MOL000856",
+        "target": "TGT::IFNG",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000856->CSF2",
+        "source": "MOL000856",
+        "target": "TGT::CSF2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000858->IL18",
+        "source": "MOL000858",
+        "target": "TGT::IL18",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000858->IL17A",
+        "source": "MOL000858",
+        "target": "TGT::IL17A",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000858->IL2",
+        "source": "MOL000858",
+        "target": "TGT::IL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000858->IL4",
+        "source": "MOL000858",
+        "target": "TGT::IL4",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000858->IL13",
+        "source": "MOL000858",
+        "target": "TGT::IL13",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000858->IFNG",
+        "source": "MOL000858",
+        "target": "TGT::IFNG",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000858->CSF2",
+        "source": "MOL000858",
+        "target": "TGT::CSF2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000858->CCL2",
+        "source": "MOL000858",
+        "target": "TGT::CCL2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000858->CXCL10",
+        "source": "MOL000858",
+        "target": "TGT::CXCL10",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000858->ICAM1",
+        "source": "MOL000858",
+        "target": "TGT::ICAM1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000858->VCAM1",
+        "source": "MOL000858",
+        "target": "TGT::VCAM1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000858->SELE",
+        "source": "MOL000858",
+        "target": "TGT::SELE",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000858->MMP2",
+        "source": "MOL000858",
+        "target": "TGT::MMP2",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    },
+    {
+      "data": {
+        "id": "E::MOL000858->MMP1",
+        "source": "MOL000858",
+        "target": "TGT::MMP1",
+        "label": "TARGETS",
+        "name": "作用"
+      }
+    }
+  ]
+}

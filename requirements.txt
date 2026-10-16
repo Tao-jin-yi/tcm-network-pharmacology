@@ -1,0 +1,6 @@
+streamlit>=1.30
+st-link-analysis>=0.4.0
+networkx>=3.0
+pandas>=1.5
+numpy>=1.24
+scipy>=1.10

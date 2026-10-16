@@ -10,63 +10,108 @@
       "data": {
         "id": "HERB::黄芪",
         "label": "HERB",
-        "name": "黄芪"
+        "name": "黄芪",
+        "nature": "甘，微温",
+        "meridian": "归脾、肺经",
+        "action": "补气升阳，固表止汗，利水消肿，生津养血，行滞通痹，托毒排脓，敛疮生肌。用于气虚乏力、食少便溏、中气下陷、表虚自汗、气虚水肿、痈疽难溃、久溃不敛。",
+        "role": "君药",
+        "category": "补虚药 / 补气药"
       }
     },
     {
       "data": {
         "id": "HERB::山茱萸",
         "label": "HERB",
-        "name": "山茱萸"
+        "name": "山茱萸",
+        "nature": "酸、涩，微温",
+        "meridian": "归肝、肾经",
+        "action": "补益肝肾，收涩固脱。用于眩晕耳鸣、腰膝酸痛、阳痿遗精、遗尿尿频、崩漏带下、大汗虚脱、内热消渴。",
+        "role": "臣药",
+        "category": "收涩药 / 固精缩尿止带药"
       }
     },
     {
       "data": {
         "id": "HERB::山药",
         "label": "HERB",
-        "name": "山药"
+        "name": "山药",
+        "nature": "甘，平",
+        "meridian": "归脾、肺、肾经",
+        "action": "补脾养胃，生津益肺，补肾涩精。用于脾虚食少、久泻不止、肺虚喘咳、肾虚遗精、带下、尿频、虚热消渴。",
+        "role": "臣药",
+        "category": "补虚药 / 补气药"
       }
     },
     {
       "data": {
         "id": "HERB::熟地黄",
         "label": "HERB",
-        "name": "熟地黄"
+        "name": "熟地黄",
+        "nature": "甘，微温",
+        "meridian": "归肝、肾经",
+        "action": "补血滋阴，益精填髓。用于血虚萎黄、心悸怔忡、月经不调、崩漏下血、肝肾阴虚、腰膝酸软、骨蒸潮热、盗汗遗精、内热消渴。",
+        "role": "君药",
+        "category": "补虚药 / 补血药"
       }
     },
     {
       "data": {
         "id": "HERB::茯苓",
         "label": "HERB",
-        "name": "茯苓"
+        "name": "茯苓",
+        "nature": "甘、淡，平",
+        "meridian": "归心、肺、脾、肾经",
+        "action": "利水渗湿，健脾，宁心。用于水肿尿少、痰饮眩悸、脾虚食少、便溏泄泻、心神不安、惊悸失眠。",
+        "role": "佐药",
+        "category": "利水渗湿药 / 利水消肿药"
       }
     },
     {
       "data": {
         "id": "HERB::泽泻",
         "label": "HERB",
-        "name": "泽泻"
+        "name": "泽泻",
+        "nature": "甘、淡，寒",
+        "meridian": "归肾、膀胱经",
+        "action": "利水渗湿，泄热，化浊降脂。用于小便不利、水肿胀满、泄泻尿少、痰饮眩晕、热淋涩痛、高脂血症。",
+        "role": "佐药",
+        "category": "利水渗湿药 / 利水消肿药"
       }
     },
     {
       "data": {
         "id": "HERB::牡丹皮",
         "label": "HERB",
-        "name": "牡丹皮"
+        "name": "牡丹皮",
+        "nature": "苦、辛，微寒",
+        "meridian": "归心、肝、肾经",
+        "action": "清热凉血，活血化瘀。用于热入营血、温毒发斑、吐血衄血、夜热早凉、无汗骨蒸、经闭痛经、跌扑伤痛、痈肿疮毒。",
+        "role": "佐药",
+        "category": "清热药 / 清热凉血药"
       }
     },
     {
       "data": {
         "id": "HERB::丹参",
         "label": "HERB",
-        "name": "丹参"
+        "name": "丹参",
+        "nature": "苦，微寒",
+        "meridian": "归心、肝经",
+        "action": "活血祛瘀，通经止痛，清心除烦，凉血消痈。用于胸痹心痛、脘腹胁痛、癥瘕积聚、热痹疼痛、心烦不眠、月经不调、痛经经闭、疮疡肿痛。",
+        "role": "臣药",
+        "category": "活血化瘀药 / 活血调经药"
       }
     },
     {
       "data": {
         "id": "HERB::甘草",
         "label": "HERB",
-        "name": "甘草"
+        "name": "甘草",
+        "nature": "甘，平",
+        "meridian": "归心、肺、脾、胃经",
+        "action": "补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药。用于脾胃虚弱、倦怠乏力、心悸气短、咳嗽痰多、脘腹及四肢挛急疼痛、痈肿疮毒，并可缓解药物毒性、烈性。",
+        "role": "使药",
+        "category": "补虚药 / 补气药"
       }
     },
     {
@@ -87,7 +132,14 @@
           "甘草"
         ],
         "n_herbs": 7,
-        "n_targets": 22
+        "n_targets": 22,
+        "smiles": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+        "formula": "C15H10O7",
+        "mw": "302.23",
+        "inchikey": "REFJWTPEDVJJIY-UHFFFAOYSA-N",
+        "cid": 5280343,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280343/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -108,7 +160,14 @@
           "甘草"
         ],
         "n_herbs": 7,
-        "n_targets": 17
+        "n_targets": 17,
+        "smiles": "C1=CC(=CC=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+        "formula": "C15H10O6",
+        "mw": "286.24",
+        "inchikey": "IYRMWMYZSQPJKC-UHFFFAOYSA-N",
+        "cid": 5280863,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280863/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -124,7 +183,14 @@
           "甘草"
         ],
         "n_herbs": 2,
-        "n_targets": 13
+        "n_targets": 13,
+        "smiles": "COC1=CC=C(C=C1)C2=COC3=C(C2=O)C=CC(=C3)O",
+        "formula": "C16H12O4",
+        "mw": "268.26",
+        "inchikey": "HKQYGTCOTHHOMP-UHFFFAOYSA-N",
+        "cid": 5280378,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280378/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -139,7 +205,14 @@
           "黄芪"
         ],
         "n_herbs": 1,
-        "n_targets": 12
+        "n_targets": 12,
+        "smiles": "COC1=C(C=C(C=C1)C2=COC3=C(C2=O)C=CC(=C3)O)O",
+        "formula": "C16H12O5",
+        "mw": "284.26",
+        "inchikey": "ZZAJQOPSWWVMBI-UHFFFAOYSA-N",
+        "cid": 5280448,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280448/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -154,7 +227,14 @@
           "黄芪"
         ],
         "n_herbs": 1,
-        "n_targets": 10
+        "n_targets": 10,
+        "smiles": "COC1=C(C=CC(=C1)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+        "formula": "C16H12O7",
+        "mw": "316.26",
+        "inchikey": "IZQSVPBOUDKVDZ-UHFFFAOYSA-N",
+        "cid": 5281654,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281654/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -169,7 +249,14 @@
           "黄芪"
         ],
         "n_herbs": 1,
-        "n_targets": 8
+        "n_targets": 8,
+        "smiles": "C1=CC(=CC=C1C2=COC3=C(C2=O)C=CC(=C3)O)O",
+        "formula": "C15H10O4",
+        "mw": "254.24",
+        "inchikey": "ZQSIJRDFPHDXIC-UHFFFAOYSA-N",
+        "cid": 5281708,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281708/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -184,7 +271,14 @@
           "黄芪"
         ],
         "n_herbs": 1,
-        "n_targets": 6
+        "n_targets": 6,
+        "smiles": "COC1=C(C=C2C(=C1)C(=O)C(=CO2)C3=CC=C(C=C3)O)O",
+        "formula": "C16H12O5",
+        "mw": "284.26",
+        "inchikey": "DXYUAIFZCFRPTH-UHFFFAOYSA-N",
+        "cid": 5317750,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5317750/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -207,7 +301,14 @@
           "甘草"
         ],
         "n_herbs": 9,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "CC[C@H](CC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)C(C)C",
+        "formula": "C29H50O",
+        "mw": "414.7",
+        "inchikey": "KZJWDPNRJALLNS-VJSFXXLFSA-N",
+        "cid": 222284,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/222284/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -230,7 +331,14 @@
           "甘草"
         ],
         "n_herbs": 9,
-        "n_targets": 12
+        "n_targets": 12,
+        "smiles": "CC[C@H](/C=C/[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)C(C)C",
+        "formula": "C29H48O",
+        "mw": "412.7",
+        "inchikey": "HCXVJBMSMIARIN-PHZDYDNGSA-N",
+        "cid": 5280794,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280794/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -245,7 +353,14 @@
           "黄芪"
         ],
         "n_herbs": 1,
-        "n_targets": 5
+        "n_targets": 5,
+        "smiles": "COC1=CC=C(C=C1)C2=COC3=C(C2=O)C=CC(=C3)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O",
+        "formula": "C22H22O9",
+        "mw": "430.4",
+        "inchikey": "MGJLSBDCWOSMHL-MIUGBVLSSA-N",
+        "cid": 442813,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442813/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -260,7 +375,14 @@
           "黄芪"
         ],
         "n_herbs": 1,
-        "n_targets": 5
+        "n_targets": 5,
+        "smiles": "CC(=C)[C@@H]1CC[C@]2([C@H]1[C@H]3CC[C@@H]4[C@]5(CC[C@@H](C([C@@H]5CC[C@]4([C@@]3(CC2)C)C)(C)C)O)C)C(=O)O",
+        "formula": "C30H48O3",
+        "mw": "456.7",
+        "inchikey": "QGJZLNKBHJESQX-FZFNOLFKSA-N",
+        "cid": 64971,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/64971/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -275,7 +397,14 @@
           "黄芪"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "C[C@]12CC[C@@H]([C@@]([C@@H]1CC[C@@]3([C@@H]2CC=C4[C@]3(CC[C@@]5([C@H]4CC(CC5)(C)C)C(=O)O)C)C)(C)CO)O",
+        "formula": "C30H48O4",
+        "mw": "472.7",
+        "inchikey": "PGOYMURMZNDHNS-MYPRUECHSA-N",
+        "cid": 73299,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73299/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -290,7 +419,14 @@
           "黄芪"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "C1=CC(=CC=C1C(=O)N[C@@H](CCC(=O)O)C(=O)O)NCC2=CN=C3C(=N2)C(=O)NC(=N3)N",
+        "formula": "C19H19N7O6",
+        "mw": "441.4",
+        "inchikey": "OVBPIULPVIDEAO-LBPRGKRZSA-N",
+        "cid": 135398658,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/135398658/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -305,7 +441,14 @@
           "山茱萸"
         ],
         "n_herbs": 1,
-        "n_targets": 8
+        "n_targets": 8,
+        "smiles": "C[C@H]1[C@H](C[C@H]2[C@@H]1[C@@H](OC=C2C(=O)OC)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O)O",
+        "formula": "C17H26O10",
+        "mw": "390.4",
+        "inchikey": "AMBQHHVBBHTQBF-UOUCRYGSSA-N",
+        "cid": 87691,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/87691/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -320,7 +463,14 @@
           "山茱萸"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "C[C@H]1[C@@H]2[C@H](C[C@@H](O1)O)C(=CO[C@H]2O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O)C(=O)OC",
+        "formula": "C17H26O11",
+        "mw": "406.4",
+        "inchikey": "YTZSBJLNMIQROD-SFBCHFHNSA-N",
+        "cid": 11228693,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11228693/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -335,7 +485,14 @@
           "山茱萸"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "COC(=O)C1=CO[C@@H]([C@H]([C@H]1CCOC(=O)C2=CC(=C(C(=C2)O)O)O)C=C)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O",
+        "formula": "C24H30O14",
+        "mw": "542.5",
+        "inchikey": "SMTKSCGLXONVGL-ZEIULZLQSA-N",
+        "cid": 131348,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/131348/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -350,7 +507,14 @@
           "山茱萸"
         ],
         "n_herbs": 1,
-        "n_targets": 10
+        "n_targets": 10,
+        "smiles": "C1=C2C3=C(C(=C1O)O)OC(=O)C4=CC(=C(C(=C43)OC2=O)O)O",
+        "formula": "C14H6O8",
+        "mw": "302.19",
+        "inchikey": "AFSDNFLWKVMVRB-UHFFFAOYSA-N",
+        "cid": 5281855,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281855/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -367,7 +531,14 @@
           "牡丹皮"
         ],
         "n_herbs": 3,
-        "n_targets": 10
+        "n_targets": 10,
+        "smiles": "C1[C@@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)O",
+        "formula": "C15H14O6",
+        "mw": "290.27",
+        "inchikey": "PFTAWBLQPZVEMU-DZGCQCFKSA-N",
+        "cid": 9064,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -384,7 +555,14 @@
           "牡丹皮"
         ],
         "n_herbs": 3,
-        "n_targets": 9
+        "n_targets": 9,
+        "smiles": "C1[C@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)O",
+        "formula": "C15H14O6",
+        "mw": "290.27",
+        "inchikey": "PFTAWBLQPZVEMU-UKRRQHHQSA-N",
+        "cid": 72276,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72276/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -399,7 +577,14 @@
           "山药"
         ],
         "n_herbs": 1,
-        "n_targets": 20
+        "n_targets": 20,
+        "smiles": "C[C@@H]1CC[C@@]2([C@H]([C@H]3[C@@H](O2)C[C@@H]4[C@@]3(CC[C@H]5[C@H]4CC=C6[C@@]5(CC[C@@H](C6)O)C)C)C)OC1",
+        "formula": "C27H42O3",
+        "mw": "414.6",
+        "inchikey": "WQLVFSAGQJTQCK-VKROHFNGSA-N",
+        "cid": 99474,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/99474/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -414,7 +599,14 @@
           "山药"
         ],
         "n_herbs": 1,
-        "n_targets": 8
+        "n_targets": 8,
+        "smiles": "C[C@H]1[C@H]2[C@H](C[C@@H]3[C@@]2(CC[C@H]4[C@H]3CC=C5[C@@]4(CC[C@@H](C5)O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)CO)O[C@H]7[C@@H]([C@@H]([C@H]([C@@H](O7)C)O)O)O)O)O[C@H]8[C@@H]([C@@H]([C@H]([C@@H](O8)C)O)O)O)C)C)O[C@@]1(CC[C@@H](C)CO[C@H]9[C@@H]([C@H]([C@@H]([C@H](O9)CO)O)O)O)OC",
+        "formula": "C52H86O22",
+        "mw": "1063.2",
+        "inchikey": "HSSJYSJXBOCKQM-GVTGEURHSA-N",
+        "cid": 11263254,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11263254/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -429,7 +621,14 @@
           "山药"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "COC1=CC(=C2C(=C1)C=CC3=CC(=C(C=C32)O)OC)OC",
+        "formula": "C17H16O4",
+        "mw": "284.31",
+        "inchikey": "KGYHMWVRKYFQQR-UHFFFAOYSA-N",
+        "cid": 442694,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442694/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -444,7 +643,14 @@
           "熟地黄"
         ],
         "n_herbs": 1,
-        "n_targets": 16
+        "n_targets": 16,
+        "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H]([C@@H](O[C@@H]([C@H]2OC(=O)/C=C/C3=CC(=C(C=C3)O)O)CO)OCCC4=CC(=C(C=C4)O)O)O)O)O)O",
+        "formula": "C29H36O15",
+        "mw": "624.6",
+        "inchikey": "FBSKJMQYURKNSU-ZLSOWSIRSA-N",
+        "cid": 5281800,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281800/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -459,7 +665,14 @@
           "熟地黄"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "C[C@@]1(C[C@H]([C@H]2[C@@H]1[C@@H](OC=C2)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O)O)O",
+        "formula": "C15H24O9",
+        "mw": "348.34",
+        "inchikey": "VELYAQRXBJLJAK-XKKWFBPMSA-N",
+        "cid": 6325127,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6325127/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -504,7 +717,14 @@
           "茯苓"
         ],
         "n_herbs": 1,
-        "n_targets": 16
+        "n_targets": 16,
+        "smiles": "CC(C)C(=C)CC[C@H]([C@H]1[C@@H](C[C@@]2([C@@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)OC(=O)C)C)C)C)O)C(=O)O",
+        "formula": "C33H52O5",
+        "mw": "528.8",
+        "inchikey": "VDYCLYGKCGVBHN-DRCQUEPLSA-N",
+        "cid": 5484385,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5484385/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -519,7 +739,14 @@
           "茯苓"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "CC(C)C(=C)CCC([C@H]1[C@@H](C[C@@]2([C@@]1(CC=C3C2=CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)OC(=O)C)C)C)C)O)C(=O)O",
+        "formula": "C33H50O5",
+        "mw": "526.7",
+        "inchikey": "RWIALJIVPUCERT-MTHWCOGXSA-N",
+        "cid": 12133289,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12133289/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -549,7 +776,14 @@
           "茯苓"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "C[C@H](/C=C/[C@H](C)C(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3C2=CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+        "formula": "C28H44O",
+        "mw": "396.6",
+        "inchikey": "DNVPQKQSNYMLRS-APGDWVJJSA-N",
+        "cid": 444679,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/444679/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -564,7 +798,14 @@
           "茯苓"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "CC(C)C(=C)CC[C@H]([C@H]1CC[C@@]2([C@@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C)C(=O)O",
+        "formula": "C31H50O3",
+        "mw": "470.7",
+        "inchikey": "UGMQOYZVOPASJF-OXUZYLMNSA-N",
+        "cid": 73402,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73402/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -579,7 +820,14 @@
           "茯苓"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "CC(C)C(=C)CC[C@H]([C@H]1[C@@H](C[C@@]2([C@@]1(CC=C3C2=CC[C@@H]4[C@@]3(CC[C@H](C4(C)C)OC(=O)C)C)C)C)O)C(=O)O",
+        "formula": "C33H50O5",
+        "mw": "526.7",
+        "inchikey": "RWIALJIVPUCERT-ROLXBSRMSA-N",
+        "cid": 15226716,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/15226716/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -594,7 +842,14 @@
           "泽泻"
         ],
         "n_herbs": 1,
-        "n_targets": 15
+        "n_targets": 15,
+        "smiles": "C[C@H](C[C@@H]([C@H](C(C)(C)O)O)O)C1=C2C[C@@H]([C@H]3[C@]4(CCC(=O)C([C@@H]4CC[C@@]3([C@]2(CC1)C)C)(C)C)C)O",
+        "formula": "C30H50O5",
+        "mw": "490.7",
+        "inchikey": "HNOSJVWYGXOFRP-UNPOXIGHSA-N",
+        "cid": 15558616,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/15558616/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -609,7 +864,14 @@
           "泽泻"
         ],
         "n_herbs": 1,
-        "n_targets": 9
+        "n_targets": 9,
+        "smiles": "C[C@H](C[C@@H]([C@@H]1C(O1)(C)C)O)C2=C3C[C@@H]([C@H]4[C@]5(CCC(=O)C([C@@H]5CC[C@@]4([C@]3(CC2)C)C)(C)C)C)O",
+        "formula": "C30H48O4",
+        "mw": "472.7",
+        "inchikey": "GBJKHDVRXAVITG-UNPOXIGHSA-N",
+        "cid": 15558620,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/15558620/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -624,7 +886,14 @@
           "泽泻"
         ],
         "n_herbs": 1,
-        "n_targets": 9
+        "n_targets": 9,
+        "smiles": "C[C@H](C[C@@H]([C@@H]1C(O1)(C)C)OC(=O)C)C2=C3C[C@@H]([C@H]4[C@]5(CCC(=O)C([C@@H]5CC[C@@]4([C@]3(CC2)C)C)(C)C)C)O",
+        "formula": "C32H50O5",
+        "mw": "514.7",
+        "inchikey": "NLOAQXKIIGTTRE-JSWHPQHOSA-N",
+        "cid": 14036811,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/14036811/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -639,7 +908,14 @@
           "泽泻"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "C[C@H](C[C@@H]([C@@H]1C(O1)(C)C)O)C2=C3C[C@@H]([C@H]4[C@]5(CCC(=O)C([C@@H]5CC[C@@]4([C@]3(CC2=O)C)C)(C)C)C)O",
+        "formula": "C30H46O5",
+        "mw": "486.7",
+        "inchikey": "DORJGGFFCMZTHW-KXVAGGRESA-N",
+        "cid": 101306923,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/101306923/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -669,7 +945,14 @@
           "牡丹皮"
         ],
         "n_herbs": 1,
-        "n_targets": 18
+        "n_targets": 18,
+        "smiles": "C[C@]12C[C@@]3([C@@H]4C[C@]1([C@@]4([C@H](O2)O3)COC(=O)C5=CC=CC=C5)O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)CO)O)O)O)O",
+        "formula": "C23H28O11",
+        "mw": "480.5",
+        "inchikey": "YKRGDOXKVOZESV-WRJNSLSBSA-N",
+        "cid": 442534,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442534/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -684,7 +967,14 @@
           "牡丹皮"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "C[C@]12C[C@H]([C@@H]3C[C@]1([C@@]3(C(=O)O2)COC(=O)C4=CC=CC=C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O)O",
+        "formula": "C23H28O11",
+        "mw": "480.5",
+        "inchikey": "QQUHMASGPODSIW-ICECTASOSA-N",
+        "cid": 24868421,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/24868421/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -699,7 +989,14 @@
           "牡丹皮"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "C[C@]12C[C@@]3([C@@H]4C[C@]1([C@@]4([C@H](O2)O3)COC(=O)C5=CC=CC=C5)O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)COC(=O)C7=CC=CC=C7)O)O)O)O",
+        "formula": "C30H32O12",
+        "mw": "584.6",
+        "inchikey": "LATYEZNGPQKAIK-HRCYFWENSA-N",
+        "cid": 21631106,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/21631106/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -714,7 +1011,14 @@
           "牡丹皮"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "CC(=O)C1=C(C=C(C=C1)OC)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)O",
+        "formula": "C15H20O8",
+        "mw": "328.31",
+        "inchikey": "AVIUTYMRHHBXPB-UXXRCYHCSA-N",
+        "cid": 442924,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442924/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -729,7 +1033,14 @@
           "丹参"
         ],
         "n_herbs": 1,
-        "n_targets": 11
+        "n_targets": 11,
+        "smiles": "CC1=COC2=C1C(=O)C(=O)C3=C2C=CC4=C3CCCC4(C)C",
+        "formula": "C19H18O3",
+        "mw": "294.3",
+        "inchikey": "HYXITZLLTYIPOF-UHFFFAOYSA-N",
+        "cid": 164676,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/164676/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -744,7 +1055,14 @@
           "丹参"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "CC1=C2C=CC3=C(C2=CC=C1)C(=O)C(=O)C4=C3OC=C4C",
+        "formula": "C18H12O3",
+        "mw": "276.3",
+        "inchikey": "AIGAZQPHXLWMOJ-UHFFFAOYSA-N",
+        "cid": 114917,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/114917/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -759,7 +1077,14 @@
           "丹参"
         ],
         "n_herbs": 1,
-        "n_targets": 10
+        "n_targets": 10,
+        "smiles": "C[C@H]1COC2=C1C(=O)C(=O)C3=C2C=CC4=C3CCCC4(C)C",
+        "formula": "C19H20O3",
+        "mw": "296.4",
+        "inchikey": "GVKKJJOMQCNPGB-JTQLQIEISA-N",
+        "cid": 160254,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/160254/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -774,7 +1099,14 @@
           "丹参"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "C[C@H]1COC2=C1C(=O)C(=O)C3=C2C=CC4=C(C=CC=C43)C",
+        "formula": "C18H14O3",
+        "mw": "278.3",
+        "inchikey": "HARGZZNYNSYSGJ-JTQLQIEISA-N",
+        "cid": 11425923,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11425923/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -789,7 +1121,14 @@
           "丹参"
         ],
         "n_herbs": 1,
-        "n_targets": 8
+        "n_targets": 8,
+        "smiles": "C1=CC(=C(C=C1C[C@H](C(=O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O",
+        "formula": "C18H16O8",
+        "mw": "360.3",
+        "inchikey": "DOUMFZQKYFQNTF-WUTVXBCWSA-N",
+        "cid": 5281792,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281792/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -804,7 +1143,14 @@
           "丹参"
         ],
         "n_herbs": 1,
-        "n_targets": 16
+        "n_targets": 16,
+        "smiles": "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+        "formula": "C15H10O6",
+        "mw": "286.24",
+        "inchikey": "IQPNAANSBPBGFQ-UHFFFAOYSA-N",
+        "cid": 5280445,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280445/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -819,7 +1165,14 @@
           "甘草"
         ],
         "n_herbs": 1,
-        "n_targets": 8
+        "n_targets": 8,
+        "smiles": "C1[C@H](OC2=C(C1=O)C=CC(=C2)O)C3=CC=C(C=C3)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O",
+        "formula": "C21H22O9",
+        "mw": "418.4",
+        "inchikey": "DEMKZLAVQYISIA-ZRWXNEIDSA-N",
+        "cid": 503737,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/503737/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -834,7 +1187,14 @@
           "甘草"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "C1=CC(=CC=C1/C=C/C(=O)C2=C(C=C(C=C2)O)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O",
+        "formula": "C21H22O9",
+        "mw": "418.4",
+        "inchikey": "YNWXJFQOCHMPCK-LXGDFETPSA-N",
+        "cid": 5318591,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5318591/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -849,7 +1209,14 @@
           "甘草"
         ],
         "n_herbs": 1,
-        "n_targets": 7
+        "n_targets": 7,
+        "smiles": "C1[C@H](OC2=C(C1=O)C=CC(=C2)O)C3=CC=C(C=C3)O",
+        "formula": "C15H12O4",
+        "mw": "256.25",
+        "inchikey": "FURUXTVZLHCCNA-AWEZNQCLSA-N",
+        "cid": 114829,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/114829/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -864,7 +1231,14 @@
           "甘草"
         ],
         "n_herbs": 1,
-        "n_targets": 14
+        "n_targets": 14,
+        "smiles": "CC1(C=CC2=C(O1)C=CC3=C2OC[C@H](C3)C4=C(C=C(C=C4)O)O)C",
+        "formula": "C20H20O4",
+        "mw": "324.4",
+        "inchikey": "LBQIJVLKGVZRIW-ZDUSSCGKSA-N",
+        "cid": 124052,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/124052/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -879,7 +1253,14 @@
           "甘草"
         ],
         "n_herbs": 1,
-        "n_targets": 7
+        "n_targets": 7,
+        "smiles": "CC(C)(C=C)C1=C(C=C(C(=C1)/C=C/C(=O)C2=CC=C(C=C2)O)OC)O",
+        "formula": "C21H22O4",
+        "mw": "338.4",
+        "inchikey": "KAZSKMJFUPEHHW-DHZHZOJOSA-N",
+        "cid": 5318998,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5318998/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {
@@ -894,7 +1275,14 @@
           "甘草"
         ],
         "n_herbs": 1,
-        "n_targets": 7
+        "n_targets": 7,
+        "smiles": "C1[C@H](OC2=CC(=CC(=C2C1=O)O)O)C3=CC=C(C=C3)O",
+        "formula": "C15H12O5",
+        "mw": "272.25",
+        "inchikey": "FTVWIRXFELQLPI-ZDUSSCGKSA-N",
+        "cid": 439246,
+        "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/439246/PNG?image_size=large",
+        "source": "PubChem"
       }
     },
     {

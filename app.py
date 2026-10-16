@@ -20,6 +20,7 @@ import pandas as pd
 import streamlit as st
 from st_link_analysis import EdgeStyle, NodeStyle, st_link_analysis
 
+from herb_info import HERB_INFO, get_herb_info
 from topology import cyto_nca_filter, elements_to_graph
 
 HERE = Path(__file__).parent
@@ -158,6 +159,15 @@ with tab_synergy:
         selected = st.selectbox("选择一味药", sorted(herb_targets))
         herb_set = herb_targets[selected]
 
+        info = get_herb_info(selected)
+    if info:
+        st.markdown(f"**{selected}**　{info['nature']}　{info['meridian']}　"
+                    f"方中角色：{info['role']}　分类：{info['category']}")
+        st.caption(f"功效主治：{info['action']}")
+    else:
+        st.caption("该药尚未录入功效主治，可在 herb_info.py 中补充。")
+
+
         c1, c2, c3 = st.columns(3)
         c1.metric("覆盖靶点数", len(herb_set))
         c2.metric("靶点覆盖率", f"{len(herb_set & all_targets) / len(all_targets):.1%}")
@@ -197,6 +207,19 @@ with tab_synergy:
         st.dataframe(pd.DataFrame({"靶点": sorted(herb_set)}),
                      hide_index=True, use_container_width=True)
 
+        with st.expander("全方药材用途一览（性味归经 / 功效主治 / 君臣佐使）"):
+            rows = []
+            for herb_name in sorted(herb_targets):
+                item = get_herb_info(herb_name)
+                if item:
+                    rows.append({"中药": herb_name, "性味": item["nature"],
+                                 "归经": item["meridian"], "分类": item["category"],
+                                 "角色": item["role"], "功效主治": item["action"]})
+            if rows:
+                st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+            else:
+                st.caption("尚未录入药材用途，可在 herb_info.py 中补充。")
+
 # ------------------------------------------------------------- 3. 核心靶点
 with tab_core:
     if not elements["nodes"]:
@@ -232,11 +255,30 @@ with tab_compound:
     if compounds_df.empty:
         st.warning("当前阈值下没有成分。")
     else:
-        show = compounds_df[["name", "en", "ob", "dl", "herbs", "n_targets"]].copy()
-        show.columns = ["成分", "英文名", "OB(%)", "DL", "所属中药", "靶点数"]
+        for extra in ["formula", "mw", "smiles", "cid", "img_url"]:
+            if extra not in compounds_df.columns:
+                compounds_df[extra] = None
+        show = compounds_df[["name", "en", "ob", "dl", "herbs", "n_targets",
+                             "formula", "mw", "smiles"]].copy()
+        show.columns = ["成分", "英文名", "OB(%)", "DL", "所属中药", "靶点数",
+                        "分子式", "分子量", "SMILES"]
         show["所属中药"] = show["所属中药"].apply(lambda x: "、".join(x))
         show = show.sort_values(["靶点数", "OB(%)"], ascending=[False, False])
         st.dataframe(show, hide_index=True, use_container_width=True)
+
+        st.markdown("**化学结构式**")
+        pick = st.selectbox("选择成分查看结构", show["成分"].tolist())
+        row = compounds_df[compounds_df["name"] == pick].iloc[0]
+        left, right = st.columns([1, 2])
+        if row.get("img_url"):
+            left.image(row["img_url"], caption=f"{pick}（PubChem CID {row.get('cid')}）",
+                       width=320)
+        else:
+            left.info("该成分暂无结构图，可运行 `python fetch_structures.py` 从 PubChem 补全。")
+        if row.get("smiles"):
+            right.markdown("**SMILES（可复制）**")
+            right.code(row["smiles"])
+            right.caption(f"分子式 {row.get('formula')}　分子量 {row.get('mw')}")
         st.download_button(
             "下载成分表 CSV",
             data=show.to_csv(index=False).encode("utf-8-sig"),

@@ -27,6 +27,8 @@ USE_UNIPROT_API = False
 
 HERE = Path(__file__).parent
 OUTPUT_FILE = HERE / "network.json"
+# 由 fetch_structures.py 生成的 PubChem 化学结构信息（SMILES / 分子式 / 分子量 / InChIKey）
+STRUCTURE_FILE = HERE / "compound_structures.json"
 
 # ------------------------------------------------------- 靶点：核心 + 扩展池
 # 核心靶点为复方主要作用的枢纽基因（示例研究中第二轮筛选后保留下来的那部分）
@@ -39,6 +41,16 @@ CORE_TARGETS = [
 ]
 
 # 扩展靶点池：用于给非核心成分分配靶点，使网络规模接近真实研究
+try:  # 支持从 herb_info.py 读取中药用途，缺失时不影响建网
+    from herb_info import get_herb_info
+except ImportError:
+    def get_herb_info(_name):
+        return None
+
+STRUCTURES: Dict[str, dict] = {}
+if STRUCTURE_FILE.exists():
+    STRUCTURES = json.loads(STRUCTURE_FILE.read_text(encoding="utf-8"))
+
 EXTRA_TARGETS = [
     "MAPK8", "MAPK14", "NFKBIA", "IKBKB", "CHUK", "MYD88", "IRAK1", "TRAF6",
     "NLRP3", "CASP1", "IL18", "IL17A", "IL2", "IL4", "IL13", "IFNG", "CSF2",
@@ -271,6 +283,18 @@ HERB_COMPOUNDS: Dict[str, List[str]] = {
     ],
 }
 
+# ---------------------------------------------------- 合并外部导入的中药数据
+# 由 import_tcmsp.py 生成（可含 TCMSP 全部 499 味中药）
+DATASET_FILE = HERE / "tcmsp_dataset.json"
+if DATASET_FILE.exists():
+    _dataset = json.loads(DATASET_FILE.read_text(encoding="utf-8"))
+    if _dataset.get("replace_builtin"):
+        COMPOUNDS = _dataset["COMPOUNDS"]
+        HERB_COMPOUNDS = _dataset["HERB_COMPOUNDS"]
+    else:
+        COMPOUNDS.update(_dataset.get("COMPOUNDS", {}))
+        HERB_COMPOUNDS.update(_dataset.get("HERB_COMPOUNDS", {}))
+
 
 def auto_targets(index: int, size: int = 14) -> List[str]:
     """按成分序号确定性分配扩展靶点，保证每次生成结果一致。"""
@@ -321,7 +345,10 @@ def build_elements(ob_min: float = OB_MIN, dl_min: float = DL_MIN) -> dict:
 
     # 中药节点
     for herb in HERB_COMPOUNDS:
-        nodes.append({"data": {"id": f"HERB::{herb}", "label": "HERB", "name": herb}})
+        node_data = {"id": f"HERB::{herb}", "label": "HERB", "name": herb}
+        info = get_herb_info(herb) or {}
+        node_data.update({k: v for k, v in info.items() if v})
+        nodes.append({"data": node_data})
 
     # 成分节点 + 中药-成分边
     for herb, mol_ids in HERB_COMPOUNDS.items():
@@ -368,6 +395,7 @@ def build_elements(ob_min: float = OB_MIN, dl_min: float = DL_MIN) -> dict:
             "herbs": herbs,
             "n_herbs": len(herbs),
             "n_targets": len(compound_targets.get(mol_id, [])),
+            **STRUCTURES.get(mol_id, {}),   # smiles / formula / mw / inchikey / cid / img_url
         }})
 
     # 靶点节点

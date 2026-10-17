@@ -29,6 +29,8 @@ from st_link_analysis import EdgeStyle, NodeStyle, st_link_analysis
 from anatomy import SPECIES, render_anatomy
 from animal_view import (compartment_of, organ_target_map, render_cell)
 from cell_pathway import render_cell_pathway
+from formula_info import (COMPATIBILITY, DOSAGE, FORMULA, NOTES, PHARMACOLOGY,
+                          PRECAUTIONS, REFERENCES, ROLE_GROUPS, formula_rows)
 from herb_info import HERB_INFO, get_herb_info
 from pathways import (KIND_STYLE, PATHWAYS, pathway_elements, pathways_of_target,
                       target_class, targets_in_pathway)
@@ -171,11 +173,60 @@ col3.metric("靶点", n_targets)
 col4.metric("关系（边）", len(elements["edges"]))
 
 # ------------------------------------------------------------------ 主体
-tab_graph, tab_synergy, tab_core, tab_target, tab_lit, tab_pk, tab_animal, tab_compound = st.tabs(
-    ["网络图", "配伍协同分析", "核心靶点（CytoNCA）", "靶点详情（蛋白 / 定位 / 结构）",
+tab_formula, tab_graph, tab_synergy, tab_core, tab_target, tab_lit, tab_pk, tab_animal, tab_compound = st.tabs(
+    ["复方说明", "网络图", "配伍协同分析", "核心靶点（CytoNCA）",
+     "靶点详情（蛋白 / 定位 / 结构）",
      "文献机制（PubMed）", "药动学 / 量-效-时", "动物模型模拟实验", "成分明细"]
 )
 core_targets: List[str] = []
+
+# -------------------------------------------------------------- 0. 复方说明
+with tab_formula:
+    st.subheader(str(FORMULA["name"]))
+    st.caption(f"{FORMULA['alias']}　|　{FORMULA['source']}")
+
+    f1, f2, f3, f4 = st.columns(4)
+    f1.metric("药材", len(herbs))
+    f2.metric("活性成分（当前阈值）", len(compounds_df))
+    f3.metric("预测靶点", n_targets)
+    f4.metric("关系（边）", len(elements["edges"]))
+
+    st.markdown(f"**组成**：{FORMULA['composition']}")
+    st.markdown(f"**功用**：{FORMULA['action']}")
+    st.markdown(f"**主治**：{FORMULA['indication']}")
+    st.markdown(f"**辨证要点**：{FORMULA['syndrome']}")
+    st.markdown(f"**用法**：{FORMULA['usage']}")
+
+    st.markdown("### 组成与方解（君臣佐使）")
+    st.dataframe(pd.DataFrame(formula_rows()), hide_index=True,
+                 use_container_width=True)
+
+    for role, members, explain in ROLE_GROUPS:
+        with st.expander(f"{role}：{'、'.join(members)}", expanded=(role == "君药")):
+            st.write(explain)
+            st.caption("剂量：" + "；".join(f"{m} {DOSAGE.get(m, '—')} g"
+                                          for m in members))
+
+    st.markdown("### 配伍特点")
+    for title, text in COMPATIBILITY:
+        st.markdown(f"- **{title}**：{text}")
+
+    st.markdown("### 现代药理研究方向（文献报道）")
+    for title, text in PHARMACOLOGY:
+        st.markdown(f"- **{title}**：{text}")
+    st.caption("以上为单味药 / 同类方已有研究报道的方向，"
+               "本平台的网络分析结果为预测，不等同于实验或临床结论。")
+
+    st.markdown("### 使用注意")
+    for item in PRECAUTIONS:
+        st.markdown(f"- {item}")
+
+    st.markdown("### 说明与数据来源")
+    for item in NOTES:
+        st.caption(f"- {item}")
+    with st.expander("参考来源"):
+        for ref in REFERENCES:
+            st.markdown(f"- {ref}")
 
 # ---------------------------------------------------------------- 1. 网络图
 with tab_graph:

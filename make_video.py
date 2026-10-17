@@ -1,12 +1,16 @@
 """把作用机制通路生成动画视频（MP4，失败时自动回退 GIF），便于学习观看。
 
-动画逻辑：按信号级联顺序（配体 → 受体 → 接头 → 激酶 → 转录因子 → 效应）
-逐节点揭示，新节点带缩放淡入，末帧停留并标注"★ 本方成分作用靶点"。
+默认形态是「成分 → 靶点 → 通路」三层联动动画（细胞水平）：
+本方成分（顶部紫色条带）→ 虚线箭头指向它在细胞内作用的靶点
+（膜受体 / 胞质激酶 / 核内转录因子）→ 信号沿级联逐级推进 → 核内效应。
+★ 标注本方成分作用靶点。
 
 用法：
-    python make_video.py --pathway "NF-κB 通路"     # 生成单条通路
-    python make_video.py --all                      # 生成全部通路
-    python make_video.py --overview                 # 生成总览视频（列出全部通路）
+    python make_video.py --pathway "NF-κB 通路"     # 单条（默认三层联动）
+    python make_video.py --all                      # 全部 12 条（三层联动）
+    python make_video.py --overview                 # 总览视频（列出全部通路）
+    python make_video.py --all --cell               # 细胞水平版本（不含成分层）
+    python make_video.py --all --plain              # 纯级联版本（无细胞结构）
     python make_video.py --all --fps 24             # 指定帧率
 
 依赖：matplotlib、imageio-ffmpeg（提供 ffmpeg 可执行文件）。
@@ -30,7 +34,7 @@ from matplotlib import font_manager
 from matplotlib.animation import FFMpegWriter, FuncAnimation, PillowWriter
 
 from cell_pathway import MEMBRANE_X, NUCLEUS, cell_layout
-from pathways import KIND_STYLE, PATHWAYS
+from pathways import KIND_STYLE, PATHWAYS, targets_in_pathway
 
 HERE = Path(__file__).parent
 NETWORK_FILE = HERE / "network.json"
@@ -394,6 +398,220 @@ def make_cell_video(name: str, fps: int = 20, out_dir: Path = VIDEO_DIR,
     return out
 
 
+def pathway_compounds(name: str, limit: int = 6) -> List[dict]:
+    """该通路相关的本方成分：从 network.json 的 成分→靶点 边反查，按命中靶点数排序。"""
+    import json
+    genes = {g.upper() for g in targets_in_pathway(name)}
+    if not genes or not NETWORK_FILE.exists():
+        return []
+    elements = json.loads(NETWORK_FILE.read_text(encoding="utf-8"))
+    nodes = {n["data"]["id"]: n["data"] for n in elements["nodes"]}
+    found: Dict[str, dict] = {}
+    for edge in elements["edges"]:
+        data = edge["data"]
+        if data.get("label") != "TARGETS":
+            continue
+        src = nodes.get(data.get("source", ""), {})
+        tgt = nodes.get(data.get("target", ""), {})
+        gene = (tgt.get("name") or "").upper()
+        if gene not in genes:
+            continue
+        cname = src.get("name") or ""
+        item = found.setdefault(cname, {"name": cname, "herbs": src.get("herbs", []),
+                                        "ob": src.get("ob") or 0, "genes": set()})
+        item["genes"].add(gene)
+    ranked = sorted(found.values(), key=lambda x: (-len(x["genes"]), -x["ob"]))
+    return ranked[:limit]
+
+
+def make_triad_video(name: str, fps: int = 20, out_dir: Path = VIDEO_DIR,
+                     targets: Optional[set] = None) -> Optional[Path]:
+    """三层联动动画：成分（顶部）→ 靶点（细胞内对应区室）→ 通路级联 → 效应。
+
+    成分条带画在细胞上方，箭头指向它在细胞内作用的靶点，
+    直观展示"成分与膜受体结合 / 作用于胞内激酶或核内转录因子"这一过程，
+    随后信号沿级联逐级推进至核内效应。
+    """
+    setup_font()
+    configure_ffmpeg()
+    out_dir.mkdir(exist_ok=True)
+    targets = targets if targets is not None else pathway_targets()
+    pw = PATHWAYS[name]
+    nodes = {n["id"]: n for n in pw["nodes"]}
+    pos, order = cell_layout(name)
+    gene_node = {n["gene"].upper(): n["id"] for n in pw["nodes"] if n.get("gene")}
+    compounds = pathway_compounds(name)
+
+    parent: Dict[str, str] = {}
+    for s, t, _ in pw["edges"]:
+        parent.setdefault(t, s)
+
+    top_y = 7.85
+    comp_x = []
+    if compounds:
+        span = 8.9 / max(len(compounds) - 1, 1)
+        comp_x = [0.65 + i * span for i in range(len(compounds))]
+
+    fig, ax = plt.subplots(figsize=(12, 9.4), dpi=110)
+    fig.patch.set_facecolor("#ffffff")
+    fig.subplots_adjust(left=0.01, right=0.99, top=0.94, bottom=0.04)
+
+    def draw(n_comp: int, comp_prog: float, step: int, progress: float) -> None:
+        ax.clear()
+        ax.set_xlim(0, 10)
+        ax.set_ylim(0, 8.9)
+        ax.axis("off")
+
+        # ---- 细胞结构（与细胞水平视频一致）
+        ax.add_patch(mp.Rectangle((0, 0), MEMBRANE_X, 7.15, facecolor="#eaf2fb",
+                                  edgecolor="none", zorder=0))
+        ax.add_patch(mp.FancyBboxPatch(
+            (MEMBRANE_X, 0.15), 10 - MEMBRANE_X - 0.12, 7.0,
+            boxstyle="round,pad=0,rounding_size=0.55", facecolor="#fffdf5",
+            edgecolor="#8a8a8a", linewidth=2, zorder=0.5))
+        ax.add_patch(mp.Rectangle((MEMBRANE_X - 0.08, 0.15), 0.16, 7.0,
+                                  facecolor="#f3d7a4", edgecolor="#c9a45c",
+                                  linewidth=1.2, zorder=1))
+        ax.add_patch(mp.Ellipse((NUCLEUS[0], NUCLEUS[1]), NUCLEUS[2] * 2,
+                                NUCLEUS[3] * 2, facecolor="#e8f0fb",
+                                edgecolor="#5677a8", linewidth=2.4, zorder=1))
+        ax.add_patch(mp.Circle((NUCLEUS[0] + 0.55, NUCLEUS[1] - 0.7), 0.34,
+                               facecolor="#d5e3f5", edgecolor="#9db8d8", zorder=1.2))
+        for mx, my in ((3.3, 5.6), (3.8, 1.2)):
+            ax.add_patch(mp.Ellipse((mx, my), 0.84, 0.44, facecolor="#ffe9d6",
+                                    edgecolor="#d98324", linewidth=1.2, zorder=1.2))
+        ax.text(0.1, 6.95, "细胞外", fontsize=12, color="#4a76a8", fontweight="bold")
+        ax.text(MEMBRANE_X + 0.14, 0.32, "细胞膜（受体）", fontsize=10, color="#b08a3c")
+        ax.text(2.9, 6.9, "细胞质（激酶级联）", fontsize=10, color="#8a8a8a")
+        ax.text(NUCLEUS[0] - 0.6, NUCLEUS[1] + NUCLEUS[3] - 0.28, "细胞核",
+                fontsize=12, color="#5677a8", fontweight="bold")
+        ax.set_title(f"{name}：成分 → 靶点 → 通路（细胞水平）", fontsize=16,
+                     fontweight="bold", color="#222", loc="left", pad=10)
+
+        visible = set(order[:step + 1]) if step >= 0 else set()
+        current = order[step] if step >= 0 else None
+
+        # ---- 成分条带 + 成分→靶点 箭头
+        for i in range(n_comp):
+            item = compounds[i]
+            cx = comp_x[i]
+            alpha = comp_prog if i == n_comp - 1 else 1.0
+            alpha = max(0.15, min(1.0, alpha))
+            label = item["name"]
+            herbs = "、".join(item["herbs"][:2])
+            ax.add_patch(mp.FancyBboxPatch(
+                (cx - 0.72, top_y - 0.26), 1.44, 0.52,
+                boxstyle="round,pad=0.03,rounding_size=0.12", facecolor="#7D5BA6",
+                edgecolor="#ffffff", linewidth=2, alpha=alpha, zorder=5))
+            ax.text(cx, top_y + 0.04, label[:8], ha="center", va="center",
+                    fontsize=9, color="#ffffff", fontweight="bold", alpha=alpha,
+                    zorder=6)
+            if herbs:
+                ax.text(cx, top_y - 0.42, herbs, ha="center", fontsize=7.5,
+                        color="#7D5BA6", alpha=alpha, zorder=6)
+            for gene in sorted(item["genes"]):
+                nid = gene_node.get(gene)
+                if not nid:
+                    continue
+                tx, ty = pos[nid]
+                ax.add_patch(mp.FancyArrowPatch(
+                    (cx, top_y - 0.28), (tx, ty + 0.3), arrowstyle="-|>",
+                    mutation_scale=11, linewidth=1.8, color="#7D5BA6",
+                    alpha=0.85 * alpha, linestyle="--",
+                    connectionstyle="arc3,rad=-0.12", zorder=4))
+                visible.add(nid)
+
+        # ---- 通路级联边
+        for s, t, label in pw["edges"]:
+            if t not in visible:
+                continue
+            x1, y1 = pos[s]
+            x2, y2 = pos[t]
+            hot = (t == current)
+            ax.add_patch(mp.FancyArrowPatch(
+                (x1 + 0.62, y1), (x2 - 0.66, y2), arrowstyle="-|>",
+                mutation_scale=13, linewidth=2 if hot else 1.6,
+                color="#E4572E" if hot else "#8a8a8a", alpha=0.95,
+                connectionstyle="arc3,rad=0.06", zorder=2))
+            if label:
+                ax.text((x1 + x2) / 2, (y1 + y2) / 2 + 0.16, label, fontsize=8.5,
+                        color="#E4572E" if hot else "#888", ha="center", zorder=3)
+
+        # ---- 节点
+        for nid in visible:
+            node = nodes[nid]
+            x, y = pos[nid]
+            kind_label, color = KIND_STYLE[node["kind"]]
+            is_new = (nid == current)
+            alpha = max(0.0, (progress - 0.6) / 0.4) if is_new else 1.0
+            alpha = min(1.0, alpha)
+            star = "★ " if node.get("gene", "").upper() in targets else ""
+            ax.add_patch(mp.FancyBboxPatch(
+                (x - 0.74, y - 0.28), 1.48, 0.56,
+                boxstyle="round,pad=0.04,rounding_size=0.13", facecolor=color,
+                edgecolor="#ffffff", linewidth=2, alpha=alpha, zorder=4))
+            if is_new:
+                ax.add_patch(mp.FancyBboxPatch(
+                    (x - 0.82, y - 0.36), 1.64, 0.72,
+                    boxstyle="round,pad=0.04,rounding_size=0.16", facecolor="none",
+                    edgecolor="#E4572E", linewidth=2.4, alpha=0.35 + 0.6 * alpha,
+                    zorder=5))
+            ax.text(x, y, f"{star}{node['label']}", ha="center", va="center",
+                    fontsize=9.2, color="#ffffff", fontweight="bold", alpha=alpha,
+                    zorder=6)
+            ax.text(x, y - 0.36, kind_label, ha="center", fontsize=7.5, color="#777",
+                    alpha=alpha, zorder=6)
+
+        # ---- 信号小点
+        src = parent.get(current) if current else None
+        if src is not None and progress < 0.98:
+            sx, sy = pos[src]
+            tx, ty = pos[current]
+            px = sx + (tx - sx) * progress
+            py = sy + (ty - sy) * progress
+            ax.add_patch(mp.Circle((px, py), 0.11, facecolor="#E4572E",
+                                   edgecolor="#ffffff", linewidth=1.2, zorder=7))
+
+        handles = [mp.Patch(facecolor=c, edgecolor="none", label=l)
+                   for l, c in KIND_STYLE.values()]
+        handles.append(mp.Patch(facecolor="#7D5BA6", edgecolor="none", label="本方成分"))
+        ax.legend(handles=handles, loc="lower center", fontsize=8.5, ncol=7,
+                  frameon=False, bbox_to_anchor=(0.5, -0.03))
+        ax.text(9.9, 0.12, "★ = 本方成分作用靶点", fontsize=8.5, color="#E4572E",
+                ha="right")
+
+    per_comp = 26 if compounds else 0
+    per_step = 28
+    phase1 = per_comp * len(compounds)
+    phase2 = per_step * len(order)
+    total = max(phase1 + phase2 + 45, 60)
+
+    def update(i: int) -> None:
+        if i < phase1:
+            n_comp = i // per_comp + 1
+            draw(n_comp, (i % per_comp) / per_comp, -1, 0.0)
+        else:
+            j = i - phase1
+            if j < phase2:
+                step = j // per_step
+                progress = min(1.0, (j % per_step) / 14 * 0.7 + 0.3)
+            else:
+                step, progress = len(order) - 1, 1.0
+            draw(len(compounds), 1.0, step, progress)
+
+    draw(min(1, len(compounds)), 0.0, -1, 0.0)
+    anim = FuncAnimation(fig, update, frames=total, interval=1000 / fps)
+    out = out_dir / f"{safe_name(name)}_成分-靶点-通路.mp4"
+    try:
+        anim.save(out, writer=FFMpegWriter(fps=fps, codec="libx264",
+                                           extra_args=["-pix_fmt", "yuv420p"]))
+    except Exception:
+        out = out_dir / f"{safe_name(name)}_成分-靶点-通路.gif"
+        anim.save(out, writer=PillowWriter(fps=max(6, fps // 3)))
+    plt.close(fig)
+    return out
+
+
 def make_overview(fps: int = 20, out_dir: Path = VIDEO_DIR) -> Optional[Path]:
     """总览视频：依次列出全部通路名与其关键节点。"""
     setup_font()
@@ -449,7 +667,11 @@ def main() -> None:
     parser.add_argument("--all", action="store_true", help="生成全部通路")
     parser.add_argument("--overview", action="store_true", help="生成总览视频")
     parser.add_argument("--cell", action="store_true",
-                        help="生成细胞水平动画（配体→膜受体→胞质级联→入核→效应）")
+                        help="改为生成细胞水平动画（配体→膜受体→胞质级联→入核→效应）")
+    parser.add_argument("--triad", action="store_true",
+                        help="三层联动动画（默认，可显式指定）")
+    parser.add_argument("--plain", action="store_true",
+                        help="改为生成纯级联动画（无细胞结构）")
     parser.add_argument("--fps", type=int, default=20)
     args = parser.parse_args()
 
@@ -472,7 +694,12 @@ def main() -> None:
         if name not in PATHWAYS:
             print("未找到通路：", name)
             continue
-        out = make_cell_video(name, args.fps) if args.cell else make_video(name, args.fps)
+        if args.cell:
+            out = make_cell_video(name, args.fps)
+        elif args.plain:
+            out = make_video(name, args.fps)
+        else:  # 默认：成分 → 靶点 → 通路 三层联动（细胞水平）
+            out = make_triad_video(name, args.fps)
         if out:
             made.append(out)
             print("已生成", out)

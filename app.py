@@ -31,7 +31,7 @@ from animal_view import (compartment_of, organ_target_map, render_cell)
 from cell_pathway import render_cell_pathway
 from herb_info import HERB_INFO, get_herb_info
 from pathways import (KIND_STYLE, PATHWAYS, pathway_elements, pathways_of_target,
-                      target_class)
+                      target_class, targets_in_pathway)
 from pkpd import (fit_dose_response, fit_pk, hill_emax, pk_metrics,
                   simulate_dose_response, simulate_effect_time, simulate_pk)
 from topology import cyto_nca_filter, elements_to_graph
@@ -639,6 +639,33 @@ with tab_animal:
                 st.caption("该器官在当前靶点范围内没有 UniProt 组织特异性注释支持。")
 
         st.markdown("---")
+        st.markdown("### 器官 → 细胞 → 通路（两级联动）")
+        st.caption("选中的器官 → 该器官表达的本方靶点 → 这些靶点参与的信号通路；"
+                   "★ 为该器官表达的靶点。")
+        organ_upper = {g.upper() for g in organ_genes}
+        if not organ_upper:
+            st.caption("该器官暂无可映射靶点（UniProt 组织特异性未标注），无法展示通路。")
+        else:
+            pw_hits = []
+            for pw_name in PATHWAYS:
+                hits = [g for g in targets_in_pathway(pw_name) if g.upper() in organ_upper]
+                if hits:
+                    pw_hits.append((pw_name, hits))
+            pw_hits.sort(key=lambda x: -len(x[1]))
+            if not pw_hits:
+                st.caption("本方 12 条通路中没有靶点在该器官表达。")
+            else:
+                organ_options = [f"{n}（{len(h)} 个靶点：{'、'.join(h[:5])}"
+                                 f"{'…' if len(h) > 5 else ''}）" for n, h in pw_hits]
+                organ_pick = st.selectbox("该器官涉及的通路", organ_options)
+                pw_name, hits = pw_hits[organ_options.index(organ_pick)]
+                st.caption(f"{pw_name} 在 {picked_organ} 表达的靶点：{'、'.join(hits)}")
+                components.html(
+                    render_cell_pathway(pw_name, highlight=hits[0].upper(),
+                                        targets=organ_upper),
+                    height=600)
+
+        st.markdown("---")
         st.markdown("### 受体点位（细胞分区）")
         pool = organ_genes or genes
         picked_gene = st.selectbox("选择靶点", pool)
@@ -701,9 +728,10 @@ with tab_animal:
 
         # ------------------------------------------------------ 教学视频
         st.markdown("---")
-        st.markdown("### 教学视频（通路动画）")
-        st.caption("按 配体 → 受体 → 激酶 → 转录因子 → 效应 逐节点动画揭示，"
-                   "★ 标注本方成分作用靶点；由 `make_video.py` 渲染。")
+        st.markdown("### 教学视频（成分 → 靶点 → 通路 三层联动动画）")
+        st.caption("默认形态：本方成分（顶部紫色条带）→ 细胞内靶点（膜受体 / 胞质激酶 / "
+                   "核内因子）→ 信号级联推进至核内效应，★ 标注本方成分作用靶点；"
+                   "由 `make_video.py` 渲染。")
         video_dir = HERE / "videos"
         videos = ({v.stem: v for v in video_dir.glob("*.mp4")}
                   if video_dir.exists() else {})
@@ -716,8 +744,8 @@ with tab_animal:
             st.info("还没有生成视频，点击下方按钮生成后即可在此播放。")
 
         b1, b2, b3 = st.columns(3)
-        if b1.button(f"生成「{picked_pw}」动画视频"):
-            with st.spinner("正在渲染视频（约 1 分钟）…"):
+        if b1.button(f"生成「{picked_pw}」三层联动动画"):
+            with st.spinner("正在渲染三层联动动画（约 3 分钟）…"):
                 subprocess.run([sys.executable, "make_video.py", "--pathway", picked_pw],
                                cwd=str(HERE), capture_output=True)
             st.rerun()
@@ -726,10 +754,10 @@ with tab_animal:
                 subprocess.run([sys.executable, "make_video.py", "--pathway", picked_pw,
                                 "--cell"], cwd=str(HERE), capture_output=True)
             st.rerun()
-        if b3.button("生成全部通路 + 总览视频"):
-            with st.spinner("正在渲染全部视频（约 20 分钟）…"):
-                subprocess.run([sys.executable, "make_video.py", "--all", "--overview",
-                                "--cell"], cwd=str(HERE), capture_output=True)
+        if b3.button("重新生成全部 12 条三层动画 + 总览"):
+            with st.spinner("正在渲染全部视频（约 35 分钟）…"):
+                subprocess.run([sys.executable, "make_video.py", "--all", "--overview"],
+                               cwd=str(HERE), capture_output=True)
             st.rerun()
 
 # ------------------------------------------------------------- 8. 成分明细

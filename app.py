@@ -21,6 +21,7 @@ import numpy as np
 import pandas as pd
 import subprocess
 import sys
+from urllib.parse import quote
 import requests
 import streamlit as st
 import streamlit.components.v1 as components
@@ -29,8 +30,8 @@ from st_link_analysis import EdgeStyle, NodeStyle, st_link_analysis
 from anatomy import SPECIES, render_anatomy
 from animal_view import (compartment_of, organ_target_map, render_cell)
 from cell_pathway import render_cell_pathway
-from formula_info import (COMPATIBILITY, DOSAGE, FORMULA, NOTES, PHARMACOLOGY,
-                          PRECAUTIONS, REFERENCES, ROLE_GROUPS, formula_rows)
+from formulas import (DEFAULT_FORMULA, NOTES, REFERENCES, formula_coverage,
+                      formula_herbs, formula_names, formula_rows, get_formula)
 from herb_info import HERB_INFO, get_herb_info
 from pathways import (KIND_STYLE, PATHWAYS, pathway_elements, pathways_of_target,
                       target_class, targets_in_pathway)
@@ -143,6 +144,14 @@ meta = raw_elements.get("meta", {})
 
 with st.sidebar:
     st.header("参数")
+
+    st.subheader("分析方剂")
+    formula_choice = st.selectbox(
+        "选择复方", ["全方（全部药材）"] + formula_names(),
+        help="切换到某首方剂时，网络与后续分析会只保留该方剂所含药材相关的"
+             "成分与靶点；暂无成分数据的方剂只展示方解。")
+    st.caption(f"复方库共 {len(formula_names())} 首方剂（formulas.py）")
+
     st.subheader("活性成分筛选")
     ob_min = st.slider("OB 口服生物利用度 ≥ (%)", 0.0, 100.0,
                        float(meta.get("ob_min", 30.0)), 1.0)
@@ -158,7 +167,37 @@ with st.sidebar:
                          help="每轮保留 DC/BC/CC/EC/LAC/NC 六个指标均高于中位数的节点")
     st.markdown("数据来源：`network.json`（由 `data_prep.py` 生成）")
 
+def filter_by_formula(elements: dict, herb_names: List[str]) -> dict:
+    """只保留指定方剂药材相关的成分与靶点（CONTAINS / TARGETS 边）。"""
+    if not herb_names:
+        return elements
+    herb_ids = {f"HERB::{h}" for h in herb_names}
+    keep = set(herb_ids)
+    for edge in elements["edges"]:
+        data = edge["data"]
+        src, tgt = data.get("source", ""), data.get("target", "")
+        if data.get("label") == "CONTAINS":
+            if src in herb_ids:
+                keep.add(tgt)
+            elif tgt in herb_ids:
+                keep.add(src)
+    compounds = {n for n in keep if n.startswith("COMP::")}
+    for edge in elements["edges"]:
+        data = edge["data"]
+        if data.get("label") == "TARGETS" and data.get("source", "") in compounds:
+            keep.add(data["target"])
+    return {
+        "meta": elements.get("meta", {}),
+        "nodes": [n for n in elements["nodes"] if n["data"]["id"] in keep],
+        "edges": [e for e in elements["edges"]
+                  if e["data"]["source"] in keep and e["data"]["target"] in keep],
+    }
+
+
 elements = filter_elements(raw_elements, ob_min, dl_min)
+selected_formula = None if formula_choice.startswith("全方") else formula_choice
+if selected_formula:
+    elements = filter_by_formula(elements, formula_herbs(selected_formula))
 
 herbs = sorted({n["data"]["name"] for n in elements["nodes"]
                 if n["data"]["label"] == "HERB"})
@@ -182,43 +221,55 @@ core_targets: List[str] = []
 
 # -------------------------------------------------------------- 0. 复方说明
 with tab_formula:
-    st.subheader(str(FORMULA["name"]))
-    st.caption(f"{FORMULA['alias']}　|　{FORMULA['source']}")
+    shown = selected_formula or DEFAULT_FORMULA
+    formula = get_formula(shown)
+    st.subheader(shown)
+    st.caption(f"出处：{formula['source']}　|　"
+               f"复方库共 {len(formula_names())} 首，可在左侧「分析方剂」切换")
 
+    hit, total, hit_herbs = formula_coverage(shown, herbs)
     f1, f2, f3, f4 = st.columns(4)
-    f1.metric("药材", len(herbs))
-    f2.metric("活性成分（当前阈值）", len(compounds_df))
-    f3.metric("预测靶点", n_targets)
+    f1.metric("方中药材", total)
+    f2.metric("有成分数据的药材", f"{hit}/{total}")
+    f3.metric("预测靶点（当前范围）", n_targets)
     f4.metric("关系（边）", len(elements["edges"]))
+    if hit == 0:
+        st.warning("该方剂的药材在数据库中暂无成分-靶点数据，本页仅展示方剂说明；"
+                   "如需纳入分析，请用 `import_tcmsp.py` 导入成分与靶点后重建网络。")
+    elif hit < total:
+        st.info(f"该方剂中 {hit}/{total} 味药材有成分数据：{'、'.join(hit_herbs)}；"
+                f"缺：{'、'.join([h for h in formula_herbs(shown) if h not in hit_herbs])}。"
+                f"网络分析仅覆盖有数据的药材。")
 
-    st.markdown(f"**组成**：{FORMULA['composition']}")
-    st.markdown(f"**功用**：{FORMULA['action']}")
-    st.markdown(f"**主治**：{FORMULA['indication']}")
-    st.markdown(f"**辨证要点**：{FORMULA['syndrome']}")
-    st.markdown(f"**用法**：{FORMULA['usage']}")
+    st.markdown(f"**组成**：" + "、".join(
+        f"{h} {d} g" for h, d in formula["dosage"].items()))
+    st.markdown(f"**功用**：{formula['action']}")
+    st.markdown(f"**主治**：{formula['indication']}")
+    st.markdown(f"**辨证要点**：{formula['syndrome']}")
+    st.markdown(f"**用法**：{formula['usage']}")
 
     st.markdown("### 组成与方解（君臣佐使）")
-    st.dataframe(pd.DataFrame(formula_rows()), hide_index=True,
+    st.dataframe(pd.DataFrame(formula_rows(shown)), hide_index=True,
                  use_container_width=True)
 
-    for role, members, explain in ROLE_GROUPS:
+    for role, members, explain in formula["roles"]:
         with st.expander(f"{role}：{'、'.join(members)}", expanded=(role == "君药")):
             st.write(explain)
-            st.caption("剂量：" + "；".join(f"{m} {DOSAGE.get(m, '—')} g"
-                                          for m in members))
+            st.caption("剂量：" + "；".join(
+                f"{m} {formula['dosage'].get(m, '—')} g" for m in members))
 
     st.markdown("### 配伍特点")
-    for title, text in COMPATIBILITY:
+    for title, text in formula["compatibility"]:
         st.markdown(f"- **{title}**：{text}")
 
     st.markdown("### 现代药理研究方向（文献报道）")
-    for title, text in PHARMACOLOGY:
+    for title, text in formula["pharmacology"]:
         st.markdown(f"- **{title}**：{text}")
     st.caption("以上为单味药 / 同类方已有研究报道的方向，"
                "本平台的网络分析结果为预测，不等同于实验或临床结论。")
 
     st.markdown("### 使用注意")
-    for item in PRECAUTIONS:
+    for item in formula["precautions"]:
         st.markdown(f"- {item}")
 
     st.markdown("### 说明与数据来源")
@@ -479,6 +530,41 @@ with tab_lit:
                 "PMID": a.get("pmid"),
             } for a in articles]).sort_values("年份", ascending=False)
             st.dataframe(table, hide_index=True, use_container_width=True)
+
+            # -------------------------------------------- 一键直达原文链接
+            st.markdown("### 打开原文（一键直达）")
+            st.caption("链接由 Europe PMC 解析（DOI / PMCID / 开放获取全文）；"
+                       "若期刊需订阅，请用学术检索找免费版本。")
+            titles = [(f"{a.get('year')}　{a.get('title')[:60]}", a) for a in articles]
+            picked_title = st.selectbox("选择文献", [t for t, _ in titles],
+                                        key="lit_pick")
+            picked_article = next(a for t, a in titles if t == picked_title)
+            pmid = str(picked_article.get("pmid") or "")
+            links = [
+                ("PubMed 摘要",
+                 picked_article.get("url") or
+                 (f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/" if pmid else None)),
+                ("Europe PMC",
+                 picked_article.get("epmc_url") or
+                 (f"https://europepmc.org/article/MED/{pmid}" if pmid else None)),
+                ("DOI 原文页", picked_article.get("doi_url")),
+                ("PMC 全文页", picked_article.get("pmc_url")),
+                ("开放获取 PDF", picked_article.get("fulltext_url")),
+                ("学术检索（找免费版）",
+                 "https://scholar.google.com/scholar?q=" +
+                 quote(str(picked_article.get("title") or ""))),
+            ]
+            available = [(label, url) for label, url in links if url]
+            if picked_article.get("is_oa"):
+                st.success("该文献为开放获取（Open Access），可直接打开全文。")
+            cols = st.columns(min(3, max(1, len(available))))
+            for i, (label, url) in enumerate(available):
+                cols[i % len(cols)].link_button(label, url)
+            st.caption(f"PMID {pmid}"
+                       + (f"　DOI {picked_article['doi']}"
+                          if picked_article.get("doi") else "")
+                       + (f"　PMCID {picked_article['pmcid']}"
+                          if picked_article.get("pmcid") else ""))
 
             with st.expander("查看摘要（前 5 篇）"):
                 for a in articles[:5]:

@@ -13,7 +13,14 @@
       "targets": [
         "TLR4"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39643403/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39643403/",
+      "doi": "10.1016/j.carbpol.2024.122829",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.carbpol.2024.122829",
+      "epmc_url": "https://europepmc.org/article/MED/39643403",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "38493280",
@@ -26,7 +33,14 @@
         "免疫调节"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38493280/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38493280/",
+      "doi": "10.1007/s12272-024-01489-y",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1007/s12272-024-01489-y",
+      "epmc_url": "https://europepmc.org/article/MED/38493280",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "25087616",
@@ -38,7 +52,14 @@
         "Nrf2/HO-1 抗氧化"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/25087616/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25087616/",
+      "doi": "10.1002/ptr.5188",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1002/ptr.5188",
+      "epmc_url": "https://europepmc.org/article/MED/25087616",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "32089240",
@@ -60,7 +81,14 @@
         "LDHA",
         "STAT3"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32089240/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32089240/",
+      "doi": "10.1016/bs.apha.2019.08.002",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/bs.apha.2019.08.002",
+      "epmc_url": "https://europepmc.org/article/MED/32089240",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "37446680",
@@ -74,7 +102,14 @@
         "免疫调节"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37446680/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37446680/",
+      "doi": "10.3390/molecules28135018",
+      "pmcid": "PMC10343288",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/molecules28135018",
+      "epmc_url": "https://europepmc.org/article/MED/37446680",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10343288/",
+      "fulltext_url": "https://europepmc.org/articles/PMC10343288?pdf=render"
     },
     {
       "pmid": "38003496",
@@ -88,7 +123,14 @@
       "targets": [
         "PTGS2"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38003496/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38003496/",
+      "doi": "10.3390/ijms242216306",
+      "pmcid": "PMC10671347",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/ijms242216306",
+      "epmc_url": "https://europepmc.org/article/MED/38003496",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10671347/",
+      "fulltext_url": "https://europepmc.org/articles/PMC10671347?pdf=render"
     },
     {
       "pmid": "37666859",
@@ -114,7 +156,14 @@
         "PTGS2",
         "VEGFA"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37666859/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37666859/",
+      "doi": "10.1038/s41598-023-36944-1",
+      "pmcid": "PMC10477296",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1038/s41598-023-36944-1",
+      "epmc_url": "https://europepmc.org/article/MED/37666859",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10477296/",
+      "fulltext_url": "https://www.nature.com/articles/s41598-023-36944-1.pdf"
     },
     {
       "pmid": "37489175",
@@ -130,7 +179,14 @@
         "IL6",
         "TLR4"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37489175/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37489175/",
+      "doi": "10.2147/dddt.s411211",
+      "pmcid": "PMC10363349",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.2147/dddt.s411211",
+      "epmc_url": "https://europepmc.org/article/MED/37489175",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10363349/",
+      "fulltext_url": "https://europepmc.org/articles/PMC10363349?pdf=render"
     },
     {
       "pmid": "39270570",
@@ -147,7 +203,14 @@
         "IL6",
         "TNF"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39270570/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39270570/",
+      "doi": "10.1016/j.phymed.2024.156032",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2024.156032",
+      "epmc_url": "https://europepmc.org/article/MED/39270570",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "40023968",
@@ -159,7 +222,14 @@
         "HIF-1/VEGF 血管新生"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40023968/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40023968/",
+      "doi": "10.1016/j.phymed.2025.156562",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2025.156562",
+      "epmc_url": "https://europepmc.org/article/MED/40023968",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "39004032",
@@ -177,7 +247,14 @@
         "TNF",
         "TP53"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39004032/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39004032/",
+      "doi": "10.1016/j.phymed.2024.155820",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2024.155820",
+      "epmc_url": "https://europepmc.org/article/MED/39004032",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "37791782",
@@ -190,7 +267,14 @@
         "TGF-β/Smad 纤维化"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37791782/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37791782/",
+      "doi": "10.1021/acsami.3c09494",
+      "pmcid": "PMC10591233",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1021/acsami.3c09494",
+      "epmc_url": "https://europepmc.org/article/MED/37791782",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10591233/",
+      "fulltext_url": "https://europepmc.org/articles/PMC10591233?pdf=render"
     },
     {
       "pmid": "39347955",
@@ -202,7 +286,14 @@
         "TGF-β/Smad 纤维化"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39347955/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39347955/",
+      "doi": "10.1142/s0192415x24500708",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1142/s0192415x24500708",
+      "epmc_url": "https://europepmc.org/article/MED/39347955",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "40316156",
@@ -220,7 +311,14 @@
       "targets": [
         "EGFR"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40316156/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40316156/",
+      "doi": "10.1016/j.jep.2025.119912",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2025.119912",
+      "epmc_url": "https://europepmc.org/article/MED/40316156",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "39308629",
@@ -242,7 +340,14 @@
         "AMPK",
         "SIRT1"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39308629/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39308629/",
+      "doi": "10.1155/2024/5216113",
+      "pmcid": "PMC11416176",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1155/2024/5216113",
+      "epmc_url": "https://europepmc.org/article/MED/39308629",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11416176/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11416176?pdf=render"
     },
     {
       "pmid": "40073779",
@@ -259,7 +364,14 @@
       "targets": [
         "NLRP3"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40073779/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40073779/",
+      "doi": "10.1016/j.phymed.2025.156622",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2025.156622",
+      "epmc_url": "https://europepmc.org/article/MED/40073779",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "28830214",
@@ -271,7 +383,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28830214/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28830214/",
+      "doi": "10.1142/s0192415x1750063x",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1142/s0192415x1750063x",
+      "epmc_url": "https://europepmc.org/article/MED/28830214",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "37952410",
@@ -288,7 +407,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37952410/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37952410/",
+      "doi": "10.1016/j.phymed.2023.155196",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2023.155196",
+      "epmc_url": "https://europepmc.org/article/MED/37952410",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "39128302",
@@ -302,7 +428,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39128302/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39128302/",
+      "doi": "10.1016/j.phymed.2024.155926",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2024.155926",
+      "epmc_url": "https://europepmc.org/article/MED/39128302",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "41046687",
@@ -315,7 +448,14 @@
         "免疫调节"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41046687/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41046687/",
+      "doi": "10.1016/j.phymed.2025.157308",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2025.157308",
+      "epmc_url": "https://europepmc.org/article/MED/41046687",
+      "pmc_url": null,
+      "fulltext_url": null
     }
   ],
   "山茱萸": [
@@ -329,7 +469,14 @@
         "JAK/STAT 通路"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40408492/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40408492/",
+      "doi": "10.1126/sciadv.adr2291",
+      "pmcid": "PMC12101508",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1126/sciadv.adr2291",
+      "epmc_url": "https://europepmc.org/article/MED/40408492",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12101508/",
+      "fulltext_url": "https://europepmc.org/articles/PMC12101508?pdf=render"
     },
     {
       "pmid": "39972387",
@@ -347,7 +494,14 @@
       "targets": [
         "NLRP3"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39972387/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39972387/",
+      "doi": "10.1186/s13195-025-01695-w",
+      "pmcid": "PMC11837312",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1186/s13195-025-01695-w",
+      "epmc_url": "https://europepmc.org/article/MED/39972387",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11837312/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11837312?pdf=render"
     },
     {
       "pmid": "38111697",
@@ -357,7 +511,14 @@
       "abstract": "Osteoporosis (OP) is a systemic metabolic skeletal disorder characterized by a decline in bone mass, bone mineral density, and deterioration of bone microstructure. It is prevalent among the elderly, particularly postmenopausal women, and poses a substantial burden to patients and society due to the high incidence of fragility fractures. Kidney-tonifying Traditional Chinese medicine (TCM) has long been utilized for OP prevention and treatment. In contrast to conventional approaches such as hormone replacement therapy, TCM offers distinct advantages such as minimal side effects, low toxicity, excellent tolerability, and suitability for long-term administration. Extensive experimental evidence supports the efficacy of kidney-tonifying TCM, exemplified by formulations based on the renowned herb Cornus officinalis and its bioactive constituents, including morroniside, sweroside, flavonol kaempferol, Cornuside I, in OP treatment. In this review, we provide a comprehensive elucidation of the underlying pathological principles governing OP, with particular emphasis on bone marrow mesenchymal stem cells, the homeostasis of osteogenic and osteoclastic, and the regulation of vascular and immune systems, all of which critically influence bone homeostasis. Furthermore, the therapeutic mechanisms of Cornus officinalis-based TCM formulations and Cornus officinalis-derived active constituents are discussed. In conclusion, this review aims to enhance understanding of the pharmacological mechanisms responsible for the anti-OP effects of kidney-tonifying TCM, specifically focusing on Cornus officinalis, and seeks to explore more efficacious and safer treatment strategies for OP.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38111697/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38111697/",
+      "doi": "10.3389/fmed.2023.1289144",
+      "pmcid": "PMC10725965",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3389/fmed.2023.1289144",
+      "epmc_url": "https://europepmc.org/article/MED/38111697",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10725965/",
+      "fulltext_url": "https://europepmc.org/articles/PMC10725965?pdf=render"
     },
     {
       "pmid": "39303509",
@@ -373,7 +534,14 @@
       "targets": [
         "AMPK"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39303509/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39303509/",
+      "doi": "10.1016/j.phymed.2024.156050",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2024.156050",
+      "epmc_url": "https://europepmc.org/article/MED/39303509",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "39301568",
@@ -386,7 +554,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39301568/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39301568/",
+      "doi": "10.3389/fphar.2024.1423062",
+      "pmcid": "PMC11411571",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3389/fphar.2024.1423062",
+      "epmc_url": "https://europepmc.org/article/MED/39301568",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11411571/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11411571?pdf=render"
     },
     {
       "pmid": "38723527",
@@ -404,7 +579,14 @@
         "AMPK",
         "NLRP3"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38723527/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38723527/",
+      "doi": "10.1016/j.phymed.2024.155703",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2024.155703",
+      "epmc_url": "https://europepmc.org/article/MED/38723527",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "29983732",
@@ -417,7 +599,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29983732/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29983732/",
+      "doi": "10.1186/s13020-018-0191-z",
+      "pmcid": "PMC6020197",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1186/s13020-018-0191-z",
+      "epmc_url": "https://europepmc.org/article/MED/29983732",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6020197/",
+      "fulltext_url": "https://cmjournal.biomedcentral.com/track/pdf/10.1186/s13020-018-0191-z"
     },
     {
       "pmid": "26637288",
@@ -427,7 +616,14 @@
       "abstract": "The adult hippocampus generates functional dentate granule cells (GCs) that release glutamate onto target cells in the hilus and cornus ammonis (CA)3 region, and receive glutamatergic and &#x3b3;-aminobutyric acid (GABA)ergic inputs that tightly control their spiking activity. The slow and sequential development of their excitatory and inhibitory inputs makes them particularly relevant for information processing. Although they are still immature, new neurons are recruited by afferent activity and display increased excitability, enhanced activity-dependent plasticity of their input and output connections, and a high rate of synaptogenesis. Once fully mature, new GCs show all the hallmarks of neurons generated during development. In this review, we focus on how developing neurons remodel the adult dentate gyrus and discuss key aspects that illustrate the potential of neurogenesis as a mechanism for circuit plasticity and function.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/26637288/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26637288/",
+      "doi": "10.1101/cshperspect.a018903",
+      "pmcid": "PMC4691791",
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1101/cshperspect.a018903",
+      "epmc_url": "https://europepmc.org/article/MED/26637288",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4691791/",
+      "fulltext_url": "http://cshperspectives.cshlp.org/content/8/1/a018903.full.pdf"
     },
     {
       "pmid": "29155174",
@@ -439,7 +635,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29155174/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29155174/",
+      "doi": "10.1016/j.jep.2017.11.010",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2017.11.010",
+      "epmc_url": "https://europepmc.org/article/MED/29155174",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "41502346",
@@ -453,7 +656,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41502346/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41502346/",
+      "doi": "10.1002/ptr.70177",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1002/ptr.70177",
+      "epmc_url": "https://europepmc.org/article/MED/41502346",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "33912050",
@@ -467,7 +677,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33912050/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33912050/",
+      "doi": "10.3389/fphar.2021.633447",
+      "pmcid": "PMC8072387",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3389/fphar.2021.633447",
+      "epmc_url": "https://europepmc.org/article/MED/33912050",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8072387/",
+      "fulltext_url": "https://www.frontiersin.org/articles/10.3389/fphar.2021.633447/pdf"
     },
     {
       "pmid": "31445129",
@@ -479,7 +696,14 @@
         "MAPK 通路"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31445129/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31445129/",
+      "doi": "10.1016/j.jep.2019.112173",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2019.112173",
+      "epmc_url": "https://europepmc.org/article/MED/31445129",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "35572722",
@@ -497,7 +721,14 @@
         "AMPK",
         "MMP2"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35572722/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35572722/",
+      "doi": "10.1155/2022/5780964",
+      "pmcid": "PMC9106464",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1155/2022/5780964",
+      "epmc_url": "https://europepmc.org/article/MED/35572722",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9106464/",
+      "fulltext_url": "https://downloads.hindawi.com/journals/bmri/2022/5780964.pdf"
     },
     {
       "pmid": "37475719",
@@ -512,7 +743,14 @@
         "糖脂代谢"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37475719/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37475719/",
+      "doi": "10.3389/fphar.2023.1207777",
+      "pmcid": "PMC10354237",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3389/fphar.2023.1207777",
+      "epmc_url": "https://europepmc.org/article/MED/37475719",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10354237/",
+      "fulltext_url": "https://europepmc.org/articles/PMC10354237?pdf=render"
     },
     {
       "pmid": "35025027",
@@ -525,7 +763,14 @@
         "免疫调节"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35025027/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35025027/",
+      "doi": "10.1007/s11418-021-01601-2",
+      "pmcid": "PMC8757402",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1007/s11418-021-01601-2",
+      "epmc_url": "https://europepmc.org/article/MED/35025027",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8757402/",
+      "fulltext_url": "https://link.springer.com/content/pdf/10.1007/s11418-021-01601-2.pdf"
     },
     {
       "pmid": "38350506",
@@ -535,7 +780,14 @@
       "abstract": "Bushen Zhichan decoction (BSZCF) is derived from Liuwei Dihuang Pill, a famous Chinese herbal formula recorded in the book Key to Therapeutics of Children's Diseases. It has been widely used as a basic prescription for nourishing and tonifying the liver and kidneys to treat Parkinson's disease (PD), but its mechanism remains to be explored. BSZCF, a Chinese herbal formula comprising five herbs: Rehmannia glutinosa (Gaertn.) DC., Dioscorea oppositifolia L., Cornus officinalis Siebold &amp; Zucc., Fallopia multiflora (Thunb.) Haraldson and Cistanche tubulosa (Schenk) Wight, is used clinically to treat PD. In vivo and in vitro experiments were designed to elucidate the mechanism of BSZCF in the protection of dopamine (DA) neurons and the treatment of PD. The toxicity of excitatory amino acids (EAA) may be attenuated by inhibiting the transcription factor Yin Yang 1 (YY1) and up-regulating the expression of excitatory amino acid transporter 1 (EAAT1). IN VIVO: After 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP) was intraperitoneally injected into specific pathogen free (SPF) C57BL/6J mice, model mice were intragastrically given adamantane hydrochloride tablets (AHT) or different doses of BSZCF for 14 days. Both open field and pole-climbing tests were conducted to assess behavioral changes. In vitro: 1-Methyl-4-phe-nylpyridiniumiodide (MPP+)-injured human neuroblastoma cells (SH-SY5Y) were utilized to construct PD cell models. Primary astrocytes were transfected with EAAT1 and YY1 lentiviruses for EAAT1 gene knockout and YY1 gene knockout astrocytes, respectively. The high performance liquid chromatography-mass spectrometry (HPLC-MS) analysis of BSZCF was performed to control the quality of blood drugs. The optimal concentration and time of PD cell models treated by BSZCF were determined by the use of Cell Counting Kit-8 (CCK8). Enzyme-linked immunosorbent assay (ELISA) was used for measuring glutamate (Glu) in the peripheral blood and cells of each group. Western blotting (WB) and real-time quantitative polymerase chain reaction (qPCR) were used to detect tyrosine hydroxylase (TH), dopamine transporters (DAT), EAAT1 and YY1 protein and mRNA. After the blockade of EAAT1, immunofluorescence (IF) assay was used to detect the TH protein in each group. In vivo research showed that BSZCF improved the behavioral symptoms of PD mice, and reduced the death of DA neurons and the level of Glu. The mechanism may be related to the decrease of YY1 expression and the increase of EAAT1 levels. In vitro experiments showed that the anti-excitatory amino acid toxicity of BSZCF was achieved by inhibiting YY1 expression and regulating EAAT1. By inhibiting YY1 to increase the expression of EAAT1 and attenuating the toxicity of Glu, BSZCF exerts the effect of protecting DA neurons and treating PD-like symptoms in mice.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38350506/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38350506/",
+      "doi": "10.1016/j.jep.2024.117857",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2024.117857",
+      "epmc_url": "https://europepmc.org/article/MED/38350506",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "35268752",
@@ -547,7 +799,14 @@
       "targets": [
         "UCP1"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35268752/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35268752/",
+      "doi": "10.3390/molecules27051649",
+      "pmcid": "PMC8911937",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/molecules27051649",
+      "epmc_url": "https://europepmc.org/article/MED/35268752",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8911937/",
+      "fulltext_url": "https://europepmc.org/articles/PMC8911937?pdf=render"
     },
     {
       "pmid": "31346338",
@@ -563,7 +822,14 @@
         "BCL2",
         "CASP3"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31346338/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31346338/",
+      "doi": "10.1155/2019/2089586",
+      "pmcid": "PMC6620845",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1155/2019/2089586",
+      "epmc_url": "https://europepmc.org/article/MED/31346338",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6620845/",
+      "fulltext_url": "https://europepmc.org/articles/PMC6620845?pdf=render"
     },
     {
       "pmid": "38646453",
@@ -582,7 +848,14 @@
         "CASP3",
         "CASP9"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38646453/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38646453/",
+      "doi": "10.1016/j.jpha.2023.12.017",
+      "pmcid": "PMC11024659",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1016/j.jpha.2023.12.017",
+      "epmc_url": "https://europepmc.org/article/MED/38646453",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11024659/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11024659?pdf=render"
     },
     {
       "pmid": "37716032",
@@ -600,7 +873,14 @@
       "targets": [
         "TNF"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37716032/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37716032/",
+      "doi": "10.1016/j.phymed.2023.155077",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2023.155077",
+      "epmc_url": "https://europepmc.org/article/MED/37716032",
+      "pmc_url": null,
+      "fulltext_url": null
     }
   ],
   "山药": [
@@ -614,7 +894,14 @@
       "targets": [
         "CCND1"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39940699/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39940699/",
+      "doi": "10.3390/ijms26030930",
+      "pmcid": "PMC11817456",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/ijms26030930",
+      "epmc_url": "https://europepmc.org/article/MED/39940699",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11817456/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11817456?pdf=render"
     },
     {
       "pmid": "27286710",
@@ -624,7 +911,14 @@
       "abstract": "Rhizoma Dioscoreae Collettii, is known as Huang Dioscorea collettii, Rhizoma Coptidis Brevisepalae or yellow ginger. It is neutral in nature and bitter in taste which is described to Gan (Liver) meridian, Wei (Stomach) meridian and Pangguang (Bladder) meridian. It was often used in the treatment of chyloid stranguria, gonorrhea, leucorrhagia, rheumatism arthralgia pain, joints disable, and lumbar knee pain syndrome in clinical.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/27286710/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27286710/",
+      "doi": "10.1007/s11655-016-2263-1",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1007/s11655-016-2263-1",
+      "epmc_url": "https://europepmc.org/article/MED/27286710",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "33538685",
@@ -634,7 +928,14 @@
       "abstract": "Cardiovascular disease is the leading cause of death in both developed and developing countries. Di'ao Xinxuekang (DAXXK) is a pure Chinese medicine herbal preparation refined from dioscin extracted from the roots of Dioscorea panthaica Prain et Burk and Diosorea nipponica Makino. To evaluate the application of DAXXK in Cardiovascular disease. We searched and summarized all the studies on DAXXK and Cardiovascular disease in Pubmed, Google, and CNKI. Modern pharmacological studies have shown that DAXXK has pharmacological effects such as dilating blood vessels, lowering blood pressure and cardiac load, improving hemodynamics, lowering blood lipids and anti-platelet aggregation, and is widely used for the therapy of various kinds of cardiovascular diseases, including hypertension, atherosclerosis, coronary heart disease (CHD), angina pectoris (AP) and myocardial infarction. We provide an overview of the clinical efficacy, molecular mechanisms, safety and therapeutic potential of DAXXK in the treatment of cardiovascular disease, aiming to provide clues and evidence for clinical decision-making. DAXXK exerts cardiovascular protection by regulating a variety of cardiovascular disease- related signaling pathways.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33538685/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33538685/",
+      "doi": "10.2174/1874467214666210203212341",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.2174/1874467214666210203212341",
+      "epmc_url": "https://europepmc.org/article/MED/33538685",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "41937194",
@@ -654,7 +955,14 @@
         "GSTP1",
         "TLR4"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41937194/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41937194/",
+      "doi": "10.1186/s12951-026-04321-5",
+      "pmcid": "PMC13330043",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1186/s12951-026-04321-5",
+      "epmc_url": "https://europepmc.org/article/MED/41937194",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13330043/",
+      "fulltext_url": "https://europepmc.org/articles/PMC13330043?pdf=render"
     },
     {
       "pmid": "36355500",
@@ -664,7 +972,14 @@
       "abstract": "Plant polysaccharides (PPS) composed of more than 10 monosaccharides show high safety and various pharmacological activities, including immunoregulatory, antitumor, antioxidative, antiaging, and other effects. In recent years, emerging evidence has indicated that many PPS are beneficial for metabolic diseases, such as cardiovascular disease (CVD), diabetes, obesity, and neurological diseases, which are usually caused by the metabolic disorder of fat, sugar, and protein. In this review, we introduce the common characteristics and functional activity of many representative PPS, emphasize the common risks and molecular mechanism of metabolic diseases, and discuss the pharmacological activity and mechanism of action of representative PPS obtained from plants including Aloe vera, Angelica sinensis, pumpkin, Lycium barbarum, Ginseng, Schisandra chinensis, Dioscorea pposite, Poria cocos, and tea in metabolic diseases. Finally, this review will provide directions and a reference for future research and for the development of PPS into potential drugs for the treatment of metabolic diseases.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36355500/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36355500/",
+      "doi": "10.3390/ph15111329",
+      "pmcid": "PMC9695998",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/ph15111329",
+      "epmc_url": "https://europepmc.org/article/MED/36355500",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9695998/",
+      "fulltext_url": "https://europepmc.org/articles/PMC9695998?pdf=render"
     },
     {
       "pmid": "31687707",
@@ -676,7 +991,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31687707/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31687707/",
+      "doi": "10.1039/c9fo00749k",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1039/c9fo00749k",
+      "epmc_url": "https://europepmc.org/article/MED/31687707",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "12385490",
@@ -688,7 +1010,14 @@
         "JAK/STAT 通路"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/12385490/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12385490/",
+      "doi": "10.1097/00000441-200210000-00004",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1097/00000441-200210000-00004",
+      "epmc_url": "https://europepmc.org/article/MED/12385490",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "29218932",
@@ -700,7 +1029,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29218932/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29218932/",
+      "doi": "10.19540/j.cnki.cjcmm.20170731.005",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.19540/j.cnki.cjcmm.20170731.005",
+      "epmc_url": "https://europepmc.org/article/MED/29218932",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "33579846",
@@ -716,7 +1052,14 @@
         "MAPK1",
         "PPARG"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33579846/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33579846/",
+      "doi": "10.3233/jad-201336",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.3233/jad-201336",
+      "epmc_url": "https://europepmc.org/article/MED/33579846",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "32802090",
@@ -729,7 +1072,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32802090/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32802090/",
+      "doi": "10.22037/ijpr.2019.112501.13795",
+      "pmcid": "PMC7393038",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.22037/ijpr.2019.112501.13795",
+      "epmc_url": "https://europepmc.org/article/MED/32802090",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7393038/",
+      "fulltext_url": "https://europepmc.org/articles/PMC7393038?pdf=render"
     },
     {
       "pmid": "32179072",
@@ -741,7 +1091,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32179072/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32179072/",
+      "doi": "10.1016/j.lfs.2020.117544",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.lfs.2020.117544",
+      "epmc_url": "https://europepmc.org/article/MED/32179072",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "41033097",
@@ -754,7 +1111,14 @@
         "凋亡（线粒体途径）"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41033097/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41033097/",
+      "doi": "10.1016/j.phymed.2025.157328",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2025.157328",
+      "epmc_url": "https://europepmc.org/article/MED/41033097",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "36940072",
@@ -768,7 +1132,14 @@
         "凋亡（线粒体途径）"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36940072/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36940072/",
+      "doi": "10.1007/s11655-023-3693-1",
+      "pmcid": "PMC10026233",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1007/s11655-023-3693-1",
+      "epmc_url": "https://europepmc.org/article/MED/36940072",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10026233/",
+      "fulltext_url": "https://link.springer.com/content/pdf/10.1007/s11655-023-3693-1.pdf"
     },
     {
       "pmid": "36040028",
@@ -778,7 +1149,14 @@
       "abstract": "Hereditary symbioses have the potential to drive transgenerational effects, yet the mechanisms responsible for transmission of heritable plant symbionts are still poorly understood. The leaf symbiosis between Dioscorea sansibarensis and the bacterium Orrella dioscoreae offers an appealing model system to study how heritable bacteria are transmitted to the next generation. Here, we demonstrate that inoculation of apical buds with a bacterial suspension is sufficient to colonize newly formed leaves and propagules, and to ensure transmission to the next plant generation. Flagellar motility is not required for movement inside the plant but is important for the colonization of new hosts. Further, tissue-specific regulation of putative symbiotic functions highlights the presence of two distinct subpopulations of bacteria in the leaf gland and at the shoot meristem. We propose that bacteria in the leaf gland dedicate resources to symbiotic functions, while dividing bacteria in the shoot tip ensure successful colonization of meristematic tissue, glands, and propagules. Compartmentalization of intrahost populations together with tissue-specific regulation may serve as a robust mechanism for the maintenance of mutualism in leaf symbiosis. IMPORTANCE Hereditary symbioses with bacteria are common in the animal kingdom, but relatively unexplored in plants. Several plant species form associations with bacteria in their leaves, which is called leaf symbiosis. These associations are highly specific, but the mechanisms responsible for symbiont transmission are poorly understood. Using the association between the yam species Dioscorea sansibarensis and Orrella dioscoreae as a model leaf symbiosis, we show that bacteria are distributed to specific leaf structures via association with shoot meristems. Flagellar motility is required for initial infection but does not contribute to spread within host tissue. We also provide evidence that bacterial subpopulations at the meristem or in the symbiotic leaf gland differentially express key symbiotic genes. We argue that this separation of functional symbiont populations, coupled with tight control over bacterial infection and transmission, explain the evolutionary robustness of leaf symbiosis. These findings may provide insights into how plants may recruit and maintain beneficial symbionts at the leaf surface.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36040028/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36040028/",
+      "doi": "10.1128/mbio.01033-22",
+      "pmcid": "PMC9600174",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1128/mbio.01033-22",
+      "epmc_url": "https://europepmc.org/article/MED/36040028",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9600174/",
+      "fulltext_url": "https://europepmc.org/articles/PMC9600174?pdf=render"
     },
     {
       "pmid": "28116217",
@@ -790,7 +1168,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28116217/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28116217/",
+      "doi": "10.1155/2016/4156293",
+      "pmcid": "PMC5225340",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1155/2016/4156293",
+      "epmc_url": "https://europepmc.org/article/MED/28116217",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5225340/",
+      "fulltext_url": "https://europepmc.org/articles/PMC5225340?pdf=render"
     },
     {
       "pmid": "41173080",
@@ -802,7 +1187,14 @@
       "targets": [
         "MMP9"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41173080/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41173080/",
+      "doi": "10.1016/j.jep.2025.120833",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2025.120833",
+      "epmc_url": "https://europepmc.org/article/MED/41173080",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "35647332",
@@ -814,7 +1206,14 @@
         "免疫调节"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35647332/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35647332/",
+      "doi": "10.1016/j.heliyon.2022.e09507",
+      "pmcid": "PMC9136347",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1016/j.heliyon.2022.e09507",
+      "epmc_url": "https://europepmc.org/article/MED/35647332",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9136347/",
+      "fulltext_url": "https://europepmc.org/articles/PMC9136347?pdf=render"
     },
     {
       "pmid": "29493133",
@@ -826,7 +1225,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29493133/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29493133/",
+      "doi": "10.19540/j.cnki.cjcmm.20171010.004",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.19540/j.cnki.cjcmm.20171010.004",
+      "epmc_url": "https://europepmc.org/article/MED/29493133",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "33014161",
@@ -838,7 +1244,14 @@
         "JAK/STAT 通路"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33014161/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33014161/",
+      "doi": "10.3892/ol.2020.12148",
+      "pmcid": "PMC7520800",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3892/ol.2020.12148",
+      "epmc_url": "https://europepmc.org/article/MED/33014161",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7520800/",
+      "fulltext_url": "https://www.spandidos-publications.com/10.3892/ol.2020.12148/download"
     },
     {
       "pmid": "39357699",
@@ -853,7 +1266,14 @@
         "IL6",
         "TNF"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39357699/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39357699/",
+      "doi": "10.1016/j.ijbiomac.2024.136167",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.ijbiomac.2024.136167",
+      "epmc_url": "https://europepmc.org/article/MED/39357699",
+      "pmc_url": null,
+      "fulltext_url": null
     }
   ],
   "熟地黄": [
@@ -870,7 +1290,14 @@
       "targets": [
         "CAT"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39321687/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39321687/",
+      "doi": "10.1016/j.phymed.2024.156047",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2024.156047",
+      "epmc_url": "https://europepmc.org/article/MED/39321687",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "37907043",
@@ -883,7 +1310,14 @@
         "免疫调节"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37907043/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37907043/",
+      "doi": "10.1016/j.biopha.2023.115809",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.biopha.2023.115809",
+      "epmc_url": "https://europepmc.org/article/MED/37907043",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "31118959",
@@ -896,7 +1330,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31118959/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31118959/",
+      "doi": "10.1155/2019/4925682",
+      "pmcid": "PMC6500620",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1155/2019/4925682",
+      "epmc_url": "https://europepmc.org/article/MED/31118959",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6500620/",
+      "fulltext_url": "https://europepmc.org/articles/PMC6500620?pdf=render"
     },
     {
       "pmid": "39094438",
@@ -909,7 +1350,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39094438/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39094438/",
+      "doi": "10.1016/j.phymed.2024.155923",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2024.155923",
+      "epmc_url": "https://europepmc.org/article/MED/39094438",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "39303509",
@@ -925,7 +1373,14 @@
       "targets": [
         "AMPK"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39303509/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39303509/",
+      "doi": "10.1016/j.phymed.2024.156050",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2024.156050",
+      "epmc_url": "https://europepmc.org/article/MED/39303509",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "36411607",
@@ -935,7 +1390,14 @@
       "abstract": "Precocious puberty in children is one of the common endocrine diseases in paediatrics. Epidemiological surveys have shown that the number of children with precocious puberty has significantly increased globally. Precocious puberty negatively affects the physical and mental health of children and may increase the risk of hypertension, diabetes, obesity and infertility in adulthood. Therefore, the initiating factors of adolescence have become core issues in the study of sexual development in children. Owing to developments in molecular genetics, many studies have been able to show that precocious puberty is mostly resulted in autosomal inheritance. For instance, makorin ring finger protein 3 gene (MKRN3) may be implicated in familial CPP. Gonadotropin-releasing hormone agonist (GnRHa) is the gold standard for treatment, but its safety still requires long-term evaluation and management. Traditional medicinal plants have been used in clinical treatments and in exploring novel treatment methods. From the collected datas, in Asia, traditional Chinese medicine treatment is based on the principles of nourishing Yin, lowering fire and draining fire from the liver to help precocious children and alleviate or delay the onset of precocious puberty by medicinal plants such as Anemarrhena asphodeloides Bge., Phellodendron amurense Rupr., Rehmannia glutinosa and Poria cocos Wolf. They play an important role in exploring the pharmacological mechanisms of precocious puberty treatment effects and drug development. Therefore, by elucidating the occurrence and development of precocious puberty, this review provides novel and valuable insights of paediatric endocrine therapy accessing the published researches on the effectiveness of traditional herbal medicine in the treatment of precocious puberty and its therapeutic mechanisms.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36411607/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36411607/",
+      "doi": "10.1016/j.biopha.2022.113907",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.biopha.2022.113907",
+      "epmc_url": "https://europepmc.org/article/MED/36411607",
+      "pmc_url": null,
+      "fulltext_url": "https://doi.org/10.1016/j.biopha.2022.113907"
     },
     {
       "pmid": "41819485",
@@ -950,7 +1412,14 @@
       "targets": [
         "BCL2"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41819485/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41819485/",
+      "doi": "10.1016/j.neuropharm.2026.110923",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.neuropharm.2026.110923",
+      "epmc_url": "https://europepmc.org/article/MED/41819485",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "42219071",
@@ -963,7 +1432,14 @@
         "氧化应激"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42219071/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42219071/",
+      "doi": "10.1016/j.jep.2026.121932",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2026.121932",
+      "epmc_url": "https://europepmc.org/article/MED/42219071",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "37627598",
@@ -976,7 +1452,14 @@
         "氧化应激"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37627598/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37627598/",
+      "doi": "10.3390/antiox12081603",
+      "pmcid": "PMC10451187",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/antiox12081603",
+      "epmc_url": "https://europepmc.org/article/MED/37627598",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10451187/",
+      "fulltext_url": "https://europepmc.org/articles/PMC10451187?pdf=render"
     },
     {
       "pmid": "38350506",
@@ -986,7 +1469,14 @@
       "abstract": "Bushen Zhichan decoction (BSZCF) is derived from Liuwei Dihuang Pill, a famous Chinese herbal formula recorded in the book Key to Therapeutics of Children's Diseases. It has been widely used as a basic prescription for nourishing and tonifying the liver and kidneys to treat Parkinson's disease (PD), but its mechanism remains to be explored. BSZCF, a Chinese herbal formula comprising five herbs: Rehmannia glutinosa (Gaertn.) DC., Dioscorea oppositifolia L., Cornus officinalis Siebold &amp; Zucc., Fallopia multiflora (Thunb.) Haraldson and Cistanche tubulosa (Schenk) Wight, is used clinically to treat PD. In vivo and in vitro experiments were designed to elucidate the mechanism of BSZCF in the protection of dopamine (DA) neurons and the treatment of PD. The toxicity of excitatory amino acids (EAA) may be attenuated by inhibiting the transcription factor Yin Yang 1 (YY1) and up-regulating the expression of excitatory amino acid transporter 1 (EAAT1). IN VIVO: After 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP) was intraperitoneally injected into specific pathogen free (SPF) C57BL/6J mice, model mice were intragastrically given adamantane hydrochloride tablets (AHT) or different doses of BSZCF for 14 days. Both open field and pole-climbing tests were conducted to assess behavioral changes. In vitro: 1-Methyl-4-phe-nylpyridiniumiodide (MPP+)-injured human neuroblastoma cells (SH-SY5Y) were utilized to construct PD cell models. Primary astrocytes were transfected with EAAT1 and YY1 lentiviruses for EAAT1 gene knockout and YY1 gene knockout astrocytes, respectively. The high performance liquid chromatography-mass spectrometry (HPLC-MS) analysis of BSZCF was performed to control the quality of blood drugs. The optimal concentration and time of PD cell models treated by BSZCF were determined by the use of Cell Counting Kit-8 (CCK8). Enzyme-linked immunosorbent assay (ELISA) was used for measuring glutamate (Glu) in the peripheral blood and cells of each group. Western blotting (WB) and real-time quantitative polymerase chain reaction (qPCR) were used to detect tyrosine hydroxylase (TH), dopamine transporters (DAT), EAAT1 and YY1 protein and mRNA. After the blockade of EAAT1, immunofluorescence (IF) assay was used to detect the TH protein in each group. In vivo research showed that BSZCF improved the behavioral symptoms of PD mice, and reduced the death of DA neurons and the level of Glu. The mechanism may be related to the decrease of YY1 expression and the increase of EAAT1 levels. In vitro experiments showed that the anti-excitatory amino acid toxicity of BSZCF was achieved by inhibiting YY1 expression and regulating EAAT1. By inhibiting YY1 to increase the expression of EAAT1 and attenuating the toxicity of Glu, BSZCF exerts the effect of protecting DA neurons and treating PD-like symptoms in mice.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38350506/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38350506/",
+      "doi": "10.1016/j.jep.2024.117857",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2024.117857",
+      "epmc_url": "https://europepmc.org/article/MED/38350506",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "39035992",
@@ -998,7 +1488,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39035992/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39035992/",
+      "doi": "10.3389/fphar.2024.1426972",
+      "pmcid": "PMC11258383",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3389/fphar.2024.1426972",
+      "epmc_url": "https://europepmc.org/article/MED/39035992",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11258383/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11258383?pdf=render"
     },
     {
       "pmid": "18407446",
@@ -1008,7 +1505,14 @@
       "abstract": "Rehmannia glutinosa, a widely used traditional Chinese herb, belongs to the family of Scrophulariaceae, and is taken to nourish Yin and invigorate the kidney in traditional Chinese medicine (TCM) and has a very high medicinal value. In recent decades, a great number of chemical and pharmacological studies have been done on Rehmannia glutinosa. More than 70 compounds including iridoids, saccharides, amino acid, inorganic ions, as well as other trace elements have been found in the herb. Studies show that Rehmannia glutinosa and its active principles possess wide pharmacological actions on the blood system, immune system, endocrine system, cardiovascular system and the nervous system. Currently, the effective monomeric compounds or active parts have been screened for the pharmacological activity of Rehmannia glutinosa and the highest quality scientific data is delivered to support the further application and exploitation for new drug development.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/18407446/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18407446/",
+      "doi": "10.1016/j.jep.2008.02.018",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2008.02.018",
+      "epmc_url": "https://europepmc.org/article/MED/18407446",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "41465975",
@@ -1022,7 +1526,14 @@
       "targets": [
         "TNF"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41465975/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41465975/",
+      "doi": "10.1097/md.0000000000046633",
+      "pmcid": "PMC12746980",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1097/md.0000000000046633",
+      "epmc_url": "https://europepmc.org/article/MED/41465975",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12746980/",
+      "fulltext_url": "https://europepmc.org/articles/PMC12746980?pdf=render"
     },
     {
       "pmid": "39148029",
@@ -1036,7 +1547,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39148029/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39148029/",
+      "doi": "10.1186/s12872-024-04046-z",
+      "pmcid": "PMC11328392",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1186/s12872-024-04046-z",
+      "epmc_url": "https://europepmc.org/article/MED/39148029",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11328392/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11328392?pdf=render"
     },
     {
       "pmid": "41933746",
@@ -1052,7 +1570,14 @@
       "targets": [
         "NLRP3"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41933746/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41933746/",
+      "doi": "10.1016/j.jep.2026.121609",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2026.121609",
+      "epmc_url": "https://europepmc.org/article/MED/41933746",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "35173832",
@@ -1068,7 +1593,14 @@
         "IL6",
         "TNF"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35173832/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35173832/",
+      "doi": null,
+      "pmcid": "PMC8829622",
+      "is_oa": false,
+      "doi_url": null,
+      "epmc_url": "https://europepmc.org/article/MED/35173832",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8829622/",
+      "fulltext_url": "https://europepmc.org/articles/PMC8829622?pdf=render"
     },
     {
       "pmid": "41305629",
@@ -1083,7 +1615,14 @@
       "targets": [
         "AMPK"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41305629/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41305629/",
+      "doi": "10.3390/nu17223579",
+      "pmcid": "PMC12655178",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/nu17223579",
+      "epmc_url": "https://europepmc.org/article/MED/41305629",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12655178/",
+      "fulltext_url": "https://europepmc.org/articles/PMC12655178?pdf=render"
     },
     {
       "pmid": "34992529",
@@ -1095,7 +1634,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34992529/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34992529/",
+      "doi": "10.3389/fphar.2021.746777",
+      "pmcid": "PMC8724257",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3389/fphar.2021.746777",
+      "epmc_url": "https://europepmc.org/article/MED/34992529",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8724257/",
+      "fulltext_url": "https://www.frontiersin.org/articles/10.3389/fphar.2021.746777/pdf"
     },
     {
       "pmid": "42883202",
@@ -1120,7 +1666,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33344651/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33344651/",
+      "doi": "10.1155/2020/8358102",
+      "pmcid": "PMC7725584",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1155/2020/8358102",
+      "epmc_url": "https://europepmc.org/article/MED/33344651",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7725584/",
+      "fulltext_url": "https://downloads.hindawi.com/journals/jdr/2020/8358102.pdf"
     }
   ],
   "茯苓": [
@@ -1136,7 +1689,14 @@
         "Wnt/β-catenin"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39482471/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39482471/",
+      "doi": "10.1038/s41401-024-01404-7",
+      "pmcid": "PMC11950336",
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1038/s41401-024-01404-7",
+      "epmc_url": "https://europepmc.org/article/MED/39482471",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11950336/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11950336?pdf=render"
     },
     {
       "pmid": "36757813",
@@ -1151,7 +1711,14 @@
       "targets": [
         "PTGS2"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36757813/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36757813/",
+      "doi": "10.1172/jci.insight.156057",
+      "pmcid": "PMC10070121",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1172/jci.insight.156057",
+      "epmc_url": "https://europepmc.org/article/MED/36757813",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10070121/",
+      "fulltext_url": "https://europepmc.org/articles/PMC10070121?pdf=render"
     },
     {
       "pmid": "36278226",
@@ -1163,7 +1730,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36278226/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36278226/",
+      "doi": "10.3389/fphar.2022.1007274",
+      "pmcid": "PMC9581278",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3389/fphar.2022.1007274",
+      "epmc_url": "https://europepmc.org/article/MED/36278226",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9581278/",
+      "fulltext_url": "https://europepmc.org/articles/PMC9581278?pdf=render"
     },
     {
       "pmid": "35978941",
@@ -1175,7 +1749,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35978941/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35978941/",
+      "doi": "10.3892/etm.2022.11484",
+      "pmcid": "PMC9366251",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3892/etm.2022.11484",
+      "epmc_url": "https://europepmc.org/article/MED/35978941",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9366251/",
+      "fulltext_url": "https://europepmc.org/articles/PMC9366251?pdf=render"
     },
     {
       "pmid": "36355500",
@@ -1185,7 +1766,14 @@
       "abstract": "Plant polysaccharides (PPS) composed of more than 10 monosaccharides show high safety and various pharmacological activities, including immunoregulatory, antitumor, antioxidative, antiaging, and other effects. In recent years, emerging evidence has indicated that many PPS are beneficial for metabolic diseases, such as cardiovascular disease (CVD), diabetes, obesity, and neurological diseases, which are usually caused by the metabolic disorder of fat, sugar, and protein. In this review, we introduce the common characteristics and functional activity of many representative PPS, emphasize the common risks and molecular mechanism of metabolic diseases, and discuss the pharmacological activity and mechanism of action of representative PPS obtained from plants including Aloe vera, Angelica sinensis, pumpkin, Lycium barbarum, Ginseng, Schisandra chinensis, Dioscorea pposite, Poria cocos, and tea in metabolic diseases. Finally, this review will provide directions and a reference for future research and for the development of PPS into potential drugs for the treatment of metabolic diseases.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36355500/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36355500/",
+      "doi": "10.3390/ph15111329",
+      "pmcid": "PMC9695998",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/ph15111329",
+      "epmc_url": "https://europepmc.org/article/MED/36355500",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9695998/",
+      "fulltext_url": "https://europepmc.org/articles/PMC9695998?pdf=render"
     },
     {
       "pmid": "32661628",
@@ -1199,7 +1787,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32661628/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32661628/",
+      "doi": "10.1007/s11255-020-02545-4",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1007/s11255-020-02545-4",
+      "epmc_url": "https://europepmc.org/article/MED/32661628",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "33071776",
@@ -1212,7 +1807,14 @@
         "免疫调节"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33071776/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33071776/",
+      "doi": "10.3389/fphar.2020.505249",
+      "pmcid": "PMC7533546",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3389/fphar.2020.505249",
+      "epmc_url": "https://europepmc.org/article/MED/33071776",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7533546/",
+      "fulltext_url": "https://www.frontiersin.org/articles/10.3389/fphar.2020.505249/pdf"
     },
     {
       "pmid": "38880400",
@@ -1232,7 +1834,14 @@
         "TNF",
         "TP53"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38880400/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38880400/",
+      "doi": "10.1016/j.jep.2024.118421",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2024.118421",
+      "epmc_url": "https://europepmc.org/article/MED/38880400",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "39520951",
@@ -1249,7 +1858,14 @@
         "BAX",
         "BCL2"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39520951/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39520951/",
+      "doi": "10.1016/j.phymed.2024.156170",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2024.156170",
+      "epmc_url": "https://europepmc.org/article/MED/39520951",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "39303509",
@@ -1265,7 +1881,14 @@
       "targets": [
         "AMPK"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39303509/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39303509/",
+      "doi": "10.1016/j.phymed.2024.156050",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2024.156050",
+      "epmc_url": "https://europepmc.org/article/MED/39303509",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "40076875",
@@ -1285,7 +1908,14 @@
         "PTEN",
         "TNF"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40076875/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40076875/",
+      "doi": "10.3390/ijms26052253",
+      "pmcid": "PMC11899877",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/ijms26052253",
+      "epmc_url": "https://europepmc.org/article/MED/40076875",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11899877/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11899877?pdf=render"
     },
     {
       "pmid": "36411607",
@@ -1295,7 +1925,14 @@
       "abstract": "Precocious puberty in children is one of the common endocrine diseases in paediatrics. Epidemiological surveys have shown that the number of children with precocious puberty has significantly increased globally. Precocious puberty negatively affects the physical and mental health of children and may increase the risk of hypertension, diabetes, obesity and infertility in adulthood. Therefore, the initiating factors of adolescence have become core issues in the study of sexual development in children. Owing to developments in molecular genetics, many studies have been able to show that precocious puberty is mostly resulted in autosomal inheritance. For instance, makorin ring finger protein 3 gene (MKRN3) may be implicated in familial CPP. Gonadotropin-releasing hormone agonist (GnRHa) is the gold standard for treatment, but its safety still requires long-term evaluation and management. Traditional medicinal plants have been used in clinical treatments and in exploring novel treatment methods. From the collected datas, in Asia, traditional Chinese medicine treatment is based on the principles of nourishing Yin, lowering fire and draining fire from the liver to help precocious children and alleviate or delay the onset of precocious puberty by medicinal plants such as Anemarrhena asphodeloides Bge., Phellodendron amurense Rupr., Rehmannia glutinosa and Poria cocos Wolf. They play an important role in exploring the pharmacological mechanisms of precocious puberty treatment effects and drug development. Therefore, by elucidating the occurrence and development of precocious puberty, this review provides novel and valuable insights of paediatric endocrine therapy accessing the published researches on the effectiveness of traditional herbal medicine in the treatment of precocious puberty and its therapeutic mechanisms.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36411607/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36411607/",
+      "doi": "10.1016/j.biopha.2022.113907",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.biopha.2022.113907",
+      "epmc_url": "https://europepmc.org/article/MED/36411607",
+      "pmc_url": null,
+      "fulltext_url": "https://doi.org/10.1016/j.biopha.2022.113907"
     },
     {
       "pmid": "39816666",
@@ -1309,7 +1946,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39816666/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39816666/",
+      "doi": "10.1016/j.mtbio.2024.101406",
+      "pmcid": "PMC11733200",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1016/j.mtbio.2024.101406",
+      "epmc_url": "https://europepmc.org/article/MED/39816666",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11733200/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11733200?pdf=render"
     },
     {
       "pmid": "36273747",
@@ -1323,7 +1967,14 @@
         "糖脂代谢"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36273747/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36273747/",
+      "doi": "10.1016/j.jep.2022.115824",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2022.115824",
+      "epmc_url": "https://europepmc.org/article/MED/36273747",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "27493835",
@@ -1338,7 +1989,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/27493835/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27493835/",
+      "doi": "10.14336/ad.2015.1220",
+      "pmcid": "PMC4963193",
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.14336/ad.2015.1220",
+      "epmc_url": "https://europepmc.org/article/MED/27493835",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4963193/",
+      "fulltext_url": "http://www.aginganddisease.org/EN/PDF/10.14336/AD.2015.1220"
     },
     {
       "pmid": "41390134",
@@ -1352,7 +2010,14 @@
       "targets": [
         "LDHA"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41390134/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41390134/",
+      "doi": "10.1016/j.cbi.2025.111881",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.cbi.2025.111881",
+      "epmc_url": "https://europepmc.org/article/MED/41390134",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "28807167",
@@ -1362,7 +2027,14 @@
       "abstract": "Insomnia is a condition with sleep problems and many people suffered from it. Chronic insomnia can last for long time and it will severely affect people's health and the quality of life. In conventional medicine, the most commonly used the medicine is benzodiazepine. It is effective but also has significant side effects. Patients try to use some kinds of alternative medicines. Chinese medicinal herbs and formulas have been used in the treatment of insomnia for more than 2000 years in China. In recent decades, Chinese herbal medicine has been widely used in the Western countries. Many clinical studies including randomized controlled clinical trials and research on pharmacological action mechanisms of the herbs for treatment of insomnia have been conducted. It is very important and very helpful to review the published research papers to gather the available information for a critical analysis. This chapter evaluated the data from both of clinical studies and pharmacological researches on the therapeutic formulas and on some key herbs used in the treatment of insomnia. Clinical studies showed a very wide spectrum of herbs that were used in clinical treatment of insomnia. This was due to different syndrome patterns happened with insomnia. This brought complexity and difficulties to identify which are the essential key herbs or formulas. It was found Suanzaoren decoction (Ziziphus spinose decoction ) is the most frequently used formula for the treatment of insomnia. Based on the clinical data, several herbs were identified as most frequently used sedative and hypnotic herbs in Chinese herbal medicine including Suanzaoren (Ziziphus spinose ), Fuling (Poria cocos ), and Gancao (Glycyrrhiza uralensis ). The underlying pharmacological action mechanisms discovered in the studies on some key herbs used in the treatment of insomnia were evaluated. The major pharmacological action mechanisms shared by most of the sedative herbs are to act through the neurotransmitter gamma-aminobutyric acid (GABA) or via stimulation of GABAAA receptor. Some herbs exert sedative activities via inhibition of 5-hydroxytryptamine 1A receptor. Another mechanism shown by some herbs is to upregulate the expression of orexin-A, leptin, orexin receptor-1, and leptin receptor in the brain, reducing insomnia-induced negative consequences, and thus indirectly help improvement of insomnia.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28807167/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28807167/",
+      "doi": "10.1016/bs.irn.2017.02.006",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/bs.irn.2017.02.006",
+      "epmc_url": "https://europepmc.org/article/MED/28807167",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "31030751",
@@ -1375,7 +2047,14 @@
         "免疫调节"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31030751/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31030751/",
+      "doi": "10.1016/bs.pmbts.2019.02.011",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/bs.pmbts.2019.02.011",
+      "epmc_url": "https://europepmc.org/article/MED/31030751",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "41270547",
@@ -1391,7 +2070,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41270547/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41270547/",
+      "doi": "10.1016/j.compbiolchem.2025.108750",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.compbiolchem.2025.108750",
+      "epmc_url": "https://europepmc.org/article/MED/41270547",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "38362144",
@@ -1401,7 +2087,14 @@
       "abstract": "Kaixinsan (KXS) is a noteworthy classical prescription, which consists of four Chinese medicinal herbs, namely Polygalae Radix, Ginseng Radix et Rhizoma, Poria, and Acori Tatarinowii Rhizoma. KXS was initially documented in the Chinese ancient book Beiji Qianjin Yaofang written by Sun Simiao of the Tang Dynasty in 652 A.D. As a traditional Chinese medicine (TCM) prescription, it functions to nourish the heart and replenish Qi, calm the heart tranquilize the mind, and excrete dampness. Originally used to treat amnesia, it is now also effective in memory decline and applied to depression. Although there remains an abundance of literature investigating KXS from multiple aspects, few reviews summarize the features and research, which impedes better exploration and exploitation of KXS. This article intends to comprehensively analyze and summarize up-to-date information concerning the chemical constituents, pharmacology, pharmacokinetics, clinical applications, and safety of KXS based on the scientific literature, as well as to examine possible scientific gaps in current research and tackle issues in the next step. The chemical constituents of KXS primarily consist of saponins, xanthones, oligosaccharide esters, triterpenoids, volatile oils, and flavonoids. Of these, saponins are the predominant active ingredients, and increasing evidence has indicated that they exert therapeutic properties against mental disease. Pharmacokinetic research has illustrated that the crucial exposed substances in rat plasma after KXS administration are ginsenoside Re (GRe), ginsenoside Rb1 (GRb1), and polygalaxanthone III (POL). This article provides additional descriptions of the safety. In this review, current issues are highlighted to guide further comprehensive research of KXS and other classical prescriptions.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38362144/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38362144/",
+      "doi": "10.3389/fphar.2024.1338024",
+      "pmcid": "PMC10867185",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3389/fphar.2024.1338024",
+      "epmc_url": "https://europepmc.org/article/MED/38362144",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10867185/",
+      "fulltext_url": "https://www.frontiersin.org/articles/10.3389/fphar.2024.1338024/pdf?isPublishedV2=False"
     }
   ],
   "泽泻": [
@@ -1422,7 +2115,14 @@
         "PPARG",
         "TNF"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36457705/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36457705/",
+      "doi": "10.3389/fphar.2022.1027112",
+      "pmcid": "PMC9705790",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3389/fphar.2022.1027112",
+      "epmc_url": "https://europepmc.org/article/MED/36457705",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9705790/",
+      "fulltext_url": "https://europepmc.org/articles/PMC9705790?pdf=render"
     },
     {
       "pmid": "32426329",
@@ -1434,7 +2134,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32426329/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32426329/",
+      "doi": "10.3389/fchem.2020.00363",
+      "pmcid": "PMC7205456",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3389/fchem.2020.00363",
+      "epmc_url": "https://europepmc.org/article/MED/32426329",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7205456/",
+      "fulltext_url": "https://www.frontiersin.org/articles/10.3389/fchem.2020.00363/pdf"
     },
     {
       "pmid": "38677271",
@@ -1452,7 +2159,14 @@
         "BAX",
         "NLRP3"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38677271/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38677271/",
+      "doi": "10.1016/j.phymed.2024.155629",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2024.155629",
+      "epmc_url": "https://europepmc.org/article/MED/38677271",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "36009492",
@@ -1469,7 +2183,14 @@
         "AMPK",
         "AR"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36009492/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36009492/",
+      "doi": "10.3390/biomedicines10081945",
+      "pmcid": "PMC9406200",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/biomedicines10081945",
+      "epmc_url": "https://europepmc.org/article/MED/36009492",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9406200/",
+      "fulltext_url": "https://europepmc.org/articles/PMC9406200?pdf=render"
     },
     {
       "pmid": "27080939",
@@ -1481,7 +2202,14 @@
         "免疫调节"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/27080939/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27080939/",
+      "doi": "10.1142/s0192415x16500142",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1142/s0192415x16500142",
+      "epmc_url": "https://europepmc.org/article/MED/27080939",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "31275407",
@@ -1498,7 +2226,14 @@
         "糖脂代谢"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31275407/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31275407/",
+      "doi": "10.1155/2019/2943162",
+      "pmcid": "PMC6582889",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1155/2019/2943162",
+      "epmc_url": "https://europepmc.org/article/MED/31275407",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6582889/",
+      "fulltext_url": "https://europepmc.org/articles/PMC6582889?pdf=render"
     },
     {
       "pmid": "28662316",
@@ -1511,7 +2246,14 @@
         "免疫调节"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28662316/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28662316/",
+      "doi": "10.1111/nyas.13381",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1111/nyas.13381",
+      "epmc_url": "https://europepmc.org/article/MED/28662316",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "36594097",
@@ -1534,7 +2276,14 @@
         "PTGS2",
         "TNF"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36594097/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36594097/",
+      "doi": "10.7150/ijbs.78097",
+      "pmcid": "PMC9760444",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.7150/ijbs.78097",
+      "epmc_url": "https://europepmc.org/article/MED/36594097",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9760444/",
+      "fulltext_url": "https://europepmc.org/articles/PMC9760444?pdf=render"
     },
     {
       "pmid": "35151834",
@@ -1551,7 +2300,14 @@
         "FASN",
         "HMGCR"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35151834/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35151834/",
+      "doi": "10.1016/j.jep.2022.115101",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2022.115101",
+      "epmc_url": "https://europepmc.org/article/MED/35151834",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "40683423",
@@ -1572,7 +2328,14 @@
         "IL10",
         "IL6"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40683423/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40683423/",
+      "doi": "10.1016/j.jep.2025.120292",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2025.120292",
+      "epmc_url": "https://europepmc.org/article/MED/40683423",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "25446590",
@@ -1584,7 +2347,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/25446590/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25446590/",
+      "doi": "10.1016/j.jep.2014.10.061",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2014.10.061",
+      "epmc_url": "https://europepmc.org/article/MED/25446590",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "29655695",
@@ -1594,7 +2364,14 @@
       "abstract": "Cholestasis is a clinical syndrome of liver damage that is caused by accumulation of bile acids in the liver and systemic circulation. Farnesoid X receptor (FXR) can regulate synthesis, metabolism, and excretion of bile acids. The rhizomes of Alisma orientale is a well-known traditional Chinese medicine to treat edema, obesity, gonorrhea, leukorrhea, diarrhea, hyperlipidemia, and diabetes in China. We hypothesized Alisma orientale extract (AOE) to exert hepatoprotective effect against &#x3b1;-naphthylisothiocyanate (ANIT) induced cholestasis in rat. We aimed to investigate the mechanism of AOE. Male Sprague Dawley rats with intrahepatic cholestasis induced by ANIT were treated with AOE (150, 300, or 600&#x202f;mg/kg). Rats receiving vehicle (0.5% CMC-Na) served as control. 48&#x202f;h after ANIT administration, rats were sacrificed. Blood was collected to obtain serum and livers were removed for histopathology and protein preparation. Biochemical indicators in serum were determined using commercial kits and triterpenoids were determined by liquid chromatography tandem Qtrap mass spectrometry. Proteomics was analyzed by liquid chromatography tandem ion-trap mass spectrometry. The differently expressed proteins were analyzed via the network database and verified by western blotting. The interaction between triterpenoids and FXR were evaluated by luciferase assay and molecular docking. AOE treatment significantly decreased the serum AST, ALT, TBIL, and intrahepatic TBA and improved the liver pathologic change induced by ANIT. Proteomics analysis indicated that AOE regulated proteins related to bile acid homeostasis via activating farnesoid X receptor (FXR) signaling pathway. Luciferase assay and molecular docking results indicated that triterpenoids could activate FXR, which resulting in ameliorative accumulation of bile acids in the liver by increase of metabolism and transportation for bile acids, and decrease of synthesis for bile acids. AOE protected against rat liver injury and cholestasis induced by ANIT by activation of farnesoid X receptor, suggesting that A. orientale could be regarded as a potential hepatoprotective drug.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29655695/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29655695/",
+      "doi": "10.1016/j.phymed.2018.03.017",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2018.03.017",
+      "epmc_url": "https://europepmc.org/article/MED/29655695",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "36961296",
@@ -1610,7 +2387,14 @@
       "targets": [
         "AMPK"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36961296/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36961296/",
+      "doi": "10.1142/s0192415x23500301",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1142/s0192415x23500301",
+      "epmc_url": "https://europepmc.org/article/MED/36961296",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "41424795",
@@ -1623,7 +2407,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41424795/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41424795/",
+      "doi": "10.3389/fphar.2025.1722483",
+      "pmcid": "PMC12712712",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3389/fphar.2025.1722483",
+      "epmc_url": "https://europepmc.org/article/MED/41424795",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12712712/",
+      "fulltext_url": "https://europepmc.org/articles/PMC12712712?pdf=render"
     },
     {
       "pmid": "35116706",
@@ -1641,7 +2432,14 @@
         "MYC",
         "PPARG"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35116706/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35116706/",
+      "doi": "10.21037/tcr-21-1041",
+      "pmcid": "PMC8797440",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.21037/tcr-21-1041",
+      "epmc_url": "https://europepmc.org/article/MED/35116706",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8797440/",
+      "fulltext_url": "https://tcr.amegroups.com/article/viewFile/56483/pdf"
     },
     {
       "pmid": "39911807",
@@ -1651,7 +2449,14 @@
       "abstract": "Alisma starch (AS) from Alismatis Rhizoma has potential applications but has been less studied compared to common starches like corn starch (CS) and potato starch (PS). We used scanning electron microscopy, X-ray diffraction, and rapid visco analysis to study the granule morphology, crystal structure, pasting properties, freeze -thaw stability, solubility, swelling degree, and gel strength of AS, CS, and PS. AS has a lower starch content but higher amylose content than CS and PS. It has a smaller particle size and is A-type starch. Its pasting temperature and trough viscosity are higher, and its freeze -thaw stability is intermediate. Gel strength increases with concentration and shows no significant difference between 10% AS and 12% PS. AS has good heat resistance, shear resistance, and gel strength, indicating potential for high-temperature processed foods. Future research should focus on its heat resistance mechanism and broader applications.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39911807/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39911807/",
+      "doi": "10.3389/fnut.2025.1513814",
+      "pmcid": "PMC11794087",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3389/fnut.2025.1513814",
+      "epmc_url": "https://europepmc.org/article/MED/39911807",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11794087/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11794087?pdf=render"
     },
     {
       "pmid": "34371964",
@@ -1669,7 +2474,14 @@
       "targets": [
         "AR"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34371964/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34371964/",
+      "doi": "10.3390/nu13072455",
+      "pmcid": "PMC8308894",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/nu13072455",
+      "epmc_url": "https://europepmc.org/article/MED/34371964",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8308894/",
+      "fulltext_url": "https://www.mdpi.com/2072-6643/13/7/2455/pdf?version=1626682776"
     },
     {
       "pmid": "41179293",
@@ -1685,7 +2497,14 @@
       "targets": [
         "XIAP"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41179293/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41179293/",
+      "doi": "10.32604/or.2025.069877",
+      "pmcid": "PMC12573210",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.32604/or.2025.069877",
+      "epmc_url": "https://europepmc.org/article/MED/41179293",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12573210/",
+      "fulltext_url": "https://europepmc.org/articles/PMC12573210?pdf=render"
     },
     {
       "pmid": "33888116",
@@ -1698,7 +2517,14 @@
         "糖脂代谢"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33888116/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33888116/",
+      "doi": "10.1186/s12906-021-03296-0",
+      "pmcid": "PMC8063434",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1186/s12906-021-03296-0",
+      "epmc_url": "https://europepmc.org/article/MED/33888116",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8063434/",
+      "fulltext_url": "https://bmccomplementmedtherapies.biomedcentral.com/track/pdf/10.1186/s12906-021-03296-0"
     },
     {
       "pmid": "38850668",
@@ -1710,7 +2536,14 @@
         "氧化应激"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38850668/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38850668/",
+      "doi": "10.1016/j.biopha.2024.116908",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.biopha.2024.116908",
+      "epmc_url": "https://europepmc.org/article/MED/38850668",
+      "pmc_url": null,
+      "fulltext_url": null
     }
   ],
   "牡丹皮": [
@@ -1724,7 +2557,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31030097/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31030097/",
+      "doi": "10.1016/j.intimp.2019.04.033",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.intimp.2019.04.033",
+      "epmc_url": "https://europepmc.org/article/MED/31030097",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "28590441",
@@ -1736,7 +2576,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28590441/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28590441/",
+      "doi": "10.3390/molecules22060946",
+      "pmcid": "PMC6152737",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/molecules22060946",
+      "epmc_url": "https://europepmc.org/article/MED/28590441",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152737/",
+      "fulltext_url": "https://europepmc.org/articles/PMC6152737?pdf=render"
     },
     {
       "pmid": "31644406",
@@ -1749,7 +2596,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31644406/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31644406/",
+      "doi": "10.2174/1389557519666191015204223",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.2174/1389557519666191015204223",
+      "epmc_url": "https://europepmc.org/article/MED/31644406",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "34443563",
@@ -1762,7 +2616,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34443563/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34443563/",
+      "doi": "10.3390/molecules26164976",
+      "pmcid": "PMC8400614",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/molecules26164976",
+      "epmc_url": "https://europepmc.org/article/MED/34443563",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8400614/",
+      "fulltext_url": "https://www.mdpi.com/1420-3049/26/16/4976/pdf?version=1629683695"
     },
     {
       "pmid": "35279012",
@@ -1779,7 +2640,14 @@
         "BCL2",
         "STAT3"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35279012/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35279012/",
+      "doi": "10.1016/j.biopha.2022.112800",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.biopha.2022.112800",
+      "epmc_url": "https://europepmc.org/article/MED/35279012",
+      "pmc_url": null,
+      "fulltext_url": "https://doi.org/10.1016/j.biopha.2022.112800"
     },
     {
       "pmid": "30324542",
@@ -1789,7 +2657,14 @@
       "abstract": "Chalcone isomerase (CHI) is the second rate-limiting and the first reported enzyme involved in the biosynthetic pathway of flavonoids. It catalyzes the intramolecular cyclization reaction, converting the bicyclic chalcone into tricyclic (2S)-flavanone. In this paper, we obtained and analyzed 916 DNA sequences, 1310 mRNA sequences, and 2403 amino acid sequences of CHI registered in NCBI by Jan 2018. The full length of CHI DNA sequences ranges from 218 to 3758&#xa0;bp, CHI mRNA sequences ranges from 265 to 1436&#xa0;bp, and CHI amino acid sequences ranges from 35 to 465 amino acid residues. Forty representative species were selected from each family to construct the maximum likelihood tree and analyze the evolutionary relationship. According to the medicinal and agricultural use, 13 specific species were selected, and their physicochemical properties were analyzed. The molecular weight of CHI ranges from 23 to 26&#xa0;kD, and the isoelectric point of CHI ranges from 4.93 to 5.85. All the half-life periods of CHI are 30&#xa0;h in mammalian reticulocytes in vitro, 20&#xa0;h in yeast, and 10&#xa0;h in E. coli in vivo, theoretically. The consistency of the 13 CHI amino acid sequences is 63.55%. According to the similarity between each sequence, we selected four CHI sequences of Paeonia suffruticosa, Paeonia lactiflora, Taxus wallichiana, and Tradescantia hirsutiflora for secondary structure, three-dimensional protein models, conserved domains, transmembrane structure, and signal peptide prediction analysis. It was found that CHI sequences of Paeonia suffruticosa and Paeonia lactiflora owned a higher similarity; they both share the template 4doi.1.A. The four CHI all have no signal peptides, and they exert their activities in cytoplasm. Then, PubMed, Web of Science, Science Direct, and Research Gate were used as information sources through the search terms 'chalcone isomerase', 'biosynthesis', 'expression', and their combinations to get the latest and comprehensive information of CHI, mainly from the year 2010 to 2018. More than 300 papers were searched and 116 papers were reviewed in the present work. We summarized the classification of CHI, catalytic reaction mechanism of CHI, and progress of genetic engineering regarding CHI clone, expression, and exogenous stimulator regulation. This paper will lay a foundation for further studies of CHI and other functional genes involved in flavonoids biosynthetic pathway.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30324542/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30324542/",
+      "doi": "10.1007/s12033-018-0130-3",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1007/s12033-018-0130-3",
+      "epmc_url": "https://europepmc.org/article/MED/30324542",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "41548374",
@@ -1807,7 +2682,14 @@
         "STAT3",
         "TNF"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41548374/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41548374/",
+      "doi": "10.1016/j.phymed.2026.157778",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2026.157778",
+      "epmc_url": "https://europepmc.org/article/MED/41548374",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "32179072",
@@ -1819,7 +2701,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32179072/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32179072/",
+      "doi": "10.1016/j.lfs.2020.117544",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.lfs.2020.117544",
+      "epmc_url": "https://europepmc.org/article/MED/32179072",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "39588155",
@@ -1831,7 +2720,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39588155/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39588155/",
+      "doi": "10.3389/fphar.2024.1450816",
+      "pmcid": "PMC11586225",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3389/fphar.2024.1450816",
+      "epmc_url": "https://europepmc.org/article/MED/39588155",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11586225/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11586225?pdf=render"
     },
     {
       "pmid": "22070681",
@@ -1844,7 +2740,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/22070681/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22070681/",
+      "doi": "10.2174/13895575111091222",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.2174/13895575111091222",
+      "epmc_url": "https://europepmc.org/article/MED/22070681",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "36501418",
@@ -1857,7 +2760,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36501418/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36501418/",
+      "doi": "10.3390/plants11233379",
+      "pmcid": "PMC9739549",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/plants11233379",
+      "epmc_url": "https://europepmc.org/article/MED/36501418",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9739549/",
+      "fulltext_url": "https://www.mdpi.com/2223-7747/11/23/3379/pdf?version=1670230697"
     },
     {
       "pmid": "40124777",
@@ -1874,7 +2784,14 @@
       "targets": [
         "AMPK"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40124777/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40124777/",
+      "doi": "10.3389/fphar.2025.1526623",
+      "pmcid": "PMC11925900",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3389/fphar.2025.1526623",
+      "epmc_url": "https://europepmc.org/article/MED/40124777",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11925900/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11925900?pdf=render"
     },
     {
       "pmid": "38206196",
@@ -1884,7 +2801,14 @@
       "abstract": "Bud dormancy is a crucial strategy for perennial plants to withstand adverse winter conditions. However, the regulatory mechanism of bud dormancy in tree peony (Paeonia suffruticosa) remains largely unknown. Here, we observed dramatically reduced and increased accumulation of abscisic acid (ABA) and bioactive gibberellins (GAs) GA1 and GA3, respectively, during bud endodormancy release of tree peony under prolonged chilling treatment. An Illumina RNA sequencing study was performed to identify potential genes involved in the bud endodormancy regulation in tree peony. Correlation matrix, principal component, and interaction network analyses identified a downregulated MYB transcription factor gene, PsMYB306, the expression of which positively correlated with 9-CIS-EPOXYCAROTENOID DIOXYGENASE 3 (PsNCED3) expression. Protein modeling analysis revealed 4 residues within the R2R3 domain of PsMYB306 to possess DNA binding capability. Transcription of PsMYB306 was increased by ABA treatment. Overexpression of PsMYB306 in petunia (Petunia hybrida) inhibited seed germination and plant growth, concomitant with elevated ABA and decreased GA contents. Silencing of PsMYB306 accelerated cold-triggered tree peony bud burst and influenced the production of ABA and GAs and the expression of their biosynthetic genes. ABA application reduced bud dormancy release and transcription of ENT-KAURENOIC ACID OXIDASE 1 (PsKAO1), GA20-OXIDASE 1 (PsGA20ox1), and GA3-OXIDASE 1 (PsGA3ox1) associated with GA biosynthesis in PsMYB306-silenced buds. In vivo and in vitro binding assays confirmed that PsMYB306 specifically transactivated the promoter of PsNCED3. Silencing of PsNCED3 also promoted bud break and growth. Altogether, our findings suggest that PsMYB306 negatively modulates cold-induced bud endodormancy release by regulating ABA production.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38206196/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38206196/",
+      "doi": "10.1093/plphys/kiae014",
+      "pmcid": "PMC10980420",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1093/plphys/kiae014",
+      "epmc_url": "https://europepmc.org/article/MED/38206196",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10980420/",
+      "fulltext_url": "https://europepmc.org/articles/PMC10980420?pdf=render"
     },
     {
       "pmid": "40083771",
@@ -1909,7 +2833,14 @@
         "STAT3",
         "TLR4"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40083771/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40083771/",
+      "doi": "10.3892/mi.2025.223",
+      "pmcid": "PMC11904873",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3892/mi.2025.223",
+      "epmc_url": "https://europepmc.org/article/MED/40083771",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11904873/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11904873?pdf=render"
     },
     {
       "pmid": "37544285",
@@ -1922,7 +2853,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37544285/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37544285/",
+      "doi": "10.1016/j.biopha.2023.115277",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.biopha.2023.115277",
+      "epmc_url": "https://europepmc.org/article/MED/37544285",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "38540443",
@@ -1932,7 +2870,14 @@
       "abstract": "The RNA-Seq and gene expression data of mature leaves under high temperature stress of Paeonia suffruticosa 'Hu Hong' were used to explore the key genes of heat tolerance of peony. The weighted gene co-expression network analysis (WGCNA) method was used to construct the network, and the main modules and core genes of co-expression were screened according to the results of gene expression and module function enrichment analysis. According to the correlation of gene expression, the network was divided into 19 modules. By analyzing the expression patterns of each module gene, Blue, Salmon and Yellow were identified as the key modules of peony heat response related functions. GO and KEGG functional enrichment analysis was performed on the genes in the three modules and a network diagram was constructed. Based on this, two key genes PsWRKY53 (TRINITY_DN60998_c1_g2, TRINITY_DN71537_c0_g1) and PsHsfB2b (TRINITY_DN56794_c0_g1) were excavated, which may play a key role in the heat shock response of peony. The three co-expression modules and two key genes were helpful to further elucidate the heat resistance mechanism of P. suffruticosa 'Hu Hong'.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38540443/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38540443/",
+      "doi": "10.3390/genes15030383",
+      "pmcid": "PMC10970469",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/genes15030383",
+      "epmc_url": "https://europepmc.org/article/MED/38540443",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10970469/",
+      "fulltext_url": "https://www.mdpi.com/2073-4425/15/3/383/pdf?version=1710994463"
     },
     {
       "pmid": "41638058",
@@ -1948,7 +2893,14 @@
       "targets": [
         "BRCA1"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41638058/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41638058/",
+      "doi": "10.1016/j.phymed.2026.157888",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2026.157888",
+      "epmc_url": "https://europepmc.org/article/MED/41638058",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "31231109",
@@ -1962,7 +2914,14 @@
       "targets": [
         "AMPK"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31231109/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31231109/",
+      "doi": "10.5582/bst.2019.01105",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.5582/bst.2019.01105",
+      "epmc_url": "https://europepmc.org/article/MED/31231109",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "31852965",
@@ -1977,7 +2936,14 @@
       "targets": [
         "TNF"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31852965/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31852965/",
+      "doi": "10.1038/s41598-019-55980-4",
+      "pmcid": "PMC6920373",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1038/s41598-019-55980-4",
+      "epmc_url": "https://europepmc.org/article/MED/31852965",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6920373/",
+      "fulltext_url": "https://europepmc.org/articles/PMC6920373?pdf=render"
     },
     {
       "pmid": "36999188",
@@ -1989,7 +2955,14 @@
         "JAK/STAT 通路"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36999188/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36999188/",
+      "doi": "10.2174/1871527322666230330111712",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.2174/1871527322666230330111712",
+      "epmc_url": "https://europepmc.org/article/MED/36999188",
+      "pmc_url": null,
+      "fulltext_url": null
     }
   ],
   "丹参": [
@@ -2005,7 +2978,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39217657/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39217657/",
+      "doi": "10.1016/j.phymed.2024.155974",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2024.155974",
+      "epmc_url": "https://europepmc.org/article/MED/39217657",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "37713995",
@@ -2022,7 +3002,14 @@
         "PTGS2",
         "TNF"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37713995/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37713995/",
+      "doi": "10.1016/j.biopha.2023.115501",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.biopha.2023.115501",
+      "epmc_url": "https://europepmc.org/article/MED/37713995",
+      "pmc_url": null,
+      "fulltext_url": "https://doi.org/10.1016/j.biopha.2023.115501"
     },
     {
       "pmid": "38772181",
@@ -2042,7 +3029,14 @@
         "TLR4",
         "TNF"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38772181/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38772181/",
+      "doi": "10.1016/j.phymed.2024.155725",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2024.155725",
+      "epmc_url": "https://europepmc.org/article/MED/38772181",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "33430756",
@@ -2056,7 +3050,14 @@
         "糖脂代谢"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33430756/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33430756/",
+      "doi": "10.2174/1874467214999210111222918",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.2174/1874467214999210111222918",
+      "epmc_url": "https://europepmc.org/article/MED/33430756",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "39296670",
@@ -2074,7 +3075,14 @@
         "MMP2",
         "MMP9"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39296670/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39296670/",
+      "doi": "10.2147/dddt.s457100",
+      "pmcid": "PMC11410030",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.2147/dddt.s457100",
+      "epmc_url": "https://europepmc.org/article/MED/39296670",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11410030/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11410030?pdf=render"
     },
     {
       "pmid": "41138578",
@@ -2097,7 +3105,14 @@
         "BAX",
         "NQO1"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41138578/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41138578/",
+      "doi": "10.1016/j.phymed.2025.157244",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2025.157244",
+      "epmc_url": "https://europepmc.org/article/MED/41138578",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "40015687",
@@ -2115,7 +3130,14 @@
       "targets": [
         "PTGS2"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40015687/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40015687/",
+      "doi": "10.1080/0886022x.2025.2466116",
+      "pmcid": "PMC11869347",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1080/0886022x.2025.2466116",
+      "epmc_url": "https://europepmc.org/article/MED/40015687",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11869347/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11869347?pdf=render"
     },
     {
       "pmid": "39399124",
@@ -2137,7 +3159,14 @@
         "TP53",
         "VEGFA"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39399124/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39399124/",
+      "doi": "10.2147/dddt.s480248",
+      "pmcid": "PMC11471080",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.2147/dddt.s480248",
+      "epmc_url": "https://europepmc.org/article/MED/39399124",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11471080/",
+      "fulltext_url": "https://europepmc.org/articles/PMC11471080?pdf=render"
     },
     {
       "pmid": "40997663",
@@ -2150,7 +3179,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40997663/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40997663/",
+      "doi": "10.1016/j.phymed.2025.157272",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2025.157272",
+      "epmc_url": "https://europepmc.org/article/MED/40997663",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "30704625",
@@ -2162,7 +3198,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30704625/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30704625/",
+      "doi": "10.1016/s1875-5364(19)30010-x",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/s1875-5364(19)30010-x",
+      "epmc_url": "https://europepmc.org/article/MED/30704625",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "40876124",
@@ -2179,7 +3222,14 @@
         "MMP9",
         "TLR4"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40876124/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40876124/",
+      "doi": "10.1016/j.phymed.2025.157162",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2025.157162",
+      "epmc_url": "https://europepmc.org/article/MED/40876124",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "39481643",
@@ -2191,7 +3241,14 @@
         "JAK/STAT 通路"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39481643/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39481643/",
+      "doi": "10.1016/j.jare.2024.10.036",
+      "pmcid": "PMC12789768",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1016/j.jare.2024.10.036",
+      "epmc_url": "https://europepmc.org/article/MED/39481643",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12789768/",
+      "fulltext_url": "https://europepmc.org/articles/PMC12789768?pdf=render"
     },
     {
       "pmid": "40975040",
@@ -2206,7 +3263,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40975040/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40975040/",
+      "doi": "10.1016/j.phymed.2025.157258",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2025.157258",
+      "epmc_url": "https://europepmc.org/article/MED/40975040",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "34749607",
@@ -2216,7 +3280,14 @@
       "abstract": "Tanshinone IIA, a major bioactive constituent of Danshen, a Chinese herbal medicine, has gained extensive exploration owing to its unique structural features and multiple promising biological activities. This review focuses on the pharmacology, total synthesis, and structural modifications of tanshinone IIA. We hope this review will contribute to a better understanding of the progress in the field and provide constructive suggestions for further study of tanshinone IIA.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34749607/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34749607/",
+      "doi": "10.2174/0929867328666211108110025",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.2174/0929867328666211108110025",
+      "epmc_url": "https://europepmc.org/article/MED/34749607",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "39986223",
@@ -2233,7 +3304,14 @@
         "AKT1",
         "TNF"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39986223/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39986223/",
+      "doi": "10.1016/j.phymed.2025.156461",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2025.156461",
+      "epmc_url": "https://europepmc.org/article/MED/39986223",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "40056636",
@@ -2248,7 +3326,14 @@
         "糖脂代谢"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40056636/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40056636/",
+      "doi": "10.1016/j.phymed.2025.156582",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phymed.2025.156582",
+      "epmc_url": "https://europepmc.org/article/MED/40056636",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "38380573",
@@ -2263,7 +3348,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38380573/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38380573/",
+      "doi": "10.1016/j.jep.2023.117354",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2023.117354",
+      "epmc_url": "https://europepmc.org/article/MED/38380573",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "19159889",
@@ -2273,7 +3365,14 @@
       "abstract": "This review summarizes the recent advances in the chemical analysis of Danshen and its finished products, including the introduction of the identified bioactive components, analytical methods for quantitative determination of target analytes and fingerprinting authentication, quality criteria of Danshen crude herb and its preparations, as well as the pharmacokinetic and pharmacodynamic studies on the active components of Danshen and its finished products. Danshen contains mainly two types of constituents, the hydrophilic depsides and lipophilic diterpenoidal quinones and both of them are responsible for the pharmacological activities of Danshen. In order to monitor simultaneously both types of components which have different physicochemical properties, numerous analytical methods have been reported using various chromatographic and spectrophotometric technologies. In this review, 110 papers on analysis of Danshen are discussed, various analytical methods and their chromatographic conditions are briefly described and their advantages/disadvantages are compared. For obtaining a quick, accurate and applicable analytical approach for quality evaluation and establishing a harmonized criteria of Danshen and its finished products, the authors' suggestion and opinions are given, including the reasonable selection of marker compounds with high concentration and commercial availability, a simple sample preparation procedure with high recoveries of both the hydrophilic phenols and lipophilic tanshinones, and an optimized chromatographic condition with ideal resolutions of all the target components. The chemical degradation and transformation of the predominant constituent salvianolic acid B in Danshen during processing and manufacturing are also emphasized in order to assure the quality consistency of Danshen containing products.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/19159889/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19159889/",
+      "doi": "10.1016/j.chroma.2008.12.032",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.chroma.2008.12.032",
+      "epmc_url": "https://europepmc.org/article/MED/19159889",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "38653110",
@@ -2286,7 +3385,14 @@
         "铁死亡"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38653110/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38653110/",
+      "doi": "10.1016/j.biopha.2024.116635",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.biopha.2024.116635",
+      "epmc_url": "https://europepmc.org/article/MED/38653110",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "35358599",
@@ -2298,7 +3404,14 @@
         "MAPK 通路"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35358599/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35358599/",
+      "doi": "10.1016/j.phytochem.2022.113177",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.phytochem.2022.113177",
+      "epmc_url": "https://europepmc.org/article/MED/35358599",
+      "pmc_url": null,
+      "fulltext_url": null
     }
   ],
   "甘草": [
@@ -2313,7 +3426,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30117204/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30117204/",
+      "doi": "10.1002/ptr.6178",
+      "pmcid": "PMC7167772",
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1002/ptr.6178",
+      "epmc_url": "https://europepmc.org/article/MED/30117204",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7167772/",
+      "fulltext_url": "https://europepmc.org/articles/PMC7167772?pdf=render"
     },
     {
       "pmid": "28833680",
@@ -2325,7 +3445,14 @@
         "JAK/STAT 通路"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28833680/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28833680/",
+      "doi": "10.1002/ptr.5893",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1002/ptr.5893",
+      "epmc_url": "https://europepmc.org/article/MED/28833680",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "18446848",
@@ -2338,7 +3465,14 @@
         "免疫调节"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/18446848/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18446848/",
+      "doi": "10.1002/ptr.2362",
+      "pmcid": "PMC7167813",
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1002/ptr.2362",
+      "epmc_url": "https://europepmc.org/article/MED/18446848",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7167813/",
+      "fulltext_url": "https://europepmc.org/articles/pmc7167813?pdf=render"
     },
     {
       "pmid": "38301986",
@@ -2358,7 +3492,14 @@
         "MAPK1",
         "PIK3CA"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38301986/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38301986/",
+      "doi": "10.1016/j.jep.2024.117739",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2024.117739",
+      "epmc_url": "https://europepmc.org/article/MED/38301986",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "26366756",
@@ -2370,7 +3511,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/26366756/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26366756/",
+      "doi": "10.1055/s-0035-1557893",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1055/s-0035-1557893",
+      "epmc_url": "https://europepmc.org/article/MED/26366756",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "34739794",
@@ -2380,7 +3528,14 @@
       "abstract": "Glycyrrhiza glabra Linn (Fabaceae), commonly known as Licorice/Liquorice, Mulahatti; is an undershrub. The dried, peeled or unpeeled underground stems and roots are used for the treatment of upper respiratory tract ailments, immunodeficiency, endocrine disorders, skin, liver, joint and heart diseases. Medicinal properties of this plant are enormous and offer it as one of the greatest candidates in the field of Nanomedicine. The Nanomedicine has dedicated to safeguard and upgrade human health using the nanotechnology. Bioactive constituents of this plant perform versatile pharmacological actions and can be used as good Bioanalytical tools. Therefore, an updated overview on current knowledge of green synthesis of nanoparticles (NPs), nanoformulations and surface modification using G. glabra is provided here in order to explore its therapeutic potential especially antifungal and antibacterial activities. In our lab, we have synthesized silver nanoparticles (Ag NPs) using leaves and rhizome parts of G. glabra.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34739794/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34739794/",
+      "doi": "10.1166/jnn.2021.19007",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1166/jnn.2021.19007",
+      "epmc_url": "https://europepmc.org/article/MED/34739794",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "38176667",
@@ -2398,7 +3553,14 @@
         "IL6",
         "TNF"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38176667/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38176667/",
+      "doi": "10.1016/j.jep.2023.117691",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2023.117691",
+      "epmc_url": "https://europepmc.org/article/MED/38176667",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "37948152",
@@ -2415,7 +3577,14 @@
       "targets": [
         "IL10"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37948152/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37948152/",
+      "doi": "10.1080/19490976.2023.2276814",
+      "pmcid": "PMC10653635",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1080/19490976.2023.2276814",
+      "epmc_url": "https://europepmc.org/article/MED/37948152",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10653635/",
+      "fulltext_url": "https://europepmc.org/articles/PMC10653635?pdf=render"
     },
     {
       "pmid": "35596156",
@@ -2431,7 +3600,14 @@
         "铁死亡"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35596156/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35596156/",
+      "doi": "10.1186/s10020-022-00481-w",
+      "pmcid": "PMC9123664",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1186/s10020-022-00481-w",
+      "epmc_url": "https://europepmc.org/article/MED/35596156",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9123664/",
+      "fulltext_url": "https://molmed.biomedcentral.com/counter/pdf/10.1186/s10020-022-00481-w"
     },
     {
       "pmid": "39551128",
@@ -2444,7 +3620,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39551128/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39551128/",
+      "doi": "10.1016/j.jare.2024.11.019",
+      "pmcid": "PMC12536610",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1016/j.jare.2024.11.019",
+      "epmc_url": "https://europepmc.org/article/MED/39551128",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12536610/",
+      "fulltext_url": "https://europepmc.org/articles/PMC12536610?pdf=render"
     },
     {
       "pmid": "35934191",
@@ -2454,7 +3637,14 @@
       "abstract": "Licorice has been widely used as a medicinal herb since ancient times. Licorice is also spelled as \"liquorice\" and it is known as \"Glycyrrhizae Radix et Rhizoma\" (Chinese: gan cao) in the Chinese Pharmacopoeia. Licorice root has a wide range of pharmacological effects, including adrenocortical hormone-like effects, as well as multiple pharmacological effects on the digestive system, immune system, and cardiovascular system. This review aims to comprehensively investigate the history of licorice and its medicinal and industrial applications in China and other nations, including research and application prospects related to the aerial parts of licorice. An extensive review of the literature was carried out, including ancient and modern texts, doctoral and masters' theses, monographs on medicinal plants, pharmacopoeias and electronic databases, including Web of Science, Springer, CNKI, and Google Scholar. The ancient and modern applications of licorice were systematically investigated. In ancient times, practitioners in China discovered the medicinal potential of licorice and used it widely. In modern times, licorice is widely used in food, medicines and supplements, tobacco, chemical applications, environmental applications, animal husbandry and other industries. The potential of the aerial portion of the plant is also gradually being researched, developed, and utilized. Licorice is one of the oldest and most widely used herbal medicines in the world. This article reviews its medicinal potential and application in various fields, and briefly introduces current research into its aerial parts. This review aims to highlight the importance of licorice and provide direction for its future development.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/35934191/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35934191/",
+      "doi": "10.1016/j.jep.2022.115594",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jep.2022.115594",
+      "epmc_url": "https://europepmc.org/article/MED/35934191",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "23318879",
@@ -2470,7 +3660,14 @@
         "NOS2",
         "PTGS2"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/23318879/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23318879/",
+      "doi": "10.1016/j.jsbmb.2012.12.009",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.jsbmb.2012.12.009",
+      "epmc_url": "https://europepmc.org/article/MED/23318879",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "33787349",
@@ -2480,7 +3677,14 @@
       "abstract": "The management of the global pandemic outbreak due to the coronavirus disease (COVID-19) has been challenging with no exact dedicated treatment nor established vaccines at the beginning of the pandemic. Nonetheless, the situation seems to be better controlled with the recent COVID-19 vaccines roll-out globally as active immunisation to prevent COVID-19. The extensive usage and trials done in recent outbreak in China has shown the effectiveness of traditional Chinese Medicines (TCM) in improving the wellbeing of COVID-19 patients. Therefore, COVID-19 Prevention and Treatment guidelines has listed a number of recommended concoctions meant for COVID-19 patients. Licorice, more commonly known as Gancao in Chinese Pinyin, is known as one of the most frequently used ingredients in TCM prescriptions for treatment of epidemic diseases. Interestingly, it is deemed as food ingredient as well, where it is normally used in Western cuisines' desserts and sweets. The surprising fact that licorice appeared in the top 10 main ingredients used in TCM prescriptions in COVID-19 has drawn great attention from researchers in revealing its biological potential in overcoming this disease. To date, there are no comprehensive review on licorice and its benefits when used in COVID-19. Thus, in this current review, the possible benefits, mechanism of actions, safety and limitations of licorice were explored in hope to provide a quick reference guide for its preclinical and clinical experimental set-up in this very critical moment of pandemic.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33787349/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33787349/",
+      "doi": "10.1177/2515690x21996662",
+      "pmcid": "PMC8020229",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.1177/2515690x21996662",
+      "epmc_url": "https://europepmc.org/article/MED/33787349",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8020229/",
+      "fulltext_url": "https://europepmc.org/articles/PMC8020229?pdf=render"
     },
     {
       "pmid": "30659537",
@@ -2493,7 +3697,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30659537/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30659537/",
+      "doi": "10.2174/1389557519666190119111125",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.2174/1389557519666190119111125",
+      "epmc_url": "https://europepmc.org/article/MED/30659537",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "31612817",
@@ -2506,7 +3717,14 @@
         "免疫调节"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31612817/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31612817/",
+      "doi": "10.2174/0929867325666191011115407",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.2174/0929867325666191011115407",
+      "epmc_url": "https://europepmc.org/article/MED/31612817",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "36142045",
@@ -2516,7 +3734,14 @@
       "abstract": "Along with pharmacological applications due to bioactive elements such as flavonoids and glycyrrhizin, licorice has positive influences on the rehabilitation, rejuvenation, and management of salt-affected degraded lands in arid regions. These features made this plant widely appreciated worldwide when climate change is showing detrimental impacts for crop production and food security. However, a growing demand followed by irrational harvesting of wild licorice plants has led to substantial dwindling of its natural habitat. There is an increasing need to protect the plant biodiversity since sustainability can be a problem with wild harvesting. Therefore, it is important to investigate cultivation technologies of licorice under harsh environments, while this plant can adapt to a wide range of climates. Thus, in this review, we studied, analyzed and summarized the literature on licorice cultivation methods counteracting the most common environmental stresses in the Aral Sea region. Particularly, the current knowledge was rationalized regarding on cultivation technologies for alleviating salt stress thereby improving crop production. We also highlighted that future research directions on licorice breeding and genomics that might facilitate to produce more resilient and sustainable licorice genotypes to renovate agricultural productivity under disastrous ecology and climate change of the arid regions. Whereas this area possesses all prerequisite conditions needed for successful cultivation of the alternative cash crop.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36142045/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36142045/",
+      "doi": "10.3390/ijerph191811770",
+      "pmcid": "PMC9517304",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/ijerph191811770",
+      "epmc_url": "https://europepmc.org/article/MED/36142045",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9517304/",
+      "fulltext_url": "https://www.mdpi.com/1660-4601/19/18/11770/pdf?version=1663498127"
     },
     {
       "pmid": "34201172",
@@ -2529,7 +3754,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34201172/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34201172/",
+      "doi": "10.3390/biom11060855",
+      "pmcid": "PMC8227143",
+      "is_oa": true,
+      "doi_url": "https://doi.org/10.3390/biom11060855",
+      "epmc_url": "https://europepmc.org/article/MED/34201172",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8227143/",
+      "fulltext_url": "https://www.mdpi.com/2218-273X/11/6/855/pdf?version=1623212746"
     },
     {
       "pmid": "37196671",
@@ -2539,7 +3771,14 @@
       "abstract": "Glycyrrhizae Radix et Rhizoma is a well-known herbal medicine with a wide range of pharmacological functions that has been used throughout Chinese history. This review presents a comprehensive introduction to this herb and its classical prescriptions. The article discusses the resources and distribution of species, methods of authentication and determination chemical composition, quality control of the original plants and herbal medicines, dosages use, common classical prescriptions, indications, and relevant mechanisms of the active content. Pharmacokinetic parameters, toxicity tests, clinical trials, and patent applications are discussed. The review will provide a good starting point for the research and development of classical prescriptions to develop herbal medicines for clinical use.",
       "mechanisms": [],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37196671/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37196671/",
+      "doi": "10.1002/ptr.7869",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1002/ptr.7869",
+      "epmc_url": "https://europepmc.org/article/MED/37196671",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "33582265",
@@ -2551,7 +3790,14 @@
         "炎症反应"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33582265/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33582265/",
+      "doi": "10.1016/j.fitote.2021.104860",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.1016/j.fitote.2021.104860",
+      "epmc_url": "https://europepmc.org/article/MED/33582265",
+      "pmc_url": null,
+      "fulltext_url": null
     },
     {
       "pmid": "36043713",
@@ -2564,7 +3810,14 @@
         "凋亡（线粒体途径）"
       ],
       "targets": [],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36043713/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36043713/",
+      "doi": "10.2174/1389557522666220827161943",
+      "pmcid": null,
+      "is_oa": false,
+      "doi_url": "https://doi.org/10.2174/1389557522666220827161943",
+      "epmc_url": "https://europepmc.org/article/MED/36043713",
+      "pmc_url": null,
+      "fulltext_url": null
     }
   ]
 }

@@ -28,6 +28,7 @@ from st_link_analysis import EdgeStyle, NodeStyle, st_link_analysis
 
 from anatomy import SPECIES, render_anatomy
 from animal_view import (compartment_of, organ_target_map, render_cell)
+from cell_pathway import render_cell_pathway
 from herb_info import HERB_INFO, get_herb_info
 from pathways import (KIND_STYLE, PATHWAYS, pathway_elements, pathways_of_target,
                       target_class)
@@ -677,16 +678,26 @@ with tab_animal:
                        f"下方展示的是所选通路拓扑。")
         st.write(PATHWAYS[picked_pw]["desc"])
 
-        layout_pw = st.selectbox("通路布局", ["breadthfirst", "dagre", "cose", "grid"],
-                                 index=0)
-        node_styles_pw = [NodeStyle(kind, color, "name") for kind, (_, color)
-                          in KIND_STYLE.items()]
-        st_link_analysis(pathway_elements(picked_pw), layout_pw, node_styles_pw,
-                         [EdgeStyle("PATH_STEP", "#8a8a8a", "name", directed=True)],
-                         height=430, key="pathway_network")
-        st.markdown("　".join(f"<span style='color:{color}'>■ {label}</span>"
-                              for label, color in KIND_STYLE.values()),
-                    unsafe_allow_html=True)
+        view_pw = st.radio("通路视图", ["细胞水平", "网络拓扑"], horizontal=True)
+        gene_set = {g.upper() for g in genes}
+        if view_pw == "细胞水平":
+            st.caption("信号流向：细胞外配体 → 膜受体 → 胞质激酶级联 → 入核转录 → 效应；"
+                       "红框为当前选中靶点，★ 为本方成分作用靶点。")
+            components.html(
+                render_cell_pathway(picked_pw, highlight=picked_gene.upper(),
+                                    targets=gene_set),
+                height=600)
+        else:
+            layout_pw = st.selectbox("通路布局",
+                                     ["breadthfirst", "dagre", "cose", "grid"], index=0)
+            node_styles_pw = [NodeStyle(kind, color, "name") for kind, (_, color)
+                              in KIND_STYLE.items()]
+            st_link_analysis(pathway_elements(picked_pw), layout_pw, node_styles_pw,
+                             [EdgeStyle("PATH_STEP", "#8a8a8a", "name", directed=True)],
+                             height=430, key="pathway_network")
+            st.markdown("　".join(f"<span style='color:{color}'>■ {label}</span>"
+                                  for label, color in KIND_STYLE.values()),
+                        unsafe_allow_html=True)
 
         # ------------------------------------------------------ 教学视频
         st.markdown("---")
@@ -704,16 +715,21 @@ with tab_animal:
         else:
             st.info("还没有生成视频，点击下方按钮生成后即可在此播放。")
 
-        b1, b2 = st.columns(2)
+        b1, b2, b3 = st.columns(3)
         if b1.button(f"生成「{picked_pw}」动画视频"):
             with st.spinner("正在渲染视频（约 1 分钟）…"):
                 subprocess.run([sys.executable, "make_video.py", "--pathway", picked_pw],
                                cwd=str(HERE), capture_output=True)
             st.rerun()
-        if b2.button("生成全部 12 条通路 + 总览视频"):
-            with st.spinner("正在渲染全部视频（约 10–15 分钟）…"):
-                subprocess.run([sys.executable, "make_video.py", "--all", "--overview"],
-                               cwd=str(HERE), capture_output=True)
+        if b2.button(f"生成「{picked_pw}」细胞水平动画"):
+            with st.spinner("正在渲染细胞水平动画（约 1–2 分钟）…"):
+                subprocess.run([sys.executable, "make_video.py", "--pathway", picked_pw,
+                                "--cell"], cwd=str(HERE), capture_output=True)
+            st.rerun()
+        if b3.button("生成全部通路 + 总览视频"):
+            with st.spinner("正在渲染全部视频（约 20 分钟）…"):
+                subprocess.run([sys.executable, "make_video.py", "--all", "--overview",
+                                "--cell"], cwd=str(HERE), capture_output=True)
             st.rerun()
 
 # ------------------------------------------------------------- 8. 成分明细

@@ -21,7 +21,8 @@
 | `pkpd.py` | 药动学与量-效-时模型（Hill 方程、一室一级吸收 PK、曲线拟合） | 曲线计算 |
 | `animal_view.py` | 细胞受体点位图、器官-靶点映射（UniProt 组织特异性 → 器官） | 动物模型可视化 |
 | `anatomy.py` | 解剖层级动物 SVG（心脏四腔/肺叶/肝分叶/豆形肾/骨骼/大血管，3 个物种） | 解剖可视化 |
-| `make_video.py` | 通路级联动画视频生成（MP4，失败自动回退 GIF） | 教学视频 |
+| `cell_pathway.py` | 细胞水平通路图（细胞外配体 → 膜受体 → 胞质级联 → 入核 → 效应） | 细胞水平可视化 |
+| `make_video.py` | 通路级联动画视频（`--cell` 生成细胞水平版本；MP4，失败回退 GIF） | 教学视频 |
 | `pathways.py` | 12 条信号通路拓扑（配体→受体→激酶→转录因子→效应）与靶点归类 | 机制通路图 |
 | `requirements.txt` | 依赖清单 | 部署 |
 
@@ -168,13 +169,27 @@ python fetch_literature.py --reparse    # 不重新抓取，仅重算机制与�
 
 > 依据解剖学比例绘制的矢量示意图，用于表达器官层级关系，不等同于影像学图像。
 
-### 通路教学视频
+### 细胞水平通路视图与动画
+
+「动物模型模拟实验」页的"作用机制通路图"支持两种视图：
+
+- **细胞水平**（默认，`cell_pathway.py`）：把通路节点放进细胞结构——
+  细胞外（配体/细胞因子）→ 细胞膜（受体，跨膜蛋白）→ 细胞质（接头/激酶级联，
+  含线粒体）→ 细胞核（核膜内侧转录因子 → 核内基因转录 → 生物学效应），
+  箭头表现跨膜与入核过程；红框高亮当前选中靶点，★ 标注本方成分作用靶点。
+- **网络拓扑**：原来的 st-link-analysis 网络布局（breadthfirst/dagre/cose/grid）。
+
+细胞水平动画（与静态图同一套坐标）：
 
 ```bash
-python make_video.py --pathway "NF-κB 通路"   # 单条
-python make_video.py --all --overview         # 全部 12 条 + 总览
-python make_video.py                          # 查看可用通路列表
+python make_video.py --pathway "NF-κB 通路" --cell   # 单条细胞水平动画
+python make_video.py --all --cell                    # 全部 12 条细胞水平动画
+python make_video.py --all --overview --cell         # 全部 + 总览
 ```
+
+动画中有一个"信号小点"沿箭头移动，直观演示信号跨膜、胞质级联与入核转导。
+
+### 通路教学视频
 
 - 动画按信号级联顺序逐节点揭示：配体 → 受体 → 接头 → 激酶 → 转录因子 → 效应，
   新节点缩放淡入、箭头同步点亮，末帧停留并标注 **★ 本方成分作用靶点**（来自 network.json）。

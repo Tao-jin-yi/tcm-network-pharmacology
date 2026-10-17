@@ -29,6 +29,7 @@ import matplotlib.patches as mp
 from matplotlib import font_manager
 from matplotlib.animation import FFMpegWriter, FuncAnimation, PillowWriter
 
+from cell_pathway import MEMBRANE_X, NUCLEUS, cell_layout
 from pathways import KIND_STYLE, PATHWAYS
 
 HERE = Path(__file__).parent
@@ -240,6 +241,159 @@ def make_video(name: str, fps: int = 20, out_dir: Path = VIDEO_DIR,
     return mp4
 
 
+def make_cell_video(name: str, fps: int = 20, out_dir: Path = VIDEO_DIR,
+                    targets: Optional[set] = None) -> Optional[Path]:
+    """细胞水平动画视频：配体在细胞外 → 受体 → 胞质激酶级联 → 入核转录 → 效应。
+
+    与 cell_pathway.py 共用同一套坐标，动画中会有一个"信号小点"沿箭头移动，
+    直观表现信号转导的方向与跨膜 / 入核过程。
+    """
+    setup_font()
+    configure_ffmpeg()
+    out_dir.mkdir(exist_ok=True)
+    targets = targets if targets is not None else pathway_targets()
+    pw = PATHWAYS[name]
+    nodes = {n["id"]: n for n in pw["nodes"]}
+    pos, order = cell_layout(name)
+
+    parent: Dict[str, str] = {}
+    for s, t, _ in pw["edges"]:
+        parent.setdefault(t, s)
+
+    fig, ax = plt.subplots(figsize=(12, 7.6), dpi=110)
+    fig.patch.set_facecolor("#ffffff")
+    fig.subplots_adjust(left=0.01, right=0.99, top=0.93, bottom=0.05)
+
+    def draw(step: int, progress: float) -> None:
+        ax.clear()
+        ax.set_xlim(0, 10)
+        ax.set_ylim(0, 7.3)
+        ax.axis("off")
+
+        # ---- 细胞结构
+        ax.add_patch(mp.Rectangle((0, 0), MEMBRANE_X, 7.3, facecolor="#eaf2fb",
+                                  edgecolor="none", zorder=0))
+        ax.add_patch(mp.FancyBboxPatch(
+            (MEMBRANE_X, 0.15), 10 - MEMBRANE_X - 0.12, 7.0,
+            boxstyle="round,pad=0,rounding_size=0.55", facecolor="#fffdf5",
+            edgecolor="#8a8a8a", linewidth=2, zorder=0.5))
+        ax.add_patch(mp.Rectangle((MEMBRANE_X - 0.08, 0.15), 0.16, 7.0,
+                                  facecolor="#f3d7a4", edgecolor="#c9a45c",
+                                  linewidth=1.2, zorder=1))
+        ax.add_patch(mp.Ellipse((NUCLEUS[0], NUCLEUS[1]), NUCLEUS[2] * 2,
+                                NUCLEUS[3] * 2, facecolor="#e8f0fb",
+                                edgecolor="#5677a8", linewidth=2.4, zorder=1))
+        ax.add_patch(mp.Ellipse((NUCLEUS[0], NUCLEUS[1]), NUCLEUS[2] * 2 - 0.18,
+                                NUCLEUS[3] * 2 - 0.18, facecolor="none",
+                                edgecolor="#9db8d8", linewidth=1.2, linestyle="--",
+                                zorder=1.1))
+        ax.add_patch(mp.Circle((NUCLEUS[0] + 0.55, NUCLEUS[1] - 0.7), 0.34,
+                               facecolor="#d5e3f5", edgecolor="#9db8d8", zorder=1.2))
+        for mx, my in ((3.3, 5.6), (3.8, 1.2)):
+            ax.add_patch(mp.Ellipse((mx, my), 0.84, 0.44, facecolor="#ffe9d6",
+                                    edgecolor="#d98324", linewidth=1.2, zorder=1.2))
+        ax.text(0.1, 7.05, "细胞外", fontsize=13, color="#4a76a8", fontweight="bold")
+        ax.text(0.1, 6.72, "配体/细胞因子", fontsize=10, color="#6b8fb5")
+        ax.text(MEMBRANE_X + 0.14, 0.32, "细胞膜（受体）", fontsize=10, color="#b08a3c")
+        ax.text(2.9, 6.9, "细胞质（激酶级联）", fontsize=10, color="#8a8a8a")
+        ax.text(NUCLEUS[0] - 0.6, NUCLEUS[1] + NUCLEUS[3] - 0.28, "细胞核",
+                fontsize=13, color="#5677a8", fontweight="bold")
+
+        ax.text(0.12, 7.05, "", fontsize=1)
+        ax.set_title(f"{name}（细胞水平）", fontsize=17, fontweight="bold",
+                     color="#222", loc="left", pad=12)
+
+        visible = set(order[:step + 1])
+        current = order[step]
+
+        # ---- 边
+        for s, t, label in pw["edges"]:
+            if t not in visible:
+                continue
+            x1, y1 = pos[s]
+            x2, y2 = pos[t]
+            hot = (t == current)
+            ax.add_patch(mp.FancyArrowPatch(
+                (x1 + 0.62, y1), (x2 - 0.66, y2), arrowstyle="-|>",
+                mutation_scale=13, linewidth=2 if hot else 1.6,
+                color="#E4572E" if hot else "#8a8a8a", alpha=0.95,
+                connectionstyle="arc3,rad=0.06", zorder=2))
+            if label:
+                ax.text((x1 + x2) / 2, (y1 + y2) / 2 + 0.16, label, fontsize=8.5,
+                        color="#E4572E" if hot else "#888", ha="center", zorder=3)
+
+        # ---- 节点
+        for nid in visible:
+            node = nodes[nid]
+            x, y = pos[nid]
+            kind_label, color = KIND_STYLE[node["kind"]]
+            is_new = (nid == current)
+            alpha = max(0.0, (progress - 0.6) / 0.4) if is_new else 1.0
+            alpha = min(1.0, alpha)
+            star = "★ " if node.get("gene", "").upper() in targets else ""
+            ax.add_patch(mp.FancyBboxPatch(
+                (x - 0.74, y - 0.28), 1.48, 0.56,
+                boxstyle="round,pad=0.04,rounding_size=0.13", facecolor=color,
+                edgecolor="#ffffff", linewidth=2, alpha=alpha, zorder=4))
+            if is_new:
+                ax.add_patch(mp.FancyBboxPatch(
+                    (x - 0.82, y - 0.36), 1.64, 0.72,
+                    boxstyle="round,pad=0.04,rounding_size=0.16", facecolor="none",
+                    edgecolor="#E4572E", linewidth=2.4, alpha=0.35 + 0.6 * alpha,
+                    zorder=5))
+            ax.text(x, y, f"{star}{node['label']}", ha="center", va="center",
+                    fontsize=9.2, color="#ffffff", fontweight="bold", alpha=alpha,
+                    zorder=6)
+            ax.text(x, y - 0.36, kind_label, ha="center", fontsize=7.5, color="#777",
+                    alpha=alpha, zorder=6)
+
+        # ---- 信号小点（沿箭头移动，表现跨膜 / 入核）
+        src = parent.get(current)
+        if src is not None and progress < 0.98:
+            sx, sy = pos[src]
+            tx, ty = pos[current]
+            px = sx + (tx - sx) * progress
+            py = sy + (ty - sy) * progress
+            ax.add_patch(mp.Circle((px, py), 0.11, facecolor="#E4572E",
+                                   edgecolor="#ffffff", linewidth=1.2, zorder=7))
+            ax.add_patch(mp.Circle((px, py), 0.11 + 0.05 * (1 - progress),
+                                   facecolor="none", edgecolor="#E4572E",
+                                   linewidth=1.2, alpha=0.5 * (1 - progress), zorder=7))
+
+        handles = [mp.Patch(facecolor=c, edgecolor="none", label=l)
+                   for l, c in KIND_STYLE.values()]
+        ax.legend(handles=handles, loc="lower center", fontsize=8.5, ncol=6,
+                  frameon=False, bbox_to_anchor=(0.5, -0.04))
+        ax.text(9.9, 0.14, "★ = 本方成分作用靶点", fontsize=8.5, color="#E4572E",
+                ha="right")
+        ax.text(9.9, 7.02, f"{step + 1}/{len(order)}", fontsize=10, color="#999",
+                ha="right")
+
+    grow, hold = 14, 14
+    frames_per_step = grow + hold
+    total = len(order) * frames_per_step + 45
+
+    def update(i: int) -> None:
+        if i < len(order) * frames_per_step:
+            step = i // frames_per_step
+            progress = min(1.0, (i % frames_per_step) / grow * 0.7 + 0.3)
+        else:
+            step, progress = len(order) - 1, 1.0
+        draw(step, progress)
+
+    draw(0, 0.0)
+    anim = FuncAnimation(fig, update, frames=total, interval=1000 / fps)
+    out = out_dir / f"{safe_name(name)}_细胞水平.mp4"
+    try:
+        anim.save(out, writer=FFMpegWriter(fps=fps, codec="libx264",
+                                           extra_args=["-pix_fmt", "yuv420p"]))
+    except Exception:
+        out = out_dir / f"{safe_name(name)}_细胞水平.gif"
+        anim.save(out, writer=PillowWriter(fps=max(6, fps // 3)))
+    plt.close(fig)
+    return out
+
+
 def make_overview(fps: int = 20, out_dir: Path = VIDEO_DIR) -> Optional[Path]:
     """总览视频：依次列出全部通路名与其关键节点。"""
     setup_font()
@@ -294,6 +448,8 @@ def main() -> None:
     parser.add_argument("--pathway", help="通路名（与 pathways.py 中的键一致）")
     parser.add_argument("--all", action="store_true", help="生成全部通路")
     parser.add_argument("--overview", action="store_true", help="生成总览视频")
+    parser.add_argument("--cell", action="store_true",
+                        help="生成细胞水平动画（配体→膜受体→胞质级联→入核→效应）")
     parser.add_argument("--fps", type=int, default=20)
     args = parser.parse_args()
 
@@ -316,7 +472,7 @@ def main() -> None:
         if name not in PATHWAYS:
             print("未找到通路：", name)
             continue
-        out = make_video(name, args.fps)
+        out = make_cell_video(name, args.fps) if args.cell else make_video(name, args.fps)
         if out:
             made.append(out)
             print("已生成", out)

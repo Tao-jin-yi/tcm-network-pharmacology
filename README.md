@@ -27,6 +27,8 @@
 | `make_video.py` | 通路级联动画视频（`--cell` 生成细胞水平版本；MP4，失败回退 GIF） | 教学视频 |
 | `pathways.py` | 12 条信号通路拓扑（配体→受体→激酶→转录因子→效应）与靶点归类 | 机制通路图 |
 | `requirements.txt` | 依赖清单 | 部署 |
+| `.streamlit/config.toml` | Streamlit 运行配置（headless、CORS、主题） | 部署 |
+| `public_tunnel.py` | 一键把本机应用映射成公网地址（Cloudflare Quick Tunnel） | 公开访问 |
 
 ## 安装
 
@@ -47,6 +49,45 @@ streamlit run app.py
 ```
 
 浏览器自动打开 `http://localhost:8501`，改完代码保存即自动刷新。
+
+## 公开访问
+
+### 方式一：本机临时公网地址（免服务器、免注册，推荐先用这个）
+
+用 Cloudflare Quick Tunnel 把本机 8501 端口映射成公网 HTTPS 地址：
+
+```powershell
+winget install --id Cloudflare.cloudflared -e   # 只需装一次
+python public_tunnel.py                          # 自动拉起应用 + 隧道
+```
+
+脚本会打印形如 `https://xxxx.trycloudflare.com` 的地址（同时写入 `public_url.txt`），
+任何人用浏览器打开即可访问。
+
+- 不需要公网 IP、不需要路由器端口映射；
+- **地址每次重启都会变化**，电脑关机 / 睡眠后失效；
+- 按 `Ctrl+C` 停止隧道（会一并关闭隧道进程）。
+
+### 方式二：部署到 Streamlit Community Cloud（固定网址，长期可访问）
+
+仓库已在 GitHub（`Tao-jin-yi/tcm-network-pharmacology`），直接部署即可：
+
+1. 打开 <https://share.streamlit.io/>，用 **GitHub 账号**登录；
+2. 点 **New app** → 选仓库 `Tao-jin-yi/tcm-network-pharmacology`、
+   分支 `main`、主文件 `app.py`；
+3. URL 子域名填想要的短名（例如 `tcm-network`），点 **Deploy**；
+4. 几十秒后得到固定地址：`https://tcm-network.streamlit.app`。
+
+部署要点（已配好，无需改动）：
+
+- 依赖走 `requirements.txt`（含 `matplotlib`、`imageio-ffmpeg`，视频区可正常播放 / 生成）；
+- `.streamlit/config.toml`：headless、CORS、主题；
+- 数据文件（`network.json` / `target_info.json` / `literature.json` /
+  `compound_structures.json` / `videos/*.mp4`）均已入库，云端直接可读；
+- 云端是 Linux，视频生成较慢，建议只点"生成单条"，不要点"生成全部"（会超时）。
+
+> 注意：无论哪种方式，页面上的成分-靶点数据都来自数据库预测，
+> 公开分享时请保留页面内的"预测结果、非临床结论"说明。
 
 ## 界面功能
 

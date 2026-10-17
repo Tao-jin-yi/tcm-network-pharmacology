@@ -5,3 +5,4 @@ __pycache__/
 .idea/
 *.log
 .streamlit/secrets.toml
+public_url.txt

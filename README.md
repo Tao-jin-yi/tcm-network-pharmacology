@@ -29,6 +29,7 @@
 | `requirements.txt` | 依赖清单 | 部署 |
 | `.streamlit/config.toml` | Streamlit 运行配置（headless、CORS、主题） | 部署 |
 | `public_tunnel.py` | 一键把本机应用映射成公网地址（Cloudflare Quick Tunnel） | 公开访问 |
+| `smoke_test.py` | 界面冒烟测试（AppTest 跑各方剂与极端阈值，检查整页崩溃） | 回归测试 |
 
 ## 安装
 
@@ -88,6 +89,29 @@ python public_tunnel.py                          # 自动拉起应用 + 隧道
 
 > 注意：无论哪种方式，页面上的成分-靶点数据都来自数据库预测，
 > 公开分享时请保留页面内的"预测结果、非临床结论"说明。
+
+## 质量与稳定性
+
+改动后建议先跑冒烟测试（用 Streamlit 官方 AppTest 真机跑一遍界面）：
+
+```bash
+python smoke_test.py
+```
+
+覆盖 8 首方剂切换（含无成分数据的方剂）+ 4 个极端阈值（OB/DL 拉到 0 与上限，
+网络可能被清空），检查是否有未捕获异常导致整页崩溃。
+
+已修过的典型问题：切换方剂后 `picked_gene` 未定义（空数据路径）、
+配伍协同页缩进错误导致 `info` 未定义、空 `selectbox` options 崩溃、
+`set & list` 类型错误、`use_container_width` 弃用（新版已改为 `width="stretch"`）。
+
+已知技术债（尚未处理）：
+
+- `st.components.v1.html` 官方公告 2026-06-01 后移除，后续需替换为 `st.iframe`
+  （涉及解剖图、细胞通路图、3Dmol 结构，替换前需逐个验证渲染）；
+- 14 首方剂中只有「六味地黄丸」6/6 味药材有成分-靶点数据，其余需先用
+  `import_tcmsp.py` 导入数据才能做网络分析（侧栏已标注覆盖率）；
+- 页面在窄屏（手机）上多列布局较拥挤，未做移动端专门适配。
 
 ## 界面功能
 

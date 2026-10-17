@@ -19,6 +19,8 @@ from typing import Dict, List, Set
 import altair as alt
 import numpy as np
 import pandas as pd
+import os
+import platform
 import subprocess
 import sys
 from urllib.parse import quote
@@ -71,6 +73,46 @@ def load_target_info() -> dict:
     return json.loads(TARGET_INFO_FILE.read_text(encoding="utf-8"))
 
 
+@st.cache_data(show_spinner=False)
+def load_literature() -> dict:
+    """读取文献数据（literature.json，约 450 KB）。"""
+    if not LITERATURE_FILE.exists():
+        return {}
+    return json.loads(LITERATURE_FILE.read_text(encoding="utf-8"))
+
+
+@st.cache_data(show_spinner=False)
+def build_network(ob: float, dl: float, formula: str) -> dict:
+    """按阈值与所选方剂裁剪网络（结果缓存，避免每次交互重算）。"""
+    elements = filter_elements(load_network(str(DATA_FILE)), ob, dl)
+    if formula:
+        elements = filter_by_formula(elements, formula_herbs(formula))
+    return elements
+
+
+@st.cache_data(show_spinner=False)
+def compute_herb_targets(ob: float, dl: float, formula: str) -> Dict[str, List[str]]:
+    """各味药的靶点集合（缓存）。"""
+    mapping = herb_target_map(build_network(ob, dl, formula))
+    return {herb: sorted(targets) for herb, targets in mapping.items()}
+
+
+@st.cache_data(show_spinner="正在计算 DC / BC / CC / EC / LAC / NC ...")
+def compute_cyto_nca(ob: float, dl: float, formula: str, rounds: int):
+    """CytoNCA 迭代筛选（缓存：网络不变、轮次不变时不重算）。"""
+    graph = elements_to_graph(build_network(ob, dl, formula))
+    core_graph, rounds_df, metrics_df = cyto_nca_filter(graph, max_rounds=rounds)
+    core = sorted(node.replace("TGT::", "") for node in core_graph.nodes
+                  if str(node).startswith("TGT::"))
+    return core, rounds_df, metrics_df
+
+
+@st.cache_data(show_spinner=False)
+def read_video_bytes(path_str: str) -> bytes:
+    """读取视频字节（缓存，避免每次刷新重读几 MB 文件）。"""
+    return Path(path_str).read_bytes()
+
+
 @st.cache_data(show_spinner="正在从 AlphaFold 下载蛋白结构 ...")
 def load_alphafold_pdb(accession: str) -> str:
     """按 UniProt 登录号取 AlphaFold 预测的 PDB 文本，失败返回空串。"""
@@ -80,6 +122,50 @@ def load_alphafold_pdb(accession: str) -> str:
     except Exception:
         return ""
     return resp.text if resp.status_code == 200 and "ATOM" in resp.text else ""
+
+
+def video_generation_enabled() -> bool:
+    """是否允许在页面里触发视频渲染（单条约 3 分钟，很耗资源）。
+
+    本机（Windows）默认开；部署到云端（Linux）默认关，避免陌生人点击
+    把服务器 CPU 占满或触发平台超时。可用环境变量 TCM_ALLOW_VIDEO=1 强制开启。
+    """
+    flag = os.environ.get("TCM_ALLOW_VIDEO", "auto").strip().lower()
+    if flag in ("1", "true", "yes", "on"):
+        return True
+    if flag in ("0", "false", "no", "off"):
+        return False
+    return platform.system() == "Windows"
+
+
+def run_video_job(args: List[str], label: str, background: bool = False) -> None:
+    """执行 make_video.py：防重复点击、超时与失败均有反馈。"""
+    if st.session_state.get("video_busy"):
+        st.warning("已有渲染任务在进行中，请稍候。")
+        return
+    cmd = [sys.executable, "make_video.py", *args]
+    if background:  # 长时间任务放后台，避免页面卡住 / 云端超时
+        log_path = HERE / "video_job.log"
+        with open(log_path, "w", encoding="utf-8") as handle:
+            subprocess.Popen(cmd, cwd=str(HERE), stdout=handle,
+                             stderr=subprocess.STDOUT)
+        st.info(f"已在后台开始{label}，进度见 `video_job.log`；完成后刷新本页即可看到新视频。")
+        return
+    st.session_state["video_busy"] = True
+    with st.spinner(f"正在渲染{label}…"):
+        try:
+            proc = subprocess.run(cmd, cwd=str(HERE), capture_output=True,
+                                  timeout=1800)
+        except subprocess.TimeoutExpired:
+            st.error("渲染超时（30 分钟）已中止；建议在终端直接运行 make_video.py。")
+            st.session_state["video_busy"] = False
+            return
+    st.session_state["video_busy"] = False
+    if proc.returncode != 0:
+        detail = (proc.stderr or b"").decode("utf-8", "ignore")[-500:]
+        st.error(f"渲染失败（返回码 {proc.returncode}）：{detail or '未知错误'}")
+    else:
+        st.rerun()
 
 
 def render_protein_3d(pdb_text: str, height: int = 430) -> None:
@@ -146,11 +232,21 @@ with st.sidebar:
     st.header("参数")
 
     st.subheader("分析方剂")
+    # 每首方剂标注数据覆盖率（只有药材在库中有成分-靶点数据才能做网络分析）
+    db_herbs = {n["data"]["name"] for n in raw_elements["nodes"]
+                if n["data"]["label"] == "HERB"}
+    formula_options: Dict[str, str] = {}
+    for name in formula_names():
+        hit, total, _ = formula_coverage(name, db_herbs)
+        tag = f"可分析 {hit}/{total} 味" if hit else f"仅方解 {hit}/{total} 味"
+        formula_options[f"{name}　{tag}"] = name
     formula_choice = st.selectbox(
-        "选择复方", ["全方（全部药材）"] + formula_names(),
+        "选择复方", ["全方（全部药材）"] + list(formula_options),
         help="切换到某首方剂时，网络与后续分析会只保留该方剂所含药材相关的"
-             "成分与靶点；暂无成分数据的方剂只展示方解。")
-    st.caption(f"复方库共 {len(formula_names())} 首方剂（formulas.py）")
+             "成分与靶点；标注「仅方解」的方剂暂无成分数据，只展示方剂说明。")
+    st.caption(f"复方库共 {len(formula_names())} 首（formulas.py）。"
+               "只有药材在库中有成分-靶点数据时才能做网络分析，"
+               "其余方剂仅提供组成、方解与使用注意。")
 
     st.subheader("活性成分筛选")
     ob_min = st.slider("OB 口服生物利用度 ≥ (%)", 0.0, 100.0,
@@ -194,10 +290,9 @@ def filter_by_formula(elements: dict, herb_names: List[str]) -> dict:
     }
 
 
-elements = filter_elements(raw_elements, ob_min, dl_min)
-selected_formula = None if formula_choice.startswith("全方") else formula_choice
-if selected_formula:
-    elements = filter_by_formula(elements, formula_herbs(selected_formula))
+selected_formula = (None if formula_choice.startswith("全方")
+                    else formula_options.get(formula_choice, formula_choice))
+elements = build_network(ob_min, dl_min, selected_formula or "")
 
 herbs = sorted({n["data"]["name"] for n in elements["nodes"]
                 if n["data"]["label"] == "HERB"})
@@ -250,7 +345,7 @@ with tab_formula:
 
     st.markdown("### 组成与方解（君臣佐使）")
     st.dataframe(pd.DataFrame(formula_rows(shown)), hide_index=True,
-                 use_container_width=True)
+                 width="stretch")
 
     for role, members, explain in formula["roles"]:
         with st.expander(f"{role}：{'、'.join(members)}", expanded=(role == "君药")):
@@ -306,28 +401,32 @@ with tab_graph:
 
 # -------------------------------------------------------- 2. 配伍协同分析
 with tab_synergy:
-    herb_targets = herb_target_map(elements)
+    herb_targets = compute_herb_targets(ob_min, dl_min, selected_formula or "")
     if not herb_targets:
-        st.warning("当前阈值下没有可分析的数据。")
+        st.warning("当前阈值或所选方剂下没有可分析的数据："
+                   "请在左侧切换回「全方」或降低 OB / DL 阈值。")
     else:
-        all_targets: Set[str] = set().union(*herb_targets.values())
+        target_sets: Dict[str, Set[str]] = {h: set(v) for h, v in herb_targets.items()}
+        all_targets: Set[str] = set().union(*target_sets.values())
         selected = st.selectbox("选择一味药", sorted(herb_targets))
-        herb_set = herb_targets[selected]
+        herb_set = target_sets[selected]
 
         info = get_herb_info(selected)
-    if info:
-        st.markdown(f"**{selected}**　{info['nature']}　{info['meridian']}　"
-                    f"方中角色：{info['role']}　分类：{info['category']}")
-        st.caption(f"功效主治：{info['action']}")
-    else:
-        st.caption("该药尚未录入功效主治，可在 herb_info.py 中补充。")
-
+        if info:
+            st.markdown(f"**{selected}**　{info.get('nature', '—')}　"
+                        f"{info.get('meridian', '—')}　"
+                        f"方中角色：{info.get('role', '—')}　"
+                        f"分类：{info.get('category', '—')}")
+            st.caption(f"功效主治：{info.get('action', '—')}")
+        else:
+            st.caption("该药尚未录入功效主治，可在 herb_info.py 中补充。")
 
         c1, c2, c3 = st.columns(3)
         c1.metric("覆盖靶点数", len(herb_set))
-        c2.metric("靶点覆盖率", f"{len(herb_set & all_targets) / len(all_targets):.1%}")
+        c2.metric("靶点覆盖率",
+                  f"{len(herb_set & all_targets) / max(len(all_targets), 1):.1%}")
         c3.metric("独有靶点数",
-                  len(herb_set - set().union(*[v for k, v in herb_targets.items()
+                  len(herb_set - set().union(*[v for k, v in target_sets.items()
                                                if k != selected])))
 
         others = [h for h in sorted(herb_targets) if h != selected]
@@ -335,20 +434,20 @@ with tab_synergy:
         if compare:
             rows = []
             for other in compare:
-                shared = herb_set & herb_targets[other]
-                union = herb_set | herb_targets[other]
+                shared = herb_set & target_sets[other]
+                union = herb_set | target_sets[other]
                 rows.append({
                     "对比药": other,
                     "共享靶点数": len(shared),
                     "Jaccard 相似度": round(len(shared) / len(union), 3) if union else 0.0,
                     "共享靶点": ", ".join(sorted(shared)[:30]),
                 })
-            st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+            st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
 
             st.markdown("**共享靶点（交集）**")
             shared_all: Set[str] = set(herb_set)
             for other in compare:
-                shared_all &= herb_targets[other]
+                shared_all &= target_sets[other]
             st.write(", ".join(sorted(shared_all)) if shared_all else "无")
 
         st.markdown("**各味药靶点数**")
@@ -360,18 +459,20 @@ with tab_synergy:
 
         st.markdown("**该味药的靶点列表**")
         st.dataframe(pd.DataFrame({"靶点": sorted(herb_set)}),
-                     hide_index=True, use_container_width=True)
+                     hide_index=True, width="stretch")
 
         with st.expander("全方药材用途一览（性味归经 / 功效主治 / 君臣佐使）"):
             rows = []
             for herb_name in sorted(herb_targets):
                 item = get_herb_info(herb_name)
                 if item:
-                    rows.append({"中药": herb_name, "性味": item["nature"],
-                                 "归经": item["meridian"], "分类": item["category"],
-                                 "角色": item["role"], "功效主治": item["action"]})
+                    rows.append({"中药": herb_name, "性味": item.get("nature", "—"),
+                                 "归经": item.get("meridian", "—"),
+                                 "分类": item.get("category", "—"),
+                                 "角色": item.get("role", "—"),
+                                 "功效主治": item.get("action", "—")})
             if rows:
-                st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+                st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
             else:
                 st.caption("尚未录入药材用途，可在 herb_info.py 中补充。")
 
@@ -380,15 +481,12 @@ with tab_core:
     if not elements["nodes"]:
         st.warning("当前阈值下没有可分析的网络。")
     else:
-        graph = elements_to_graph(elements)
-        with st.spinner("正在计算 DC / BC / CC / EC / LAC / NC ..."):
-            core_graph, rounds_df, metrics_df = cyto_nca_filter(graph, max_rounds=n_rounds)
+        core_targets, rounds_df, metrics_df = compute_cyto_nca(
+            ob_min, dl_min, selected_formula or "", n_rounds)
 
         st.markdown("**迭代筛选过程**")
-        st.dataframe(rounds_df, hide_index=True, use_container_width=True)
+        st.dataframe(rounds_df, hide_index=True, width="stretch")
 
-        core_targets = sorted(n.replace("TGT::", "") for n in core_graph.nodes
-                              if str(n).startswith("TGT::"))
         st.metric("核心靶点数", len(core_targets))
         if core_targets:
             st.write(", ".join(core_targets))
@@ -405,7 +503,7 @@ with tab_core:
                              ["、".join(info.get(t, {}).get("locations", [])[:2])
                               for t in table.index])
             st.markdown("**核心靶点的拓扑指标**")
-            st.dataframe(table, use_container_width=True)
+            st.dataframe(table, width="stretch")
             st.download_button(
                 "下载核心靶点 CSV",
                 data=table.reset_index().rename(columns={"index": "靶点"}).to_csv(index=False)
@@ -423,40 +521,44 @@ with tab_target:
     else:
         all_t = sorted({n["data"]["name"] for n in elements["nodes"]
                         if n["data"]["label"] == "TARGET"})
-        options = core_targets + [t for t in all_t if t not in core_targets]
-        picked = st.selectbox("选择靶点（核心靶点排在前面）", options)
-
-        item = info.get(picked.upper())
-        if not item:
-            st.warning(f"UniProt 中暂无 {picked} 的人源已审阅记录。")
+        if not all_t:
+            st.info("当前范围内没有靶点：所选方剂可能暂无成分-靶点数据，"
+                    "请在左侧切换回「全方」或降低 OB / DL 阈值。")
         else:
-            st.markdown(f"### {picked}　{item['protein']}")
-            c1, c2, c3, c4 = st.columns(4)
-            c1.metric("UniProt 登录号", item["accession"] or "-")
-            c2.metric("物种", item["organism"] or "Homo sapiens")
-            c3.metric("氨基酸长度", item["length"] or "-")
-            c4.metric("是否核心靶点", "是" if picked in core_targets else "否")
-            st.markdown(f"[在 UniProt 打开 {item['accession']}]({item['uniprot_url']})")
+            options = core_targets + [t for t in all_t if t not in core_targets]
+            picked = st.selectbox("选择靶点（核心靶点排在前面）", options)
 
-            if item["locations"]:
-                st.markdown("**亚细胞定位（UniProt 注释）**")
-                st.markdown("　".join(f"`{loc}`" for loc in item["locations"]))
-            if item["function"]:
-                st.markdown("**功能描述**")
-                st.caption(item["function"])
-
-            st.markdown("**蛋白三维结构**（AlphaFold DB 预测模型，可旋转缩放）")
-            pdb_text = load_alphafold_pdb(item["accession"])
-            if pdb_text:
-                render_protein_3d(pdb_text)
-                st.download_button(
-                    "下载 PDB 结构文件",
-                    data=pdb_text,
-                    file_name=f"AF-{item['accession']}-F1-model_v6.pdb",
-                    mime="chemical/x-pdb",
-                )
+            item = info.get(picked.upper())
+            if not item:
+                st.warning(f"UniProt 中暂无 {picked} 的人源已审阅记录。")
             else:
-                st.info("AlphaFold 暂无该蛋白的预测结构。")
+                st.markdown(f"### {picked}　{item['protein']}")
+                c1, c2, c3, c4 = st.columns(4)
+                c1.metric("UniProt 登录号", item["accession"] or "-")
+                c2.metric("物种", item["organism"] or "Homo sapiens")
+                c3.metric("氨基酸长度", item["length"] or "-")
+                c4.metric("是否核心靶点", "是" if picked in core_targets else "否")
+                st.markdown(f"[在 UniProt 打开 {item['accession']}]({item['uniprot_url']})")
+
+                if item["locations"]:
+                    st.markdown("**亚细胞定位（UniProt 注释）**")
+                    st.markdown("　".join(f"`{loc}`" for loc in item["locations"]))
+                if item["function"]:
+                    st.markdown("**功能描述**")
+                    st.caption(item["function"])
+
+                st.markdown("**蛋白三维结构**（AlphaFold DB 预测模型，可旋转缩放）")
+                pdb_text = load_alphafold_pdb(item["accession"])
+                if pdb_text:
+                    render_protein_3d(pdb_text)
+                    st.download_button(
+                        "下载 PDB 结构文件",
+                        data=pdb_text,
+                        file_name=f"AF-{item['accession']}-F1-model_v6.pdb",
+                        mime="chemical/x-pdb",
+                    )
+                else:
+                    st.info("AlphaFold 暂无该蛋白的预测结构。")
 
         if core_targets:
             st.markdown("**核心靶点的亚细胞定位分布**")
@@ -478,7 +580,7 @@ with tab_lit:
         st.info("未找到 literature.json，请先运行 `python fetch_literature.py` "
                 "从 PubMed 抓取文献。")
     else:
-        lit = json.loads(LITERATURE_FILE.read_text(encoding="utf-8"))
+        lit = load_literature()
         herb_options = ["全部中药"] + sorted(lit)
         picked_herb = st.selectbox("选择中药", herb_options)
         scope = (lit if picked_herb == "全部中药"
@@ -506,7 +608,7 @@ with tab_lit:
                         color=alt.Color("文献数:Q", scale=alt.Scale(scheme="oranges")),
                         tooltip=["机制", "文献数"],
                     ).properties(height=max(160, 26 * len(mech_count))),
-                    use_container_width=True)
+                    width="stretch")
 
             target_rows = [{"靶点": t} for a in articles for t in a.get("targets", [])]
             if target_rows:
@@ -520,7 +622,7 @@ with tab_lit:
                         color=alt.Color("文献数:Q", scale=alt.Scale(scheme="teals")),
                         tooltip=["靶点", "文献数"],
                     ).properties(height=max(160, 24 * len(t_count))),
-                    use_container_width=True)
+                    width="stretch")
 
             st.markdown("**文献列表**")
             table = pd.DataFrame([{
@@ -529,13 +631,14 @@ with tab_lit:
                 "靶点": "、".join(a.get("targets", [])),
                 "PMID": a.get("pmid"),
             } for a in articles]).sort_values("年份", ascending=False)
-            st.dataframe(table, hide_index=True, use_container_width=True)
+            st.dataframe(table, hide_index=True, width="stretch")
 
             # -------------------------------------------- 一键直达原文链接
             st.markdown("### 打开原文（一键直达）")
             st.caption("链接由 Europe PMC 解析（DOI / PMCID / 开放获取全文）；"
                        "若期刊需订阅，请用学术检索找免费版本。")
-            titles = [(f"{a.get('year')}　{a.get('title')[:60]}", a) for a in articles]
+            titles = [(f"[{i}] {a.get('year')}　{str(a.get('title'))[:58]}", a)
+                      for i, a in enumerate(articles, 1)]
             picked_title = st.selectbox("选择文献", [t for t, _ in titles],
                                         key="lit_pick")
             picked_article = next(a for t, a in titles if t == picked_title)
@@ -610,21 +713,21 @@ with tab_pk:
             st.altair_chart(
                 alt.Chart(pk_df).mark_line(color="#2A629A").encode(
                     x=alt.X("时间 (h):Q"), y=alt.Y("血药浓度 (mg/L):Q")),
-                use_container_width=True)
+                width="stretch")
             st.markdown("**剂量 - 效应曲线（量-效）**")
             dr_df = simulate_dose_response(e0, emax, ec50, hill,
                                            d_max=max(200.0, dose * 3))
             st.altair_chart(
                 alt.Chart(dr_df).mark_line(color="#FF7F3E").encode(
                     x=alt.X("剂量 (mg/kg):Q"), y=alt.Y("效应 (%):Q")),
-                use_container_width=True)
+                width="stretch")
         with col_b:
             st.markdown("**效应 - 时间曲线（时-效，PK 驱动）**")
             et_df = simulate_effect_time(dose, f_bio, vd, ka, ke, e0, emax, ec50, hill)
             st.altair_chart(
                 alt.Chart(et_df).mark_line(color="#3CB371").encode(
                     x=alt.X("时间 (h):Q"), y=alt.Y("效应 (%):Q")),
-                use_container_width=True)
+                width="stretch")
             st.markdown("**多剂量 PK 比较**")
             multi = []
             for d in [dose * 0.5, dose, dose * 2]:
@@ -635,13 +738,13 @@ with tab_pk:
                 alt.Chart(pd.concat(multi)).mark_line().encode(
                     x=alt.X("时间 (h):Q"), y=alt.Y("血药浓度 (mg/L):Q"),
                     color=alt.Color("剂量:N")),
-                use_container_width=True)
+                width="stretch")
     else:
         st.markdown("上传 CSV：一列自变量（剂量或时间），一列因变量（效应或浓度）。")
         up = st.file_uploader("实验数据 CSV", type=["csv"])
         if up is not None:
             data = pd.read_csv(up)
-            st.dataframe(data, hide_index=True, use_container_width=True)
+            st.dataframe(data, hide_index=True, width="stretch")
             kind = st.radio("数据类型", ["量-效（剂量 vs 效应）", "药-时（时间 vs 浓度）"],
                             horizontal=True)
             xcol = st.selectbox("自变量列", data.columns)
@@ -668,7 +771,7 @@ with tab_pk:
                         x=f"{xcol}:Q", y=f"{ycol}:Q")
                     line = alt.Chart(fit_df).mark_line(color="#FF7F3E").encode(
                         x=f"{xcol}:Q", y="拟合值:Q")
-                    st.altair_chart(base + line, use_container_width=True)
+                    st.altair_chart(base + line, width="stretch")
 
     st.markdown("---")
     st.markdown("### 实验动物模型")
@@ -705,7 +808,7 @@ with tab_pk:
             color=alt.Color("阶段:N", legend=None),
             tooltip=["阶段", "开始", "结束"],
         ).properties(height=180),
-        use_container_width=True)
+        width="stretch")
 
     default_groups = pd.DataFrame([
         {"组别": "空白对照组", "动物数": 12, "造模": "普通饲料", "剂量 (mg/kg)": 0,
@@ -722,14 +825,14 @@ with tab_pk:
          "给药": "灌胃"},
     ])
     groups = st.data_editor(default_groups, num_rows="dynamic",
-                            use_container_width=True)
+                            width="stretch")
     st.altair_chart(
         alt.Chart(groups).mark_bar(cornerRadiusEnd=3).encode(
             x=alt.X("剂量 (mg/kg):Q"), y=alt.Y("组别:N", sort=None),
             color=alt.Color("动物数:Q", scale=alt.Scale(scheme="blues")),
             tooltip=list(groups.columns),
         ).properties(height=220),
-        use_container_width=True)
+        width="stretch")
     st.download_button("下载分组方案 CSV",
                        data=groups.to_csv(index=False).encode("utf-8-sig"),
                        file_name="animal_groups.csv", mime="text/csv")
@@ -771,7 +874,7 @@ with tab_animal:
                     "类别": target_class(g, subset[g]),
                     "亚细胞定位": "、".join(subset[g].get("locations", [])[:2]),
                     "组织特异性": subset[g].get("tissue", "")[:60],
-                } for g in organ_genes]), hide_index=True, use_container_width=True)
+                } for g in organ_genes]), hide_index=True, width="stretch")
             else:
                 st.caption("该器官在当前靶点范围内没有 UniProt 组织特异性注释支持。")
 
@@ -805,31 +908,36 @@ with tab_animal:
         st.markdown("---")
         st.markdown("### 受体点位（细胞分区）")
         pool = organ_genes or genes
-        picked_gene = st.selectbox("选择靶点", pool)
-        gene_item = info.get(picked_gene.upper(), {})
-        show_all = st.checkbox("显示当前靶点范围全部靶点的细胞分布", value=False)
-
-        if show_all:
-            pairs = [(g, loc) for g in genes
-                     for loc in (info.get(g.upper(), {}).get("locations") or [])]
+        if not pool:
+            st.info("当前范围内没有靶点（所选方剂暂无成分-靶点数据），"
+                    "请切换回「全方」或降低 OB / DL 阈值。")
+            picked_gene = ""  # 降级：仍可查看通路图，只是不做靶点高亮
         else:
-            pairs = [(picked_gene, loc)
-                     for loc in (gene_item.get("locations") or ["未标注"])]
+            picked_gene = st.selectbox("选择靶点", pool)
+            gene_item = info.get(picked_gene.upper(), {})
+            show_all = st.checkbox("显示当前靶点范围全部靶点的细胞分布", value=False)
 
-        cell_left, cell_right = st.columns([1.3, 1])
-        with cell_left:
-            components.html(render_cell(pairs), height=340)
-        with cell_right:
-            st.markdown(f"**{picked_gene}**　{gene_item.get('protein', '-')}")
-            st.metric("功能类别", target_class(picked_gene, gene_item))
-            st.metric("UniProt", gene_item.get("accession", "-"))
-            locs = gene_item.get("locations") or []
-            if locs:
-                st.markdown("**亚细胞定位**")
-                for loc in locs:
-                    st.markdown(f"- `{loc}` → **{compartment_of(loc)}**")
+            if show_all:
+                pairs = [(g, loc) for g in genes
+                         for loc in (info.get(g.upper(), {}).get("locations") or [])]
             else:
-                st.caption("UniProt 未提供亚细胞定位注释。")
+                pairs = [(picked_gene, loc)
+                         for loc in (gene_item.get("locations") or ["未标注"])]
+
+            cell_left, cell_right = st.columns([1.3, 1])
+            with cell_left:
+                components.html(render_cell(pairs), height=340)
+            with cell_right:
+                st.markdown(f"**{picked_gene}**　{gene_item.get('protein', '-')}")
+                st.metric("功能类别", target_class(picked_gene, gene_item))
+                st.metric("UniProt", gene_item.get("accession", "-"))
+                locs = gene_item.get("locations") or []
+                if locs:
+                    st.markdown("**亚细胞定位**")
+                    for loc in locs:
+                        st.markdown(f"- `{loc}` → **{compartment_of(loc)}**")
+                else:
+                    st.caption("UniProt 未提供亚细胞定位注释。")
 
         st.markdown("---")
         st.markdown("### 作用机制通路图")
@@ -875,27 +983,27 @@ with tab_animal:
         if videos:
             pick_video = st.selectbox("选择视频", sorted(videos))
             st.video(str(videos[pick_video]))
-            st.download_button("下载该视频", data=videos[pick_video].read_bytes(),
+            st.download_button("下载该视频",
+                               data=read_video_bytes(str(videos[pick_video])),
                                file_name=videos[pick_video].name, mime="video/mp4")
         else:
-            st.info("还没有生成视频，点击下方按钮生成后即可在此播放。")
+            st.info("还没有生成视频，可在终端运行 `python make_video.py --all` 生成。")
 
-        b1, b2, b3 = st.columns(3)
-        if b1.button(f"生成「{picked_pw}」三层联动动画"):
-            with st.spinner("正在渲染三层联动动画（约 3 分钟）…"):
-                subprocess.run([sys.executable, "make_video.py", "--pathway", picked_pw],
-                               cwd=str(HERE), capture_output=True)
-            st.rerun()
-        if b2.button(f"生成「{picked_pw}」细胞水平动画"):
-            with st.spinner("正在渲染细胞水平动画（约 1–2 分钟）…"):
-                subprocess.run([sys.executable, "make_video.py", "--pathway", picked_pw,
-                                "--cell"], cwd=str(HERE), capture_output=True)
-            st.rerun()
-        if b3.button("重新生成全部 12 条三层动画 + 总览"):
-            with st.spinner("正在渲染全部视频（约 35 分钟）…"):
-                subprocess.run([sys.executable, "make_video.py", "--all", "--overview"],
-                               cwd=str(HERE), capture_output=True)
-            st.rerun()
+        if not video_generation_enabled():
+            st.info("当前为服务器 / 云端环境，已关闭页面内视频渲染"
+                    "（单条约 3 分钟，会占满 CPU 且易触发超时）。\n\n"
+                    "本机使用请在终端运行：`python make_video.py "
+                    "--pathway \"通路名\"`；或设置环境变量 `TCM_ALLOW_VIDEO=1` 后重启应用。")
+        else:
+            b1, b2, b3 = st.columns(3)
+            if b1.button(f"生成「{picked_pw}」三层联动动画"):
+                run_video_job(["--pathway", picked_pw], "三层联动动画（约 3 分钟）")
+            if b2.button(f"生成「{picked_pw}」细胞水平动画"):
+                run_video_job(["--pathway", picked_pw, "--cell"],
+                              "细胞水平动画（约 2 分钟）")
+            if b3.button("后台重新生成全部 12 条 + 总览"):
+                run_video_job(["--all", "--overview"], "全部视频（约 35 分钟）",
+                              background=True)
 
 # ------------------------------------------------------------- 8. 成分明细
 with tab_compound:
@@ -911,24 +1019,38 @@ with tab_compound:
                         "分子式", "分子量", "SMILES"]
         show["所属中药"] = show["所属中药"].apply(lambda x: "、".join(x))
         show = show.sort_values(["靶点数", "OB(%)"], ascending=[False, False])
-        st.dataframe(show, hide_index=True, use_container_width=True)
+        st.dataframe(show, hide_index=True, width="stretch")
 
         st.markdown("**化学结构式**")
         pick = st.selectbox("选择成分查看结构", show["成分"].tolist())
-        row = compounds_df[compounds_df["name"] == pick].iloc[0]
-        left, right = st.columns([1, 2])
-        if row.get("img_url"):
-            left.image(row["img_url"], caption=f"{pick}（PubChem CID {row.get('cid')}）",
-                       width=320)
+        rows = compounds_df[compounds_df["name"] == pick]
+        if rows.empty:
+            st.info("未找到该成分的记录，请重新选择。")
         else:
-            left.info("该成分暂无结构图，可运行 `python fetch_structures.py` 从 PubChem 补全。")
-        if row.get("smiles"):
-            right.markdown("**SMILES（可复制）**")
-            right.code(row["smiles"])
-            right.caption(f"分子式 {row.get('formula')}　分子量 {row.get('mw')}")
+            row = rows.iloc[0]
+            left, right = st.columns([1, 2])
+            if row.get("img_url"):
+                left.image(row["img_url"],
+                           caption=f"{pick}（PubChem CID {row.get('cid')}）", width=320)
+            else:
+                left.info("该成分暂无结构图，可运行 `python fetch_structures.py` 从 PubChem 补全。")
+            if row.get("smiles"):
+                right.markdown("**SMILES（可复制）**")
+                right.code(row["smiles"])
+                right.caption(f"分子式 {row.get('formula')}　分子量 {row.get('mw')}")
         st.download_button(
             "下载成分表 CSV",
             data=show.to_csv(index=False).encode("utf-8-sig"),
             file_name="compounds.csv",
             mime="text/csv",
         )
+
+# ---------------------------------------------------------------------- 页脚
+st.divider()
+st.caption(
+    "**数据说明与免责声明**：成分-靶点关系来自 TCMSP 等数据库与预测算法，"
+    "通路拓扑依据文献整理，靶点信息来自 UniProt，蛋白结构为 AlphaFold 预测模型，"
+    "文献来自 PubMed / Europe PMC。本平台用于教学与科研探索，"
+    "所有结果均为**预测或文献汇总**，不等同于实验验证结果，"
+    "也不构成任何诊断、用药或临床建议。"
+)

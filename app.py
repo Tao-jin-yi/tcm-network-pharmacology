@@ -19,13 +19,15 @@ from typing import Dict, List, Set
 import altair as alt
 import numpy as np
 import pandas as pd
+import subprocess
+import sys
 import requests
 import streamlit as st
 import streamlit.components.v1 as components
 from st_link_analysis import EdgeStyle, NodeStyle, st_link_analysis
 
-from animal_view import (ANIMALS, compartment_of, organ_target_map, render_animal,
-                         render_cell)
+from anatomy import SPECIES, render_anatomy
+from animal_view import (compartment_of, organ_target_map, render_cell)
 from herb_info import HERB_INFO, get_herb_info
 from pathways import (KIND_STYLE, PATHWAYS, pathway_elements, pathways_of_target,
                       target_class)
@@ -612,13 +614,14 @@ with tab_animal:
         counts = {organ: len(v) for organ, v in o_map.items()}
 
         left, right = st.columns([1.2, 1])
-        animal = left.selectbox("实验动物", list(ANIMALS))
+        animal = left.selectbox("实验动物", list(SPECIES))
         organs_sorted = sorted(counts, key=lambda o: -counts[o])
         picked_organ = right.selectbox("选择器官 / 组织", organs_sorted or ["（暂无）"])
         with left:
-            components.html(render_animal(animal, counts, picked_organ), height=360)
-            st.caption("圆点大小与颜色深浅 = 该器官相关靶点数；红框为当前选中器官。"
-                       "器官位置为示意布局，非解剖学精确作图。")
+            components.html(render_anatomy(animal, counts, picked_organ), height=430)
+            st.caption("解剖层级示意：心脏四腔、肺叶、肝分叶、豆形肾、小肠盘曲、盲肠、"
+                       "骨骼（脊柱/肋骨/骨盆）与大血管均按解剖比例绘制；"
+                       "器官颜色深浅 = 该器官相关靶点数，红框为当前选中器官。")
 
         with right:
             organ_genes = o_map.get(picked_organ, [])
@@ -684,6 +687,34 @@ with tab_animal:
         st.markdown("　".join(f"<span style='color:{color}'>■ {label}</span>"
                               for label, color in KIND_STYLE.values()),
                     unsafe_allow_html=True)
+
+        # ------------------------------------------------------ 教学视频
+        st.markdown("---")
+        st.markdown("### 教学视频（通路动画）")
+        st.caption("按 配体 → 受体 → 激酶 → 转录因子 → 效应 逐节点动画揭示，"
+                   "★ 标注本方成分作用靶点；由 `make_video.py` 渲染。")
+        video_dir = HERE / "videos"
+        videos = ({v.stem: v for v in video_dir.glob("*.mp4")}
+                  if video_dir.exists() else {})
+        if videos:
+            pick_video = st.selectbox("选择视频", sorted(videos))
+            st.video(str(videos[pick_video]))
+            st.download_button("下载该视频", data=videos[pick_video].read_bytes(),
+                               file_name=videos[pick_video].name, mime="video/mp4")
+        else:
+            st.info("还没有生成视频，点击下方按钮生成后即可在此播放。")
+
+        b1, b2 = st.columns(2)
+        if b1.button(f"生成「{picked_pw}」动画视频"):
+            with st.spinner("正在渲染视频（约 1 分钟）…"):
+                subprocess.run([sys.executable, "make_video.py", "--pathway", picked_pw],
+                               cwd=str(HERE), capture_output=True)
+            st.rerun()
+        if b2.button("生成全部 12 条通路 + 总览视频"):
+            with st.spinner("正在渲染全部视频（约 10–15 分钟）…"):
+                subprocess.run([sys.executable, "make_video.py", "--all", "--overview"],
+                               cwd=str(HERE), capture_output=True)
+            st.rerun()
 
 # ------------------------------------------------------------- 8. 成分明细
 with tab_compound:

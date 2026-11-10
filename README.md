@@ -27,6 +27,8 @@
 | `make_video.py` | 通路级联动画视频（`--cell` 生成细胞水平版本；MP4，失败回退 GIF） | 教学视频 |
 | `pathways.py` | 12 条信号通路拓扑（配体→受体→激酶→转录因子→效应）与靶点归类 | 机制通路图 |
 | `requirements.txt` | 依赖清单 | 部署 |
+| `compound_db.py` | 成分数据库数据层：PubChem 理化性质批量富化（本地缓存）、Lipinski Ro5 评估、9 个主流中药成分库跨库直达链接 | 成分数据库 |
+| `pubchem_props.json` | PubChem 计算属性缓存（IUPAC 名 / 精确质量 / TPSA / XLogP / 氢键 / 可旋转键），离线可用 | 成分数据库 |
 | `.streamlit/config.toml` | Streamlit 运行配置（headless、CORS、主题） | 部署 |
 | `public_tunnel.py` | 一键把本机应用映射成公网地址（Cloudflare Quick Tunnel） | 公开访问 |
 | `smoke_test.py` | 界面冒烟测试（AppTest 跑各方剂与极端阈值，检查整页崩溃） | 回归测试 |
@@ -89,6 +91,25 @@ python public_tunnel.py                          # 自动拉起应用 + 隧道
 
 > 注意：无论哪种方式，页面上的成分-靶点数据都来自数据库预测，
 > 公开分享时请保留页面内的"预测结果、非临床结论"说明。
+
+## 成分数据库（应用首页）
+
+第一个标签页即「成分数据库」，整合 TCMSP 与 PubChem 两个数据源，展示**全库成分**
+（不受左侧方剂筛选影响）：
+
+- **总览指标**：成分总数、已补全结构数、作用靶点去重数、来源中药数；
+- **浏览方式**：全部成分 / 按中药浏览（选择单味药查看其全部活性成分）；
+- **搜索**：支持中文名、英文名、TCMSP MOL 编号、分子式、SMILES、InChIKey 的包含匹配；
+- **筛选**：OB / DL / 靶点数下限；总表可下载 CSV；
+- **成分详情**：2D 结构图、IUPAC 名、SMILES、InChIKey、精确质量 / TPSA / XLogP /
+  氢键供受体 / 可旋转键、Lipinski 类药性五规则（Ro5）评估、PubChem 同义词、
+  来源中药、作用靶点表（含蛋白名与 UniProt 登录号）；
+- **跨库直达**：PubChem 页面 / SDF 下载 / InChIKey 检索、ChEMBL、Google Scholar、
+  PubMed；另附 9 个主流中药成分数据库入口表
+  （TCMSP、BATMAN-TCM 2.0、ETCM、HERB、SymMap、TCMID、NPASS、PubChem、ChEMBL）。
+
+PubChem 理化性质首次运行时批量抓取并缓存到 `pubchem_props.json`，之后离线可用；
+若需刷新可删除该文件后重启应用。
 
 ## 质量与稳定性
 

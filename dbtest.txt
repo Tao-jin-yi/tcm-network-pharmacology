@@ -1,0 +1,6 @@
+搜索 quercetin | 异常 0
+详情选择器存在: True, 选项数 1
+选中首个成分 | 异常 0
+按中药浏览 | 异常 0
+link_button 数量: 10
+download_button 数量: 5

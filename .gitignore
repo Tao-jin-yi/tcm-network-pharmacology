@@ -7,3 +7,4 @@ __pycache__/
 .streamlit/secrets.toml
 public_url.txt
 dbtest.txt
+npass_data/

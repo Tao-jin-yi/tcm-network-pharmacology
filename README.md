@@ -27,7 +27,10 @@
 | `make_video.py` | 通路级联动画视频（`--cell` 生成细胞水平版本；MP4，失败回退 GIF） | 教学视频 |
 | `pathways.py` | 12 条信号通路拓扑（配体→受体→激酶→转录因子→效应）与靶点归类 | 机制通路图 |
 | `requirements.txt` | 依赖清单 | 部署 |
-| `compound_db.py` | 成分数据库数据层：PubChem 理化性质批量富化（本地缓存）、Lipinski Ro5 评估、9 个主流中药成分库跨库直达链接 | 成分数据库 |
+| `compound_db.py` | 成分数据库数据层：PubChem 理化性质批量富化（本地缓存）、NPASS 整合、Lipinski Ro5 评估、9 个主流中药成分库跨库直达链接 | 成分数据库 |
+| `import_npass.py` | 下载并解析 NPASS 天然产物数据集（断点续传），生成成分库与实验活性靶点文件 | 数据扩充 |
+| `npass_compounds.json` | NPASS 成分库（3.09 万天然产物：结构 / 理化属性 / ChEMBL / CID） | 数据扩充 |
+| `npass_targets.json` | NPASS 人源蛋白实验活性（化合物 → 靶点，保留最优 IC50 / Ki / EC50 值） | 数据扩充 |
 | `pubchem_props.json` | PubChem 计算属性缓存（IUPAC 名 / 精确质量 / TPSA / XLogP / 氢键 / 可旋转键），离线可用 | 成分数据库 |
 | `.streamlit/config.toml` | Streamlit 运行配置（headless、CORS、主题） | 部署 |
 | `public_tunnel.py` | 一键把本机应用映射成公网地址（Cloudflare Quick Tunnel） | 公开访问 |
@@ -94,19 +97,39 @@ python public_tunnel.py                          # 自动拉起应用 + 隧道
 
 ## 成分数据库（应用首页）
 
-第一个标签页即「成分数据库」，整合 TCMSP 与 PubChem 两个数据源，展示**全库成分**
-（不受左侧方剂筛选影响）：
+第一个标签页即「成分数据库」，整合 **TCMSP + NPASS + PubChem** 三个数据源，
+展示**全库成分**（不受左侧方剂筛选影响）：
 
-- **总览指标**：成分总数、已补全结构数、作用靶点去重数、来源中药数；
+- **总览指标**：成分总数、TCMSP 中药成分数、NPASS 天然产物数、已补全结构数、来源中药数；
+- **数据来源筛选**：全部来源 / 仅 TCMSP（中药成分）/ 仅 NPASS（天然产物）；
 - **浏览方式**：全部成分 / 按中药浏览（选择单味药查看其全部活性成分）；
-- **搜索**：支持中文名、英文名、TCMSP MOL 编号、分子式、SMILES、InChIKey 的包含匹配；
-- **筛选**：OB / DL / 靶点数下限；总表可下载 CSV；
-- **成分详情**：2D 结构图、IUPAC 名、SMILES、InChIKey、精确质量 / TPSA / XLogP /
-  氢键供受体 / 可旋转键、Lipinski 类药性五规则（Ro5）评估、PubChem 同义词、
-  来源中药、作用靶点表（含蛋白名与 UniProt 登录号）；
+- **搜索**：支持名称、编号、分子式、SMILES、InChIKey、IUPAC 名的包含匹配；
+- **筛选**：OB / DL / 靶点数下限（OB / DL 仅作用于 TCMSP 成分，
+  NPASS 成分无该值、自动保留）；总表可下载 CSV；
+- **成分详情**：
+  - TCMSP 成分：2D 结构图、IUPAC 名、SMILES、InChIKey、PubChem 理化性质、
+    Ro5 评估、同义词、来源中药、**预测靶点表**（蛋白名 + UniProt）；
+  - NPASS 成分：结构 / 理化属性（数据集自带）、**实验活性靶点表**
+    （人源蛋白，IC50 / Ki / EC50 最优值，nM）、ChEMBL 报告卡直达；
 - **跨库直达**：PubChem 页面 / SDF 下载 / InChIKey 检索、ChEMBL、Google Scholar、
   PubMed；另附 9 个主流中药成分数据库入口表
   （TCMSP、BATMAN-TCM 2.0、ETCM、HERB、SymMap、TCMID、NPASS、PubChem、ChEMBL）。
+
+### NPASS 数据扩充
+
+`python import_npass.py` 一键接入 NPASS 天然产物数据集（3.09 万条，含结构与
+理化属性；活性表较大、支持断点续传）：
+
+```bash
+python import_npass.py                 # 全量（成分 + 实验活性）
+python import_npass.py --no-activity   # 只要成分库
+python import_npass.py --force         # 重新下载原始文件
+```
+
+- 与 TCMSP 成分按 InChIKey 自动去重合并（同物归入 TCMSP 行并标注 NPASS 编号）；
+- 原始 txt 存于 `npass_data/`（不入 git），生成的两个 json 入库供云端直接使用；
+- 活性靶点仅保留**人源蛋白**（Individual Protein / Protein Complex）的
+  nM 单位抑制活性，每对化合物-靶点取最优值。
 
 PubChem 理化性质首次运行时批量抓取并缓存到 `pubchem_props.json`，之后离线可用；
 若需刷新可删除该文件后重启应用。

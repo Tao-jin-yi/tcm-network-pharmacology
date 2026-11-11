@@ -41,7 +41,8 @@ from pkpd import (fit_dose_response, fit_pk, hill_emax, pk_metrics,
                   simulate_dose_response, simulate_effect_time, simulate_pk)
 from topology import cyto_nca_filter, elements_to_graph
 from compound_db import (external_links, fetch_pubchem_props, fetch_synonyms,
-                         compound_target_map, lipinski_flags, EXTERNAL_DBS)
+                         compound_target_map, lipinski_flags, load_npass_compounds,
+                         load_npass_targets, EXTERNAL_DBS)
 
 HERE = Path(__file__).parent
 DATA_FILE = HERE / "network.json"
@@ -234,16 +235,48 @@ meta = raw_elements.get("meta", {})
 # ---------------- 成分数据库（全库口径，不随左侧阈值 / 方剂筛选变化）
 @st.cache_data(show_spinner=False)
 def load_compound_db():
-    """全库成分表 + 成分→靶点映射 + PubChem 理化属性（本地缓存）。"""
+    """全库成分表：TCMSP（中药成分，OB/DL + 预测靶点）+ NPASS（天然产物，
+    理化属性自带 + 人源蛋白实验活性）；按 InChIKey 去重合并。"""
     comps = [n["data"] for n in raw_elements["nodes"]
              if n["data"]["label"] == "COMPOUND"]
-    df = pd.DataFrame(comps)
+    df_tcmsp = pd.DataFrame(comps)
     targets_of = compound_target_map(raw_elements)
-    df["targets"] = df["id"].map(lambda i: targets_of.get(i, []))
-    df["n_targets"] = df["targets"].apply(len)
-    props = fetch_pubchem_props([int(c) for c in df["cid"].dropna().unique()])
-    df["props"] = df["cid"].map(
+    df_tcmsp["targets"] = df_tcmsp["id"].map(lambda i: targets_of.get(i, []))
+    df_tcmsp["activities"] = [() for _ in range(len(df_tcmsp))]
+    df_tcmsp["source"] = "TCMSP"
+    df_tcmsp["npass_id"] = None
+    df_tcmsp["iupac"] = None
+    df_tcmsp["chembl_id"] = None
+    props = fetch_pubchem_props([int(c) for c in df_tcmsp["cid"].dropna().unique()])
+    df_tcmsp["props"] = df_tcmsp["cid"].map(
         lambda c: props.get(str(int(c))) if pd.notna(c) and c else None)
+
+    frames = [df_tcmsp]
+    npass_rows = load_npass_compounds()
+    if npass_rows:
+        df_n = pd.DataFrame(npass_rows)
+        act_map = load_npass_targets()
+        df_n["targets"] = df_n["id"].map(
+            lambda i: sorted({r["uni"] for r in act_map.get(i, []) if r.get("uni")}))
+        df_n["activities"] = df_n["id"].map(lambda i: tuple(act_map.get(i, [])))
+        df_n["source"] = "NPASS"
+        df_n["npass_id"] = df_n["id"]
+        df_n["label"] = "COMPOUND"
+        df_n["n_herbs"] = 0
+        # 与 TCMSP 重叠（同 InChIKey）的成分合并进 TCMSP 行，NPASS 侧去重
+        ik_map = dict(zip(df_n["inchikey"], df_n["npass_id"]))
+        tcmsp_keys = set(df_tcmsp["inchikey"].dropna())
+        df_tcmsp["npass_id"] = df_tcmsp["inchikey"].map(
+            lambda k: ik_map.get(k) if isinstance(k, str) else None)
+        df_n = df_n[df_n["inchikey"].map(
+            lambda k: not (isinstance(k, str) and k in tcmsp_keys))]
+        frames.append(df_n)  # 缺失列由 concat 自动补 NaN
+
+    df = pd.concat(frames, ignore_index=True)
+    df["n_targets"] = df["targets"].apply(len)
+    # 搜索缓存列（向量化包含匹配）
+    search_cols = ["name", "en", "id", "formula", "smiles", "inchikey", "iupac"]
+    df["_search"] = df[search_cols].fillna("").astype(str).agg(" ".join, axis=1).str.lower()
     for col in ["ob", "dl", "mw"]:
         df[col] = pd.to_numeric(df[col], errors="coerce")
     return df
@@ -339,18 +372,28 @@ core_targets: List[str] = []
 
 # ------------------------------------------------------------- 0. 成分数据库
 with tab_db:
-    st.caption("整合 TCMSP 成分信息（OB / DL / 来源中药 / 作用靶点 / MOL 编号）与 "
-               "PubChem 理化性质（IUPAC 名、精确质量、TPSA、XLogP、氢键、同义词），"
+    st.caption("整合三个数据源：**TCMSP**（中药成分：OB / DL / 来源中药 / 预测靶点 / "
+               "MOL 编号）+ **NPASS**（3 万天然产物：理化属性自带 + 人源蛋白实验活性 "
+               "IC50 / Ki / EC50）+ **PubChem**（结构富化），"
                "并提供 9 个主流中药成分数据库的跨库直达入口。"
                "**本页展示全库成分，不受左侧方剂筛选影响。**")
 
     db = COMPOUND_DB
-    m1, m2, m3, m4 = st.columns(4)
+    n_tcmsp = int((db["source"] == "TCMSP").sum())
+    n_npass = int((db["source"] == "NPASS").sum())
+    m1, m2, m3, m4, m5 = st.columns(5)
     m1.metric("成分总数", len(db))
-    m2.metric("已补全结构（PubChem）", int(db["cid"].notna().sum()))
-    m3.metric("作用靶点（去重）",
-              len({t for ts in db["targets"] for t in ts}))
-    m4.metric("来源中药", len(db_herbs))
+    m2.metric("TCMSP 中药成分", n_tcmsp)
+    m3.metric("NPASS 天然产物", n_npass)
+    m4.metric("已补全结构", int(db["cid"].notna().sum()))
+    m5.metric("来源中药", len(db_herbs))
+
+    src_filter = st.radio("数据来源", ["全部来源", "仅 TCMSP（中药成分）",
+                                       "仅 NPASS（天然产物）"], horizontal=True)
+    if src_filter.startswith("仅 TCMSP"):
+        db = db[db["source"] == "TCMSP"]
+    elif src_filter.startswith("仅 NPASS"):
+        db = db[db["source"] == "NPASS"]
 
     mode = st.radio("浏览方式", ["全部成分", "按中药浏览"], horizontal=True)
     if mode == "按中药浏览":
@@ -360,32 +403,28 @@ with tab_db:
         st.caption(f"「{herb_pick}」共 {len(db)} 个活性成分"
                    f"（OB ≥ 30%，DL ≥ 0.18，来自 TCMSP）。")
 
-    q = st.text_input("搜索成分（中文名 / 英文名 / MOL 编号 / 分子式 / SMILES / InChIKey）",
+    q = st.text_input("搜索成分（名称 / 编号 / 分子式 / SMILES / InChIKey / IUPAC 名）",
                       placeholder="例如：槲皮素 / quercetin / MOL000098 / C15H10O7")
     f_ob, f_dl, f_mw = st.columns(3)
-    ob_max = f_ob.slider("OB(%) 下限", 0.0, 100.0, 0.0, 1.0)
-    dl_min = f_dl.slider("DL 下限", 0.0, 1.0, 0.0, 0.01)
-    t_min = f_mw.slider("靶点数下限", 0, int(db["n_targets"].max() or 0), 0, 1)
+    ob_min_f = f_ob.slider("OB(%) 下限（仅 TCMSP 成分有此值）", 0.0, 100.0, 0.0, 1.0)
+    dl_min_f = f_dl.slider("DL 下限（仅 TCMSP 成分有此值）", 0.0, 1.0, 0.0, 0.01)
+    t_min = f_mw.slider("靶点数下限", 0, max(int(db["n_targets"].max() or 0), 1), 0, 1)
 
     view = db.copy()
     if q.strip():
         needle = q.strip().lower()
-        def _match(row) -> bool:
-            hay = " ".join([str(row.get("name", "")), str(row.get("en", "")),
-                            str(row.get("id", "")), str(row.get("formula", "")),
-                            str(row.get("smiles", "")), str(row.get("inchikey", ""))])
-            return needle in hay.lower()
-        view = view[view.apply(_match, axis=1)]
-    view = view[(view["ob"].fillna(0) >= ob_max)
-                & (view["dl"].fillna(0) >= dl_min)
+        view = view[view["_search"].str.contains(needle, regex=False)]
+    # OB / DL 只过滤有该值的行（NPASS 成分无 OB / DL，不受影响）
+    view = view[((view["ob"].isna()) | (view["ob"] >= ob_min_f))
+                & ((view["dl"].isna()) | (view["dl"] >= dl_min_f))
                 & (view["n_targets"] >= t_min)]
 
     table = pd.DataFrame({
-        "成分": view["name"], "英文名": view["en"], "MOL 编号": view["id"],
-        "分子式": view["formula"], "分子量": view["mw"],
+        "成分": view["name"], "英文名": view["en"], "编号": view["id"],
+        "来源": view["source"], "分子式": view["formula"], "分子量": view["mw"],
         "OB(%)": view["ob"], "DL": view["dl"],
         "靶点数": view["n_targets"],
-        "所属中药": view["herbs"].apply(lambda hs: "、".join(hs)),
+        "所属中药": view["herbs"].apply(lambda hs: "、".join(hs) if hs else "—"),
     }).reset_index(drop=True)
     table = table.sort_values(["靶点数", "OB(%)"], ascending=[False, False])
 
@@ -403,17 +442,32 @@ with tab_db:
     else:
         pick = st.selectbox("选择成分查看详情（含结构 / 理化性质 / 靶点 / 跨库直达）",
                             table["成分"].tolist())
-        row = db[db["name"] == pick].iloc[0]
+        matches = db[db["name"] == pick]
+        row = matches.iloc[0]
         props = row.get("props") or {}
+        is_npass = row.get("source") == "NPASS"
 
         info_col, img_col = st.columns([2.2, 1])
         with info_col:
+            badge = ("🌿 NPASS 天然产物" if is_npass else "💊 TCMSP 中药成分")
             st.subheader(f"{row['name']}　{row.get('en', '')}")
-            st.caption(f"TCMSP 编号：{row['id']}　|　分子式：{row.get('formula', '—')}"
-                       f"　|　分子量：{row.get('mw', '—')}"
-                       f"　|　OB：{row.get('ob', '—')}%　|　DL：{row.get('dl', '—')}")
-            iupac = props.get("IUPACName", "—")
-            st.markdown(f"**IUPAC 名**：`{iupac}`")
+            st.caption(badge)
+            if is_npass:
+                st.caption(f"NPASS 编号：{row['id']}"
+                           f"　|　分子式：{row.get('formula', '—')}"
+                           f"　|　分子量：{row.get('mw', '—')}"
+                           + (f"　|　TCMSP 同物：{row.get('npass_id') and ''}"
+                              f"{row['id'] if False else ''}" or ""))
+            else:
+                st.caption(f"TCMSP 编号：{row['id']}"
+                           + (f"　|　NPASS 同物：{row['npass_id']}"
+                              if row.get("npass_id") else "")
+                           + f"　|　分子式：{row.get('formula', '—')}"
+                             f"　|　分子量：{row.get('mw', '—')}"
+                             f"　|　OB：{row.get('ob', '—')}%　|　DL：{row.get('dl', '—')}")
+            iupac = (row.get("iupac") if is_npass else None) or props.get("IUPACName")
+            if iupac:
+                st.markdown(f"**IUPAC 名**：`{iupac}`")
             if row.get("smiles"):
                 st.markdown("**SMILES（可复制）**")
                 st.code(row["smiles"])
@@ -436,43 +490,64 @@ with tab_db:
                 st.caption("Lipinski 类药性五规则（Ro5）："
                            + ("✅ 全部符合" if not flags else "⚠️ 违规项：" + "；".join(flags)))
             else:
-                st.caption("PubChem 理化属性未获取到（网络原因），重启应用后会自动重试。")
+                st.caption("理化属性未获取到：TCMSP 成分来自 PubChem（网络原因会自动重试）；"
+                           "NPASS 成分由数据集自带。")
 
         with img_col:
             if row.get("img_url"):
                 st.image(row["img_url"], caption=f"{pick}（CID {row.get('cid')}）",
                          width=300)
             else:
-                st.info("暂无结构图，可运行 `python fetch_structures.py` 补全。")
+                st.info("暂无结构图。")
 
-        syn = fetch_synonyms(int(row["cid"])) if row.get("cid") else []
-        if syn:
-            with st.expander(f"同义词 / 贸易名（PubChem，{len(syn)} 条）"):
-                st.write("、".join(syn))
-
-        herb_col, tgt_col = st.columns(2)
-        with herb_col:
-            st.markdown("**来源中药**")
-            st.write("、".join(row.get("herbs") or []))
-        with tgt_col:
-            targets = row.get("targets") or []
-            st.markdown(f"**作用靶点（{len(targets)} 个，TCMSP 预测）**")
-            if targets:
-                target_info = load_target_info()
-                tgt_df = pd.DataFrame(
-                    [{"靶点": t, "蛋白名": target_info.get(t, {}).get("protein", ""),
-                      "UniProt": target_info.get(t, {}).get("accession", "")}
-                     for t in sorted(targets)])
-                st.dataframe(tgt_df, hide_index=True, width="stretch", height=240)
+        if is_npass:
+            acts = list(row.get("activities") or [])
+            st.markdown(f"**实验活性靶点（人源蛋白，{len(acts)} 个，NPASS 文献数据）**")
+            if acts:
+                act_df = pd.DataFrame(
+                    [{"UniProt": a.get("uni", ""), "靶点蛋白": a.get("name", ""),
+                      "活性类型": a.get("type", ""),
+                      "活性值(nM)": a.get("val", ""),
+                      "关系": a.get("rel") or "="} for a in acts])
+                act_df = act_df.sort_values("活性值(nM)")
+                st.dataframe(act_df, hide_index=True, width="stretch", height=260)
+                st.caption("活性值为文献 / PubChem BioAssay 报道的实验测定值，"
+                           "已按化合物-靶点对保留最优（最小）值。")
             else:
-                st.caption("暂无靶点数据。")
+                st.caption("NPASS 中暂无该成分的人源蛋白抑制活性记录。")
+            st.markdown("**预测靶点（TCMSP 口径）**")
+            st.caption("—（NPASS 天然产物未接入中药归属；"
+                       "TCMSP 成分的预测靶点见「网络图 / 核心靶点」页）")
+        else:
+            syn = fetch_synonyms(int(row["cid"])) if row.get("cid") else []
+            if syn:
+                with st.expander(f"同义词 / 贸易名（PubChem，{len(syn)} 条）"):
+                    st.write("、".join(syn))
+
+            herb_col, tgt_col = st.columns(2)
+            with herb_col:
+                st.markdown("**来源中药**")
+                st.write("、".join(row.get("herbs") or []))
+            with tgt_col:
+                targets = row.get("targets") or []
+                st.markdown(f"**作用靶点（{len(targets)} 个，TCMSP 预测）**")
+                if targets:
+                    target_info = load_target_info()
+                    tgt_df = pd.DataFrame(
+                        [{"靶点": t, "蛋白名": target_info.get(t, {}).get("protein", ""),
+                          "UniProt": target_info.get(t, {}).get("accession", "")}
+                         for t in sorted(targets)])
+                    st.dataframe(tgt_df, hide_index=True, width="stretch", height=240)
+                else:
+                    st.caption("暂无靶点数据。")
 
         st.markdown("**跨库直达**")
-        if row.get("cid"):
+        if not is_npass and row.get("cid"):
             st.markdown(f"TCMSP 检索：复制本成分编号 `{row['id']}` 到 "
                         f"[tcmsp.cn](https://www.tcmsp.cn/) 查询原始记录。")
-        link_row = st.columns(min(5, max(1, len(external_links(row)))))
-        for i, (label, url) in enumerate(external_links(row)):
+        links = external_links(row)
+        link_row = st.columns(min(5, max(1, len(links))))
+        for i, (label, url) in enumerate(links):
             with link_row[i % len(link_row)]:
                 st.link_button(label, url, width="stretch")
 
@@ -480,9 +555,11 @@ with tab_db:
         st.markdown("本成分库整合自以下数据库；点击名称直达官网检索：")
         for name, url, desc in EXTERNAL_DBS:
             st.markdown(f"- [{name}]({url}) — {desc}")
-        st.caption("TCMSP 旧站已下线、成分-靶点数据为文献/预测口径；"
-                   "BATMAN-TCM / ETCM / HERB / SymMap / TCMID / NPASS 暂无公开 REST 接口，"
-                   "故以官网检索直达方式整合。PubChem 支持实时接口（本库已接入）。")
+        st.caption("TCMSP：中药成分与 OB/DL 筛选（旧站已下线，用 MOL 编号检索）；"
+                   "NPASS：已通过官方数据文件全量接入（3 万天然产物 + 实验活性，"
+                   "重跑 `python import_npass.py` 可更新）；"
+                   "BATMAN-TCM / ETCM / HERB / SymMap / TCMID 暂无公开数据接口，"
+                   "以官网检索直达方式整合；PubChem 支持实时接口（已接入）。")
 
 # -------------------------------------------------------------- 1. 复方说明
 with tab_formula:

@@ -132,9 +132,14 @@ def external_links(comp: dict) -> list[tuple[str, str]]:
         links.append(("PubChem 按 InChIKey",
                       f"https://pubchem.ncbi.nlm.nih.gov/search/"
                       f"search.cgi?structure={comp['inchikey']}"))
-    if name_en:
+    chembl_id = comp.get("chembl_id")
+    if chembl_id:
+        links.append(("ChEMBL 报告卡",
+                      f"https://www.ebi.ac.uk/chembl/compound_report_card/{chembl_id}/"))
+    elif name_en:
         links.append(("ChEMBL 检索",
                       f"https://www.ebi.ac.uk/chembl/search_results/?query={name_en}"))
+    if name_en:
         links.append(("Google Scholar 文献",
                       f"https://scholar.google.com/scholar?q={name_en}"))
         links.append(("PubMed 文献",
@@ -153,3 +158,62 @@ def compound_target_map(net: dict) -> dict[str, list[str]]:
             if symbol not in targets:
                 targets.append(symbol)
     return mapping
+
+
+# ---------------------------------------------------------------- NPASS 整合
+NPASS_COMPOUNDS = HERE / "npass_compounds.json"
+NPASS_TARGETS = HERE / "npass_targets.json"
+
+# NPASS 属性字段 → PubChem 属性名（详情页统一展示口径）
+_NPASS_PROP_MAP = [("mw", "ExactMass"), ("xlogp", "XLogP"), ("psa", "TPSA"),
+                   ("hbd", "HBondDonorCount"), ("hba", "HBondAcceptorCount"),
+                   ("rotb", "RotatableBondCount")]
+
+
+def load_npass_compounds() -> list[dict]:
+    """读取 NPASS 成分库（import_npass.py 生成），统一为成分数据库行格式。
+
+    NPASS 无 OB / DL 筛选值、无中药归属，故 ob / dl 为 None、herbs 为空；
+    理化属性直接采用 NPASS 自带计算值（无需 PubChem 网络请求）。
+    """
+    if not NPASS_COMPOUNDS.exists():
+        return []
+    raw = json.loads(NPASS_COMPOUNDS.read_text(encoding="utf-8"))
+    rows = []
+    for item in raw:
+        smiles = item.get("smiles") or ""
+        if not smiles:
+            continue
+        props = {}
+        for src, dst in _NPASS_PROP_MAP:
+            value = item.get(src)
+            if value not in ("", "n.a.", None):
+                props[dst] = value
+        name = item.get("name") or item.get("iupac") or item["id"]
+        rows.append({
+            "id": item["id"],
+            "name": name[:60],
+            "en": name,
+            "iupac": item.get("iupac", ""),
+            "chembl_id": item.get("chembl_id", ""),
+            "ob": None,
+            "dl": None,
+            "herbs": [],
+            "smiles": smiles,
+            "formula": item.get("formula", ""),
+            "mw": item.get("mw", ""),
+            "inchikey": item.get("inchikey", ""),
+            "cid": int(item["cid"]) if str(item.get("cid") or "").isdigit() else None,
+            "img_url": (f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/"
+                        f"{item['cid']}/PNG"
+                        if str(item.get("cid") or "").isdigit() else ""),
+            "props": props,
+        })
+    return rows
+
+
+def load_npass_targets() -> dict[str, list[dict]]:
+    """读取 NPASS 人源蛋白实验活性（np_id → 靶点列表）。"""
+    if not NPASS_TARGETS.exists():
+        return {}
+    return json.loads(NPASS_TARGETS.read_text(encoding="utf-8"))

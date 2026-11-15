@@ -295,6 +295,18 @@ if DATASET_FILE.exists():
         COMPOUNDS.update(_dataset.get("COMPOUNDS", {}))
         HERB_COMPOUNDS.update(_dataset.get("HERB_COMPOUNDS", {}))
 
+# --------------------------------------------- 药典/本草目录药材的演示关联
+# 《中国药典》2020 / 《本草纲目》目录中的其余药材没有 TCMSP 实测成分，
+# 由 demo_data.py 分配演示用成分-靶点关联，使全部目录药材可走通分析流程；
+# 已含真实数据的药材不会被覆盖。接入真实 TCMSP 数据后本步自动跳过这些药材。
+DEMO_HERBS: Dict[str, List[str]] = {}
+try:
+    from demo_data import expand_catalog_herbs
+
+    DEMO_HERBS = expand_catalog_herbs(COMPOUNDS, HERB_COMPOUNDS)
+except ImportError:  # 缺少 demo_data.py 时不影响原有流程
+    pass
+
 
 def auto_targets(index: int, size: int = 14) -> List[str]:
     """按成分序号确定性分配扩展靶点，保证每次生成结果一致。"""
@@ -346,6 +358,8 @@ def build_elements(ob_min: float = OB_MIN, dl_min: float = DL_MIN) -> dict:
     # 中药节点
     for herb in HERB_COMPOUNDS:
         node_data = {"id": f"HERB::{herb}", "label": "HERB", "name": herb}
+        if herb in DEMO_HERBS:
+            node_data["demo_data"] = True   # 成分-靶点为演示关联（demo_data.py）
         info = get_herb_info(herb) or {}
         node_data.update({k: v for k, v in info.items() if v})
         nodes.append({"data": node_data})
@@ -410,9 +424,12 @@ def build_elements(ob_min: float = OB_MIN, dl_min: float = DL_MIN) -> dict:
 
     return {
         "meta": {
-            "source": "TCMSP(示例数据) / UniProt",
+            "source": "TCMSP(示例数据) / UniProt"
+                      + ("；《中国药典》/《本草纲目》目录药材为演示关联（demo_data.py）"
+                         if DEMO_HERBS else ""),
             "ob_min": ob_min,
             "dl_min": dl_min,
+            "n_demo_herbs": len(DEMO_HERBS),
             "generated_by": "data_prep.py",
         },
         "nodes": nodes,

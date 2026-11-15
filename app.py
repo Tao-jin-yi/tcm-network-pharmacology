@@ -35,6 +35,8 @@ from cell_pathway import render_cell_pathway
 from formulas import (DEFAULT_FORMULA, NOTES, REFERENCES, formula_coverage,
                       formula_herbs, formula_names, formula_rows, get_formula)
 from herb_info import HERB_INFO, get_herb_info
+from pharmacopoeia import (HERB_CATALOG, catalog_stats, list_categories,
+                           search_herbs)
 from pathways import (KIND_STYLE, PATHWAYS, pathway_elements, pathways_of_target,
                       target_class, targets_in_pathway)
 from pkpd import (fit_dose_response, fit_pk, hill_emax, pk_metrics,
@@ -291,6 +293,9 @@ with st.sidebar:
     # 每首方剂标注数据覆盖率（只有药材在库中有成分-靶点数据才能做网络分析）
     db_herbs = {n["data"]["name"] for n in raw_elements["nodes"]
                 if n["data"]["label"] == "HERB"}
+    # 成分-靶点为演示关联（demo_data.py 生成）的药材
+    demo_herbs = {n["data"]["name"] for n in raw_elements["nodes"]
+                  if n["data"]["label"] == "HERB" and n["data"].get("demo_data")}
     formula_options: Dict[str, str] = {}
     for name in formula_names():
         hit, total, _ = formula_coverage(name, db_herbs)
@@ -318,6 +323,11 @@ with st.sidebar:
     n_rounds = st.slider("迭代轮次", 1, 4, 1,
                          help="每轮保留 DC/BC/CC/EC/LAC/NC 六个指标均高于中位数的节点")
     st.markdown("数据来源：`network.json`（由 `data_prep.py` 生成）")
+    st.caption(f"网络分析覆盖 **{len(db_herbs)} 味中药**：其中 **{len(demo_herbs)} 味**"
+               "为《中国药典》/《本草纲目》目录药材的**演示关联**成分-靶点数据"
+               "（`demo_data.py` 确定性分配，非 TCMSP 实测），"
+               f"其余 {len(db_herbs) - len(demo_herbs)} 味为 TCMSP 示例数据。"
+               "接入真实 TCMSP 数据请运行 `python import_tcmsp.py 数据文件.csv` 后重跑 `data_prep.py`。")
 
 def filter_by_formula(elements: dict, herb_names: List[str]) -> dict:
     """只保留指定方剂药材相关的成分与靶点（CONTAINS / TARGETS 边）。"""
@@ -356,12 +366,6 @@ compounds_df = pd.DataFrame([n["data"] for n in elements["nodes"]
                              if n["data"]["label"] == "COMPOUND"])
 n_targets = sum(1 for n in elements["nodes"] if n["data"]["label"] == "TARGET")
 
-col1, col2, col3, col4 = st.columns(4)
-col1.metric("中药", len(herbs))
-col2.metric("活性成分", len(compounds_df))
-col3.metric("靶点", n_targets)
-col4.metric("关系（边）", len(elements["edges"]))
-
 # ------------------------------------------------------------------ 主体
 tab_db, tab_formula, tab_graph, tab_synergy, tab_core, tab_target, tab_lit, tab_pk, tab_animal = st.tabs(
     ["成分数据库", "复方说明", "网络图", "配伍协同分析", "核心靶点（CytoNCA）",
@@ -387,6 +391,68 @@ with tab_db:
     m3.metric("NPASS 天然产物", n_npass)
     m4.metric("已补全结构", int(db["cid"].notna().sum()))
     m5.metric("来源中药", len(db_herbs))
+
+    # ---------------------------------- 药典/本草目录药材（并入本板块浏览）
+    with st.expander(f"📖 药典·本草目录药材（{len(HERB_CATALOG)} 味，已全部接入网络分析）"):
+        st.caption("收录 **《中国药典》2020年版一部** 及 **《本草纲目》** 等药学著作所记载的"
+                   "中药材目录，按药典功能分类编排（见 `pharmacopoeia.py`）。"
+                   f"其中 **{len(demo_herbs)} 味**的成分-靶点为演示关联"
+                   "（`demo_data.py`，按药材名确定性分配，非 TCMSP 实测），"
+                   "其余为 TCMSP 示例数据；接入真实 TCMSP 导出表后演示关联会自动被覆盖。"
+                   "全部药材均可在「网络图 / 配伍协同分析 / 核心靶点 / 靶点详情 / "
+                   "药动学 / 动物模型」各板块参与分析。")
+        h1, h2, h3, h4 = st.columns(4)
+        h1.metric("收载药材", catalog_stats()["total"])
+        h2.metric("功能分类", catalog_stats()["categories"])
+        h3.metric("《本草纲目》亦收载", catalog_stats()["gangmu"])
+        h4.metric("有毒药材", catalog_stats()["toxic"])
+
+        kw = st.text_input("搜索药材（名称 / 性味 / 归经 / 功效）", "",
+                           help="支持子串匹配，例如输入“肝”可找到归肝经或功效与肝相关的药材")
+        cat_pick = st.selectbox("按功能分类筛选", ["全部分类"] + list_categories())
+        src_pick = st.radio(
+            "按典籍收录筛选",
+            ["全部", "《本草纲目》亦收载", "后世著作收载（本草纲目未收）", "仅显示有毒药材"],
+            horizontal=True)
+        result = search_herbs(
+            kw,
+            category=None if cat_pick == "全部分类" else cat_pick,
+            gangmu=None if src_pick == "全部"
+            else (True if src_pick.startswith("《本草纲目》") else False),
+            toxic_only=src_pick == "仅显示有毒药材",
+        )
+        st.caption(f"筛选结果：**{len(result)}** 味")
+
+        if not result:
+            st.info("没有符合条件的中药材，请调整搜索关键词或筛选条件。")
+        else:
+            rows = [{
+                "药材": n,
+                "功能分类": v["category"],
+                "性味": v["nature"],
+                "归经": v["meridian"],
+                "毒性": "有毒" if v["toxic"] else "—",
+                "典籍收录": "、".join(v["works"]),
+            } for n, v in result.items()]
+            st.dataframe(pd.DataFrame(rows), use_container_width=True,
+                         height=min(28 * (len(rows) + 1), 460))
+
+            picked = st.selectbox("查看药材详情", list(result))
+            detail = result[picked]
+            sub1, sub2, sub3 = st.columns([1, 2, 1])
+            sub1.metric("性味", detail["nature"])
+            sub2.metric("归经", detail["meridian"])
+            sub3.metric("毒性", "有毒" if detail["toxic"] else "无毒")
+            st.markdown(f"**功效主治**：{detail['action']}")
+            st.markdown(f"**功能分类**：{detail['category']}")
+            st.markdown(f"**典籍收录**：{'、'.join(detail['works'])}")
+            if picked in demo_herbs:
+                st.info(f"「{picked}」当前使用**演示关联**的成分-靶点数据，"
+                        "可在上方「按中药浏览」查看其活性成分，"
+                        "演示数据仅用于流程演示与教学，不可作为科研结论。")
+            else:
+                st.success(f"「{picked}」已有 TCMSP 成分-靶点数据，"
+                           "可在上方「按中药浏览」查看其活性成分。")
 
     src_filter = st.radio("数据来源", ["全部来源", "仅 TCMSP（中药成分）",
                                        "仅 NPASS（天然产物）"], horizontal=True)
@@ -830,6 +896,10 @@ with tab_lit:
         lit = load_literature()
         herb_options = ["全部中药"] + sorted(lit)
         picked_herb = st.selectbox("选择中药", herb_options)
+        if len(lit) < len(db_herbs):
+            st.caption(f"文献按药材抓取自 PubMed，目前覆盖 {len(lit)} 味（共 {len(db_herbs)} 味）；"
+                       "其余药材的本草学信息见「成分数据库 · 药典/本草目录」，"
+                       "或运行 `python fetch_literature.py` 扩充文献抓取范围。")
         scope = (lit if picked_herb == "全部中药"
                  else {picked_herb: lit.get(picked_herb, [])})
         articles = [dict(a, herb=h) for h, arts in scope.items() for a in arts]

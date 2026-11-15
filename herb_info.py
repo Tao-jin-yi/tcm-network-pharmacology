@@ -13,6 +13,8 @@ from __future__ import annotations
 
 from typing import Dict, Optional
 
+from pharmacopoeia import get_pharm_herb
+
 HERB_INFO: Dict[str, dict] = {
     "黄芪": {
         "nature": "甘，微温",
@@ -320,5 +322,20 @@ HERB_INFO: Dict[str, dict] = {
 
 
 def get_herb_info(name: str) -> Optional[dict]:
-    """按药名取用途信息，未收录返回 None。"""
-    return HERB_INFO.get(name)
+    """按药名取用途信息。
+
+    先查手工维护的精修数据（含方中角色），未收录时回退到药典/本草目录
+    （pharmacopoeia.py），仍查不到才返回 None。
+    """
+    info = HERB_INFO.get(name)
+    if info is None:
+        pharm = get_pharm_herb(name)
+        if pharm:
+            info = {
+                "nature": pharm["nature"],
+                "meridian": pharm["meridian"],
+                "action": pharm["action"],
+                "category": pharm["category"],
+                "source": "、".join(pharm["works"]),
+            }
+    return info

@@ -29,10 +29,17 @@ CHUNK = 25  # 每批发查询的基因数，避免 URL 过长
 
 
 def gene_symbols() -> List[str]:
-    """从 network.json 取出全部靶点基因符号。"""
+    """从 network.json 取出全部靶点基因符号。
+
+    未映射的靶点以蛋白原名记录（可能含空格 / 括号等），
+    gene_exact 查询会失败且拖垮同批的其他基因，故过滤掉。
+    """
+    import re
+
     elements = json.loads(NETWORK_FILE.read_text(encoding="utf-8"))
-    return sorted({n["data"]["name"] for n in elements["nodes"]
-                   if n["data"]["label"] == "TARGET"})
+    names = {n["data"]["name"] for n in elements["nodes"]
+             if n["data"]["label"] == "TARGET"}
+    return sorted(n for n in names if re.fullmatch(r"[A-Za-z0-9.-]+", n))
 
 
 def query_chunk(genes: List[str]) -> List[dict]:

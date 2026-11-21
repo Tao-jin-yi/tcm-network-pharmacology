@@ -7,7 +7,7 @@
 | 文件 | 作用 | 对应流程 |
 | --- | --- | --- |
 | `data_prep.py` | 成分/靶点获取、OB/DL 筛选、UniProt 基因符号标准化，输出 `network.json` | 第一步：数据准备 |
-| `network.json` | Cytoscape 格式的网络数据（`HERB` / `COMPOUND` / `TARGET`） | 数据交换文件 |
+| `network.json` | Cytoscape 格式的网络数据（`HERB` / `COMPOUND` / `TARGET` / `DISEASE` 四层） | 数据交换文件 |
 | `topology.py` | CytoNCA 六指标（DC、BC、CC、EC、LAC、NC）迭代筛选 | 第二步：拓扑筛选 |
 | `app.py` | Streamlit 界面：网络图、配伍协同分析、核心靶点、成分明细 | 第三步：应用开发 |
 | `fetch_structures.py` | 用 PubChem 补全成分化学结构（SMILES、分子式、分子量、InChIKey、2D 图） | 结构式数据 |
@@ -16,6 +16,11 @@
 | `resolve_links.py` | 用 Europe PMC 为文献补全 DOI / PMCID / 开放获取全文链接 | 文献直达 |
 | `herb_info.py` | 中药用途：性味归经、功效主治、君臣佐使、分类 | 用途数据 |
 | `import_tcmsp.py` | 导入 TCMSP 导出的 CSV/Excel（支持录入全部 499 味中药） | 批量入库 |
+| `fetch_tcmsp_full.py` | 抓取 TCMSP 全库 502 味中药的「草药-成分-靶点-疾病」四层数据（断点续传） | 全库抓取 |
+| `tcmsp_full.json` | 上一步的产物：502 味药 × (成分表 + 成分-靶点表 + 靶点-疾病表) | 原始数据缓存 |
+| `fetch_target_mapping.py` | 把 TCMSP 靶点蛋白名经 UniProt 映射为标准基因符号（增量缓存） | 靶点标准化 |
+| `tcmsp_target_map.json` | 上一步的产物：蛋白名 → 基因符号映射表 | 映射缓存 |
+| `tcmsp_herb_catalog.json` | TCMSP 全库药材目录（502 味，含药类分类） | 药材目录 |
 | `fetch_target_info.py` | 用 UniProt 补全靶点蛋白信息（蛋白名、登录号、亚细胞定位、功能） | 蛋白数据 |
 | `target_info.json` | 上一步的产物，被 `app.py` 直接读取 | 蛋白数据缓存 |
 | `fetch_literature.py` | 从 PubMed 抓取中药药理文献并抽取机制关键词与涉及靶点 | 文献机制 |
@@ -153,8 +158,9 @@ python smoke_test.py
 
 - `st.components.v1.html` 官方公告 2026-06-01 后移除，后续需替换为 `st.iframe`
   （涉及解剖图、细胞通路图、3Dmol 结构，替换前需逐个验证渲染）；
-- 14 首方剂中只有「六味地黄丸」6/6 味药材有成分-靶点数据，其余需先用
-  `import_tcmsp.py` 导入数据才能做网络分析（侧栏已标注覆盖率）；
+- 目录药材中 TCMSP 未收录的 73 味仍为演示关联（`demo_data.py`），节点已标注；
+- 疾病关联来自 TCMSP（DrugBank 验证子集，445 种疾病），后续可接入
+  OpenTargets / DisGeNET 扩充疾病层；
 - 页面在窄屏（手机）上多列布局较拥挤，未做移动端专门适配。
 
 ## 界面功能
@@ -194,9 +200,9 @@ python smoke_test.py
 每首方剂给出：组成与剂量（g）、功用、主治、辨证要点、用法、
 君臣佐使方解、配伍特点、现代药理研究方向、使用注意。
 
-**数据覆盖率提示**：只有药材在数据库中有成分-靶点数据时才能做网络分析。
-例如六味地黄丸 6/6 味有数据（可完整分析），而银翘散等多数方剂暂无成分数据，
-页面会明确提示"仅展示方解"，可用 `import_tcmsp.py` 导入数据后再分析。
+**数据覆盖率提示**：TCMSP 全库 502 味中药已接入真实成分-靶点-疾病数据，
+14 首方剂的药材基本全部可做完整网络分析；个别药材（如浮小麦等 TCMSP
+未收录品种）使用演示关联，侧栏与页面会标注覆盖率。
 
 其中本项目示例方的完整说明如下：
 
@@ -410,12 +416,29 @@ python make_video.py --all --plain            # 纯级联版本（无细胞结�
   | `--cell` | 细胞结构 + 级联（不含成分层） |
   | `--plain` | 纯级联拓扑（无细胞结构） |
 
-## 录入更多中药（含 TCMSP 全部 499 味）
+## 录入更多中药（含 TCMSP 全库 502 味）
 
-TCMSP 旧版数据库已下线，无法直接抓取；请用下面任一方式拿到成分表后导入：
+### 方式一：一键抓取 TCMSP 全库（推荐，含疾病层）
 
-1. 从 TCMSP / HERB / SymMap 等数据库导出 CSV 或 Excel；
-2. 执行导入（表头中英文均可，自动识别）：
+TCMSP 旧版（`old.tcmsp-e.com`）检索接口可编程访问，`fetch_tcmsp_full.py`
+自动抓取全部 **502 味中药**的「草药 → 成分 → 靶点 → 疾病」四层数据：
+
+```bash
+python fetch_tcmsp_full.py            # 全量抓取（约 15 分钟，断点续传）
+python fetch_tcmsp_full.py --retry-zeros   # 补抓空结果（偶发首请求页面不完整）
+python fetch_target_mapping.py        # 靶点蛋白名 → 基因符号（UniProt，约 15 分钟）
+python data_prep.py                   # 重建 network.json（含疾病层）
+```
+
+- 每味药抓三张表：**成分**（MOL 编号、OB、DL、MW、AlogP、Caco-2、BBB、H 键供体）、
+  **成分-靶点**（含 SVM / RF 预测分与实验验证标记）、**靶点-疾病**（疾病英文名）；
+- 靶点经 UniProt REST（人源、Swiss-Prot 已审阅）映射为标准基因符号；
+  未映射的（多为非人源蛋白）保留原蛋白名；
+- 药典/本草目录中 TCMSP 未收录的药材自动保留演示关联，真实数据优先；
+- `data_prep.py` 检测到 `tcmsp_full.json` 即自动替换内置示例数据并构建
+  **疾病层**（`DISEASE` 节点 + `INDICATES` 靶点-疾病边）。
+
+### 方式二：手工导入 CSV / Excel
 
 ```bash
 python import_tcmsp.py 你的文件.csv            # 与内置数据合并
@@ -425,11 +448,28 @@ python data_prep.py
 
 需要的列：中药名、成分名，可选：成分编号、英文名、OB、DL、靶点（多个用 `;` 或 `,` 分隔）、SMILES。
 
-## 当前示例数据规模
+## 疾病关联（草药-成分-靶点-疾病四层检索）
 
-9 味中药（黄芪、熟地黄、山茱萸、山药、茯苓、泽泻、牡丹皮、丹参、甘草）、
-53 个活性成分、158 个靶点、740 条关系；53 个成分中 49 个已补全 PubChem 结构。
-第一轮 CytoNCA 筛选得到 32 个核心靶点（含 TNF、IL6、AKT1、TP53）。
+「疾病关联」标签页为**全库口径**的四层贯通检索（不受左侧方剂 / 阈值影响）：
+
+- **按疾病名搜索**（TCMSP 疾病为英文名，子串匹配）→ 查看该疾病的
+  关联靶点、相关活性成分（按来源中药数排序）与来源中药（含柱状图）；
+- **总览指标**：收录疾病数、疾病-靶点关联数、涉及靶点数；
+- **网络图联动**：「网络图」页勾选"显示疾病层"即可在图中渲染疾病节点
+  （红色，最多可调 10-100 个），把四层网络画在一张图里；
+- **靶点详情联动**：靶点详情页直接列出该靶点的全部关联疾病。
+
+## 当前数据规模
+
+- **中药**：TCMSP 全库 **502 味**（真实抓取）+ 《中国药典》/《本草纲目》目录药材演示关联补充，
+  共 575 味在网络中；
+- **成分**：OB ≥ 30% 且 DL ≥ 0.18 筛选后 **2585 个**活性成分（含 OB / DL / MW / AlogP / Caco-2 / BBB）；
+- **靶点**：572 个（TCMSP 蛋白名经 UniProt 映射为基因符号，映射率 1277/1716；
+  512 个基因符号已补全 UniProt 蛋白信息与 AlphaFold 三维结构）；
+- **疾病**：445 种（TCMSP 靶点-疾病关联，DrugBank 验证子集），网络内 897 条靶点-疾病边；
+- **关系**：中药-成分 5743 条、成分-靶点 28821 条（含 SVM / RF 预测分与实验验证标记）、
+  靶点-疾病 897 条；
+- `network.json` 约 10 MB，首次加载后全程缓存（`@st.cache_resource`），云端部署可直接使用。
 
 ## 部署到 Streamlit Community Cloud
 

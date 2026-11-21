@@ -56,14 +56,26 @@ def fetch_pubchem(name: str) -> Optional[Dict]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--all", action="store_true", help="重新抓取全部成分")
+    parser.add_argument("--filtered", action="store_true",
+                        help="只抓通过 OB≥30 / DL≥0.18 筛选的活性成分"
+                             "（TCMSP 全库成分上万，全抓耗时数小时）")
     args = parser.parse_args()
+
+    compounds = COMPOUNDS
+    if args.filtered:
+        compounds = {mol_id: comp for mol_id, comp in COMPOUNDS.items()
+                     if comp.get("ob", 0) >= 30.0 and comp.get("dl", 0) >= 0.18}
+        print(f"筛选后待抓成分 {len(compounds)} 个")
 
     cache: Dict[str, dict] = {}
     if OUTPUT_FILE.exists() and not args.all:
         cache = json.loads(OUTPUT_FILE.read_text(encoding="utf-8"))
 
     ok, fail = 0, []
-    for mol_id, compound in COMPOUNDS.items():
+    n_total = len(compounds)
+    n_done = 0
+    for mol_id, compound in compounds.items():
+        n_done += 1
         if mol_id in cache and not args.all:
             continue
         name = compound.get("en") or compound["name"]
@@ -75,6 +87,12 @@ def main() -> None:
             ok += 1
         else:
             fail.append(f"{mol_id} {compound['name']}({name})")
+        # 每 50 个增量落盘并打印进度（中断可续传）
+        if n_done % 50 == 0:
+            OUTPUT_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2),
+                                   encoding="utf-8")
+            print(f"[{n_done}/{n_total}] 累计 {len(cache)}，本次成功 {ok}",
+                  flush=True)
         time.sleep(0.34)  # PubChem 限速：不超过 5 次/秒
 
     OUTPUT_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")

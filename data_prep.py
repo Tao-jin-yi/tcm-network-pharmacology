@@ -16,7 +16,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Set
 
 # ---------------------------------------------------------------- 筛选阈值
 OB_MIN = 30.0   # 口服生物利用度 Oral Bioavailability (%)
@@ -295,6 +295,102 @@ if DATASET_FILE.exists():
         COMPOUNDS.update(_dataset.get("COMPOUNDS", {}))
         HERB_COMPOUNDS.update(_dataset.get("HERB_COMPOUNDS", {}))
 
+# ------------------------------------- TCMSP 全库真实数据（fetch_tcmsp_full.py 生成）
+# 抓取自 TCMSP 官方检索接口的全部 502 味中药「草药-成分-靶点-疾病」四层数据：
+# ingredients（成分 + OB/DL/ADME）、targets（成分-靶点 + SVM/RF 预测分）、
+# diseases（靶点-疾病）。存在时以真实数据替换内置示例数据。
+# 靶点蛋白名经 UniProt 映射为基因符号（tcmsp_target_map.json，由
+# fetch_target_mapping.py 生成）；未映射的保留原蛋白名（多为非人源蛋白）。
+TCMSP_FULL_FILE = HERE / "tcmsp_full.json"
+TCMSP_TARGET_MAP_FILE = HERE / "tcmsp_target_map.json"
+
+REAL_DISEASES: Dict[str, Set[str]] = {}   # 靶点标识（基因符号或蛋白名）-> 疾病集合
+REAL_HERB_META: Dict[str, dict] = {}      # 中药名 -> 拼音 / 拉丁名 / 药类
+TCMSP_HERB_COUNT = 0
+
+if TCMSP_FULL_FILE.exists():
+    _full = json.loads(TCMSP_FULL_FILE.read_text(encoding="utf-8"))
+    _tmap: Dict[str, dict] = {}
+    if TCMSP_TARGET_MAP_FILE.exists():
+        _tmap = json.loads(TCMSP_TARGET_MAP_FILE.read_text(encoding="utf-8"))
+
+    def _tmap_key(protein: str) -> str:
+        """蛋白名 -> 基因符号（未映射时回退原蛋白名）。"""
+        info = _tmap.get(protein) or {}
+        return info.get("gene") or protein
+
+    def _num(value) -> float:
+        try:
+            return float(value)
+        except (TypeError, ValueError):
+            return 0.0
+
+    _real_compounds: Dict[str, dict] = {}
+    _real_herb_compounds: Dict[str, List[str]] = {}
+
+    for _cn, _herb in _full.items():
+        if not _herb.get("fetched"):
+            continue
+        TCMSP_HERB_COUNT += 1
+        REAL_HERB_META[_cn] = {
+            "pinyin": _herb.get("pinyin", ""),
+            "latin": _herb.get("en", ""),
+            "category": _herb.get("category", ""),
+        }
+        _mol_ids: List[str] = []
+        for _ing in _herb.get("ingredients", []):
+            _mid = _ing.get("MOL_ID")
+            if not _mid:
+                continue
+            _comp = _real_compounds.get(_mid)
+            if _comp is None:
+                _comp = {
+                    "name": _ing.get("molecule_name") or _mid,
+                    "en": _ing.get("molecule_name") or "",
+                    "ob": _num(_ing.get("ob")),
+                    "dl": _num(_ing.get("dl")),
+                    "source": "TCMSP",
+                }
+                for _f in ("mw", "alogp", "caco2", "bbb", "hdon"):
+                    if _ing.get(_f):
+                        _comp[_f] = _ing[_f]
+                _real_compounds[_mid] = _comp
+            if _mid not in _mol_ids:
+                _mol_ids.append(_mid)
+        if _mol_ids:
+            _real_herb_compounds[_cn] = _mol_ids
+
+    # 第二遍：成分-靶点对（含 SVM / RF 预测分与实验验证标记）
+    for _cn, _herb in _full.items():
+        for _row in _herb.get("targets", []):
+            _mid = _row.get("MOL_ID")
+            _key = _tmap_key((_row.get("target_name") or "").strip())
+            _comp = _real_compounds.get(_mid)
+            if _comp is None or not _key:
+                continue
+            _targets = _comp.setdefault("targets", [])
+            if _key not in _targets:
+                _targets.append(_key)
+            _scores = _comp.setdefault("target_scores", {})
+            _scores[_key] = {
+                "svm": _num(_row.get("SVM_score")),
+                "rf": _num(_row.get("RF_score")),
+                "validated": bool((_row.get("validated") or "").strip()),
+                "drugbank": _row.get("drugbank_ID") or "",
+            }
+
+    # 第三遍：靶点-疾病对
+    for _cn, _herb in _full.items():
+        for _row in _herb.get("diseases", []):
+            _key = _tmap_key((_row.get("target_name") or "").strip())
+            _dis = (_row.get("disease_name") or "").strip()
+            if _key and _dis:
+                REAL_DISEASES.setdefault(_key, set()).add(_dis)
+
+    if _real_herb_compounds:
+        COMPOUNDS = _real_compounds
+        HERB_COMPOUNDS = _real_herb_compounds
+
 # --------------------------------------------- 药典/本草目录药材的演示关联
 # 《中国药典》2020 / 《本草纲目》目录中的其余药材没有 TCMSP 实测成分，
 # 由 demo_data.py 分配演示用成分-靶点关联，使全部目录药材可走通分析流程；
@@ -360,6 +456,7 @@ def build_elements(ob_min: float = OB_MIN, dl_min: float = DL_MIN) -> dict:
         node_data = {"id": f"HERB::{herb}", "label": "HERB", "name": herb}
         if herb in DEMO_HERBS:
             node_data["demo_data"] = True   # 成分-靶点为演示关联（demo_data.py）
+        node_data.update(REAL_HERB_META.get(herb, {}))   # 拼音 / 拉丁名 / 药类
         info = get_herb_info(herb) or {}
         node_data.update({k: v for k, v in info.items() if v})
         nodes.append({"data": node_data})
@@ -387,18 +484,30 @@ def build_elements(ob_min: float = OB_MIN, dl_min: float = DL_MIN) -> dict:
         targets = compound.get("targets") or auto_targets(idx)
         targets = uniprot_to_gene_symbol(list(dict.fromkeys(targets)))
         compound_targets[mol_id] = targets
+        scores = compound.get("target_scores", {})
         for target in targets:
-            edges.append({"data": {
+            edge_data = {
                 "id": f"E::{mol_id}->{target}",
                 "source": mol_id,
                 "target": f"TGT::{target}",
                 "label": "TARGETS",
                 "name": "作用",
-            }})
+            }
+            score = scores.get(target)
+            if score:
+                edge_data.update({
+                    "svm": score.get("svm"),
+                    "rf": score.get("rf"),
+                    "validated": score.get("validated", False),
+                    "drugbank": score.get("drugbank", ""),
+                })
+            edges.append({"data": edge_data})
 
     # 成分节点
     for mol_id, herbs in used_compounds.items():
         compound = COMPOUNDS[mol_id]
+        adme = {k: compound[k] for k in ("mw", "alogp", "caco2", "bbb", "hdon")
+                if k in compound}
         nodes.append({"data": {
             "id": mol_id,
             "label": "COMPOUND",
@@ -406,9 +515,11 @@ def build_elements(ob_min: float = OB_MIN, dl_min: float = DL_MIN) -> dict:
             "en": compound.get("en", ""),
             "ob": compound["ob"],
             "dl": compound["dl"],
+            "source": compound.get("source", ""),
             "herbs": herbs,
             "n_herbs": len(herbs),
             "n_targets": len(compound_targets.get(mol_id, [])),
+            **adme,
             **STRUCTURES.get(mol_id, {}),   # smiles / formula / mw / inchikey / cid / img_url
         }})
 
@@ -420,16 +531,46 @@ def build_elements(ob_min: float = OB_MIN, dl_min: float = DL_MIN) -> dict:
             "label": "TARGET",
             "name": tgt.replace("TGT::", ""),
             "degree": sum(1 for e in edges if e["data"]["target"] == tgt),
+            "n_diseases": len(REAL_DISEASES.get(tgt.replace("TGT::", ""), ())),
         }})
 
+    # 疾病层：靶点-疾病边 + 疾病节点（仅挂接当前网络中存在的靶点）
+    n_disease_pairs = 0
+    if REAL_DISEASES:
+        disease_targets: Dict[str, List[str]] = {}
+        for tgt in targets:
+            for dis in REAL_DISEASES.get(tgt.replace("TGT::", ""), ()):
+                disease_targets.setdefault(dis, []).append(tgt)
+        for dis, tgt_list in sorted(disease_targets.items()):
+            dis_id = f"DIS::{dis}"
+            for tgt in tgt_list:
+                edges.append({"data": {
+                    "id": f"E::{tgt}->{dis_id}",
+                    "source": tgt,
+                    "target": dis_id,
+                    "label": "INDICATES",
+                    "name": "关联",
+                }})
+            nodes.append({"data": {
+                "id": dis_id,
+                "label": "DISEASE",
+                "name": dis,
+                "degree": len(tgt_list),
+            }})
+            n_disease_pairs += len(tgt_list)
+
+    source_note = (f"TCMSP 全库 {TCMSP_HERB_COUNT} 味（草药-成分-靶点-疾病）/ UniProt"
+                   if TCMSP_HERB_COUNT else "TCMSP(示例数据) / UniProt")
     return {
         "meta": {
-            "source": "TCMSP(示例数据) / UniProt"
+            "source": source_note
                       + ("；《中国药典》/《本草纲目》目录药材为演示关联（demo_data.py）"
                          if DEMO_HERBS else ""),
             "ob_min": ob_min,
             "dl_min": dl_min,
             "n_demo_herbs": len(DEMO_HERBS),
+            "n_tcmsp_herbs": TCMSP_HERB_COUNT,
+            "n_disease_pairs": n_disease_pairs,
             "generated_by": "data_prep.py",
         },
         "nodes": nodes,

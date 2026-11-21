@@ -57,7 +57,8 @@ st.set_page_config(page_title="中药成分数据库 · 网络药理学分析平
                    page_icon=":herb:", layout="wide")
 st.title("中药成分数据库 · 网络药理学分析平台")
 st.caption("成分数据库（TCMSP + PubChem 整合） → UniProt 基因符号标准化 → "
-           "Cytoscape.js 网络可视化 → CytoNCA 拓扑筛选 → 配伍协同分析")
+           "Cytoscape.js 网络可视化 → CytoNCA 拓扑筛选 → 配伍协同分析 → 疾病关联"
+           "（草药-成分-靶点-疾病四层网络）")
 
 
 # ------------------------------------------------------------------ 数据读取
@@ -230,6 +231,85 @@ def herb_target_map(elements: dict) -> Dict[str, Set[str]]:
     return result
 
 
+@st.cache_data(show_spinner=False)
+def disease_index() -> dict:
+    """从 network.json 构建疾病层索引（全库口径，不随阈值 / 方剂筛选变化）。
+
+    返回：
+        dis_targets   疾病ID -> [靶点ID, ...]
+        tgt_compounds 靶点ID -> [成分ID, ...]
+        cmp_herbs     成分ID -> [中药ID, ...]
+        node_by_id    节点ID -> 节点data
+        diseases      按关联靶点数降序的疾病名列表
+    """
+    net = load_network(str(DATA_FILE))
+    dis_targets: Dict[str, List[str]] = {}
+    tgt_compounds: Dict[str, List[str]] = {}
+    cmp_herbs: Dict[str, List[str]] = {}
+    for edge in net["edges"]:
+        d = edge["data"]
+        label = d.get("label")
+        if label == "INDICATES":
+            dis_targets.setdefault(d["target"], []).append(d["source"])
+        elif label == "TARGETS":
+            tgt_compounds.setdefault(d["target"], []).append(d["source"])
+        elif label == "CONTAINS":
+            cmp_herbs.setdefault(d["target"], []).append(d["source"])
+    node_by_id = {n["data"]["id"]: n["data"] for n in net["nodes"]}
+    diseases = sorted({n["data"]["name"] for n in net["nodes"]
+                       if n["data"]["label"] == "DISEASE"})
+    diseases.sort(key=lambda name: -len(dis_targets.get(f"DIS::{name}", [])))
+    return {"dis_targets": dis_targets, "tgt_compounds": tgt_compounds,
+            "cmp_herbs": cmp_herbs, "node_by_id": node_by_id,
+            "diseases": diseases}
+
+
+def disease_subgraph(elements: dict, raw: dict, max_diseases: int) -> dict:
+    """在当前网络基础上追加疾病层（INDICATES 边 + DISEASE 节点）。
+
+    疾病边取自全库数据 raw（filter_elements 会剥掉疾病层），
+    只保留与当前网络靶点相关的部分；疾病按关联靶点数取前
+    max_diseases 个，避免图过于稠密。
+    """
+    tgt_ids = {n["data"]["id"] for n in elements["nodes"]
+               if n["data"]["label"] == "TARGET"}
+    counts: Dict[str, int] = {}
+    pairs: List[tuple] = []
+    for edge in raw["edges"]:
+        d = edge["data"]
+        if d.get("label") == "INDICATES" and d["source"] in tgt_ids:
+            pairs.append((d["source"], d["target"]))
+            counts[d["target"]] = counts.get(d["target"], 0) + 1
+    if not pairs:
+        return elements
+    keep = {d for d, _ in
+            sorted(counts.items(), key=lambda kv: -kv[1])[:max_diseases]}
+    ext_nodes = list(elements["nodes"])
+    ext_edges = list(elements["edges"])
+    for src, dst in sorted(pairs):
+        if dst not in keep:
+            continue
+        ext_edges.append({"data": {
+            "id": f"E::{src}->{dst}",
+            "source": src,
+            "target": dst,
+            "label": "INDICATES",
+            "name": "关联",
+        }})
+    degree: Dict[str, int] = {}
+    for _, dst in ext_edges:
+        if str(dst).startswith("DIS::"):
+            degree[dst] = degree.get(dst, 0) + 1
+    for dis_id, deg in degree.items():
+        ext_nodes.append({"data": {
+            "id": dis_id,
+            "label": "DISEASE",
+            "name": dis_id.replace("DIS::", ""),
+            "degree": deg,
+        }})
+    return {"nodes": ext_nodes, "edges": ext_edges}
+
+
 # ------------------------------------------------------------------ 侧边栏
 raw_elements = load_network(str(DATA_FILE))
 meta = raw_elements.get("meta", {})
@@ -367,9 +447,9 @@ compounds_df = pd.DataFrame([n["data"] for n in elements["nodes"]
 n_targets = sum(1 for n in elements["nodes"] if n["data"]["label"] == "TARGET")
 
 # ------------------------------------------------------------------ 主体
-tab_db, tab_formula, tab_graph, tab_synergy, tab_core, tab_target, tab_lit, tab_pk, tab_animal = st.tabs(
+tab_db, tab_formula, tab_graph, tab_synergy, tab_core, tab_target, tab_disease, tab_lit, tab_pk, tab_animal = st.tabs(
     ["成分数据库", "复方说明", "网络图", "配伍协同分析", "核心靶点（CytoNCA）",
-     "靶点详情（蛋白 / 定位 / 结构）",
+     "靶点详情（蛋白 / 定位 / 结构）", "疾病关联（草药-成分-靶点-疾病）",
      "文献机制（PubMed）", "药动学 / 量-效-时", "动物模型模拟实验"]
 )
 core_targets: List[str] = []
@@ -692,25 +772,35 @@ with tab_graph:
     if not elements["nodes"]:
         st.warning("当前阈值下没有符合条件的成分，请调低 OB / DL。")
     else:
+        show_disease = st.checkbox("显示疾病层（靶点 → 疾病，草药-成分-靶点-疾病四层网络）",
+                                   value=False)
+        if show_disease:
+            max_dis = st.slider("最多显示的疾病节点数（按关联靶点数排序）",
+                                10, 100, 30, 5)
+            graph_elements = disease_subgraph(elements, raw_elements, max_dis)
+        else:
+            graph_elements = elements
         node_styles = [
             NodeStyle("HERB", "#FF7F3E", "name", "store"),
             NodeStyle("COMPOUND", "#2A629A", "name", "science"),
             NodeStyle("TARGET", "#3CB371", "name", "medical_services"),
+            NodeStyle("DISEASE", "#C23B22", "name", "sick"),
         ]
         edge_styles = [
             EdgeStyle("CONTAINS", caption="name", directed=True),
             EdgeStyle("TARGETS", caption="name", directed=True),
+            EdgeStyle("INDICATES", caption="name", directed=True),
         ]
-        st_link_analysis(elements, layout, node_styles, edge_styles,
+        st_link_analysis(graph_elements, layout, node_styles, edge_styles,
                          height=height, key="tcm_network")
-        st.markdown(
-            "**图例**："
-            "<span style='color:#FF7F3E'>■ 中药</span>　"
-            "<span style='color:#2A629A'>■ 成分</span>　"
-            "<span style='color:#3CB371'>■ 靶点</span>　　"
-            "点击节点高亮邻居，可拖拽调整布局。",
-            unsafe_allow_html=True,
-        )
+        legend = ("**图例**："
+                  "<span style='color:#FF7F3E'>■ 中药</span>　"
+                  "<span style='color:#2A629A'>■ 成分</span>　"
+                  "<span style='color:#3CB371'>■ 靶点</span>")
+        if show_disease:
+            legend += "　<span style='color:#C23B22'>■ 疾病</span>"
+        st.markdown(legend + "　　点击节点高亮邻居，可拖拽调整布局。",
+                    unsafe_allow_html=True)
 
 # -------------------------------------------------------- 2. 配伍协同分析
 with tab_synergy:
@@ -860,6 +950,17 @@ with tab_target:
                     st.markdown("**功能描述**")
                     st.caption(item["function"])
 
+                # 关联疾病（TCMSP 靶点-疾病层，全库口径）
+                dis_rows = sorted({
+                    e["data"]["target"].replace("DIS::", "")
+                    for e in raw_elements["edges"]
+                    if e["data"].get("label") == "INDICATES"
+                    and e["data"]["source"] == f"TGT::{picked}"
+                })
+                if dis_rows:
+                    st.markdown(f"**关联疾病（TCMSP，{len(dis_rows)} 种）**")
+                    st.write("、".join(dis_rows))
+
                 st.markdown("**蛋白三维结构**（AlphaFold DB 预测模型，可旋转缩放）")
                 pdb_text = load_alphafold_pdb(item["accession"])
                 if pdb_text:
@@ -887,7 +988,117 @@ with tab_target:
                 st.bar_chart(dist)
                 st.caption("同一蛋白可定位于多个区室，故计数之和大于核心靶点数。")
 
-# ---------------------------------------------- 5. 文献机制（PubMed 抓取与抽取）
+# ------------------------------- 5. 疾病关联：草药-成分-靶点-疾病四层检索
+with tab_disease:
+    st.caption("数据来源：**TCMSP** 靶点-疾病关联（靶点已经 UniProt 标准化为基因符号）。"
+               "本页为全库口径，不受左侧方剂 / 阈值筛选影响。"
+               "可由疾病反查关联靶点、活性成分与来源中药，实现"
+               "**草药 → 成分 → 靶点 → 疾病** 的四层贯通检索。")
+
+    idx = disease_index()
+    n_dis = len(idx["diseases"])
+    if n_dis == 0:
+        st.info("network.json 中暂无疾病层数据：请确认 tcmsp_full.json 已抓取，"
+                "并重新运行 `python data_prep.py`。")
+    else:
+        m1, m2, m3 = st.columns(3)
+        m1.metric("收录疾病", n_dis)
+        m2.metric("疾病-靶点关联",
+                  sum(len(v) for v in idx["dis_targets"].values()))
+        m3.metric("涉及靶点", len({t for v in idx["dis_targets"].values() for t in v}))
+
+        kw = st.text_input("按疾病名称搜索",
+                           placeholder="例如：Cardiac / Diabetes / cancer / 高血压 对应的英文名",
+                           help="TCMSP 疾病为英文名，支持子串匹配，不区分大小写")
+        needle = kw.strip().lower()
+        if needle:
+            matched = [d for d in idx["diseases"] if needle in d.lower()]
+        else:
+            matched = idx["diseases"]
+        st.caption(f"匹配到 **{len(matched)}** 种疾病"
+                   + ("（未输入关键词时按关联靶点数排序展示）" if not needle else ""))
+
+        if not matched:
+            st.info("没有匹配的疾病名称，请换一个关键词。")
+        else:
+            options = [f"{d}　关联靶点 {len(idx['dis_targets'].get('DIS::' + d, []))} 个"
+                       for d in matched[:200]]
+            pick = st.selectbox("选择疾病", options)
+            picked_dis = pick.split("　关联靶点")[0]
+            tgt_ids = idx["dis_targets"].get(f"DIS::{picked_dis}", [])
+
+            st.markdown(f"### {picked_dis}")
+            c1, c2, c3 = st.columns(3)
+            c1.metric("关联靶点", len(tgt_ids))
+
+            # 靶点 -> 成分 -> 中药 逐层反查
+            compound_ids: Set[str] = set()
+            for t in tgt_ids:
+                compound_ids.update(idx["tgt_compounds"].get(t, []))
+            herb_counter: Dict[str, int] = {}
+            for cid_ in compound_ids:
+                for hid in idx["cmp_herbs"].get(cid_, []):
+                    herb_counter[hid] = herb_counter.get(hid, 0) + 1
+            c2.metric("相关活性成分", len(compound_ids))
+            c3.metric("来源中药", len(herb_counter))
+
+            with st.expander(f"关联靶点（{len(tgt_ids)} 个）", expanded=True):
+                tgt_rows = []
+                for t in sorted(tgt_ids):
+                    node = idx["node_by_id"].get(t, {})
+                    tgt_rows.append({
+                        "靶点": str(t).replace("TGT::", ""),
+                        "关联成分数": len(idx["tgt_compounds"].get(t, [])),
+                        "网络度数": node.get("degree", ""),
+                    })
+                st.dataframe(pd.DataFrame(tgt_rows).sort_values(
+                    "关联成分数", ascending=False),
+                    hide_index=True, width="stretch", height=min(
+                        28 * (len(tgt_rows) + 1), 460))
+
+            with st.expander(f"相关活性成分（{len(compound_ids)} 个，按来源中药数排序）"):
+                cmp_rows = []
+                for cid_ in sorted(compound_ids):
+                    node = idx["node_by_id"].get(cid_, {})
+                    if not node:
+                        continue
+                    cmp_rows.append({
+                        "成分": node.get("name", cid_),
+                        "编号": cid_,
+                        "OB(%)": node.get("ob"),
+                        "DL": node.get("dl"),
+                        "靶点数": node.get("n_targets"),
+                        "来源中药数": node.get("n_herbs"),
+                    })
+                if cmp_rows:
+                    st.dataframe(pd.DataFrame(cmp_rows).sort_values(
+                        "来源中药数", ascending=False),
+                        hide_index=True, width="stretch",
+                        height=min(28 * (len(cmp_rows) + 1), 460))
+                else:
+                    st.caption("—")
+
+            with st.expander(f"来源中药（{len(herb_counter)} 味，按覆盖成分数排序）"):
+                herb_rows = [{"中药": h, "覆盖成分数": n,
+                              "是否演示关联": "是" if h in demo_herbs else "否"}
+                             for h, n in sorted(herb_counter.items(),
+                                                key=lambda kv: -kv[1])]
+                st.dataframe(pd.DataFrame(herb_rows),
+                             hide_index=True, width="stretch",
+                             height=min(28 * (len(herb_rows) + 1), 460))
+                top_herbs = dict(sorted(herb_counter.items(),
+                                        key=lambda kv: -kv[1])[:15])
+                st.bar_chart(pd.DataFrame({"覆盖成分数": top_herbs}).T)
+                st.caption("柱状图为覆盖成分数前 15 的中药。")
+
+        with st.expander("疾病关联总数排行（前 50）"):
+            top_rows = [{"疾病": d,
+                         "关联靶点数": len(idx["dis_targets"].get("DIS::" + d, []))}
+                        for d in idx["diseases"][:50]]
+            st.dataframe(pd.DataFrame(top_rows), hide_index=True,
+                         width="stretch", height=460)
+
+# ---------------------------------------------- 6. 文献机制（PubMed 抓取与抽取）
 with tab_lit:
     if not LITERATURE_FILE.exists():
         st.info("未找到 literature.json，请先运行 `python fetch_literature.py` "

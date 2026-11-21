@@ -1,0 +1,3516 @@
+[
+ {
+  "herb_cn_name": "矮地茶",
+  "herb_pinyin": "Aidicha",
+  "herb_en_name": "Ardisiae Japonicae Herba",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "艾叶",
+  "herb_pinyin": "Aiye",
+  "herb_en_name": "Folium Artemisiae Argyi",
+  "child_cn_name": "温经止血药",
+  "child_en_name": "Channel-Warming Hemostatic"
+ },
+ {
+  "herb_cn_name": "安息香",
+  "herb_pinyin": "Anxixiang",
+  "herb_en_name": "Benzoinum",
+  "child_cn_name": "开窍药",
+  "child_en_name": "Resuscitative Stimulant; Resuscitative Medicinal"
+ },
+ {
+  "herb_cn_name": "八角茴香",
+  "herb_pinyin": "Bajiaohuixiang",
+  "herb_en_name": "Anisi Stellati Fructus",
+  "child_cn_name": "温里药",
+  "child_en_name": "Warming Interior Drugs"
+ },
+ {
+  "herb_cn_name": "八角莲",
+  "herb_pinyin": "Bajiaolian",
+  "herb_en_name": "Dysosmae Verspiellis Rhixoma Et Radix",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "巴豆",
+  "herb_pinyin": "Badou",
+  "herb_en_name": "Crotonis Fructus",
+  "child_cn_name": "攻下药",
+  "child_en_name": "Offensive Purgative Medicinal"
+ },
+ {
+  "herb_cn_name": "巴戟天",
+  "herb_pinyin": "Bajitian",
+  "herb_en_name": "Morindae Officinalis Radix",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "菝葜",
+  "herb_pinyin": "Baqia",
+  "herb_en_name": "Smilax China",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "白扁豆",
+  "herb_pinyin": "Baibiandou",
+  "herb_en_name": "Lablab Semen Album",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "白附子",
+  "herb_pinyin": "Baifuzi",
+  "herb_en_name": "Typhonii Rhizoma",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "白果",
+  "herb_pinyin": "Baiguo",
+  "herb_en_name": "Ginkgo Semen",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "白花菜子",
+  "herb_pinyin": "Baihuacaizi",
+  "herb_en_name": "Semen Cleomis",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "白花蛇舌草",
+  "herb_pinyin": "Baihuasheshecao",
+  "herb_en_name": "Hedyotis Diffusae Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "白及",
+  "herb_pinyin": "Baiji",
+  "herb_en_name": "Bletilla Striata (Thunb.Ex A.Murray)Rchb.F.",
+  "child_cn_name": "收敛止血药",
+  "child_en_name": "Astringent Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "白蔹",
+  "herb_pinyin": "Bailian",
+  "herb_en_name": "Ampelopsis Japonica",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "白毛藤",
+  "herb_pinyin": "Baimaoteng",
+  "herb_en_name": "Herba Solani Lyrati",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "白毛夏枯草",
+  "herb_pinyin": "Baimaoxiakucao",
+  "herb_en_name": "Ajugae Decumbentis Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "白茅根",
+  "herb_pinyin": "Baimaogen",
+  "herb_en_name": "Imperatae Rhizoma",
+  "child_cn_name": "凉血止血药",
+  "child_en_name": "Blood-Cooling Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "白前",
+  "herb_pinyin": "Baiqian",
+  "herb_en_name": "Cynanchistauntonii Rhizoma Et Radix",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "白屈菜",
+  "herb_pinyin": "Baiqucai",
+  "herb_en_name": "Chelidonii Herba",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "白芍",
+  "herb_pinyin": "Baishao",
+  "herb_en_name": "Paeoniae Radix Alba",
+  "child_cn_name": "补血药",
+  "child_en_name": "Blood-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "白术",
+  "herb_pinyin": "Baizhu",
+  "herb_en_name": "Atractylodes Macrocephala Koidz.",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "白头翁",
+  "herb_pinyin": "Baitouweng",
+  "herb_en_name": "Pulsatilliae Radix",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "白薇",
+  "herb_pinyin": "Baiwei",
+  "herb_en_name": "Radix Cynanchi",
+  "child_cn_name": "清虚热药",
+  "child_en_name": "Asthenic Heat Dispelling Drugs"
+ },
+ {
+  "herb_cn_name": "白鲜皮",
+  "herb_pinyin": "Baixianpi",
+  "herb_en_name": "Dictamni Cortex",
+  "child_cn_name": "清热燥湿药",
+  "child_en_name": "Heat-Clearing And Dampnessdrying Medicinal"
+ },
+ {
+  "herb_cn_name": "白药子",
+  "herb_pinyin": "Baiyaozi",
+  "herb_en_name": "Radix Stephaniae Cepharanthae.",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "白芷",
+  "herb_pinyin": "Baizhi",
+  "herb_en_name": "A. Dahurica (Fisch.) Benth. Et Hook",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "百部",
+  "herb_pinyin": "Baibu",
+  "herb_en_name": "Stemonae Radix",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "百合",
+  "herb_pinyin": "Baihe",
+  "herb_en_name": "Lilii Bulbus",
+  "child_cn_name": "补阴药",
+  "child_en_name": "Yin-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "柏子仁",
+  "herb_pinyin": "Baiziren",
+  "herb_en_name": "Platycladi Semen",
+  "child_cn_name": "安神药",
+  "child_en_name": "Tranguilizing Medicinal"
+ },
+ {
+  "herb_cn_name": "败酱草",
+  "herb_pinyin": "Baijiangcao",
+  "herb_en_name": "Herba Patriniae",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "斑蝥",
+  "herb_pinyin": "Banmao",
+  "herb_en_name": "Mylabris",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "板蓝根",
+  "herb_pinyin": "Banlangen",
+  "herb_en_name": "Isatidis Radix",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "半边莲",
+  "herb_pinyin": "Banbianlian",
+  "herb_en_name": "Lobeliae Chinensis Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "半夏",
+  "herb_pinyin": "Banxia",
+  "herb_en_name": "Arum Ternatum Thunb.",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "半枝莲",
+  "herb_pinyin": "Banzhilian",
+  "herb_en_name": "Scutellariae Barbatae Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "薄荷",
+  "herb_pinyin": "Bohe",
+  "herb_en_name": "Menthae Herba",
+  "child_cn_name": "辛凉解表药",
+  "child_en_name": "Pungent Cool Diaphoretics"
+ },
+ {
+  "herb_cn_name": "北豆根",
+  "herb_pinyin": "Beidougen",
+  "herb_en_name": "Menispermi Rhizoma",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "北刘寄奴",
+  "herb_pinyin": "Beiliujinu",
+  "herb_en_name": "Siphonostegiae Herba",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "北沙参",
+  "herb_pinyin": "Beishashen",
+  "herb_en_name": "Glehniae Radix",
+  "child_cn_name": "补阴药",
+  "child_en_name": "Yin-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "北五味子",
+  "herb_pinyin": "Beiwuweizi",
+  "herb_en_name": "Schisandrae Chinensis Fructus",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "荜茇",
+  "herb_pinyin": "Biba",
+  "herb_en_name": "Piperis Longi Fructus",
+  "child_cn_name": "温里药",
+  "child_en_name": "Warming Interior Drugs"
+ },
+ {
+  "herb_cn_name": "荜澄茄",
+  "herb_pinyin": "Bichengqie",
+  "herb_en_name": "Litseae Fructus",
+  "child_cn_name": "温里药",
+  "child_en_name": "Warming Interior Drugs"
+ },
+ {
+  "herb_cn_name": "蓖麻子",
+  "herb_pinyin": "Bimazie",
+  "herb_en_name": "Ricini Semen",
+  "child_cn_name": "拔毒化腐生肌药",
+  "child_en_name": "External Medicinal (Draw Out Toxin, Resolve Putridity)"
+ },
+ {
+  "herb_cn_name": "萹蓄",
+  "herb_pinyin": "Bianxu",
+  "herb_en_name": "Polygoni Avicularis Herba",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "扁豆花",
+  "herb_pinyin": "Biandouhua",
+  "herb_en_name": "Dolichos Lablab L",
+  "child_cn_name": "化湿药",
+  "child_en_name": "Dampness Removing Drugs"
+ },
+ {
+  "herb_cn_name": "槟榔",
+  "herb_pinyin": "Binglang",
+  "herb_en_name": "Arecae Semen",
+  "child_cn_name": "驱虫药",
+  "child_en_name": "Antiparasitic Drugs"
+ },
+ {
+  "herb_cn_name": "冰片",
+  "herb_pinyin": "Bingpian",
+  "herb_en_name": "Borneolum Syntheticum",
+  "child_cn_name": "开窍药",
+  "child_en_name": "Resuscitative Stimulant; Resuscitative Medicinal"
+ },
+ {
+  "herb_cn_name": "布渣叶",
+  "herb_pinyin": "Buzhaye",
+  "herb_en_name": "Microctis Folium",
+  "child_cn_name": "拔毒化腐生肌药",
+  "child_en_name": "External Medicinal (Draw Out Toxin, Resolve Putridity)"
+ },
+ {
+  "herb_cn_name": "蚕沙",
+  "herb_pinyin": "Cansha",
+  "herb_en_name": "Bombyx Mori L.",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "苍耳子",
+  "herb_pinyin": "Cangerzi",
+  "herb_en_name": "Xanthii Fructus",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "苍术",
+  "herb_pinyin": "Cangzhu",
+  "herb_en_name": "Atractylodes Lancea (Thunb.)Dc.",
+  "child_cn_name": "化湿药",
+  "child_en_name": "Dampness Removing Drugs"
+ },
+ {
+  "herb_cn_name": "草苁蓉",
+  "herb_pinyin": "Caocongrong",
+  "herb_en_name": "Boschniakia Rossica Herba",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "草果",
+  "herb_pinyin": "Caoguo",
+  "herb_en_name": "Amomum Tsao-Ko Crevostet",
+  "child_cn_name": "化湿药",
+  "child_en_name": "Dampness Removing Drugs"
+ },
+ {
+  "herb_cn_name": "草乌",
+  "herb_pinyin": "Caowu",
+  "herb_en_name": "Aconitum Kusnezoffii Reichb",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "草乌叶",
+  "herb_pinyin": "Caowuye",
+  "herb_en_name": "Radix Aconiti Kusnezoffii",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "侧柏叶",
+  "herb_pinyin": "Cebaiye",
+  "herb_en_name": "Platycladi Cacumen",
+  "child_cn_name": "凉血止血药",
+  "child_en_name": "Blood-Cooling Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "柴胡",
+  "herb_pinyin": "Chaihu",
+  "herb_en_name": "Radix Bupleuri",
+  "child_cn_name": "辛凉解表药",
+  "child_en_name": "Pungent Cool Diaphoretics"
+ },
+ {
+  "herb_cn_name": "蝉蜕",
+  "herb_pinyin": "Chantui",
+  "herb_en_name": "Cicadae Periostracum",
+  "child_cn_name": "辛凉解表药",
+  "child_en_name": "Pungent Cool Diaphoretics"
+ },
+ {
+  "herb_cn_name": "常山",
+  "herb_pinyin": "Changshan",
+  "herb_en_name": "Dichroae Radix",
+  "child_cn_name": "涌吐药",
+  "child_en_name": "Emetic Medicinal"
+ },
+ {
+  "herb_cn_name": "车前草",
+  "herb_pinyin": "Cheqiancao",
+  "herb_en_name": "Plantaginis Herba",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "车前子",
+  "herb_pinyin": "Cheqianzi",
+  "herb_en_name": "Plantaginis Semen",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "沉香",
+  "herb_pinyin": "Chenxiang",
+  "herb_en_name": "Linderae Radix",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "陈皮",
+  "herb_pinyin": "Chenpi",
+  "herb_en_name": "Citrus Reticulata",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "赤芍",
+  "herb_pinyin": "Chishao",
+  "herb_en_name": "Radix Paeoniae Rubra",
+  "child_cn_name": "清热凉血药",
+  "child_en_name": "Heat Clearing Blood Cooling Drugs"
+ },
+ {
+  "herb_cn_name": "赤小豆",
+  "herb_pinyin": "Chixiaodou",
+  "herb_en_name": "Phaseoli Semen",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "茺蔚子",
+  "herb_pinyin": "Chongweizi",
+  "herb_en_name": "Leonuri Fructus",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "臭梧桐",
+  "herb_pinyin": "Chouwutong",
+  "herb_en_name": "Clerodendrum Trichotomum Thunb",
+  "child_cn_name": "祛风湿清热药",
+  "child_en_name": "Wind-Dampnessdispelling And Heatclearing Medicinal"
+ },
+ {
+  "herb_cn_name": "楮实子",
+  "herb_pinyin": "Chushiziu",
+  "herb_en_name": "Broussonetiae Fructus",
+  "child_cn_name": "补阴药",
+  "child_en_name": "Yin-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "川贝母",
+  "herb_pinyin": "Chuanbeimu",
+  "herb_en_name": "Fritiliariae Irrhosae Bulbus",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "川槿皮",
+  "herb_pinyin": "Chuanjinpi",
+  "herb_en_name": "Cortex Hibisci",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "川楝子",
+  "herb_pinyin": "Chuanlianzi",
+  "herb_en_name": "Toosendan Fructus",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "川木通",
+  "herb_pinyin": "Chuanmutong",
+  "herb_en_name": "Clematidis Armandii Caulis",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "川牛膝",
+  "herb_pinyin": "Chuanniuxi",
+  "herb_en_name": "Cyathulae Radix",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "川射干",
+  "herb_pinyin": "Chuanshegan",
+  "herb_en_name": "Iridis Tectori Rhizoma",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "川乌",
+  "herb_pinyin": "Chuanwu",
+  "herb_en_name": "Aconiti Radix",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "川芎",
+  "herb_pinyin": "Chuanxiong",
+  "herb_en_name": "Chuanxiong Rhizoma",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "穿山龙",
+  "herb_pinyin": "Chuanshanlong",
+  "herb_en_name": "Rhizoma Dioscoreae Nipponicae",
+  "child_cn_name": "祛风湿清热药",
+  "child_en_name": "Wind-Dampnessdispelling And Heatclearing Medicinal"
+ },
+ {
+  "herb_cn_name": "穿心莲",
+  "herb_pinyin": "Chuanxinlian",
+  "herb_en_name": "Andrographis Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "垂盆草",
+  "herb_pinyin": "Chuipencao",
+  "herb_en_name": "Sedi Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "椿皮",
+  "herb_pinyin": "Chunpi",
+  "herb_en_name": "Ailanthi Cortex",
+  "child_cn_name": "清热燥湿药",
+  "child_en_name": "Heat-Clearing And Dampnessdrying Medicinal"
+ },
+ {
+  "herb_cn_name": "葱白",
+  "herb_pinyin": "Congbai",
+  "herb_en_name": "Allii Fistulost Bulbus",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "大风子",
+  "herb_pinyin": "Dafengzi",
+  "herb_en_name": "Hydnocarpi Anthelminticae Semen",
+  "child_cn_name": "解毒杀虫燥湿止痒药",
+  "child_en_name": "Medicinal For Detoxification、Parasiticide、Drying Dampness And Relieving Itching"
+ },
+ {
+  "herb_cn_name": "大腹皮",
+  "herb_pinyin": "Dafupi",
+  "herb_en_name": "Areca Catechu L.",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "大黄",
+  "herb_pinyin": "Dahuang",
+  "herb_en_name": "Radix Rhei Et Rhizome",
+  "child_cn_name": "攻下药",
+  "child_en_name": "Offensive Purgative Medicinal"
+ },
+ {
+  "herb_cn_name": "大蓟",
+  "herb_pinyin": "Daji",
+  "herb_en_name": "Radix Cirsii Japonici",
+  "child_cn_name": "凉血止血药",
+  "child_en_name": "Blood-Cooling Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "大青叶",
+  "herb_pinyin": "Daqingye",
+  "herb_en_name": "Isatidis Folium",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "大蒜",
+  "herb_pinyin": "Dasuan",
+  "herb_en_name": "Allii Sativi Bulbus",
+  "child_cn_name": "解毒杀虫燥湿止痒药",
+  "child_en_name": "Medicinal For Detoxification、Parasiticide、Drying Dampness And Relieving Itching"
+ },
+ {
+  "herb_cn_name": "大血藤",
+  "herb_pinyin": "Daxueteng",
+  "herb_en_name": "Sargentodoxae Caulis",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "大枣",
+  "herb_pinyin": "Dazao",
+  "herb_en_name": "Jujubae Fructus",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "大皂荚",
+  "herb_pinyin": "Dazaojia",
+  "herb_en_name": "Gleditsiae Fructus",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "玳玳花",
+  "herb_pinyin": "Daidaihua",
+  "herb_en_name": "Citrus Aurantium",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "丹参",
+  "herb_pinyin": "Danshen",
+  "herb_en_name": "Radix Salviae",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "淡豆豉",
+  "herb_pinyin": "Dandouchi",
+  "herb_en_name": "Sojae Semen Praeparatum",
+  "child_cn_name": "辛凉解表药",
+  "child_en_name": "Pungent Cool Diaphoretics"
+ },
+ {
+  "herb_cn_name": "当归",
+  "herb_pinyin": "Danggui",
+  "herb_en_name": "Angelicae Sinensis Radix",
+  "child_cn_name": "补血药",
+  "child_en_name": "Blood-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "党参",
+  "herb_pinyin": "Dangshen",
+  "herb_en_name": "Codonopsis Radix",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "刀豆",
+  "herb_pinyin": "Daodou",
+  "herb_en_name": "Canavaliae Semen",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "倒扣草",
+  "herb_pinyin": "Daokoucao",
+  "herb_en_name": "Achyranthis Asperae Herba",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "灯心草",
+  "herb_pinyin": "Dengxincao",
+  "herb_en_name": "Junci Medulla",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "地耳草",
+  "herb_pinyin": "Diercao",
+  "herb_en_name": "Hyperici Japonici Herber",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "地枫皮",
+  "herb_pinyin": "Difengpi",
+  "herb_en_name": "Illicium Difengpi K. L. B. Et K. I. M.",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "地肤子",
+  "herb_pinyin": "Difuzi",
+  "herb_en_name": "Kochiae Fructus",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "地骨皮",
+  "herb_pinyin": "Digupi",
+  "herb_en_name": "Lycii Cortex",
+  "child_cn_name": "清虚热药",
+  "child_en_name": "Asthenic Heat Dispelling Drugs"
+ },
+ {
+  "herb_cn_name": "地锦草",
+  "herb_pinyin": "Dijincao",
+  "herb_en_name": "Euphorbiae Humifusae Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "地榆",
+  "herb_pinyin": "Diyu",
+  "herb_en_name": "Radix Sanguisorbae",
+  "child_cn_name": "凉血止血药",
+  "child_en_name": "Blood-Cooling Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "丁公藤",
+  "herb_pinyin": "Dinggongteng",
+  "herb_en_name": "Erycibe Obtusifolia Benth",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "丁香",
+  "herb_pinyin": "Dingxiang",
+  "herb_en_name": "Caryophylliflos",
+  "child_cn_name": "温里药",
+  "child_en_name": "Warming Interior Drugs"
+ },
+ {
+  "herb_cn_name": "冬虫夏草",
+  "herb_pinyin": "Dongchongxiacao",
+  "herb_en_name": "Corayceps",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "冬瓜皮",
+  "herb_pinyin": "Dongguapi",
+  "herb_en_name": "Benincasae Exocarpium",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "冬瓜子",
+  "herb_pinyin": "Dongguazi",
+  "herb_en_name": "Benincasae Semen",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "冬葵果",
+  "herb_pinyin": "Dongkuiguo",
+  "herb_en_name": "Malvae Fructus",
+  "child_cn_name": "拔毒化腐生肌药",
+  "child_en_name": "External Medicinal (Draw Out Toxin, Resolve Putridity)"
+ },
+ {
+  "herb_cn_name": "豆蔻",
+  "herb_pinyin": "Doukou",
+  "herb_en_name": "Alpinia Katsumadai Hayat",
+  "child_cn_name": "化湿药",
+  "child_en_name": "Dampness Removing Drugs"
+ },
+ {
+  "herb_cn_name": "独活",
+  "herb_pinyin": "Duhuo",
+  "herb_en_name": "Radix Angelicae Biseratae",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "杜仲",
+  "herb_pinyin": "Duzhong",
+  "herb_en_name": "Eucommiae Cortex",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "杜仲叶",
+  "herb_pinyin": "Duzhongye",
+  "herb_en_name": "Eucommiae Folium",
+  "child_cn_name": "拔毒化腐生肌药",
+  "child_en_name": "External Medicinal (Draw Out Toxin, Resolve Putridity)"
+ },
+ {
+  "herb_cn_name": "断血流",
+  "herb_pinyin": "Duanxueliu",
+  "herb_en_name": "Herba Clinopodii Polycephali.",
+  "child_cn_name": "凉血止血药",
+  "child_en_name": "Blood-Cooling Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "莪术",
+  "herb_pinyin": "Ezhu",
+  "herb_en_name": "Curcumae Rhizoma",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "鹅不食草",
+  "herb_pinyin": "Ebushicao",
+  "herb_en_name": "Centipedae Herba",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "儿茶",
+  "herb_pinyin": "Ercha",
+  "herb_en_name": "Catechu",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "番泻叶",
+  "herb_pinyin": "Fanxieye",
+  "herb_en_name": "Sennae Folium",
+  "child_cn_name": "攻下药",
+  "child_en_name": "Offensive Purgative Medicinal"
+ },
+ {
+  "herb_cn_name": "翻白草",
+  "herb_pinyin": "Fanbaicao",
+  "herb_en_name": "Potentillae Discoloris Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "防风",
+  "herb_pinyin": "Fangfeng",
+  "herb_en_name": "Saposhnikoviae Radix",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "防己",
+  "herb_pinyin": "Fangji",
+  "herb_en_name": "Stephaniae Tetrandrae Radix",
+  "child_cn_name": "祛风湿清热药",
+  "child_en_name": "Wind-Dampnessdispelling And Heatclearing Medicinal"
+ },
+ {
+  "herb_cn_name": "粉萆薢",
+  "herb_pinyin": "Fenbixie",
+  "herb_en_name": "Dioscoreae Hypoglaucae Rhizoma",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "凤尾草",
+  "herb_pinyin": "Fengweicao",
+  "herb_en_name": "Pteridis Multifidae Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "凤仙透骨草",
+  "herb_pinyin": "Fengxiantougucao",
+  "herb_en_name": "Impatiens Balsamina",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "凤眼草",
+  "herb_pinyin": "Fengyancao",
+  "herb_en_name": "Ailanthi Altissimae Fructus",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "佛手",
+  "herb_pinyin": "Foshou",
+  "herb_en_name": "Citri Sarcodactylis Fructus",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "茯苓",
+  "herb_pinyin": "Fuling",
+  "herb_en_name": "Poria Cocos(Schw.) Wolf.",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "浮萍",
+  "herb_pinyin": "Fuping",
+  "herb_en_name": "Spirodelae Herba",
+  "child_cn_name": "辛凉解表药",
+  "child_en_name": "Pungent Cool Diaphoretics"
+ },
+ {
+  "herb_cn_name": "附子",
+  "herb_pinyin": "Fuzi",
+  "herb_en_name": "Aconiti Lateralis Radix Praeparata",
+  "child_cn_name": "温里药",
+  "child_en_name": "Warming Interior Drugs"
+ },
+ {
+  "herb_cn_name": "覆盆子",
+  "herb_pinyin": "Fupenzi",
+  "herb_en_name": "Rubi Fructus",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "甘草",
+  "herb_pinyin": "Gancao",
+  "herb_en_name": "licorice",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "甘松",
+  "herb_pinyin": "Gansong",
+  "herb_en_name": "Nardostachyos Radix Et Rhizoma",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "甘遂",
+  "herb_pinyin": "Gansui",
+  "herb_en_name": "Kansui Radix",
+  "child_cn_name": "通水药",
+  "child_en_name": "Drastic Purgatives"
+ },
+ {
+  "herb_cn_name": "干姜",
+  "herb_pinyin": "Ganjiang",
+  "herb_en_name": "Zingiberis Rhizoma",
+  "child_cn_name": "温里药",
+  "child_en_name": "Warming Interior Drugs"
+ },
+ {
+  "herb_cn_name": "高良姜",
+  "herb_pinyin": "Gaoliangjiang",
+  "herb_en_name": "Alpiniae Officinarum Rhizome",
+  "child_cn_name": "温里药",
+  "child_en_name": "Warming Interior Drugs"
+ },
+ {
+  "herb_cn_name": "藁本",
+  "herb_pinyin": "Gaoben",
+  "herb_en_name": "Ligustici Rhizoma Et Radix",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "葛花",
+  "herb_pinyin": "Gehua",
+  "herb_en_name": "Puerariae Flos",
+  "child_cn_name": "辛凉解表药",
+  "child_en_name": "Pungent Cool Diaphoretics"
+ },
+ {
+  "herb_cn_name": "功劳木",
+  "herb_pinyin": "Gonglaomu",
+  "herb_en_name": "Mahoniae Caulis",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "钩藤",
+  "herb_pinyin": "Gouteng",
+  "herb_en_name": "Uncariae Ramulus Cumuncis",
+  "child_cn_name": "平肝熄风药",
+  "child_en_name": "Liver-Pacifying Wind-Extinguishing Medicinal"
+ },
+ {
+  "herb_cn_name": "枸骨叶",
+  "herb_pinyin": "Gouguye",
+  "herb_en_name": "Folium Ilicis Cornutae",
+  "child_cn_name": "清虚热药",
+  "child_en_name": "Asthenic Heat Dispelling Drugs"
+ },
+ {
+  "herb_cn_name": "枸杞子",
+  "herb_pinyin": "Gouqizi",
+  "herb_en_name": "Lycii Fructus",
+  "child_cn_name": "补阴药",
+  "child_en_name": "Yin-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "谷精草",
+  "herb_pinyin": "Gujingcao",
+  "herb_en_name": "Eriocauli Flos",
+  "child_cn_name": "清热泻火药",
+  "child_en_name": "Fire Purging Drugs"
+ },
+ {
+  "herb_cn_name": "骨碎补",
+  "herb_pinyin": "Gusuibu",
+  "herb_en_name": "Drynariae Rhizoma",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "瓜蒂",
+  "herb_pinyin": "Guadi",
+  "herb_en_name": "Calyx Cucumis",
+  "child_cn_name": "涌吐药",
+  "child_en_name": "Emetic Medicinal"
+ },
+ {
+  "herb_cn_name": "瓜蒌",
+  "herb_pinyin": "Gualou",
+  "herb_en_name": "Trichosanthes Kirilowii Maxim",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "关黄柏",
+  "herb_pinyin": "Guanhuangbo",
+  "herb_en_name": "Phellodendri Amurensis Cortex",
+  "child_cn_name": "清热燥湿药",
+  "child_en_name": "Heat-Clearing And Dampnessdrying Medicinal"
+ },
+ {
+  "herb_cn_name": "贯叶金丝桃",
+  "herb_pinyin": "Guanyejinsitao",
+  "herb_en_name": "Herbahypericiperforati",
+  "child_cn_name": "收敛止血药",
+  "child_en_name": "Astringent Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "贯众",
+  "herb_pinyin": "Guanzhong",
+  "herb_en_name": "Fortunes Bossfern Rhizome",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "广藿香",
+  "herb_pinyin": "Guanghuoxiang",
+  "herb_en_name": "Pogostemon Cablin (Blanco) Benth.",
+  "child_cn_name": "化湿药",
+  "child_en_name": "Dampness Removing Drugs"
+ },
+ {
+  "herb_cn_name": "广枣",
+  "herb_pinyin": "Guangzao",
+  "herb_en_name": "Choerospondiatis Fructus",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "鬼箭羽",
+  "herb_pinyin": "Guijianyu",
+  "herb_en_name": "Euonymi Alati Ramulus",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "鬼针草",
+  "herb_pinyin": "Guizhencao",
+  "herb_en_name": "Bidentis Bipinnatae Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "桂枝",
+  "herb_pinyin": "Guizhi",
+  "herb_en_name": "Cinnamomi Ramulus",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "海风藤",
+  "herb_pinyin": "Haifengteng",
+  "herb_en_name": "Caulis Piperis Kadsurae",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "海金沙",
+  "herb_pinyin": "Haijinsha",
+  "herb_en_name": "Lygodii Spora",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "海桐皮",
+  "herb_pinyin": "Haitongpi",
+  "herb_en_name": "Cortex Erythrinae",
+  "child_cn_name": "祛风湿清热药",
+  "child_en_name": "Wind-Dampnessdispelling And Heatclearing Medicinal"
+ },
+ {
+  "herb_cn_name": "海藻",
+  "herb_pinyin": "Haizao",
+  "herb_en_name": "Sargassum",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "诃子",
+  "herb_pinyin": "Hezi",
+  "herb_en_name": "Chebulae Fructus",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "荷叶",
+  "herb_pinyin": "Heye",
+  "herb_en_name": "Folium Nelumbinis",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "核桃仁",
+  "herb_pinyin": "Hetaoren",
+  "herb_en_name": "Juglandis Semen",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "鹤虱",
+  "herb_pinyin": "Heshi",
+  "herb_en_name": "Carpesiumabrotanoidesl.",
+  "child_cn_name": "驱虫药",
+  "child_en_name": "Antiparasitic Drugs"
+ },
+ {
+  "herb_cn_name": "黑豆",
+  "herb_pinyin": "Heidou",
+  "herb_en_name": "Sojae Semen Nigrum",
+  "child_cn_name": "补阴药",
+  "child_en_name": "Yin-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "黑老虎",
+  "herb_pinyin": "Heilaohu",
+  "herb_en_name": "Kadsurae Coccineae Radix Et Caulis",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "黑芝麻",
+  "herb_pinyin": "Heizhima",
+  "herb_en_name": "Sesami Nigrum Semen",
+  "child_cn_name": "补阴药",
+  "child_en_name": "Yin-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "红参",
+  "herb_pinyin": "Hongshen",
+  "herb_en_name": "Ginsen Radix Et Rhizoma Rubra",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "红花",
+  "herb_pinyin": "Honghua",
+  "herb_en_name": "Carthami Flos",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "红芪",
+  "herb_pinyin": "Hongqi",
+  "herb_en_name": "Hedysari Radix",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "猴枣",
+  "herb_pinyin": "Houzao",
+  "herb_en_name": "Macacae Calcalus Gasteris",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "厚朴",
+  "herb_pinyin": "Houpu",
+  "herb_en_name": "Magnolia Officinalis Rehd Et Wils．",
+  "child_cn_name": "化湿药",
+  "child_en_name": "Dampness Removing Drugs"
+ },
+ {
+  "herb_cn_name": "胡黄连",
+  "herb_pinyin": "Huhuanglian",
+  "herb_en_name": "Picrorhizae Rhizoma",
+  "child_cn_name": "清虚热药",
+  "child_en_name": "Asthenic Heat Dispelling Drugs"
+ },
+ {
+  "herb_cn_name": "胡椒",
+  "herb_pinyin": "Hujiao",
+  "herb_en_name": "Piperis Fructus",
+  "child_cn_name": "温里药",
+  "child_en_name": "Warming Interior Drugs"
+ },
+ {
+  "herb_cn_name": "胡芦巴",
+  "herb_pinyin": "Huluba",
+  "herb_en_name": "Trigonellae Semen",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "槲寄生",
+  "herb_pinyin": "Hujisheng",
+  "herb_en_name": "Viscum Angulatum Heyne",
+  "child_cn_name": "祛风湿筋骨药",
+  "child_en_name": "Wind-Damp-Dispelling And Sinew-Bone-Strengthening Medicinal"
+ },
+ {
+  "herb_cn_name": "虎耳草",
+  "herb_pinyin": "Huercao",
+  "herb_en_name": "Saxifraga Stolonifera",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "虎杖",
+  "herb_pinyin": "Huzhang",
+  "herb_en_name": "Polygoni Cuspidati Rhizoma Et Radix",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "花椒",
+  "herb_pinyin": "Huajiao",
+  "herb_en_name": "Zanthoxyli Pericarpium",
+  "child_cn_name": "温里药",
+  "child_en_name": "Warming Interior Drugs"
+ },
+ {
+  "herb_cn_name": "花生衣",
+  "herb_pinyin": "Huashengyi",
+  "herb_en_name": "Peanut Skin",
+  "child_cn_name": "收敛止血药",
+  "child_en_name": "Astringent Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "华山参",
+  "herb_pinyin": "Huashanshen",
+  "herb_en_name": "Physochlainae Radix",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "化橘红",
+  "herb_pinyin": "Huajuhong",
+  "herb_en_name": "Citri Grandis Exocarpium",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "槐花",
+  "herb_pinyin": "Huaihua",
+  "herb_en_name": "Sophora Japonica L.",
+  "child_cn_name": "凉血止血药",
+  "child_en_name": "Blood-Cooling Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "槐角",
+  "herb_pinyin": "Huaijiao",
+  "herb_en_name": "Fructussophorae",
+  "child_cn_name": "凉血止血药",
+  "child_en_name": "Blood-Cooling Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "黄柏",
+  "herb_pinyin": "Huangbo",
+  "herb_en_name": "Phellodendri Chinrnsis Cortex",
+  "child_cn_name": "清热燥湿药",
+  "child_en_name": "Heat-Clearing And Dampnessdrying Medicinal"
+ },
+ {
+  "herb_cn_name": "黄精",
+  "herb_pinyin": "Huangjing",
+  "herb_en_name": "Polygonati Rhizoma",
+  "child_cn_name": "补阴药",
+  "child_en_name": "Yin-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "黄连",
+  "herb_pinyin": "Huanglian",
+  "herb_en_name": "Coptidis Rhizoma",
+  "child_cn_name": "清热燥湿药",
+  "child_en_name": "Heat-Clearing And Dampnessdrying Medicinal"
+ },
+ {
+  "herb_cn_name": "黄芪",
+  "herb_pinyin": "Huangqi",
+  "herb_en_name": "Hedysarum Multijugum Maxim.",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "黄芩",
+  "herb_pinyin": "Huangqin",
+  "herb_en_name": "Scutellariae Radix",
+  "child_cn_name": "清热燥湿药",
+  "child_en_name": "Heat-Clearing And Dampnessdrying Medicinal"
+ },
+ {
+  "herb_cn_name": "黄药子",
+  "herb_pinyin": "Huangyaozi",
+  "herb_en_name": "Dioscoreaebulbiferae",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "火麻仁",
+  "herb_pinyin": "Huomaren",
+  "herb_en_name": "Cannabis Sativa L.",
+  "child_cn_name": "润下药",
+  "child_en_name": "Laxatives"
+ },
+ {
+  "herb_cn_name": "鸡骨草",
+  "herb_pinyin": "Jigucao",
+  "herb_en_name": "Abri Herba",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "鸡冠花",
+  "herb_pinyin": "Jiguanhua",
+  "herb_en_name": "Celosia Cristata L.",
+  "child_cn_name": "收敛止血药",
+  "child_en_name": "Astringent Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "鸡屎藤",
+  "herb_pinyin": "Jishiteng",
+  "herb_en_name": "Paederiae Scandentis Herba",
+  "child_cn_name": "消食药",
+  "child_en_name": "Digestants"
+ },
+ {
+  "herb_cn_name": "鸡血藤",
+  "herb_pinyin": "Jixueteng",
+  "herb_en_name": "Spatholobus Suberectus Dunn",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "积雪草",
+  "herb_pinyin": "Jixuecao",
+  "herb_en_name": "Centella Asiatica (L.) Urban[Hydro-Cotyle Asiatica L.]",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "急性子",
+  "herb_pinyin": "Jixingzi",
+  "herb_en_name": "Impatientis Semen",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "蒺藜",
+  "herb_pinyin": "Jili",
+  "herb_en_name": "Tribulifructus",
+  "child_cn_name": "平肝熄风药",
+  "child_en_name": "Liver-Pacifying Wind-Extinguishing Medicinal"
+ },
+ {
+  "herb_cn_name": "姜黄",
+  "herb_pinyin": "Jianghuang",
+  "herb_en_name": "Curcumaelongae Rhizoma",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "降香",
+  "herb_pinyin": "Jiangxiang",
+  "herb_en_name": "Dalbergiae Odoriferae Lignum",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "绞股蓝",
+  "herb_pinyin": "Jiaoguolan",
+  "herb_en_name": "Gynostemmae Pentaphylli Herba",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "芥子",
+  "herb_pinyin": "Jiezi",
+  "herb_en_name": "Sinapis Semen",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "金沸草",
+  "herb_pinyin": "Jinfeicao",
+  "herb_en_name": "Inulae Herba",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "金果揽",
+  "herb_pinyin": "Jinguolan",
+  "herb_en_name": "Tinosporae Radix",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "金莲花",
+  "herb_pinyin": "Jinlianhua",
+  "herb_en_name": "Trollius Chinensis",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "金钱草",
+  "herb_pinyin": "Jinqiancao",
+  "herb_en_name": "Lysimachiae Herba",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "金荞麦",
+  "herb_pinyin": "Jinqiaomai",
+  "herb_en_name": "Rhizoma Fagopyri Cymosi",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "金银花",
+  "herb_pinyin": "Jinyinhua",
+  "herb_en_name": "Lonicerae Japonicae Flos",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "金樱子",
+  "herb_pinyin": "Jinyingzi",
+  "herb_en_name": "Rosae Laevigatae Fructus",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "金盏菊花",
+  "herb_pinyin": "Jinzhanjuhua",
+  "herb_en_name": "Calendula Officinalis",
+  "child_cn_name": "凉血止血药",
+  "child_en_name": "Blood-Cooling Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "锦灯笼",
+  "herb_pinyin": "Jindenglong",
+  "herb_en_name": "Calyx Seu Fructus Physalis",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "京大戟",
+  "herb_pinyin": "Jingdaji",
+  "herb_en_name": "Radix Euphorbiae Pekinensis",
+  "child_cn_name": "通水药",
+  "child_en_name": "Drastic Purgatives"
+ },
+ {
+  "herb_cn_name": "荆芥",
+  "herb_pinyin": "Jingjie",
+  "herb_en_name": "Schizonepetae Herba",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "荆芥穗",
+  "herb_pinyin": "Jingjiesui",
+  "herb_en_name": "Schizonepetae Spica",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "景天三七",
+  "herb_pinyin": "Jintiansanqi",
+  "herb_en_name": "Sedum Aizoon L.",
+  "child_cn_name": "化瘀止血药",
+  "child_en_name": "Stasis-Resolving Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "韭菜子",
+  "herb_pinyin": "Jiucaizi",
+  "herb_en_name": "Allii Tuberosi Semen",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "桔梗",
+  "herb_pinyin": "Jiegeng",
+  "herb_en_name": "Platycodon Grandiforus",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "菊花",
+  "herb_pinyin": "Juhua",
+  "herb_en_name": "Chrysanthemi Flos",
+  "child_cn_name": "辛凉解表药",
+  "child_en_name": "Pungent Cool Diaphoretics"
+ },
+ {
+  "herb_cn_name": "菊苣",
+  "herb_pinyin": "Juju",
+  "herb_en_name": "Cichorii Radix",
+  "child_cn_name": "拔毒化腐生肌药",
+  "child_en_name": "External Medicinal (Draw Out Toxin, Resolve Putridity)"
+ },
+ {
+  "herb_cn_name": "橘核",
+  "herb_pinyin": "Juhe",
+  "herb_en_name": "Citri Reticulatae Semen",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "橘红",
+  "herb_pinyin": "Juhong",
+  "herb_en_name": "Citri Exocarpium Rubrum",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "橘络",
+  "herb_pinyin": "Juluo",
+  "herb_en_name": "Citri Fructus Retinervus",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "橘叶",
+  "herb_pinyin": "Juye",
+  "herb_en_name": "Citri Reticulatae Folium",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "卷柏",
+  "herb_pinyin": "Juanbai",
+  "herb_en_name": "Herba Selaginellae Moellendorfii",
+  "child_cn_name": "化瘀止血药",
+  "child_en_name": "Stasis-Resolving Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "决明子",
+  "herb_pinyin": "Juemingzi",
+  "herb_en_name": "Cassiae Semen",
+  "child_cn_name": "清热泻火药",
+  "child_en_name": "Fire Purging Drugs"
+ },
+ {
+  "herb_cn_name": "苦参",
+  "herb_pinyin": "Kushen",
+  "herb_en_name": "Sophorae Flavescentis Radix",
+  "child_cn_name": "清热燥湿药",
+  "child_en_name": "Heat-Clearing And Dampnessdrying Medicinal"
+ },
+ {
+  "herb_cn_name": "苦地丁",
+  "herb_pinyin": "Kudiding",
+  "herb_en_name": "Corydalis Bungeanae Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "苦丁茶",
+  "herb_pinyin": "Kudingcha",
+  "herb_en_name": "Ilicis Cornutae Folium Immayuri",
+  "child_cn_name": "清热泻火药",
+  "child_en_name": "Fire Purging Drugs"
+ },
+ {
+  "herb_cn_name": "苦楝皮",
+  "herb_pinyin": "Kulianpi",
+  "herb_en_name": "Meliae Cortex",
+  "child_cn_name": "驱虫药",
+  "child_en_name": "Antiparasitic Drugs"
+ },
+ {
+  "herb_cn_name": "苦楝子",
+  "herb_pinyin": "Kulianzi",
+  "herb_en_name": "Meliae Azedarach Fructus",
+  "child_cn_name": "驱虫药",
+  "child_en_name": "Antiparasitic Drugs"
+ },
+ {
+  "herb_cn_name": "苦杏仁",
+  "herb_pinyin": "Kuxingren",
+  "herb_en_name": "Amygdalus Communis Vas",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "款冬花",
+  "herb_pinyin": "Kuandonghua",
+  "herb_en_name": "Farfarae Flos",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "昆布",
+  "herb_pinyin": "Kunbu",
+  "herb_en_name": "Thalluslaminariae",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "辣椒",
+  "herb_pinyin": "Lajiao",
+  "herb_en_name": "Capsici Fructus",
+  "child_cn_name": "拔毒化腐生肌药",
+  "child_en_name": "External Medicinal (Draw Out Toxin, Resolve Putridity)"
+ },
+ {
+  "herb_cn_name": "莱菔子",
+  "herb_pinyin": "Laifuzi",
+  "herb_en_name": "Raphani Semen",
+  "child_cn_name": "消食药",
+  "child_en_name": "Digestants"
+ },
+ {
+  "herb_cn_name": "老鹳草",
+  "herb_pinyin": "Laoguancao",
+  "herb_en_name": "Geranium Wilfordii Maxim.",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "了哥王根",
+  "herb_pinyin": "Liaogewanggen",
+  "herb_en_name": "Wikstroemiae Indicae Rasix",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "雷公藤",
+  "herb_pinyin": "Leigongteng",
+  "herb_en_name": "Tripterygii Radix",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "雷丸",
+  "herb_pinyin": "Leiwan",
+  "herb_en_name": "Omphalia",
+  "child_cn_name": "驱虫药",
+  "child_en_name": "Antiparasitic Drugs"
+ },
+ {
+  "herb_cn_name": "荔枝核",
+  "herb_pinyin": "Lizhihe",
+  "herb_en_name": "Litchi Semen",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "连钱草",
+  "herb_pinyin": "Lianqiancao",
+  "herb_en_name": "Glechomae Herba",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "连翘",
+  "herb_pinyin": "Lianqiao",
+  "herb_en_name": "Forsythiae Fructus",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "莲房",
+  "herb_pinyin": "Lianfang",
+  "herb_en_name": "Receptaculum Nelumbinis",
+  "child_cn_name": "收敛止血药",
+  "child_en_name": "Astringent Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "莲须",
+  "herb_pinyin": "Lianxu",
+  "herb_en_name": "Nelumbinis Stamen",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "莲子心",
+  "herb_pinyin": "Lianzixin",
+  "herb_en_name": "Nelumbinis Plumula",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "两面针",
+  "herb_pinyin": "Liangmianzhen",
+  "herb_en_name": "Zanthoxylum Nitidum",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "两头尖",
+  "herb_pinyin": "Liangtoujian",
+  "herb_en_name": "Rhizoma Anemones Raddeanae",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "蓼大青叶",
+  "herb_pinyin": "Liaodaqingye",
+  "herb_en_name": "Polygoni Tinctorii Foliu",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "灵芝",
+  "herb_pinyin": "Lingzhi",
+  "herb_en_name": "Ganoderma",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "凌霄花",
+  "herb_pinyin": "Lingxiaohua",
+  "herb_en_name": "Campsis Flos",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "零陵香",
+  "herb_pinyin": "Linglingxiang",
+  "herb_en_name": "Lysimachiae Foenigraeci Herba",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "龙胆",
+  "herb_pinyin": "Longdan",
+  "herb_en_name": "Gentianae Radix Et Rhozima",
+  "child_cn_name": "清热燥湿药",
+  "child_en_name": "Heat-Clearing And Dampnessdrying Medicinal"
+ },
+ {
+  "herb_cn_name": "龙葵",
+  "herb_pinyin": "Longkui",
+  "herb_en_name": "Solanum Nigrum Linn.",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "龙脷叶",
+  "herb_pinyin": "Longliye",
+  "herb_en_name": "Aauropi Folium",
+  "child_cn_name": "拔毒化腐生肌药",
+  "child_en_name": "External Medicinal (Draw Out Toxin, Resolve Putridity)"
+ },
+ {
+  "herb_cn_name": "漏芦",
+  "herb_pinyin": "Loulu",
+  "herb_en_name": "Rhapontici Radix",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "芦根",
+  "herb_pinyin": "Lugen",
+  "herb_en_name": "Phragmitis Rhizoma",
+  "child_cn_name": "清热泻火药",
+  "child_en_name": "Fire Purging Drugs"
+ },
+ {
+  "herb_cn_name": "芦荟",
+  "herb_pinyin": "Luhui",
+  "herb_en_name": "Aloe",
+  "child_cn_name": "攻下药",
+  "child_en_name": "Offensive Purgative Medicinal"
+ },
+ {
+  "herb_cn_name": "鹿衔草",
+  "herb_pinyin": "Luxiancao",
+  "herb_en_name": "Herba Pyrolae",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "路路通",
+  "herb_pinyin": "Lulutong",
+  "herb_en_name": "Fructuslipuidambaris",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "罗布麻叶",
+  "herb_pinyin": "Luobumaye",
+  "herb_en_name": "Apocyniveneti Folium",
+  "child_cn_name": "平肝熄风药",
+  "child_en_name": "Liver-Pacifying Wind-Extinguishing Medicinal"
+ },
+ {
+  "herb_cn_name": "罗汉果",
+  "herb_pinyin": "Luohanguo",
+  "herb_en_name": "Momordicae Fructus",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "络石藤",
+  "herb_pinyin": "Luoshiteng",
+  "herb_en_name": "Trachelospermumjasminoides",
+  "child_cn_name": "祛风湿清热药",
+  "child_en_name": "Wind-Dampnessdispelling And Heatclearing Medicinal"
+ },
+ {
+  "herb_cn_name": "绿豆",
+  "herb_pinyin": "Lvdou",
+  "herb_en_name": "Vigna Radiata",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "葎草",
+  "herb_pinyin": "Lvcao",
+  "herb_en_name": "Humulus Scandens (Lour.) Merr.",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "麻黄",
+  "herb_pinyin": "Mahuang",
+  "herb_en_name": "Ephedra Herba",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "麻黄根",
+  "herb_pinyin": "Mahuanggen",
+  "herb_en_name": "Ephedrae Radix Et Rhizoma",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "马鞭草",
+  "herb_pinyin": "Mabiancao",
+  "herb_en_name": "Verbenae Herb",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "马勃",
+  "herb_pinyin": "Mabo",
+  "herb_en_name": "Lasiosphaera Seu Calvatia",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "马齿苋",
+  "herb_pinyin": "Machixian",
+  "herb_en_name": "Portulacae Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "马兜铃",
+  "herb_pinyin": "Madouling",
+  "herb_en_name": "Aristolochiae Fructus",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "马钱子",
+  "herb_pinyin": "Maqianzi",
+  "herb_en_name": "Strychni Semen",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "马尾莲",
+  "herb_pinyin": "Maweilian",
+  "herb_en_name": "Thalictri Glandulosissimi Et",
+  "child_cn_name": "清热燥湿药",
+  "child_en_name": "Heat-Clearing And Dampnessdrying Medicinal"
+ },
+ {
+  "herb_cn_name": "麦芽",
+  "herb_pinyin": "Maiya",
+  "herb_en_name": "Hordei Fructus Germinatus",
+  "child_cn_name": "消食药",
+  "child_en_name": "Digestants"
+ },
+ {
+  "herb_cn_name": "满山红",
+  "herb_pinyin": "Manshanhong",
+  "herb_en_name": "Rhododendri Daurici Folium",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "蔓荆子",
+  "herb_pinyin": "Manjingzi",
+  "herb_en_name": "Viticis Fructus",
+  "child_cn_name": "辛凉解表药",
+  "child_en_name": "Pungent Cool Diaphoretics"
+ },
+ {
+  "herb_cn_name": "猫眼草",
+  "herb_pinyin": "Maoyancao",
+  "herb_en_name": "Lunulatae Herba",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "猫爪草",
+  "herb_pinyin": "Maozhaocao",
+  "herb_en_name": "Ranunculi Ternati Radix",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "没药",
+  "herb_pinyin": "Moyao",
+  "herb_en_name": "Myrrha",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "玫瑰花",
+  "herb_pinyin": "Meiguihua",
+  "herb_en_name": "Rose Rugosae Flos",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "梅花",
+  "herb_pinyin": "Meihua",
+  "herb_en_name": "Mume Flos",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "猕猴桃根",
+  "herb_pinyin": "Mihoutaogen",
+  "herb_en_name": "Actinidia Chinensis Planch",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "密蒙花",
+  "herb_pinyin": "Mimenghua",
+  "herb_en_name": "Buddlejae Flos",
+  "child_cn_name": "清热泻火药",
+  "child_en_name": "Fire Purging Drugs"
+ },
+ {
+  "herb_cn_name": "绵萆薢",
+  "herb_pinyin": "Mianbixie",
+  "herb_en_name": "Dioscoreae Septemlo Bae Rhizoma",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "墨旱莲",
+  "herb_pinyin": "Mohanlian",
+  "herb_en_name": "Ecliptae Herba",
+  "child_cn_name": "补阴药",
+  "child_en_name": "Yin-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "牡丹皮",
+  "herb_pinyin": "Mudanpi",
+  "herb_en_name": "Cortex Moutan",
+  "child_cn_name": "清热凉血药",
+  "child_en_name": "Heat Clearing Blood Cooling Drugs"
+ },
+ {
+  "herb_cn_name": "牡荆叶",
+  "herb_pinyin": "Mujingye",
+  "herb_en_name": "Viticis Negundo Folium",
+  "child_cn_name": "辛凉解表药",
+  "child_en_name": "Pungent Cool Diaphoretics"
+ },
+ {
+  "herb_cn_name": "牡荆子",
+  "herb_pinyin": "Mujingzi",
+  "herb_en_name": "Viticis Cannabifoliae Fructus",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "木鳖子",
+  "herb_pinyin": "Mubiezi",
+  "herb_en_name": "Momordicae Semen",
+  "child_cn_name": "拔毒化腐生肌药",
+  "child_en_name": "External Medicinal (Draw Out Toxin, Resolve Putridity)"
+ },
+ {
+  "herb_cn_name": "木瓜",
+  "herb_pinyin": "Mugau",
+  "herb_en_name": "Chaenomeles Sinensis (Thouin) Koehne",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "木蝴蝶",
+  "herb_pinyin": "Muhudie",
+  "herb_en_name": "Oroxyli Semen",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "木棉花",
+  "herb_pinyin": "Mumianhua",
+  "herb_en_name": "Gossampiniflos",
+  "child_cn_name": "拔毒化腐生肌药",
+  "child_en_name": "External Medicinal (Draw Out Toxin, Resolve Putridity)"
+ },
+ {
+  "herb_cn_name": "木通",
+  "herb_pinyin": "Mutong",
+  "herb_en_name": "Caulis Akebiae",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "木香",
+  "herb_pinyin": "Muxiang",
+  "herb_en_name": "Aucklandiae Radix",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "木贼",
+  "herb_pinyin": "Muzei",
+  "herb_en_name": "Equiseti Hiemalis Herba",
+  "child_cn_name": "辛凉解表药",
+  "child_en_name": "Pungent Cool Diaphoretics"
+ },
+ {
+  "herb_cn_name": "墓头回",
+  "herb_pinyin": "Mutouhui",
+  "herb_en_name": "Et Radix Patriniae Rhizoma",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "南瓜子",
+  "herb_pinyin": "Nanguazi",
+  "herb_en_name": "Cucurbitae Moschatae Semen",
+  "child_cn_name": "驱虫药",
+  "child_en_name": "Antiparasitic Drugs"
+ },
+ {
+  "herb_cn_name": "南鹤虱",
+  "herb_pinyin": "Nanheshi",
+  "herb_en_name": "Fructus Carotae",
+  "child_cn_name": "驱虫药",
+  "child_en_name": "Antiparasitic Drugs"
+ },
+ {
+  "herb_cn_name": "南沙参",
+  "herb_pinyin": "Nanshashen",
+  "herb_en_name": "Adenophprae Ae Radix",
+  "child_cn_name": "补阴药",
+  "child_en_name": "Yin-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "南蛇藤果",
+  "herb_pinyin": "Nanshetengguo",
+  "herb_en_name": "Celastri Orbiculati Fructus",
+  "child_cn_name": "安神药",
+  "child_en_name": "Tranguilizing Medicinal"
+ },
+ {
+  "herb_cn_name": "南五味子",
+  "herb_pinyin": "Nawuweizi",
+  "herb_en_name": "Schisandrae Sphenantherae Fructus",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "闹羊花",
+  "herb_pinyin": "Naoyanghua",
+  "herb_en_name": "Rhododendronmolle",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "牛蒡子",
+  "herb_pinyin": "Niubangzi",
+  "herb_en_name": "Fructus Arctii",
+  "child_cn_name": "辛凉解表药",
+  "child_en_name": "Pungent Cool Diaphoretics"
+ },
+ {
+  "herb_cn_name": "牛大力",
+  "herb_pinyin": "Niudali",
+  "herb_en_name": "Millettiae Speciosae Radix",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "牛黄",
+  "herb_pinyin": "Niuhuang",
+  "herb_en_name": "Bovis Calculus",
+  "child_cn_name": "开窍药",
+  "child_en_name": "Resuscitative Stimulant; Resuscitative Medicinal"
+ },
+ {
+  "herb_cn_name": "牛膝",
+  "herb_pinyin": "Niuxi",
+  "herb_en_name": "Achyranthis Bidentatae Radix",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "糯稻根",
+  "herb_pinyin": "Nuodaogen",
+  "herb_en_name": "Oryzae Glutinosae Radix",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "女贞子",
+  "herb_pinyin": "Nvzhenzi",
+  "herb_en_name": "Fructus Ligustri Lucidi",
+  "child_cn_name": "补阴药",
+  "child_en_name": "Yin-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "藕节",
+  "herb_pinyin": "Oujie",
+  "herb_en_name": "Nodus Nelumbinis Rhizomatis",
+  "child_cn_name": "收敛止血药",
+  "child_en_name": "Astringent Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "胖大海",
+  "herb_pinyin": "Pangdahai",
+  "herb_en_name": "Sterculiae Lychnophorae Semen",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "佩兰",
+  "herb_pinyin": "Peilan",
+  "herb_en_name": "Eupatorium Fortunei Turcz",
+  "child_cn_name": "化湿药",
+  "child_en_name": "Dampness Removing Drugs"
+ },
+ {
+  "herb_cn_name": "枇杷叶",
+  "herb_pinyin": "Pipaye",
+  "herb_en_name": "Eriobotryae Folium",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "平贝母",
+  "herb_pinyin": "Pingbeimu",
+  "herb_en_name": "Fritillariaeussuriensis Bulbus",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "蒲黄",
+  "herb_pinyin": "Puhuang",
+  "herb_en_name": "Pollen Typhae",
+  "child_cn_name": "化瘀止血药",
+  "child_en_name": "Stasis-Resolving Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "荠菜",
+  "herb_pinyin": "Jicai",
+  "herb_en_name": "Capsellae Herba",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "千斤拔",
+  "herb_pinyin": "Qianjinba",
+  "herb_en_name": "Flemingia Prostrata Roxb",
+  "child_cn_name": "祛风湿筋骨药",
+  "child_en_name": "Wind-Damp-Dispelling And Sinew-Bone-Strengthening Medicinal"
+ },
+ {
+  "herb_cn_name": "千金子",
+  "herb_pinyin": "Qianjinzi",
+  "herb_en_name": "Semen Euphorbiae",
+  "child_cn_name": "通水药",
+  "child_en_name": "Drastic Purgatives"
+ },
+ {
+  "herb_cn_name": "千年健",
+  "herb_pinyin": "Qiannianjian",
+  "herb_en_name": "Homalomena Occulta (Lour.) Schott",
+  "child_cn_name": "祛风湿筋骨药",
+  "child_en_name": "Wind-Damp-Dispelling And Sinew-Bone-Strengthening Medicinal"
+ },
+ {
+  "herb_cn_name": "千日红",
+  "herb_pinyin": "Qianrihong",
+  "herb_en_name": "Gomphrenae Globosae Flos Seu Herba",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "牵牛子",
+  "herb_pinyin": "Qianniuzi",
+  "herb_en_name": "Semen Pharbitidis",
+  "child_cn_name": "通水药",
+  "child_en_name": "Drastic Purgatives"
+ },
+ {
+  "herb_cn_name": "前胡",
+  "herb_pinyin": "Qianhu",
+  "herb_en_name": "Peucedani Radix",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "芡实",
+  "herb_pinyin": "Qianshi",
+  "herb_en_name": "Euryales Semen",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "茜草",
+  "herb_pinyin": "Qiancao",
+  "herb_en_name": "Rubia Cordifolia",
+  "child_cn_name": "化瘀止血药",
+  "child_en_name": "Stasis-Resolving Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "羌活",
+  "herb_pinyin": "Qianghuo",
+  "herb_en_name": "Notopterygii Rhizoma Et Radix",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "茄根",
+  "herb_pinyin": "Qiegeng",
+  "herb_en_name": "Solanum Melongena L",
+  "child_cn_name": "祛风湿清热药",
+  "child_en_name": "Wind-Dampnessdispelling And Heatclearing Medicinal"
+ },
+ {
+  "herb_cn_name": "秦艽",
+  "herb_pinyin": "Qinjia",
+  "herb_en_name": "Gentiana Macrophylla Pall",
+  "child_cn_name": "祛风湿清热药",
+  "child_en_name": "Wind-Dampnessdispelling And Heatclearing Medicinal"
+ },
+ {
+  "herb_cn_name": "秦皮",
+  "herb_pinyin": "Qinpi",
+  "herb_en_name": "Fraxini Cortex",
+  "child_cn_name": "清热燥湿药",
+  "child_en_name": "Heat-Clearing And Dampnessdrying Medicinal"
+ },
+ {
+  "herb_cn_name": "青黛",
+  "herb_pinyin": "Qingdai",
+  "herb_en_name": "Indigo Naturalis",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "青风藤",
+  "herb_pinyin": "Qingfengteng",
+  "herb_en_name": "Caulis Sinomenii",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "青果",
+  "herb_pinyin": "Qingguo",
+  "herb_en_name": "Canarii Fructus",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "青蒿",
+  "herb_pinyin": "Qinghao",
+  "herb_en_name": "Artemisia Annua L.",
+  "child_cn_name": "清虚热药",
+  "child_en_name": "Asthenic Heat Dispelling Drugs"
+ },
+ {
+  "herb_cn_name": "青皮",
+  "herb_pinyin": "Qingpi",
+  "herb_en_name": "Citri Reticulatae Pericarpium Viride",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "青葙子",
+  "herb_pinyin": "Qingxiangzi",
+  "herb_en_name": "Celosiae Semen",
+  "child_cn_name": "清热泻火药",
+  "child_en_name": "Fire Purging Drugs"
+ },
+ {
+  "herb_cn_name": "青叶胆",
+  "herb_pinyin": "Qingyedan",
+  "herb_en_name": "Swertiae Mileensis Herba",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "苘麻子",
+  "herb_pinyin": "Qingmazi",
+  "herb_en_name": "Abutili Semen",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "瞿麦",
+  "herb_pinyin": "Qumai",
+  "herb_en_name": "Dianthi Herba",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "拳参",
+  "herb_pinyin": "Quanshen",
+  "herb_en_name": "Bistortae Rhizoma",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "人参",
+  "herb_pinyin": "Renshen",
+  "herb_en_name": "Panax Ginseng C. A. Mey.",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "人参叶",
+  "herb_pinyin": "Renshenye",
+  "herb_en_name": "Ginseng Folium",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "肉苁蓉",
+  "herb_pinyin": "Roucongrong",
+  "herb_en_name": "Cistanches Herba",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "肉豆蔻",
+  "herb_pinyin": "Roudoukou",
+  "herb_en_name": "Myristicae Semen",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "肉桂",
+  "herb_pinyin": "Rougui",
+  "herb_en_name": "Cinnanmomi Cortex",
+  "child_cn_name": "温里药",
+  "child_en_name": "Warming Interior Drugs"
+ },
+ {
+  "herb_cn_name": "乳香",
+  "herb_pinyin": "Ruxiang",
+  "herb_en_name": "Olibanun",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "蕤仁",
+  "herb_pinyin": "Ruiren",
+  "herb_en_name": "Prinsepiae Nux",
+  "child_cn_name": "辛凉解表药",
+  "child_en_name": "Pungent Cool Diaphoretics"
+ },
+ {
+  "herb_cn_name": "三白草",
+  "herb_pinyin": "Sanbaicao",
+  "herb_en_name": "Saururi Herba",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "三分三",
+  "herb_pinyin": "Sanfensan",
+  "herb_en_name": "Anisodus Acutangulus C. Y. Wu Et C .Chen Ex C. Che",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "三棱",
+  "herb_pinyin": "Sanleng",
+  "herb_en_name": "Sparganii Rhizoma",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "三七",
+  "herb_pinyin": "Sanqi",
+  "herb_en_name": "Panax Notoginseng (Burk.) F. H. Chen Ex C. Chow",
+  "child_cn_name": "化瘀止血药",
+  "child_en_name": "Stasis-Resolving Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "三七花",
+  "herb_pinyin": "Sanqihua",
+  "herb_en_name": "Notoginseng Flos",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "桑白皮",
+  "herb_pinyin": "Sangbaipi",
+  "herb_en_name": "Mori Cortex",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "桑寄生",
+  "herb_pinyin": "Sangjisheng",
+  "herb_en_name": "Herba Taxilli",
+  "child_cn_name": "祛风湿筋骨药",
+  "child_en_name": "Wind-Damp-Dispelling And Sinew-Bone-Strengthening Medicinal"
+ },
+ {
+  "herb_cn_name": "桑椹",
+  "herb_pinyin": "Sangsheng",
+  "herb_en_name": "Mori Fructus",
+  "child_cn_name": "补阴药",
+  "child_en_name": "Yin-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "桑叶",
+  "herb_pinyin": "Sangye",
+  "herb_en_name": "Mori Follum",
+  "child_cn_name": "辛凉解表药",
+  "child_en_name": "Pungent Cool Diaphoretics"
+ },
+ {
+  "herb_cn_name": "桑枝",
+  "herb_pinyin": "Sangzhi",
+  "herb_en_name": "Ramulus Mori",
+  "child_cn_name": "祛风湿清热药",
+  "child_en_name": "Wind-Dampnessdispelling And Heatclearing Medicinal"
+ },
+ {
+  "herb_cn_name": "沙棘",
+  "herb_pinyin": "Shaji",
+  "herb_en_name": "Hippophae Fructus",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "沙苑子",
+  "herb_pinyin": "Shayuanzi",
+  "herb_en_name": "Astragali Cpmplanatisemen",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "砂仁",
+  "herb_pinyin": "Sharen",
+  "herb_en_name": "Amomum Aurantiacum H. T. Tsai Et S. W. Zhao",
+  "child_cn_name": "化湿药",
+  "child_en_name": "Dampness Removing Drugs"
+ },
+ {
+  "herb_cn_name": "山慈菇",
+  "herb_pinyin": "Shancigu",
+  "herb_en_name": "Pseudobulbus Cremastrae Seu Pleiones",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "山豆根",
+  "herb_pinyin": "Shandougen",
+  "herb_en_name": "Sophorae Tonkinensis Radix Et Rhizome",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "山柰",
+  "herb_pinyin": "Shannai",
+  "herb_en_name": "Kaempferiae Rhizoma",
+  "child_cn_name": "温里药",
+  "child_en_name": "Warming Interior Drugs"
+ },
+ {
+  "herb_cn_name": "山药",
+  "herb_pinyin": "Shanyao",
+  "herb_en_name": "Rhizoma Dioscoreae",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "山楂叶",
+  "herb_pinyin": "Shanzhaye",
+  "herb_en_name": "Crataegi Folium",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "山茱萸",
+  "herb_pinyin": "Shanzhuyu",
+  "herb_en_name": "Cornus Officinalis Sieb. Et Zucc.",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "商陆",
+  "herb_pinyin": "Shanglu",
+  "herb_en_name": "Phytolaccae Radix",
+  "child_cn_name": "通水药",
+  "child_en_name": "Drastic Purgatives"
+ },
+ {
+  "herb_cn_name": "蛇床子",
+  "herb_pinyin": "Shechuangzi",
+  "herb_en_name": "Cnidii Fructus",
+  "child_cn_name": "解毒杀虫燥湿止痒药",
+  "child_en_name": "Medicinal For Detoxification、Parasiticide、Drying Dampness And Relieving Itching"
+ },
+ {
+  "herb_cn_name": "射干",
+  "herb_pinyin": "Shegan",
+  "herb_en_name": "Belamcandae Rhizome",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "伸筋草",
+  "herb_pinyin": "Shenjincao",
+  "herb_en_name": "Rhizome Of Whiteback Greenbrier",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "升麻",
+  "herb_pinyin": "Shengma",
+  "herb_en_name": "Cimicifugae Rhizoma",
+  "child_cn_name": "辛凉解表药",
+  "child_en_name": "Pungent Cool Diaphoretics"
+ },
+ {
+  "herb_cn_name": "生姜",
+  "herb_pinyin": "Shengjiang",
+  "herb_en_name": "Zingiber Officinale Roscoe",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "十大功劳根",
+  "herb_pinyin": "Shidagonglaogen",
+  "herb_en_name": "Mahoniae Eadix",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "十大功劳叶",
+  "herb_pinyin": "Shidagonglaoye",
+  "herb_en_name": "Mahoniae Folum",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "石菖蒲",
+  "herb_pinyin": "Shichangpu",
+  "herb_en_name": "Acoritataninowii Rhizoma",
+  "child_cn_name": "开窍药",
+  "child_en_name": "Resuscitative Stimulant; Resuscitative Medicinal"
+ },
+ {
+  "herb_cn_name": "石见穿",
+  "herb_pinyin": "Shijianchuan",
+  "herb_en_name": "Salviae Chinensis Herba",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "石榴皮",
+  "herb_pinyin": "Shiliupi",
+  "herb_en_name": "Granati Pericarpium",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "石上柏",
+  "herb_pinyin": "Shishangbai",
+  "herb_en_name": "Selaginella Doederleinii Hieron",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "石韦",
+  "herb_pinyin": "Shiwei",
+  "herb_en_name": "Pyrrosiae Folium",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "使君子",
+  "herb_pinyin": "Shijunzi",
+  "herb_en_name": "Quisqualis Indica",
+  "child_cn_name": "驱虫药",
+  "child_en_name": "Antiparasitic Drugs"
+ },
+ {
+  "herb_cn_name": "柿蒂",
+  "herb_pinyin": "Shidi",
+  "herb_en_name": "Kaki Calyx",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "熟地黄",
+  "herb_pinyin": "Shudihuang",
+  "herb_en_name": "Rehmanniae Radix Praeparata",
+  "child_cn_name": "补血药",
+  "child_en_name": "Blood-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "鼠曲草",
+  "herb_pinyin": "Shuqucao",
+  "herb_en_name": "Gnaphalii Affinis Herba",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "水飞蓟",
+  "herb_pinyin": "Shuifeiji",
+  "herb_en_name": "Silybum Marianum",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "水红花子",
+  "herb_pinyin": "Shuihonghuazi",
+  "herb_en_name": "Polygoni Orientalis Fructus",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "四季青",
+  "herb_pinyin": "Sijiqing",
+  "herb_en_name": "Ilicis Purpureae Folium",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "松花粉",
+  "herb_pinyin": "Songhuafen",
+  "herb_en_name": "Pine Pollen",
+  "child_cn_name": "收敛止血药",
+  "child_en_name": "Astringent Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "松节",
+  "herb_pinyin": "Songjie",
+  "herb_en_name": "Lignum Pini Nodi",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "松子仁",
+  "herb_pinyin": "Songziren",
+  "herb_en_name": "Semen Pini Koraiensis",
+  "child_cn_name": "润下药",
+  "child_en_name": "Laxatives"
+ },
+ {
+  "herb_cn_name": "苏合香",
+  "herb_pinyin": "Suhexiang",
+  "herb_en_name": "Styrax",
+  "child_cn_name": "开窍药",
+  "child_en_name": "Resuscitative Stimulant; Resuscitative Medicinal"
+ },
+ {
+  "herb_cn_name": "酸枣仁",
+  "herb_pinyin": "Suanzaoren",
+  "herb_en_name": "Ziziphi Spinosae Semen",
+  "child_cn_name": "安神药",
+  "child_en_name": "Tranguilizing Medicinal"
+ },
+ {
+  "herb_cn_name": "娑罗子",
+  "herb_pinyin": "Suoluozi",
+  "herb_en_name": "Semen Aesculi",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "太子参",
+  "herb_pinyin": "Taizishen",
+  "herb_en_name": "Pseudostellariae Radix",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "檀香",
+  "herb_pinyin": "Tanxiang",
+  "herb_en_name": "Santalum Album L．",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "桃仁",
+  "herb_pinyin": "Taoren",
+  "herb_en_name": "Persicae Semen",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "天冬",
+  "herb_pinyin": "Tiandong",
+  "herb_en_name": "Asparagi Radix",
+  "child_cn_name": "补阴药",
+  "child_en_name": "Yin-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "天花粉",
+  "herb_pinyin": "Tianhuafen",
+  "herb_en_name": "Trichosanthis Radix",
+  "child_cn_name": "清热泻火药",
+  "child_en_name": "Fire Purging Drugs"
+ },
+ {
+  "herb_cn_name": "天葵子",
+  "herb_pinyin": "Tiankuizi",
+  "herb_en_name": "Semiaquilegiae Radix",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "天南星",
+  "herb_pinyin": "Tiannanxing",
+  "herb_en_name": "Arisaematis Rhizoma",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "天山雪莲",
+  "herb_pinyin": "Tianshanxuelian",
+  "herb_en_name": "Saussureae Involucratae Herba",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "天仙藤",
+  "herb_pinyin": "Tianxianteng",
+  "herb_en_name": "Caulis Aristolochiae",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "天仙子",
+  "herb_pinyin": "Tianxianzi",
+  "herb_en_name": "Hyoscyami Semen",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "天竺黄",
+  "herb_pinyin": "Tianzhuhuang",
+  "herb_en_name": "Bamusaeconcretiosilicea",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "甜瓜子",
+  "herb_pinyin": "Tianguazi",
+  "herb_en_name": "Melo Semen",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "铁丝威灵仙",
+  "herb_pinyin": "Tiesiweilingxian",
+  "herb_en_name": "Smilax Scodinicaulis C.H. Wrisht?",
+  "child_cn_name": "祛风湿清热药",
+  "child_en_name": "Wind-Dampnessdispelling And Heatclearing Medicinal"
+ },
+ {
+  "herb_cn_name": "铁线透骨草",
+  "herb_pinyin": "Tiexiantougucao",
+  "herb_en_name": "Herba Clematidis Aethusaefoliae",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "葶苈子",
+  "herb_pinyin": "Tinglizi",
+  "herb_en_name": "Lepidii Semen Descurainiae Semen",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "通草",
+  "herb_pinyin": "Tongcao",
+  "herb_en_name": "Tetrapanacis Medulla",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "土贝母",
+  "herb_pinyin": "Tubeimu",
+  "herb_en_name": "Bolbostemae Paniculati Bulbus",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "土茯苓",
+  "herb_pinyin": "Tufuling",
+  "herb_en_name": "Smilacis Glabrae Rhixoma",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "土荆皮",
+  "herb_pinyin": "Tujingpi",
+  "herb_en_name": "Pseudolaricis Cortex",
+  "child_cn_name": "解毒杀虫燥湿止痒药",
+  "child_en_name": "Medicinal For Detoxification、Parasiticide、Drying Dampness And Relieving Itching"
+ },
+ {
+  "herb_cn_name": "菟丝子",
+  "herb_pinyin": "Tusizi",
+  "herb_en_name": "Cuscutae Semen",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "瓦楞子",
+  "herb_pinyin": "Waleng",
+  "herb_en_name": "Arcae Concha",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "瓦松",
+  "herb_pinyin": "Wasong",
+  "herb_en_name": "Cotyledon Fimbriata Turcz.",
+  "child_cn_name": "清热凉血药",
+  "child_en_name": "Heat Clearing Blood Cooling Drugs"
+ },
+ {
+  "herb_cn_name": "王不留行",
+  "herb_pinyin": "Wangbuliuxing",
+  "herb_en_name": "Vaccariae Semen",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "威灵仙",
+  "herb_pinyin": "Weilingxian",
+  "herb_en_name": "Radix Clematidis",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "委陵菜",
+  "herb_pinyin": "Weilingcai",
+  "herb_en_name": "Potentillae Chinensis Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "乌敛莓",
+  "herb_pinyin": "Wulianmei",
+  "herb_en_name": "Cayratiae Japonicae Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "乌梅",
+  "herb_pinyin": "Wumei",
+  "herb_en_name": "Mume Fructus",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "乌药",
+  "herb_pinyin": "Wuyao",
+  "herb_en_name": "Linderae Radix",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "无患子",
+  "herb_pinyin": "Wuhuanzi",
+  "herb_en_name": "Sapindi Mukorossi Semen",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "无患子皮",
+  "herb_pinyin": "Wuhuanzipi",
+  "herb_en_name": "Sapindi Mukorossiperic Arpium",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "吴茱萸",
+  "herb_pinyin": "Wuzhuyu",
+  "herb_en_name": "Evodiae Fructus",
+  "child_cn_name": "温里药",
+  "child_en_name": "Warming Interior Drugs"
+ },
+ {
+  "herb_cn_name": "梧桐子",
+  "herb_pinyin": "Wutongzi",
+  "herb_en_name": "Semen Firmianae",
+  "child_cn_name": "消食药",
+  "child_en_name": "Digestants"
+ },
+ {
+  "herb_cn_name": "五倍子",
+  "herb_pinyin": "Wubeizi",
+  "herb_en_name": "Galla Chinensis",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "西河柳",
+  "herb_pinyin": "Xiheliu",
+  "herb_en_name": "Tamaricis Cacumen",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "西红花",
+  "herb_pinyin": "Xihonghua",
+  "herb_en_name": "Croci Stigma",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "西洋参",
+  "herb_pinyin": "Xiyangshen",
+  "herb_en_name": "Panacis Quinquefolii Radix",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "豨莶草",
+  "herb_pinyin": "Xixiancao",
+  "herb_en_name": "Siegesbeckiae Herba",
+  "child_cn_name": "祛风湿清热药",
+  "child_en_name": "Wind-Dampnessdispelling And Heatclearing Medicinal"
+ },
+ {
+  "herb_cn_name": "细辛",
+  "herb_pinyin": "Xixin",
+  "herb_en_name": "Asari Radix Et Rhizoma",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "夏枯草",
+  "herb_pinyin": "Xiakucao",
+  "herb_en_name": "Prunellae Spica",
+  "child_cn_name": "清热泻火药",
+  "child_en_name": "Fire Purging Drugs"
+ },
+ {
+  "herb_cn_name": "夏天无",
+  "herb_pinyin": "Xiatianwu",
+  "herb_en_name": "Corydalis Decumbens(Thunb.)Pers.",
+  "child_cn_name": "祛风湿清热药",
+  "child_en_name": "Wind-Dampnessdispelling And Heatclearing Medicinal"
+ },
+ {
+  "herb_cn_name": "仙鹤草",
+  "herb_pinyin": "Xianhecao",
+  "herb_en_name": "Agrimonia Eupatoria",
+  "child_cn_name": "收敛止血药",
+  "child_en_name": "Astringent Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "仙茅",
+  "herb_pinyin": "Xianmao",
+  "herb_en_name": "Curculiginis Rhizome",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "仙桃草",
+  "herb_pinyin": "Xiantaocao",
+  "herb_en_name": "Veronicae Peregrinae Herba",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "相思子",
+  "herb_pinyin": "Xiangsizi",
+  "herb_en_name": "Abrus Precatorius L.",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "香附",
+  "herb_pinyin": "Xiangfu",
+  "herb_en_name": "Cyperi Rhizoma",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "香加皮",
+  "herb_pinyin": "Xiangjiapi",
+  "herb_en_name": "Cortex Periplocae Radicis",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "香茅",
+  "herb_pinyin": "Xiangmao",
+  "herb_en_name": "Cymbopon Citratus(D C.) Stapf",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "香薷",
+  "herb_pinyin": "Xiangru",
+  "herb_en_name": "Moslae Herba",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "香橼",
+  "herb_pinyin": "Xiangyuan",
+  "herb_en_name": "Citri Fructus",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "小茴香",
+  "herb_pinyin": "Xiaohuixiang",
+  "herb_en_name": "Foeniculi Fructus",
+  "child_cn_name": "温里药",
+  "child_en_name": "Warming Interior Drugs"
+ },
+ {
+  "herb_cn_name": "小蓟",
+  "herb_pinyin": "Xiaoji",
+  "herb_en_name": "Herba Cirsii",
+  "child_cn_name": "凉血止血药",
+  "child_en_name": "Blood-Cooling Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "小通草",
+  "herb_pinyin": "Xiaotongcao",
+  "herb_en_name": "Stachyurimedulla Helwingiaemedulla",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "薤白",
+  "herb_pinyin": "Xiebai",
+  "herb_en_name": "Allium Azureum Ledeb.",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "辛夷",
+  "herb_pinyin": "Xinyi",
+  "herb_en_name": "Magnoliae Flos",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "徐长卿",
+  "herb_pinyin": "Xuchangqing",
+  "herb_en_name": "Radix Cynanchi Paniculati",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "续断",
+  "herb_pinyin": "Xuduan",
+  "herb_en_name": "Dipsaci Radix",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "萱草根",
+  "herb_pinyin": "Xuancaogen",
+  "herb_en_name": "Hemerocallis Radix",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "玄参",
+  "herb_pinyin": "Xuanshen",
+  "herb_en_name": "Figwort Root",
+  "child_cn_name": "清热凉血药",
+  "child_en_name": "Heat Clearing Blood Cooling Drugs"
+ },
+ {
+  "herb_cn_name": "旋覆花",
+  "herb_pinyin": "Xuanfuhua",
+  "herb_en_name": "Inulae Flos",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "寻骨风",
+  "herb_pinyin": "Xungufeng",
+  "herb_en_name": "Rhizoma Seu Herba Aristolochiae Mollissimae",
+  "child_cn_name": "祛风湿散寒药",
+  "child_en_name": "Wind-Dampnessdispelling And Colddispersing Medicinal"
+ },
+ {
+  "herb_cn_name": "鸦胆子",
+  "herb_pinyin": "Yadanzi",
+  "herb_en_name": "Bruceae Fructus",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "鸭跖草",
+  "herb_pinyin": "Yazhicao",
+  "herb_en_name": "Commelinae Herba",
+  "child_cn_name": "清热泻火药",
+  "child_en_name": "Fire Purging Drugs"
+ },
+ {
+  "herb_cn_name": "亚麻子",
+  "herb_pinyin": "Yamazi",
+  "herb_en_name": "Semen Lini",
+  "child_cn_name": "润下药",
+  "child_en_name": "Laxatives"
+ },
+ {
+  "herb_cn_name": "延胡索",
+  "herb_pinyin": "Yanhusuo",
+  "herb_en_name": "Corydalis Rhizoma",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "洋金花",
+  "herb_pinyin": "Yangjinhua",
+  "herb_en_name": "Daturae Flos",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "野菊花",
+  "herb_pinyin": "Yejuhua",
+  "herb_en_name": "Chrysanthemi Indici Flos",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "一枝黄花",
+  "herb_pinyin": "Yizhihuanghua",
+  "herb_en_name": "Solidaginis Herba",
+  "child_cn_name": "辛凉解表药",
+  "child_en_name": "Pungent Cool Diaphoretics"
+ },
+ {
+  "herb_cn_name": "伊贝母",
+  "herb_pinyin": "Yibeimu",
+  "herb_en_name": "Fritillariae Pallidiflorae Bulbus",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "益母草",
+  "herb_pinyin": "Yimucao",
+  "herb_en_name": "Leonuri Herba",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "益智",
+  "herb_pinyin": "Yizhi",
+  "herb_en_name": "Alpiniae Oxyphyliae Fructus",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "薏苡仁",
+  "herb_pinyin": "Yiyiren",
+  "herb_en_name": "Coicis Semen",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "茵陈",
+  "herb_pinyin": "Yinchen",
+  "herb_en_name": "Artemisiae Scopariae Herba",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "银柴胡",
+  "herb_pinyin": "Yinchaihu",
+  "herb_en_name": "Gypsophila Licentiana Hand.-Mazz.",
+  "child_cn_name": "清虚热药",
+  "child_en_name": "Asthenic Heat Dispelling Drugs"
+ },
+ {
+  "herb_cn_name": "银杏叶",
+  "herb_pinyin": "Yinxingye",
+  "herb_en_name": "Ginkgo Folium",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "淫羊藿",
+  "herb_pinyin": "Yinyanghuo",
+  "herb_en_name": "Epimrdii Herba",
+  "child_cn_name": "补阳药",
+  "child_en_name": "Yang Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "罂粟壳",
+  "herb_pinyin": "Yingsuke",
+  "herb_en_name": "Papaveris Pericarpium",
+  "child_cn_name": "收涩药",
+  "child_en_name": "Astringent Medicinal"
+ },
+ {
+  "herb_cn_name": "余甘子",
+  "herb_pinyin": "Yuganzi",
+  "herb_en_name": "Phyllanthi Fructus",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "鱼腥草",
+  "herb_pinyin": "Yuxingcao",
+  "herb_en_name": "Houttuyniae Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "禹州漏芦",
+  "herb_pinyin": "Yuzhouloulu",
+  "herb_en_name": "Echinopsis Radix",
+  "child_cn_name": "拔毒化腐生肌药",
+  "child_en_name": "External Medicinal (Draw Out Toxin, Resolve Putridity)"
+ },
+ {
+  "herb_cn_name": "玉米须",
+  "herb_pinyin": "Yumixu",
+  "herb_en_name": "Maydis Seigma",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "玉竹",
+  "herb_pinyin": "Yuzhu",
+  "herb_en_name": "Polygonati Odorati Rhizoma",
+  "child_cn_name": "补阴药",
+  "child_en_name": "Yin-Tonifying Medicinal"
+ },
+ {
+  "herb_cn_name": "郁金",
+  "herb_pinyin": "Yujin",
+  "herb_en_name": "Curcumae Radix",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "郁李仁",
+  "herb_pinyin": "Yuliren",
+  "herb_en_name": "Semen Pruni",
+  "child_cn_name": "润下药",
+  "child_en_name": "Laxatives"
+ },
+ {
+  "herb_cn_name": "预知子",
+  "herb_pinyin": "Yuzhizi",
+  "herb_en_name": "Akebiae Frucyus",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "芫花",
+  "herb_pinyin": "Yuanhua",
+  "herb_en_name": "Flos Genkwa",
+  "child_cn_name": "通水药",
+  "child_en_name": "Drastic Purgatives"
+ },
+ {
+  "herb_cn_name": "芫荽",
+  "herb_pinyin": "Yuansui",
+  "herb_en_name": "Coriandri Sativi Herba",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "月季花",
+  "herb_pinyin": "Yuejihua",
+  "herb_en_name": "Mori Cortex",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "云芝",
+  "herb_pinyin": "Yunzhi",
+  "herb_en_name": "Coriolus",
+  "child_cn_name": "拔毒化腐生肌药",
+  "child_en_name": "External Medicinal (Draw Out Toxin, Resolve Putridity)"
+ },
+ {
+  "herb_cn_name": "皂荚子",
+  "herb_pinyin": "Zaojiazi",
+  "herb_en_name": "Gleditsiae Sinensis Semen",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "皂角刺",
+  "herb_pinyin": "Zaojiaoci",
+  "herb_en_name": "Gleditsiae Spina",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "泽兰",
+  "herb_pinyin": "Zelan",
+  "herb_en_name": "Lycopi Herba",
+  "child_cn_name": "活血祛瘀药",
+  "child_en_name": "Blood Activating Stasis Removing Drugs"
+ },
+ {
+  "herb_cn_name": "泽漆",
+  "herb_pinyin": "Zeqi",
+  "herb_en_name": "Euphorbiae Helioscopiae Herba",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "泽泻",
+  "herb_pinyin": "Zexie",
+  "herb_en_name": "Alisma Orientale (Sam.) Juz.",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "浙贝母",
+  "herb_pinyin": "Zhebeimu",
+  "herb_en_name": "Fritillariae Thunbrgii Bulbus",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "知母",
+  "herb_pinyin": "Zhimu",
+  "herb_en_name": "Anemarrhenae Rhizoma",
+  "child_cn_name": "清热泻火药",
+  "child_en_name": "Fire Purging Drugs"
+ },
+ {
+  "herb_cn_name": "栀子",
+  "herb_pinyin": "Zhizi",
+  "herb_en_name": "Gardeniae Fructus",
+  "child_cn_name": "清热泻火药",
+  "child_en_name": "Fire Purging Drugs"
+ },
+ {
+  "herb_cn_name": "枳椇子",
+  "herb_pinyin": "Zhijuzi",
+  "herb_en_name": "Hoveniae Dulcis Semen",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "枳壳",
+  "herb_pinyin": "Zhike",
+  "herb_en_name": "Aurantii Fructus",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "枳实",
+  "herb_pinyin": "Zhishi",
+  "herb_en_name": "Aurantii Fructus Immaturus",
+  "child_cn_name": "理气药",
+  "child_en_name": "Qi Regulating Drugs"
+ },
+ {
+  "herb_cn_name": "肿节风",
+  "herb_pinyin": "Zhongjiefeng",
+  "herb_en_name": "Herba Sarcandrae",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "猪苓",
+  "herb_pinyin": "Zhuling",
+  "herb_en_name": "Polyporus Umbellatus(Pers)Fr.",
+  "child_cn_name": "利水渗湿药",
+  "child_en_name": "Diuretic Dampness Excreting Drugs"
+ },
+ {
+  "herb_cn_name": "猪牙皂",
+  "herb_pinyin": "Zhuyazao",
+  "herb_en_name": "Gleditsiae Fructus Abnormalis",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "竹节参",
+  "herb_pinyin": "Zhujieshen",
+  "herb_en_name": "Panacis Japonici Rhizoma",
+  "child_cn_name": "补气药",
+  "child_en_name": "Qi Reinforcing Drugs"
+ },
+ {
+  "herb_cn_name": "竹沥",
+  "herb_pinyin": "Zhuli",
+  "herb_en_name": "Bomboo Juice",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "苎麻根",
+  "herb_pinyin": "Zhumagen",
+  "herb_en_name": "Boehmeriae Rhizoma Et Radix",
+  "child_cn_name": "凉血止血药",
+  "child_en_name": "Blood-Cooling Hemostatic Medicinal"
+ },
+ {
+  "herb_cn_name": "紫草",
+  "herb_pinyin": "Zicao",
+  "herb_en_name": "Lithospermum Erythrorhizon",
+  "child_cn_name": "清热凉血药",
+  "child_en_name": "Heat Clearing Blood Cooling Drugs"
+ },
+ {
+  "herb_cn_name": "紫花地丁",
+  "herb_pinyin": "Zihuadiding",
+  "herb_en_name": "Violsse Herba",
+  "child_cn_name": "清热解毒药",
+  "child_en_name": "Antipyretic Detoxicate Drugs"
+ },
+ {
+  "herb_cn_name": "紫花前胡",
+  "herb_pinyin": "Zihuaqianhu",
+  "herb_en_name": "Peucedanidecursivi Radix",
+  "child_cn_name": "化痰药",
+  "child_en_name": "Phlegresolving Medicine"
+ },
+ {
+  "herb_cn_name": "紫苏",
+  "herb_pinyin": "Zisu",
+  "herb_en_name": "Perilla Frutescens",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "紫苏子",
+  "herb_pinyin": "Zisuzi",
+  "herb_en_name": "Perillae Fructus",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "紫菀",
+  "herb_pinyin": "Ziwan",
+  "herb_en_name": "Asteris Radix Et Rhizoma",
+  "child_cn_name": "止咳平喘药",
+  "child_en_name": "Antitussive Antiasthmetics"
+ },
+ {
+  "herb_cn_name": "葛根",
+  "herb_pinyin": "Gegen",
+  "herb_en_name": "Radix Puerariae",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "海参",
+  "herb_pinyin": "Haishen",
+  "herb_en_name": "Sea Cucumber",
+  "child_cn_name": "其它",
+  "child_en_name": "Others"
+ },
+ {
+  "herb_cn_name": "灯盏细辛",
+  "herb_pinyin": "Dengzhanxixin",
+  "herb_en_name": "Erigeron Breviscapus",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ },
+ {
+  "herb_cn_name": "蒿本",
+  "herb_pinyin": "Haoben",
+  "herb_en_name": "Radix et Rhizoma Ligustici Chinesis",
+  "child_cn_name": "辛温解表药",
+  "child_en_name": "Pungent-Warm Exterior-Releasing Medicinal"
+ }
+]

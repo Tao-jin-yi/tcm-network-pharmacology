@@ -754,5 +754,4487 @@
     "cid": 14982,
     "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/14982/PNG?image_size=large",
     "source": "PubChem"
+  },
+  "MOL001040": {
+    "smiles": "C1[C@@H](OC2=CC(=CC(=C2C1=O)O)O)C3=CC=C(C=C3)O",
+    "formula": "C15H12O5",
+    "mw": "272.25",
+    "inchikey": "FTVWIRXFELQLPI-CYBMUJFWSA-N",
+    "cid": 667495,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/667495/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002883": {
+    "smiles": "CCCCCCCC/C=C\\CCCCCCCC(=O)OCC",
+    "formula": "C20H38O2",
+    "mw": "310.5",
+    "inchikey": "LVGKNOAMLMIIKO-QXMHVHEDSA-N",
+    "cid": 5363269,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5363269/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005735": {
+    "smiles": "CC(=CCCC(=C)[C@H]1CC[C@@]2([C@@H]1CC[C@H]3[C@]2(CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)OC(=O)C)C)C)C)C",
+    "formula": "C32H52O2",
+    "mw": "468.8",
+    "inchikey": "CRWQCIAHDTXLKB-DWKUDBNXSA-N",
+    "cid": 14137680,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/14137680/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005741": {
+    "smiles": "C[C@H](CCC=C(C)C)[C@H]1CC[C@@]2([C@@]1(CC[C@]34[C@H]2CC[C@@H]5[C@]3(C4)CC[C@@H](C5(C)C)OC(=O)C)C)C",
+    "formula": "C32H52O2",
+    "mw": "468.8",
+    "inchikey": "PQNTWKDHNSWVPU-OSWLCJEWSA-N",
+    "cid": 13023741,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13023741/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012189": {
+    "smiles": "C/C=C(/C)\\C(=O)OC/C=C/C1=CC(=C(C=C1)OC(=O)/C(=C\\C)/C)OC",
+    "formula": "C20H24O5",
+    "mw": "344.4",
+    "inchikey": "XBXXXXXDBUJKFO-VJFCEBIRSA-N",
+    "cid": 5316044,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5316044/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012190": {
+    "smiles": "COC1=CC(=CC(=C1O)C2=C(C(=CC(=C2)C=O)OC)O)C=O",
+    "formula": "C16H14O6",
+    "mw": "302.28",
+    "inchikey": "NSTQUZVZBUTVPY-UHFFFAOYSA-N",
+    "cid": 95086,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/95086/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012200": {
+    "smiles": "CC(=C)[C@H]1CC2=C(O1)C=C(C3=C2O[C@@H]4COC5=CC(=C(C=C5[C@@H]4C3=O)OC)OC)O",
+    "formula": "C23H22O7",
+    "mw": "410.4",
+    "inchikey": "ZPEHYKMRUBEPSQ-XMCHAPAWSA-N",
+    "cid": 442824,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442824/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001698": {
+    "smiles": "COC1=C(C=C2C(=C1)C(=C3C(=C2O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)COC3=O)C5=CC6=C(C=C5)OCO6)OC",
+    "formula": "C27H26O12",
+    "mw": "542.5",
+    "inchikey": "BJGIWVGXMRUMNA-WBYCZGBQSA-N",
+    "cid": 119458,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/119458/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001699": {
+    "smiles": "COC1=C(C=C2C(=C1)C(=C3C(=C2O)COC3=O)C4=CC5=C(C=C4)OCO5)OC",
+    "formula": "C21H16O7",
+    "mw": "380.3",
+    "inchikey": "VMEJANRODATDOF-UHFFFAOYSA-N",
+    "cid": 100492,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/100492/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001700": {
+    "smiles": "COC1=CC(=CC(=C1OC)OC)[C@H]2[C@@H]3[C@@H](CC4=CC5=C(C=C24)OCO5)COC3=O",
+    "formula": "C22H22O7",
+    "mw": "398.4",
+    "inchikey": "ZGLXUQQMLLIKAN-SVIJTADQSA-N",
+    "cid": 345501,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/345501/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001708": {
+    "smiles": "COC1=CC(=CC(=C1OC)OC)[C@H]2[C@H]3[C@H](COC3=O)C(=O)C4=CC5=C(C=C24)OCO5",
+    "formula": "C22H20O8",
+    "mw": "412.4",
+    "inchikey": "ISCQYPPCSYRZOT-MJXNMMHHSA-N",
+    "cid": 3083574,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3083574/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001710": {
+    "smiles": "COC1=CC(=CC(=C1OC)OC)[C@H]2[C@H]3[C@H](COC3=O)[C@H](C4=CC5=C(C=C24)OCO5)O",
+    "formula": "C22H22O8",
+    "mw": "414.4",
+    "inchikey": "YJGVMLPVUAXIQN-HAEOHBJNSA-N",
+    "cid": 72435,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72435/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001712": {
+    "smiles": "COC1=CC(=CC(=C1OC)OC)[C@H]2[C@@H]3[C@H](COC3=O)[C@H](C4=CC5=C(C=C24)OCO5)O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)CO)O)O)O",
+    "formula": "C28H32O13",
+    "mw": "576.5",
+    "inchikey": "NXVJTGLCCSFGAT-QNDDJFOYSA-N",
+    "cid": 161177,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/161177/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001714": {
+    "smiles": "COC1=CC(=CC(=C1OC)OC)[C@H]2[C@@H]3[C@H](COC3=O)[C@H](C4=CC5=C(C=C24)OCO5)O",
+    "formula": "C22H22O8",
+    "mw": "414.4",
+    "inchikey": "YJGVMLPVUAXIQN-XVVDYKMHSA-N",
+    "cid": 10607,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10607/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001715": {
+    "smiles": "COC1=CC(=CC(=C1OC)OC)[C@H]2[C@@H]3[C@H](COC3=O)C(=O)C4=CC5=C(C=C24)OCO5",
+    "formula": "C22H20O8",
+    "mw": "412.4",
+    "inchikey": "ISCQYPPCSYRZOT-BKTGTZMESA-N",
+    "cid": 443014,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/443014/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000492": {
+    "smiles": "C1[C@@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)O",
+    "formula": "C15H14O6",
+    "mw": "290.27",
+    "inchikey": "PFTAWBLQPZVEMU-DZGCQCFKSA-N",
+    "cid": 9064,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9064/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001638": {
+    "smiles": "C[C@@H]1[C@H]([C@@]2([C@@H](C2(C)C)[C@H]3[C@]1([C@@H]4C=C(C(=O)[C@]4(CC(=C3)CO)O)C)O)O)O",
+    "formula": "C20H28O6",
+    "mw": "364.4",
+    "inchikey": "QGVLYPPODPLXMB-UBTYZVCOSA-N",
+    "cid": 442070,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442070/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001645": {
+    "smiles": "CCCCC/C=C\\C/C=C\\CCCCCCCCOC(=O)C",
+    "formula": "C20H36O2",
+    "mw": "308.5",
+    "inchikey": "KFXARGMQYWECBV-NQLNTKRDSA-N",
+    "cid": 21159087,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/21159087/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000359": {
+    "smiles": "CC[C@H](CC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)C(C)C",
+    "formula": "C29H50O",
+    "mw": "414.7",
+    "inchikey": "KZJWDPNRJALLNS-VJSFXXLFSA-N",
+    "cid": 222284,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/222284/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001506": {
+    "smiles": "CC(=CCC/C(=C/CC/C(=C/CC/C=C(/CC/C=C(/CCC=C(C)C)\\C)\\C)/C)/C)C",
+    "formula": "C30H50",
+    "mw": "410.7",
+    "inchikey": "YYGNTYWPHWGJRM-AAJYLUCBSA-N",
+    "cid": 638072,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/638072/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002879": {
+    "smiles": "CC(C)CCCCCOC(=O)C1=CC=CC=C1C(=O)OCCCCCC(C)C",
+    "formula": "C24H38O4",
+    "mw": "390.6",
+    "inchikey": "IJFPVINAQGWBRJ-UHFFFAOYSA-N",
+    "cid": 33934,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/33934/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006147": {
+    "smiles": "COC1=C(C2=C(C=C1)C(=O)C3=CC=CC=C3C2=O)O",
+    "formula": "C15H10O4",
+    "mw": "254.24",
+    "inchikey": "BYQWRZGQEZAOPQ-UHFFFAOYSA-N",
+    "cid": 80103,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/80103/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009495": {
+    "smiles": "COCC1=C(C2=C(C=C1)C(=O)C3=C(C2=O)C=CC(=C3OC)O)OC",
+    "formula": "C18H16O6",
+    "mw": "328.3",
+    "inchikey": "HEVJQUHAJKODII-UHFFFAOYSA-N",
+    "cid": 16203753,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/16203753/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009500": {
+    "smiles": "COCC1=C(C2=C(C=C1)C(=O)C3=C(C2=O)C=CC(=C3OC)O)O",
+    "formula": "C17H14O6",
+    "mw": "314.29",
+    "inchikey": "KKHLOCIPXRSWKM-UHFFFAOYSA-N",
+    "cid": 11674044,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11674044/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009503": {
+    "smiles": "COC1=CC2=C(C(=C1)O)C(=O)C3=CC=CC=C3C2=O",
+    "formula": "C15H10O4",
+    "mw": "254.24",
+    "inchikey": "LRCKMFKYRNMGRL-UHFFFAOYSA-N",
+    "cid": 13412786,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13412786/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009537": {
+    "smiles": "C1=CC2=C(C=C1/C=C/C=O)O[C@H]([C@@H](O2)C3=CC(=C(C=C3)O)O)CO",
+    "formula": "C18H16O6",
+    "mw": "328.3",
+    "inchikey": "NTXXGPYGMQQSML-QLJMBOKNSA-N",
+    "cid": 44575382,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/44575382/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009541": {
+    "smiles": "CC(=O)OC[C@@H]1[C@H]([C@@H]([C@H]([C@@H](O1)O[C@H]2[C@H]3[C@@H]4[C@H](C=C3COC(=O)C)OC(=O)C4=CO2)OC(=O)C)OC(=O)C)OC(=O)C",
+    "formula": "C26H30O15",
+    "mw": "582.5",
+    "inchikey": "PNJMLKLECQXAHQ-GGHIHTNXSA-N",
+    "cid": 443336,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/443336/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009558": {
+    "smiles": "C1=CC=C(C(=C1)C(=O)C2=C(C=C(C(=C2)CO)O)C(=O)OCCO)O",
+    "formula": "C17H16O7",
+    "mw": "332.3",
+    "inchikey": "BRYATOWTSDMLNN-UHFFFAOYSA-N",
+    "cid": 24763413,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/24763413/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009562": {
+    "smiles": "C1[C@H]2[C@@H]3[C@H](C4=C(C=CC(=C4)O)C5=C3C(=C(C=C5O)O)C1=O)OC6=CC=CC=C26",
+    "formula": "C23H16O5",
+    "mw": "372.4",
+    "inchikey": "DBGJQYIYUBGFLT-GQIHDASDSA-N",
+    "cid": 442531,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442531/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004564": {
+    "smiles": "COC1=CC=C(C=C1)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O",
+    "formula": "C16H12O6",
+    "mw": "300.26",
+    "inchikey": "SQFSKOYWJBQGKQ-UHFFFAOYSA-N",
+    "cid": 5281666,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281666/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004567": {
+    "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@H]2[C@H](OC3=CC(=CC(=C3C2=O)O)O)C4=CC=C(C=C4)O)O)O)O",
+    "formula": "C21H22O10",
+    "mw": "434.4",
+    "inchikey": "VQUPQWGKORWZII-RPJYBVRZSA-N",
+    "cid": 101937309,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/101937309/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004568": {
+    "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H](OC3=CC(=CC(=C3C2=O)O)O)C4=CC=C(C=C4)O)O)O)O",
+    "formula": "C21H22O10",
+    "mw": "434.4",
+    "inchikey": "VQUPQWGKORWZII-WDPYGAQVSA-N",
+    "cid": 6453452,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6453452/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004575": {
+    "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H](OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=C(C=C4)O)O)O)O)O",
+    "formula": "C21H22O11",
+    "mw": "450.4",
+    "inchikey": "ZROGCCBNZBKLEL-MPRHSVQHSA-N",
+    "cid": 119258,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/119258/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004576": {
+    "smiles": "C1=CC(=C(C=C1[C@@H]2[C@H](C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+    "formula": "C15H12O7",
+    "mw": "304.25",
+    "inchikey": "CXQWRCVTCMQVQX-LSDHHAIUSA-N",
+    "cid": 439533,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/439533/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004580": {
+    "smiles": "C1=CC(=C(C=C1[C@H]2[C@H](C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+    "formula": "C15H12O7",
+    "mw": "304.25",
+    "inchikey": "CXQWRCVTCMQVQX-GJZGRUSLSA-N",
+    "cid": 443758,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/443758/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002773": {
+    "smiles": "CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C=C/C=C(/C=C/C=C(/C=C/C2=C(CCCC2(C)C)C)\\C)\\C)/C)/C",
+    "formula": "C40H56",
+    "mw": "536.9",
+    "inchikey": "OENHQHLEOONYIE-JLTXGRSLSA-N",
+    "cid": 5280489,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280489/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011059": {
+    "smiles": "C[C@@H]1C(=O)O[C@@H]2[C@]1([C@@]34C(=O)O[C@H]5C3([C@H]2O)C6([C@@H](C5)C(C)(C)C)[C@H](C(=O)O[C@H]6O4)O)O",
+    "formula": "C20H24O10",
+    "mw": "424.4",
+    "inchikey": "SQOJOAFXDQDRGF-NNGCZKEZSA-N",
+    "cid": 6917929,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6917929/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011061": {
+    "smiles": "C[C@@H]1C(=O)O[C@@H]2[C@]1([C@@]34C(=O)O[C@H]5[C@]3([C@@H]2O)[C@@]6([C@@H](C5)C(C)(C)C)[C@H](C(=O)O[C@H]6O4)O)O",
+    "formula": "C20H24O10",
+    "mw": "424.4",
+    "inchikey": "SQOJOAFXDQDRGF-ZMVGXLHTSA-N",
+    "cid": 11973122,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11973122/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011063": {
+    "smiles": "CCCCCCCCCCCCCCCCC=CC=CC(=O)O",
+    "formula": "C21H38O2",
+    "mw": "322.5",
+    "inchikey": "PJNOTBMYNJXRIV-UHFFFAOYSA-N",
+    "cid": 54192568,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/54192568/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011072": {
+    "smiles": "COC1=CC2=C(C=CN=C2C=C1)C(=O)CC[C@@H]3CCNC[C@@H]3C=C",
+    "formula": "C20H24N2O2",
+    "mw": "324.4",
+    "inchikey": "DKRSEIPLAZTSFD-LSDHHAIUSA-N",
+    "cid": 65753,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/65753/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011073": {
+    "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@H]2CC[C@@]3([C@H]4CC[C@@]5([C@H](CC[C@@]5([C@@H]4CCC3=C2)O)C6=COC(=O)C=C6)C)C)O)O)O[C@H]7[C@@H]([C@H]([C@@H]([C@H](O7)CO)O)O)O",
+    "formula": "C36H52O13",
+    "mw": "692.8",
+    "inchikey": "NXJOCELNFPGKIV-ARHXXGKOSA-N",
+    "cid": 441870,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/441870/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011075": {
+    "smiles": "C[C@@]12CCC[C@@]3([C@@H]1[C@H](OC2)O)COC(=O)[C@]45[C@H]3[C@@H](C[C@H](C4)C(=C)C5=O)O",
+    "formula": "C20H26O6",
+    "mw": "362.4",
+    "inchikey": "BTRYMTRPHJVMRG-KTSQQWMFSA-N",
+    "cid": 442085,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442085/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001771": {
+    "smiles": "CC[C@@H](CC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)C(C)C",
+    "formula": "C29H50O",
+    "mw": "414.7",
+    "inchikey": "KZJWDPNRJALLNS-FBZNIEFRSA-N",
+    "cid": 457801,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/457801/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005236": {
+    "smiles": "CC12C(C=CC3(C1C(C45C3CCC(C4)(C(=C)C5)O)C(=O)O)OC2=O)O",
+    "formula": "C19H22O6",
+    "mw": "346.4",
+    "inchikey": "IXORZMNAPKEEDV-UHFFFAOYSA-N",
+    "cid": 522636,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/522636/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006821": {
+    "smiles": "C1[C@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C(=C3)O)O)O)OC(=O)C4=CC(=C(C(=C4)O)O)O",
+    "formula": "C22H18O11",
+    "mw": "458.4",
+    "inchikey": "WMBWREPUVVBILR-WIYYLYMNSA-N",
+    "cid": 65064,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/65064/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000014": {
+    "smiles": "C1=CC=C2C(=C1)C(=CN2)CC(=NOS(=O)(=O)O)S[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O",
+    "formula": "C16H20N2O9S2",
+    "mw": "448.5",
+    "inchikey": "DNDNWOWHUWNBCK-JZYAIQKZSA-N",
+    "cid": 656506,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/656506/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001659": {
+    "smiles": "CC[C@@H](/C=C/[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)C(C)C",
+    "formula": "C29H48O",
+    "mw": "412.7",
+    "inchikey": "HCXVJBMSMIARIN-KEJCWXRGSA-N",
+    "cid": 5281330,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281330/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001663": {
+    "smiles": "C[C@]12CC[C@H](C([C@@H]1CC[C@@]3([C@@H]2CC=C4[C@]3(CC[C@@]5([C@H]4CC(CC5)(C)C)C(=O)O)C)C)(C)C)O",
+    "formula": "C30H48O3",
+    "mw": "456.7",
+    "inchikey": "MIJYXULNPSFWEK-KDQGZELNSA-N",
+    "cid": 11869658,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11869658/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005755": {
+    "smiles": "COC1=C2C(=C(C(=C1)O)CC3=CC=C(C=C3)O)CCC4=C2C=CC(=C4)O",
+    "formula": "C22H20O4",
+    "mw": "348.4",
+    "inchikey": "XNPQRYUNKPQOPF-UHFFFAOYSA-N",
+    "cid": 11163864,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11163864/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005756": {
+    "smiles": "COC1=CC2=C(C=C1)C3=C(C(=C(C=C3C=C2)OC)OC)OC",
+    "formula": "C18H18O4",
+    "mw": "298.3",
+    "inchikey": "SZWNNHPMXYWRRE-UHFFFAOYSA-N",
+    "cid": 11437978,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11437978/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005761": {
+    "smiles": "COC1=C(C=CC2=C1C3=CC=CC=C3CC2)CC4=CC=C(C=C4)O",
+    "formula": "C22H20O2",
+    "mw": "316.4",
+    "inchikey": "MSBLHJVDGZEYIG-UHFFFAOYSA-N",
+    "cid": 155679845,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/155679845/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005776": {
+    "smiles": "COC1=C2C3=C(C=CC2=C(C(=C1)O)C4=C5C=CC6=C(C5=C(C=C4O)OC)C=CC(=C6)O)C=C(C=C3)O",
+    "formula": "C30H22O6",
+    "mw": "478.5",
+    "inchikey": "CNLFNDMTGHNGIV-UHFFFAOYSA-N",
+    "cid": 9982511,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9982511/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004355": {
+    "smiles": "CC[C@H](/C=C/[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3C2=CC[C@@H]4[C@@]3(CC[C@@H](C4)O)C)C)C(C)C",
+    "formula": "C29H48O",
+    "mw": "412.7",
+    "inchikey": "JZVFJDZBLUFKCA-FXIAWGAOSA-N",
+    "cid": 5281331,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281331/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000569": {
+    "smiles": "C1=C(C=C(C(=C1O)[O-])O)C(=O)OC2=CC(=CC(=C2O)O)C(=O)O",
+    "formula": "C14H9O9-",
+    "mw": "321.21",
+    "inchikey": "COVFEVWNJUOYRL-UHFFFAOYSA-M",
+    "cid": 54711004,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/54711004/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006504": {
+    "smiles": "C1[C@H]([C@@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)OC(=O)C4=CC(=C(C(=C4)O)O)O",
+    "formula": "C22H18O10",
+    "mw": "442.4",
+    "inchikey": "LSHVYAFMTMFKBA-CTNGQTDRSA-N",
+    "cid": 6419835,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6419835/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006859": {
+    "smiles": "C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O",
+    "formula": "C21H27FO6",
+    "mw": "394.4",
+    "inchikey": "GFNANZIMVAIWHM-OBYCQNJPSA-N",
+    "cid": 31307,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/31307/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007760": {
+    "smiles": "C/C=C(\\C)/C(=O)OC[C@@]12[C@H](CCC[C@@]1(CO)O)[C@@]([C@@H](C[C@@H]2O)C)(C)CCC3=CC(=O)OC3",
+    "formula": "C25H38O7",
+    "mw": "450.6",
+    "inchikey": "MIOANCGOVTTWSH-DONKYKGPSA-N",
+    "cid": 6442776,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6442776/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007768": {
+    "smiles": "C/C=C(\\C)/C(=O)OC[C@@]12[C@H](CCC[C@]13CO3)[C@@]([C@@H](C[C@@H]2O)C)(C)CCC4=CC(=O)OC4",
+    "formula": "C25H36O6",
+    "mw": "432.5",
+    "inchikey": "OPIBUIPAAPHGEN-DONKYKGPSA-N",
+    "cid": 14447803,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/14447803/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001870": {
+    "smiles": "C1=CC(=C(C=C1C2=[O+]C3=CC(=CC(=C3C=C2)O)O)O)O",
+    "formula": "C15H11O5+",
+    "mw": "271.24",
+    "inchikey": "GDNIGMNXEKGFIP-UHFFFAOYSA-O",
+    "cid": 441701,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/441701/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000387": {
+    "smiles": "COC1=C2C(=C(C(=C1)C(=O)OC)C3=C4C(=C(C=C3C(=O)OC)OC)OCO4)OCO2",
+    "formula": "C20H18O10",
+    "mw": "418.3",
+    "inchikey": "JMZOMFYRADAWOG-UHFFFAOYSA-N",
+    "cid": 108213,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/108213/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012933": {
+    "smiles": "COC1=CC2=C(C=C1)C3=C(CN4CCC[C@H]4[C@H]3O)C5=CC(=C(C=C52)O)OC",
+    "formula": "C22H23NO4",
+    "mw": "365.4",
+    "inchikey": "CMFIDYCYVJWPPL-PGRDOPGGSA-N",
+    "cid": 161749,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/161749/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001454": {
+    "smiles": "COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC",
+    "formula": "C20H18NO4+",
+    "mw": "336.4",
+    "inchikey": "YBHILYKTIRIUTE-UHFFFAOYSA-N",
+    "cid": 2353,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2353/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001455": {
+    "smiles": "COC1=C(C2=C(C[C@H]3C4=CC5=C(C=C4CCN3C2)OCO5)C=C1)OC",
+    "formula": "C20H21NO4",
+    "mw": "339.4",
+    "inchikey": "VZTUIEROBZXUFA-INIZCTEOSA-N",
+    "cid": 21171,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/21171/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001458": {
+    "smiles": "C1C[N+]2=C(C=C3C=CC4=C(C3=C2)OCO4)C5=CC6=C(C=C51)OCO6",
+    "formula": "C19H14NO4+",
+    "mw": "320.3",
+    "inchikey": "XYHOBCMEDLZUMP-UHFFFAOYSA-N",
+    "cid": 72322,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72322/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001460": {
+    "smiles": "CN1CCC2=CC(=C(C=C2C(=O)CC3=C(C1)C4=C(C=C3)OCO4)OC)OC",
+    "formula": "C21H23NO5",
+    "mw": "369.4",
+    "inchikey": "XPOJSWHIKCNLEQ-UHFFFAOYSA-N",
+    "cid": 72616,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72616/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001461": {
+    "smiles": "CN1CC2=C(C=CC(=C2OC)OC)C3=C1C4=CC5=C(C=C4C=C3)OCO5",
+    "formula": "C21H19NO4",
+    "mw": "349.4",
+    "inchikey": "ALZAZMCIBRHMFF-UHFFFAOYSA-N",
+    "cid": 485077,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/485077/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001462": {
+    "smiles": "CN1CC2=C3C(=CC(=C2C4=C1C5=CC6=C(C=C5C=C4)OCO6)OC)OCO3",
+    "formula": "C21H17NO5",
+    "mw": "363.4",
+    "inchikey": "JPXUJRDPZQUCNV-UHFFFAOYSA-N",
+    "cid": 440589,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/440589/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001463": {
+    "smiles": "CN1CC2=C(C=CC3=C2OCO3)C4=C1C5=CC6=C(C=C5C=C4)OCO6",
+    "formula": "C20H15NO4",
+    "mw": "333.3",
+    "inchikey": "CIUHLXZTZWTVFL-UHFFFAOYSA-N",
+    "cid": 124069,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/124069/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001467": {
+    "smiles": "CN1CCC2=CC(=C(C3=C2[C@@H]1CC4=C3C(=C(C=C4)OC)O)OC)OC",
+    "formula": "C20H23NO4",
+    "mw": "341.4",
+    "inchikey": "QELDJEKNFOQJOY-ZDUSSCGKSA-N",
+    "cid": 10143,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10143/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001469": {
+    "smiles": "CN1CC2=C(C=CC3=C2OCO3)C4=C(C=C5C=C6C(=C(C5=C41)OC)OCO6)O",
+    "formula": "C21H17NO6",
+    "mw": "379.4",
+    "inchikey": "ZQABHUVYNCKFTJ-UHFFFAOYSA-N",
+    "cid": 14818665,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/14818665/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001473": {
+    "smiles": "CN1CCC2=CC3=C(C=C2[C@@H]4[C@H]1C5=C([C@H](O4)OC)C6=C(C=C5)OCO6)OCO3",
+    "formula": "C21H21NO6",
+    "mw": "383.4",
+    "inchikey": "XRBIHOLQAKITPP-SBHAEUEKSA-N",
+    "cid": 197775,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/197775/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001474": {
+    "smiles": "C[N+]1=C2C(=C3C=CC4=C(C3=C1)OCO4)C=CC5=CC6=C(C=C52)OCO6",
+    "formula": "C20H14NO4+",
+    "mw": "332.3",
+    "inchikey": "INVGWHRKADIJHF-UHFFFAOYSA-N",
+    "cid": 5154,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5154/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001475": {
+    "smiles": "C1CCN2C[C@@H]3C[C@H]([C@@H]2C1)CN4[C@H]3CCCC4",
+    "formula": "C15H26N2",
+    "mw": "234.38",
+    "inchikey": "SLRCCWJSBJZJBV-AJNGGQMLSA-N",
+    "cid": 168213,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/168213/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001476": {
+    "smiles": "C1CN2CC3=C(C[C@H]2C4=CC5=C(C=C41)OCO5)C=CC6=C3OCO6",
+    "formula": "C19H17NO4",
+    "mw": "323.3",
+    "inchikey": "UXYJCYXWJGAKQY-HNNXBMFYSA-N",
+    "cid": 440583,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/440583/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001481": {
+    "smiles": "CN1CC2=C(C=CC3=C2OCO3)[C@@H]4[C@H]1C5=CC6=C(C=C5C[C@@H]4O)OCO6",
+    "formula": "C20H19NO5",
+    "mw": "353.4",
+    "inchikey": "GHKISGDRQRSCII-ZOCIIQOWSA-N",
+    "cid": 197810,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/197810/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001482": {
+    "smiles": "C[N+]1=C2C(=C3C(=CC(=C(C3=C1)OC)OC)OC)C=CC4=CC5=C(C=C42)OCO5",
+    "formula": "C22H20NO5+",
+    "mw": "378.4",
+    "inchikey": "LZJHNXHYKRKCDZ-UHFFFAOYSA-N",
+    "cid": 443720,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/443720/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000217": {
+    "smiles": "COC1=C(C2=C(C[C@H]3C4=CC(=C(C=C4CCN3C2)OC)O)C=C1)O",
+    "formula": "C19H21NO4",
+    "mw": "327.4",
+    "inchikey": "KNWVMRVOBAFFMH-HNNXBMFYSA-N",
+    "cid": 439654,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/439654/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000729": {
+    "smiles": "CN1C2=C(C=CC3=CC4=C(C=C32)OCO4)C5=C(C1=O)C6=C(C=C5)OCO6",
+    "formula": "C20H13NO5",
+    "mw": "347.3",
+    "inchikey": "UFHGABBBZRPRJV-UHFFFAOYSA-N",
+    "cid": 443716,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/443716/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000787": {
+    "smiles": "CN1CCC2=CC3=C(C=C2C(=O)CC4=C(C1)C5=C(C=C4)OCO5)OCO3",
+    "formula": "C20H19NO5",
+    "mw": "353.4",
+    "inchikey": "GPTFURBXHJWNHR-UHFFFAOYSA-N",
+    "cid": 4970,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/4970/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001919": {
+    "smiles": "C[C@]12CC[C@@H](C([C@@H]1CC[C@@]3([C@@H]2C=CC4=C(C(=O)C(=O)[C@]43C)O)C)(C)C)O",
+    "formula": "C22H30O4",
+    "mw": "358.5",
+    "inchikey": "KIAKLFLISZCITK-PPAUHQMUSA-N",
+    "cid": 9841735,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9841735/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001921": {
+    "smiles": "CC12CC3C4(CC1C4(C(=O)O2)COC(=O)C5=CC=CC=C5)O[C@@H]6[C@H]([C@@H]([C@H](OC6O3)CO)O)O",
+    "formula": "C23H26O10",
+    "mw": "462.4",
+    "inchikey": "KEMSOUIGHYEWRY-PDQVMUKXSA-N",
+    "cid": 5318917,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5318917/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000028": {
+    "smiles": "C[C@@H]1CC[C@@]2(CC[C@@]3(C(=CC[C@H]4[C@]3(CC[C@@H]5[C@@]4(CC[C@@H](C5(C)C)O)C)C)[C@@H]2[C@H]1C)C)C",
+    "formula": "C30H50O",
+    "mw": "426.7",
+    "inchikey": "FSLPMRQHCOLESF-SFMCKYFRSA-N",
+    "cid": 73170,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73170/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001973": {
+    "smiles": "CC[C@H](CC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)OC(=O)C)C)C)C(C)C",
+    "formula": "C31H52O2",
+    "mw": "456.7",
+    "inchikey": "PBWOIPCULUXTNY-LBKBYZTLSA-N",
+    "cid": 5354503,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5354503/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001978": {
+    "smiles": "C1=CC(=C(C=C1/C=C\\2/C(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+    "formula": "C15H10O6",
+    "mw": "286.24",
+    "inchikey": "WBEFUVAYFSOUEA-PQMHYQBVSA-N",
+    "cid": 5281220,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281220/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000173": {
+    "smiles": "COC1=C(C=C(C2=C1OC(=CC2=O)C3=CC=CC=C3)O)O",
+    "formula": "C16H12O5",
+    "mw": "284.26",
+    "inchikey": "XLTFNNCXVBYBSX-UHFFFAOYSA-N",
+    "cid": 5281703,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281703/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002663": {
+    "smiles": "COC1=C(C2=C(C=C1)C(=C3C=COC3=N2)OC)OC",
+    "formula": "C14H13NO4",
+    "mw": "259.26",
+    "inchikey": "SLSIBLKBHNKZTB-UHFFFAOYSA-N",
+    "cid": 6760,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6760/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005043": {
+    "smiles": "C[C@H](CC[C@@H](C)C(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+    "formula": "C28H48O",
+    "mw": "400.7",
+    "inchikey": "SGNBVLSWZMBQTH-PODYLUTMSA-N",
+    "cid": 173183,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/173183/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006233": {
+    "smiles": "COC1=C(C=CC(=C1)C2C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+    "formula": "C16H14O7",
+    "mw": "318.28",
+    "inchikey": "JWYULKXTGMJKKM-UHFFFAOYSA-N",
+    "cid": 56658060,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/56658060/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006236": {
+    "smiles": "C[C@@]12CC[C@H]3[C@]([C@@]14[C@H](O4)C(=O)O[C@H]2C5=COC=C5)(C(=O)C(=C6[C@@]37COC(=O)C[C@@H]7OC6(C)C)O)C",
+    "formula": "C26H28O9",
+    "mw": "484.5",
+    "inchikey": "SNGHLUWTFLYPMT-JPRNBFAHSA-N",
+    "cid": 185481,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/185481/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006261": {
+    "smiles": "CN1C2=C(C=C(C=C2OC)OC)C(=O)C3=C1OC=C3",
+    "formula": "C14H13NO4",
+    "mw": "259.26",
+    "inchikey": "FXHBKLQQNAGNJN-UHFFFAOYSA-N",
+    "cid": 3083609,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3083609/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013352": {
+    "smiles": "C[C@@]12CC[C@@H]3[C@]4(C=CC(=O)OC([C@@H]4CC(=O)[C@]3([C@@]15[C@H](O5)C(=O)O[C@H]2C6=COC=C6)C)(C)C)C",
+    "formula": "C26H30O7",
+    "mw": "454.5",
+    "inchikey": "MAYJEFRPIKEYBL-OASIGRBWSA-N",
+    "cid": 119041,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/119041/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006268": {
+    "smiles": "CC(=CCC1=C(C2=C(C(=C(C=C2)OC)OC)NC1=O)OC)C",
+    "formula": "C17H21NO4",
+    "mw": "303.35",
+    "inchikey": "OAEZQCLAAGSHHA-UHFFFAOYSA-N",
+    "cid": 12305721,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12305721/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006270": {
+    "smiles": "C[C@@H](CCCC(C)C)[C@@H]1CC[C@]2([C@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CCCC4(C)C)C)C)C",
+    "formula": "C30H54",
+    "mw": "414.7",
+    "inchikey": "ZQIOPEXWVBIZAV-RSKDDJKESA-N",
+    "cid": 12312922,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12312922/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006971": {
+    "smiles": "CN1CCC2=CC3=C(C4=C2C1CC5=C4C=CC(=C5OC)OC)OCO3",
+    "formula": "C20H21NO4",
+    "mw": "339.4",
+    "inchikey": "UVDQDNQWGQFIAO-UHFFFAOYSA-N",
+    "cid": 159999,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/159999/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006980": {
+    "smiles": "COC1=C(C=C(C=C1)CC2=NC=CC3=CC(=C(C=C32)OC)OC)OC",
+    "formula": "C20H21NO4",
+    "mw": "339.4",
+    "inchikey": "XQYZDYMELSJDRZ-UHFFFAOYSA-N",
+    "cid": 4680,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/4680/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006982": {
+    "smiles": "CN1CC[C@]23[C@@H]4[C@H]1CC5=C2C(=C(C=C5)OC)O[C@H]3[C@H](C=C4)O",
+    "formula": "C18H21NO3",
+    "mw": "299.4",
+    "inchikey": "OROGSEYTTFOCAN-DNJOTXNNSA-N",
+    "cid": 5284371,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5284371/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001939": {
+    "smiles": "CC(=CCC1=C2C(=C(C3=C1OC=C3)O)C=CC(=O)O2)C",
+    "formula": "C16H14O4",
+    "mw": "270.28",
+    "inchikey": "JLCROWZWGSUEMR-UHFFFAOYSA-N",
+    "cid": 5317436,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5317436/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001941": {
+    "smiles": "CC(=CCOC1=C2C(=CC3=C1OC=C3)C=CC(=O)O2)C",
+    "formula": "C16H14O4",
+    "mw": "270.28",
+    "inchikey": "OLOOJGVNMBJLLR-UHFFFAOYSA-N",
+    "cid": 10212,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10212/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001942": {
+    "smiles": "CC(=CCOC1=C2C=CC(=O)OC2=CC3=C1C=CO3)C",
+    "formula": "C16H14O4",
+    "mw": "270.28",
+    "inchikey": "IGWDEVSBEKYORK-UHFFFAOYSA-N",
+    "cid": 68081,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/68081/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001956": {
+    "smiles": "CC(=CCOC1=C2C=COC2=C(C3=C1C=CC(=O)O3)OC)C",
+    "formula": "C17H16O5",
+    "mw": "300.30",
+    "inchikey": "NNDOCYLWULORAM-UHFFFAOYSA-N",
+    "cid": 821449,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/821449/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005800": {
+    "smiles": "CC1([C@H](O1)COC2=C3C(=C(C4=C2OC(=O)C=C4)OC)C=CO3)C",
+    "formula": "C17H16O6",
+    "mw": "316.30",
+    "inchikey": "ORBITTMJKIGFNH-LLVKDONJSA-N",
+    "cid": 3055167,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3055167/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005802": {
+    "smiles": "CCCCCCCCC/C=C\\CCCCCCC(=O)OCCCO",
+    "formula": "C21H40O3",
+    "mw": "340.5",
+    "inchikey": "MRARCWSVBSCXKN-KHPPLWFESA-N",
+    "cid": 5365625,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5365625/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005806": {
+    "smiles": "CC(C)([C@H](COC1=C2C=CC(=O)OC2=CC3=C1C=CO3)O)O",
+    "formula": "C16H16O6",
+    "mw": "304.29",
+    "inchikey": "PEWFWDOPJISUOK-ZDUSSCGKSA-N",
+    "cid": 899657,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/899657/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000953": {
+    "smiles": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+    "formula": "C27H46O",
+    "mw": "386.7",
+    "inchikey": "HVYWMOMLDIMFJA-DPAQBDIFSA-N",
+    "cid": 5997,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5997/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002644": {
+    "smiles": "CC(=CCOC1=C2C(=C(C3=C1OC(=O)C=C3)OC)C=CO2)C",
+    "formula": "C17H16O5",
+    "mw": "300.30",
+    "inchikey": "BMLZFLQMBMYVHG-UHFFFAOYSA-N",
+    "cid": 98608,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/98608/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL003588": {
+    "smiles": "CC(=CCC1=C2C=CC(=O)OC2=C(C3=C1C=CO3)O)C",
+    "formula": "C16H14O4",
+    "mw": "270.28",
+    "inchikey": "KDXVVZMYSLWJMA-UHFFFAOYSA-N",
+    "cid": 69502,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/69502/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL003791": {
+    "smiles": "CCCCC/C=C\\C/C=C\\CCCCCCCC(=O)OC(CO)CO",
+    "formula": "C21H38O4",
+    "mw": "354.5",
+    "inchikey": "IEPGNWMPIFDNSD-HZJYTTRNSA-N",
+    "cid": 5365676,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5365676/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007514": {
+    "smiles": "CCCCCC=CCC=CCCCCCCCCCC(=O)OC",
+    "formula": "C21H38O2",
+    "mw": "322.5",
+    "inchikey": "GWJCFAOQCNNFAM-UHFFFAOYSA-N",
+    "cid": 17164,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/17164/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013430": {
+    "smiles": "CC1(C(O1)COC2=C3C(=CC4=C2OC=C4)C=CC(=O)O3)C",
+    "formula": "C16H14O5",
+    "mw": "286.28",
+    "inchikey": "CTJZWFCPUDPLME-UHFFFAOYSA-N",
+    "cid": 182251,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/182251/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001558": {
+    "smiles": "C1[C@H]2[C@H](CO[C@@H]2C3=CC4=C(C=C3)OCO4)[C@H](O1)C5=CC6=C(C=C5)OCO6",
+    "formula": "C20H18O6",
+    "mw": "354.4",
+    "inchikey": "PEYUIKBAABKQKQ-AFHBHXEDSA-N",
+    "cid": 72307,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72307/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005360": {
+    "smiles": "CC1CCC(C2(C13CC(C(C2OC(=O)C4=CC=CC=C4)OC(=O)C)C(O3)(C)C)CO)O",
+    "formula": "C24H32O7",
+    "mw": "432.5",
+    "inchikey": "GCFQOAVTRWVJDV-UHFFFAOYSA-N",
+    "cid": 90473155,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/90473155/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005384": {
+    "smiles": "COC1=C(C=C(C=C1)C[C@H]\\2COC(=O)/C2=C/C3=CC4=C(C=C3)OCO4)OC",
+    "formula": "C21H20O6",
+    "mw": "368.4",
+    "inchikey": "GVNUFBXIXQNOCF-MDNIKOHYSA-N",
+    "cid": 132350840,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/132350840/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009361": {
+    "smiles": "CCN1C[C@@]2([C@@H](C[C@@H]([C@@]34[C@@H]2[C@H]([C@@H]([C@H]31)[C@]5(C[C@@H]([C@H]6C[C@@H]4[C@@H]5[C@H]6OC(=O)C7=CC=CC=C7)OC)OC(=O)C)OC)OC)O)COC",
+    "formula": "C34H47NO9",
+    "mw": "613.7",
+    "inchikey": "YYJZWLOTQILZLS-DYUYSYFFSA-N",
+    "cid": 129449696,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/129449696/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009377": {
+    "smiles": "CCC1C2CCCCN3C2=C(C=C3C4CC(C(=O)O4)C)C5C1OC(=O)C5C",
+    "formula": "C22H29NO4",
+    "mw": "371.5",
+    "inchikey": "RFGMIDHPFYCJDM-UHFFFAOYSA-N",
+    "cid": 23593530,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/23593530/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009379": {
+    "smiles": "CC[C@@H]1[C@H]2CCCCN3[C@H]2[C@H](CC3=O)[C@@H]4[C@H]1OC(=O)[C@H]4C",
+    "formula": "C17H25NO3",
+    "mw": "291.4",
+    "inchikey": "HHVLDUXNKYSRDS-BKQRAYJDSA-N",
+    "cid": 56776320,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/56776320/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009380": {
+    "smiles": "CC[C@H]1[C@H]2[C@@H](CCCN3C2=CC=C3[C@@H]4C[C@@H](C(=O)O4)C)O[C@]15C=C(C(=O)O5)C",
+    "formula": "C22H27NO5",
+    "mw": "385.5",
+    "inchikey": "KKSONBBSOWYZHQ-NHYIYJRYSA-N",
+    "cid": 11842856,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11842856/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009394": {
+    "smiles": "CC1=C2CCCCN3C2(CCC3)C4(C1=O)C(=C(C(=O)O4)C)OC",
+    "formula": "C18H23NO4",
+    "mw": "317.4",
+    "inchikey": "YRGLLFADJRHUKM-UHFFFAOYSA-N",
+    "cid": 181709,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/181709/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009409": {
+    "smiles": "CC[C@H]1[C@H]2[C@@H](CCCN3[C@H]2CC=C3[C@@H]4C[C@@H](C(=O)O4)C)O[C@]15[C@@H]([C@H](C(=O)O5)C)O",
+    "formula": "C22H31NO6",
+    "mw": "405.5",
+    "inchikey": "FIHXRNWFWOXVLU-AYMLZROUSA-N",
+    "cid": 102575927,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/102575927/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009411": {
+    "smiles": "C[C@H]1C[C@H](OC1=O)[C@@H]2CC[C@]34N2CCCCC3=C(C(=O)[C@@]45C(=C(C(=O)O5)C)OC)C",
+    "formula": "C23H29NO6",
+    "mw": "415.5",
+    "inchikey": "SKYPPFSYUDCEQR-NMXNWEJOSA-N",
+    "cid": 53343513,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/53343513/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009414": {
+    "smiles": "CC[C@@H]([C@H]1CCCCN2[C@H]1CCC2=O)[C@@H]3C=C(C(=O)O3)C",
+    "formula": "C17H25NO3",
+    "mw": "291.4",
+    "inchikey": "UCPFAONBHXOZTR-XGUBFFRZSA-N",
+    "cid": 12116761,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12116761/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009431": {
+    "smiles": "CCC1C2C3CCC(N3CCCC2OC14C=C(C(=O)O4)C)C5CC(C(=O)O5)C",
+    "formula": "C22H31NO5",
+    "mw": "389.5",
+    "inchikey": "UINUUSQOLRQGNF-UHFFFAOYSA-N",
+    "cid": 155331,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/155331/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009434": {
+    "smiles": "CC[C@H]1[C@@H]2[C@@H]3CCC(=O)N3CCC[C@H]2O[C@]14C=C(C(=O)O4)C",
+    "formula": "C17H23NO4",
+    "mw": "305.4",
+    "inchikey": "DVRWOSGUHQABHJ-SCYMPEOESA-N",
+    "cid": 12116764,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12116764/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009436": {
+    "smiles": "C[C@H]1C[C@H](OC1=O)[C@@H]2CC[C@]34N2C[C@H](O3)CC[C@]45C[C@H](C(=O)O5)C",
+    "formula": "C18H25NO5",
+    "mw": "335.4",
+    "inchikey": "GRCVOPKGGZCLPF-HMVZOGCKSA-N",
+    "cid": 101160220,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/101160220/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009441": {
+    "smiles": "C[C@H]1C[C@H](OC1=O)[C@@H]2CC[C@@H]3N2CCCC[C@@]34[C@@H]([C@H](C(=O)O4)C)O",
+    "formula": "C18H27NO5",
+    "mw": "337.4",
+    "inchikey": "UWDIPKSFCOQITE-PDKNDOMISA-N",
+    "cid": 11537361,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11537361/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002039": {
+    "smiles": "C[C@@]1(CC[C@H]2C(=CC[C@@H]3[C@@]2(CCC[C@@]3(C)C(=O)O)C)C1)C=C",
+    "formula": "C20H30O2",
+    "mw": "302.5",
+    "inchikey": "MXYATHGRPJZBNA-KRFUXDQASA-N",
+    "cid": 442048,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442048/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009458": {
+    "smiles": "CC(=O)N[C@H]1CCC2=CC(=C(C(=C2C3=CC=C(C(=O)C=C13)OC)OC)OC)O",
+    "formula": "C21H23NO6",
+    "mw": "385.4",
+    "inchikey": "JRRUSQGIRBEMRN-HNNXBMFYSA-N",
+    "cid": 299664,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/299664/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001439": {
+    "smiles": "CCCCC/C=C\\C/C=C\\C/C=C\\C/C=C\\CCCC(=O)O",
+    "formula": "C20H32O2",
+    "mw": "304.5",
+    "inchikey": "YZXBAPSDXZZRGB-DOFZRALJSA-N",
+    "cid": 444899,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/444899/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002211": {
+    "smiles": "CCCCC/C=C/C/C=C/CCCCCCCCCC(=O)O",
+    "formula": "C20H36O2",
+    "mw": "308.5",
+    "inchikey": "XSXIVVZCUAHUJO-AVQMFFATSA-N",
+    "cid": 5282805,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5282805/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL003927": {
+    "smiles": "CC/C=C\\C/C=C\\C/C=C\\CCCCCCCCCC(=O)O",
+    "formula": "C20H34O2",
+    "mw": "306.5",
+    "inchikey": "AHANXAKGNAKFSK-PDBXOOCHSA-N",
+    "cid": 5312529,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5312529/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008153": {
+    "smiles": "CCCCCCCCCCCCCC/C=C\\CCCC(=O)O",
+    "formula": "C20H38O2",
+    "mw": "310.5",
+    "inchikey": "FPAQLJHSZVFKES-NXVVXOECSA-N",
+    "cid": 5312522,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5312522/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001676": {
+    "smiles": "CCN1C[C@@]2(CCC(C34[C@@H]2C(C(C31)[C@]5(C[C@@H]([C@H]6C[C@@H]4[C@@H]5C6OC(=O)C7=CC=C(C=C7)OC)OC)OC(=O)C)OC)OC)COC",
+    "formula": "C35H49NO9",
+    "mw": "627.8",
+    "inchikey": "LYUPEIXJYAJCHL-OKRLCDHJSA-N",
+    "cid": 176532378,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/176532378/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001677": {
+    "smiles": "CC(=O)OC[C@H](CC1=CC=CC=C1)NC(=O)[C@H](CC2=CC=CC=C2)NC(=O)C3=CC=CC=C3",
+    "formula": "C27H28N2O4",
+    "mw": "444.5",
+    "inchikey": "VZPAURMDJZOGHU-DQEYMECFSA-N",
+    "cid": 10026486,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10026486/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001678": {
+    "smiles": "CC(=CCC1=C(C(=CC(=C1)C2COC3=CC(=CC(=C3C2=O)O)O)O)O)C",
+    "formula": "C20H20O6",
+    "mw": "356.4",
+    "inchikey": "HCLPXVZSJXUHTK-UHFFFAOYSA-N",
+    "cid": 10594416,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10594416/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001790": {
+    "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC[C@@H]2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=CC(=C4C(=C3)OC(=CC4=O)C5=CC=C(C=C5)OC)O)O)O)O)O)O)O",
+    "formula": "C28H32O14",
+    "mw": "592.5",
+    "inchikey": "YFVGIJBUXMQFOF-PJOVQGMDSA-N",
+    "cid": 5317025,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5317025/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001689": {
+    "smiles": "COC1=CC=C(C=C1)C2=CC(=O)C3=C(C=C(C=C3O2)O)O",
+    "formula": "C16H12O5",
+    "mw": "284.26",
+    "inchikey": "DANYIYRPLHHOCZ-UHFFFAOYSA-N",
+    "cid": 5280442,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280442/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002322": {
+    "smiles": "C1=CC(=CC=C1C2=CC(=O)C3=C(O2)C=C(C(=C3O)[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)O)O",
+    "formula": "C21H20O10",
+    "mw": "432.4",
+    "inchikey": "MYXNWGACZJSMBT-VJXVFPJBSA-N",
+    "cid": 162350,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/162350/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001697": {
+    "smiles": "CN1CC[C@@]23C=C(C(=O)C=C2[C@@H]1CC4=C3C(=C(C=C4)OC)O)OC",
+    "formula": "C19H21NO4",
+    "mw": "327.4",
+    "inchikey": "GVTRUVGBZQJVTF-ORAYPTAESA-N",
+    "cid": 821366,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/821366/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001851": {
+    "smiles": "C1C2=C(C3=CC=CC=C31)N=C(C=C2)C4=CC=CC=C4",
+    "formula": "C18H13N",
+    "mw": "243.3",
+    "inchikey": "WJSSJWJAOMQSAN-UHFFFAOYSA-N",
+    "cid": 618317,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/618317/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001721": {
+    "smiles": "CC1=C(C(=O)CC2N1C3(CCC2)C4=CC=CC=C4NC3=O)C(=O)O",
+    "formula": "C18H18N2O4",
+    "mw": "326.3",
+    "inchikey": "QQDWEMDBMCNRPU-UHFFFAOYSA-N",
+    "cid": 5318488,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5318488/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001733": {
+    "smiles": "COC1=C(C=C(C=C1)C2=CC(=O)C3=C(C(=C(C=C3O2)OC)OC)O)O",
+    "formula": "C18H16O7",
+    "mw": "344.3",
+    "inchikey": "KLAOKWJLUQKWIF-UHFFFAOYSA-N",
+    "cid": 97214,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/97214/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001735": {
+    "smiles": "COC1=C(C2=C(C=C1O)OC(=CC2=O)C3=CC=C(C=C3)O)O",
+    "formula": "C16H12O6",
+    "mw": "300.26",
+    "inchikey": "IHFBPDAQLQOCBX-UHFFFAOYSA-N",
+    "cid": 5281628,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281628/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001750": {
+    "smiles": "C1=CC=C2C(=C1)C(=CN2)CC(=NOS(=O)(=O)O)S[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O",
+    "formula": "C16H20N2O9S2",
+    "mw": "448.5",
+    "inchikey": "DNDNWOWHUWNBCK-JZYAIQKZSA-N",
+    "cid": 656506,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/656506/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001755": {
+    "smiles": "CCC(CC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)C)C(C)C",
+    "formula": "C29H48O",
+    "mw": "412.7",
+    "inchikey": "RUVUHIUYGJBLGI-DOUXTHCPSA-N",
+    "cid": 15596633,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/15596633/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001756": {
+    "smiles": "C1=CC=C2C(=C1)C=C3C(=N2)C4=CC=CC=C4N3",
+    "formula": "C15H10N2",
+    "mw": "218.25",
+    "inchikey": "QOAKRWLMTKEDDL-UHFFFAOYSA-N",
+    "cid": 98912,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/98912/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001774": {
+    "smiles": "C[C@]1(C[C@@H]([C@]2([C@@H]3CCCC([C@]3(CC(=O)C2=C1)O)(C)C)C)O)C=C",
+    "formula": "C20H30O3",
+    "mw": "318.4",
+    "inchikey": "BWRPYSJNBVBIRP-FLFBIERCSA-N",
+    "cid": 188456,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/188456/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001779": {
+    "smiles": "CN1CC[C@@]23C=C(C(=O)C=C2[C@@H]1CC4=C3C(=C(C=C4)OC)O)OC",
+    "formula": "C19H21NO4",
+    "mw": "327.4",
+    "inchikey": "GVTRUVGBZQJVTF-ORAYPTAESA-N",
+    "cid": 821366,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/821366/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001781": {
+    "smiles": "C1=CC=C2C(=C1)C(=C(N2)C3=NC4=CC=CC=C4C3=O)O",
+    "formula": "C16H10N2O2",
+    "mw": "262.26",
+    "inchikey": "QQILFGKZUJYXGS-UHFFFAOYSA-N",
+    "cid": 10215,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10215/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001792": {
+    "smiles": "C1[C@H](OC2=C(C1=O)C=CC(=C2)O)C3=CC=C(C=C3)O",
+    "formula": "C15H12O4",
+    "mw": "256.25",
+    "inchikey": "FURUXTVZLHCCNA-AWEZNQCLSA-N",
+    "cid": 114829,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/114829/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001803": {
+    "smiles": "COC1=C(C=C(C=C1)C2=CC(=O)C3=C(C(=C(C=C3O2)OC)OC)OC)OC",
+    "formula": "C20H20O7",
+    "mw": "372.4",
+    "inchikey": "LKMNXYDUQXAUCZ-UHFFFAOYSA-N",
+    "cid": 145659,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/145659/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001806": {
+    "smiles": "CC[C@H](C=C[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2[C@H](C=C4[C@@]3(CC[C@@H](C4)O)C)O)C)C(C)C",
+    "formula": "C29H48O2",
+    "mw": "428.7",
+    "inchikey": "DPNNWDOFSGOYEK-PZHNMUJHSA-N",
+    "cid": 182464,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/182464/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012207": {
+    "smiles": "CN1[C@H](CCC[C@H]1C[C@@H](C2=CC=CC=C2)O)C[C@H](C3=CC=CC=C3)O",
+    "formula": "C22H29NO2",
+    "mw": "339.5",
+    "inchikey": "OWGJQNXIWMMDTH-COPRSSIGSA-N",
+    "cid": 442646,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442646/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012208": {
+    "smiles": "CN1[C@H](CCC[C@H]1CC(=O)C2=CC=CC=C2)CC(=O)C3=CC=CC=C3",
+    "formula": "C22H25NO2",
+    "mw": "335.4",
+    "inchikey": "IDEMKXUAULKYJV-BGYRXZFFSA-N",
+    "cid": 442647,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442647/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012209": {
+    "smiles": "CN1[C@@H](CCC[C@@H]1CC(=O)C2=CC=CC=C2)C[C@@H](C3=CC=CC=C3)O",
+    "formula": "C22H27NO2",
+    "mw": "337.5",
+    "inchikey": "MXYUKLILVYORSK-HBMCJLEFSA-N",
+    "cid": 101616,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/101616/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012216": {
+    "smiles": "C1C[C@@H](N[C@@H](C1)CC(=O)C2=CC=CC=C2)CC(=O)C3=CC=CC=C3",
+    "formula": "C21H23NO2",
+    "mw": "321.4",
+    "inchikey": "OMAMGHBETNHQJC-KDURUIRLSA-N",
+    "cid": 12311086,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12311086/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009653": {
+    "smiles": "C[C@H]1[C@@H]2CC[C@H]3[C@@]4(CC[C@@H]([C@]4(CC[C@@]35[C@@]2(C5)CC[C@@H]1O)C)[C@H](C)CCC(=C)C(C)C)C",
+    "formula": "C30H50O",
+    "mw": "426.7",
+    "inchikey": "HUNLTIZKNQDZEI-PGFZVWMDSA-N",
+    "cid": 101690,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/101690/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002341": {
+    "smiles": "COC1=C(C=C(C=C1)[C@@H]2CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+    "formula": "C16H14O6",
+    "mw": "302.28",
+    "inchikey": "AIONOLUJZLIMTK-AWEZNQCLSA-N",
+    "cid": 72281,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72281/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002881": {
+    "smiles": "COC1=C(C=C(C=C1)C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+    "formula": "C16H12O6",
+    "mw": "300.26",
+    "inchikey": "MBNGWHIJMBWFHU-UHFFFAOYSA-N",
+    "cid": 5281612,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281612/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL003044": {
+    "smiles": "COC1=C(C=CC(=C1)C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+    "formula": "C16H12O6",
+    "mw": "300.26",
+    "inchikey": "SCZVLDHREVKTSH-UHFFFAOYSA-N",
+    "cid": 5280666,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280666/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005530": {
+    "smiles": "COC1=CC(=C2C(=C1)OC(=CC2=O)C3=CC(=C(C=C3)O)O)O",
+    "formula": "C16H12O6",
+    "mw": "300.26",
+    "inchikey": "RRRSSAVLTCVNIQ-UHFFFAOYSA-N",
+    "cid": 5318214,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5318214/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009009": {
+    "smiles": "COC1=CC(=CC(=C1O)OC)[C@@H]2[C@H]3CO[C@@H]([C@H]3CO2)C4=CC(=C(C=C4)O)OC",
+    "formula": "C21H24O7",
+    "mw": "388.4",
+    "inchikey": "VJOBNGRIBLNUKN-BMHXQBNDSA-N",
+    "cid": 181681,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/181681/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002670": {
+    "smiles": "C[C@@H]1[C@@H]2C3=CC(=C(C=C3CCN2CC4=C1C=CC5=C4OCO5)OC)OC",
+    "formula": "C21H23NO4",
+    "mw": "353.4",
+    "inchikey": "JTZZGWPIBBTYNE-FKIZINRSSA-N",
+    "cid": 193148,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/193148/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002714": {
+    "smiles": "C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C=C(C(=C3O)O)O",
+    "formula": "C15H10O5",
+    "mw": "270.24",
+    "inchikey": "FXNFHKRTJBSTCS-UHFFFAOYSA-N",
+    "cid": 5281605,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281605/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002776": {
+    "smiles": "C1=CC=C(C=C1)C2=CC(=O)C3=C(C(=C(C=C3O2)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)O)O)O)O)O)O",
+    "formula": "C21H18O11",
+    "mw": "446.4",
+    "inchikey": "IKIIZLYTISPENI-ZFORQUDYSA-N",
+    "cid": 64982,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/64982/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005030": {
+    "smiles": "CCCCCCCC/C=C\\CCCCCCCCCC(=O)O",
+    "formula": "C20H38O2",
+    "mw": "310.5",
+    "inchikey": "BITHHVVYSMSWAG-KTKRTIGZSA-N",
+    "cid": 5282768,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5282768/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000519": {
+    "smiles": "COC1=C(C=CC(=C1)/C=C/CO)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)O",
+    "formula": "C16H22O8",
+    "mw": "342.34",
+    "inchikey": "SFLMUHDGSQZDOW-FAOXUISGSA-N",
+    "cid": 5280372,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280372/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL003578": {
+    "smiles": "C[C@H](CCC=C(C)C)[C@H]1CC[C@@]2([C@@]1(CC[C@]34[C@H]2CC[C@@H]5[C@]3(C4)CC[C@@H](C5(C)C)O)C)C",
+    "formula": "C30H50O",
+    "mw": "426.7",
+    "inchikey": "ONQRKEUAIJMULO-YBXTVTTCSA-N",
+    "cid": 92110,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/92110/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006967": {
+    "smiles": "C1=NC2=C(N1[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O)NC(=O)NC2=O",
+    "formula": "C10H12N4O6",
+    "mw": "284.23",
+    "inchikey": "UBORTCNDUKBEOP-UUOKFMHZSA-N",
+    "cid": 64959,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/64959/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012245": {
+    "smiles": "COC1=C(C2=C(C=C1O)OC(CC2=O)C3=CC=C(C=C3)O)O",
+    "formula": "C16H14O6",
+    "mw": "302.28",
+    "inchikey": "FCXRFTLSXMRXTM-UHFFFAOYSA-N",
+    "cid": 5322074,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5322074/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012246": {
+    "smiles": "COC1=C(C=C(C2=C1OC(CC2=O)C3=CC=C(C=C3)O)O)O",
+    "formula": "C16H14O6",
+    "mw": "302.28",
+    "inchikey": "OJCCBPWPNVUJFG-UHFFFAOYSA-N",
+    "cid": 42608119,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/42608119/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012251": {
+    "smiles": "COC1=CC(=CC2=C1C(=O)C=C(O2)C3=CC=CC=C3)O",
+    "formula": "C16H12O4",
+    "mw": "268.26",
+    "inchikey": "JVEMWXSMSUNXSD-UHFFFAOYSA-N",
+    "cid": 5490127,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5490127/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012252": {
+    "smiles": "C[C@H](CCC=C(C)C)[C@H]1CC[C@@]2([C@@]1(CC[C@]34[C@H]2CC[C@H]5[C@]3(C4)CCC(C5(C)C)O)C)C",
+    "formula": "C30H50O",
+    "mw": "426.7",
+    "inchikey": "ONQRKEUAIJMULO-CPIKPBPNSA-N",
+    "cid": 129660864,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/129660864/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012254": {
+    "smiles": "C[C@H](CC[C@@H](C)C(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+    "formula": "C28H48O",
+    "mw": "400.7",
+    "inchikey": "SGNBVLSWZMBQTH-PODYLUTMSA-N",
+    "cid": 173183,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/173183/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012266": {
+    "smiles": "COC1=CC=CC(=C1C2=CC(=O)C3=C(O2)C(=C(C=C3O)OC)OC)O",
+    "formula": "C18H16O7",
+    "mw": "344.3",
+    "inchikey": "IYMNRCWUEDWTPE-UHFFFAOYSA-N",
+    "cid": 13889022,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13889022/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012269": {
+    "smiles": "CC[C@H](C=C[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CCC(C4)OC(=O)C)C)C)C(C)C",
+    "formula": "C31H50O2",
+    "mw": "454.7",
+    "inchikey": "IZEUIYYDWBKERE-RWKSKRQGSA-N",
+    "cid": 129885398,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/129885398/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002719": {
+    "smiles": "C1[C@H](OC2=C(C1=O)C(=C(C(=C2)O)O)O)C3=CC=C(C=C3)O",
+    "formula": "C15H12O6",
+    "mw": "288.25",
+    "inchikey": "NPLTVGMLNDMOQE-NSHDSACASA-N",
+    "cid": 188308,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/188308/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002915": {
+    "smiles": "COC1=CC=C(C=C1)C2=CC(=O)C3=C(C(=C(C=C3O2)OC)OC)O",
+    "formula": "C18H16O6",
+    "mw": "328.3",
+    "inchikey": "QCDYOIZVELGOLZ-UHFFFAOYSA-N",
+    "cid": 161271,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/161271/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000351": {
+    "smiles": "COC1=CC(=C2C(=C1)OC(=C(C2=O)O)C3=CC(=C(C=C3)O)OC)O",
+    "formula": "C17H14O7",
+    "mw": "330.29",
+    "inchikey": "MYMGKIQXYXSRIJ-UHFFFAOYSA-N",
+    "cid": 5320945,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5320945/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005190": {
+    "smiles": "C1[C@H](OC2=CC(=CC(=C2C1=O)O)O)C3=CC(=C(C=C3)O)O",
+    "formula": "C15H12O6",
+    "mw": "288.25",
+    "inchikey": "SBHXYTNGIZCORC-ZDUSSCGKSA-N",
+    "cid": 440735,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/440735/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008206": {
+    "smiles": "COC1=C(C2=C(C(=C1)O)C(=O)C=C(O2)C3=CC=CC=C3)OC",
+    "formula": "C17H14O5",
+    "mw": "298.29",
+    "inchikey": "IHLSBQVBFDTNTC-UHFFFAOYSA-N",
+    "cid": 188316,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/188316/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011616": {
+    "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H]([C@@H]([C@H](O[C@H]2OC3=CC(=C4C(=C3)OC(=CC4=O)C5=CC=C(C=C5)OC)O)CO)O)O)O)O)O",
+    "formula": "C28H32O14",
+    "mw": "592.5",
+    "inchikey": "MLWDGPFGTFOLRJ-CUVHLRMHSA-N",
+    "cid": 5317385,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5317385/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000471": {
+    "smiles": "C1=CC2=C(C(=C1)O)C(=O)C3=C(C2=O)C=C(C=C3O)CO",
+    "formula": "C15H10O5",
+    "mw": "270.24",
+    "inchikey": "YDQWDHRMZQUTBA-UHFFFAOYSA-N",
+    "cid": 10207,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10207/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005573": {
+    "smiles": "COC1=CC(=C2C(=C1)OC(=CC2=O)C3=CC=C(C=C3)O)O",
+    "formula": "C16H12O5",
+    "mw": "284.26",
+    "inchikey": "JPMYFOBNRRGFNO-UHFFFAOYSA-N",
+    "cid": 5281617,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281617/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012904": {
+    "smiles": "CN1CC[C@@]23[C@@]1(C[C@@H]([C@@]24[C@H](C(=CC4=O)OC)O)Cl)C(=C(C(=O)C3)OC)OC",
+    "formula": "C19H24ClNO6",
+    "mw": "397.8",
+    "inchikey": "FSXRARBVZZKCGJ-WPLONRSQSA-N",
+    "cid": 11741544,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11741544/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012910": {
+    "smiles": "COC1=CC2=C(C=C1)C3=NC=CC4=CC(=CC(=C43)C2=O)OC",
+    "formula": "C18H13NO3",
+    "mw": "291.3",
+    "inchikey": "OLIWOPDNTUVPQD-UHFFFAOYSA-N",
+    "cid": 126021,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/126021/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012918": {
+    "smiles": "COC1=CC2=C(C=C1)C3=NC=CC4=C3C(=C(C(=C4OC)OC)O)C2=O",
+    "formula": "C19H15NO5",
+    "mw": "337.3",
+    "inchikey": "HVXLZTVOIBKOPD-UHFFFAOYSA-N",
+    "cid": 68232932,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/68232932/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012920": {
+    "smiles": "CN1CC[C@@]23CC(=O)C(=C[C@@H]2[C@@H]1CC4=C3C(=C(C=C4)OC)O)OC",
+    "formula": "C19H23NO4",
+    "mw": "329.4",
+    "inchikey": "INYYVPJSBIVGPH-QHRIQVFBSA-N",
+    "cid": 5459308,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5459308/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012921": {
+    "smiles": "COC1=C(C2=C3[C@@H](CC24C=CC(=O)C=C4)NCCC3=C1)OC",
+    "formula": "C18H19NO3",
+    "mw": "297.3",
+    "inchikey": "OGJKMZVUJJYWKO-CYBMUJFWSA-N",
+    "cid": 193686,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/193686/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012922": {
+    "smiles": "COC1=C(C=C2[C@@H]3CC4=C(CN3CCC2=C1)C(=C(C=C4)O)OC)O",
+    "formula": "C19H21NO4",
+    "mw": "327.4",
+    "inchikey": "JKPISQIIWUONPB-HNNXBMFYSA-N",
+    "cid": 6917970,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6917970/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005944": {
+    "smiles": "C1C[C@@H]2[C@H]3CCCN4[C@H]3[C@@H](CCC4)CN2C(=O)C1",
+    "formula": "C15H24N2O",
+    "mw": "248.36",
+    "inchikey": "ZSBXGIUJOOQZMP-JLNYLFASSA-N",
+    "cid": 91466,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/91466/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008127": {
+    "smiles": "COC1=CC=C(C=C1)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)OC",
+    "formula": "C17H14O6",
+    "mw": "314.29",
+    "inchikey": "RJCJVIFSIXKSAH-UHFFFAOYSA-N",
+    "cid": 5352001,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5352001/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008135": {
+    "smiles": "C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)OC(=O)/C=C/C3=CC(=C(C=C3)O)O)O",
+    "formula": "C25H24O12",
+    "mw": "516.4",
+    "inchikey": "UFCLZKMFXSILNL-PSEXTPKNSA-N",
+    "cid": 5281780,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281780/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001951": {
+    "smiles": "CC(=CCC/C(=C/COC1=C2C=CC(=O)OC2=CC3=C1C=CO3)/C)C",
+    "formula": "C21H22O4",
+    "mw": "338.4",
+    "inchikey": "DBMJZOMNXBSRED-OQLLNIDSSA-N",
+    "cid": 5471349,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5471349/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004624": {
+    "smiles": "CC1(CCC[C@]23[C@@H]1[C@@H]([C@]([C@]45[C@H]2CC[C@H]([C@H]4O)C(=C)C5=O)(OC3)O)O)C",
+    "formula": "C20H28O5",
+    "mw": "348.4",
+    "inchikey": "PSVHVXLCVSKJGM-MHRDNBEJSA-N",
+    "cid": 102117144,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/102117144/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005317": {
+    "smiles": "CC(C)CC[C@@](CC(=O)OC)(C(=O)O[C@H]1[C@H]2C3=CC4=C(C=C3CCN5[C@@]2(CCC5)C=C1OC)OCO4)O",
+    "formula": "C28H37NO8",
+    "mw": "515.6",
+    "inchikey": "WRCBXHDQHPUVHW-QKBZBAIHSA-N",
+    "cid": 285342,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/285342/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008956": {
+    "smiles": "C/C=C(/C)\\C(=O)O[C@@H]1[C@H]([C@H](CC2=CC3=C(C(=C2C4=C(C(=C(C=C14)OC)OC)OC)OC)OCO3)C)C",
+    "formula": "C28H34O8",
+    "mw": "498.6",
+    "inchikey": "PLKFSXFJGNZAER-XXDSNBTQSA-N",
+    "cid": 91864462,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/91864462/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008957": {
+    "smiles": "C/C=C(\\C)/C(=O)O[C@@H]1C2=CC(=C(C(=C2C3=C(C4=C(C=C3C[C@@H]([C@@]1(C)O)C)OCO4)OC)OC)OC)OC",
+    "formula": "C28H34O9",
+    "mw": "514.6",
+    "inchikey": "BKGUPIVDQHHVMV-TWJXSMCESA-N",
+    "cid": 5318785,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5318785/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008968": {
+    "smiles": "C[C@H]1CC2=CC3=C(C(=C2C4=C(C(=C(C=C4C[C@]1(C)O)OC)OC)OC)OC)OCO3",
+    "formula": "C23H28O7",
+    "mw": "416.5",
+    "inchikey": "ZWRRJEICIPUPHZ-MYODQAERSA-N",
+    "cid": 3001662,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3001662/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008974": {
+    "smiles": "C[C@H]1CC2=CC(=C(C(=C2C3=C(C4=C(C=C3[C@@H]([C@@]1(C)O)OC(=O)C5=CC=CC=C5)OCO4)OC)OC)OC)OC",
+    "formula": "C30H32O9",
+    "mw": "536.6",
+    "inchikey": "OFDWKHIQKPKRKY-DSASHONVSA-N",
+    "cid": 14992067,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/14992067/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008978": {
+    "smiles": "C[C@H]1CC2=CC3=C(C(=C2C4=C(C5=C(C=C4[C@H]([C@H]1C)O)OCO5)OC)OC)OCO3",
+    "formula": "C22H24O7",
+    "mw": "400.4",
+    "inchikey": "HOPDFAWBFXSPSA-FHGNATFXSA-N",
+    "cid": 11516888,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11516888/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008992": {
+    "smiles": "C[C@@H]1CC2=CC3=C(C(=C2C4=C(C5=C(C=C4C[C@@H]1C)OCO5)OC)OC)OCO3",
+    "formula": "C22H24O6",
+    "mw": "384.4",
+    "inchikey": "HTBWBWWADZJXID-TXEJJXNPSA-N",
+    "cid": 443027,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/443027/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001559": {
+    "smiles": "CC(C)CNC(=O)/C=C/C=C/C1=CC2=C(C=C1)OCO2",
+    "formula": "C16H19NO3",
+    "mw": "273.33",
+    "inchikey": "WHAAPCGHVWVUEX-GGWOSOGESA-N",
+    "cid": 5320621,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5320621/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001560": {
+    "smiles": "C1CCN(CC1)C(=O)/C=C/CCCC/C=C/C2=CC3=C(C=C2)OCO3",
+    "formula": "C21H27NO3",
+    "mw": "341.4",
+    "inchikey": "PKLGRWSJBLGIBF-JMQWPVDRSA-N",
+    "cid": 9974595,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9974595/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001561": {
+    "smiles": "C1CCN(CC1)C(=O)/C=C/C=C/CC/C=C/C2=CC3=C(C=C2)OCO3",
+    "formula": "C21H25NO3",
+    "mw": "339.4",
+    "inchikey": "KAYVDASZRFLFRZ-PQECNABGSA-N",
+    "cid": 6439947,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6439947/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001586": {
+    "smiles": "COC1=CC=C(C=C1)C(=O)NC2=C(C=CC(=C2)OC)OC",
+    "formula": "C16H17NO4",
+    "mw": "287.31",
+    "inchikey": "CFFUCEHTAUTSAT-UHFFFAOYSA-N",
+    "cid": 532276,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/532276/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001589": {
+    "smiles": "CCCCCCCCCCCCCCC/C=C/C=C/C(=O)NCC(C)C",
+    "formula": "C24H45NO",
+    "mw": "363.6",
+    "inchikey": "LMZPUHBJSQVRHE-HYGARKJASA-N",
+    "cid": 6441067,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6441067/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001592": {
+    "smiles": "C1CCN(CC1)C(=O)/C=C/C=C/C2=CC3=C(C=C2)OCO3",
+    "formula": "C17H19NO3",
+    "mw": "285.34",
+    "inchikey": "MXXWOMGUGJBKIW-YPCIICBESA-N",
+    "cid": 638024,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/638024/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001594": {
+    "smiles": "COC1=CC2=C(C=C1)[C@@H]3[C@](CO2)(C4=CC5=C(C=C4O3)OCO5)O",
+    "formula": "C17H14O6",
+    "mw": "314.29",
+    "inchikey": "LZMRDTLRSDRUSU-SJORKVTESA-N",
+    "cid": 101689,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/101689/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001610": {
+    "smiles": "CC(C)CCC/C=C/CCCCNC(=O)/C=C/C=C\\C1=CC2=C(C=C1)OCO2",
+    "formula": "C24H33NO3",
+    "mw": "383.5",
+    "inchikey": "URFYPQQKBYOWIX-SWZGVYIDSA-N",
+    "cid": 131750975,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/131750975/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013185": {
+    "smiles": "COC1=CC(=CC(=C1OC)OC)CC2C(COC2O)CC3=CC4=C(C=C3)OCO4",
+    "formula": "C22H26O7",
+    "mw": "402.4",
+    "inchikey": "SOCNBZCAGNYAED-UHFFFAOYSA-N",
+    "cid": 44575537,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/44575537/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013187": {
+    "smiles": "C1[C@@H]([C@H]([C@H](O1)O)CC2=CC3=C(C=C2)OCO3)CC4=CC5=C(C=C4)OCO5",
+    "formula": "C20H20O6",
+    "mw": "356.4",
+    "inchikey": "DIYWRNLYKJKHAM-MDOVXXIYSA-N",
+    "cid": 117443,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/117443/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013189": {
+    "smiles": "COC1=CC(=CC(=C1OC)OC)CC2COC(=O)C2CC3=CC(=C(C(=C3)OC)OC)OC",
+    "formula": "C24H30O8",
+    "mw": "446.5",
+    "inchikey": "VUNCHONBJWJYID-UHFFFAOYSA-N",
+    "cid": 9981005,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9981005/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013190": {
+    "smiles": "COC1=CC(=CC2=C1OCO2)C[C@@H]3[C@H](COC3=O)CC4=CC(=C(C(=C4)OC)OC)OC",
+    "formula": "C23H26O8",
+    "mw": "430.4",
+    "inchikey": "BFDODNWEBMWJIS-JKSUJKDBSA-N",
+    "cid": 91724200,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/91724200/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013191": {
+    "smiles": "COC1=CC(=CC(=C1OC)OC)C[C@@H](CO)[C@@H](CC2=CC3=C(C=C2)OCO3)CO",
+    "formula": "C22H28O7",
+    "mw": "404.5",
+    "inchikey": "FDHFWHRGVDRJIK-IRXDYDNUSA-N",
+    "cid": 332806,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/332806/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013192": {
+    "smiles": "C1OC2=C(O1)C=C(C=C2)C[C@@H](CO)[C@@H](CC3=CC4=C(C=C3)OCO4)CO",
+    "formula": "C20H22O6",
+    "mw": "358.4",
+    "inchikey": "JKCVMTYNARDGET-HOTGVXAUSA-N",
+    "cid": 193042,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/193042/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013193": {
+    "smiles": "CC(=O)OCC(CC1=CC2=C(C=C1)OCO2)C(CC3=CC4=C(C=C3)OCO4)CO",
+    "formula": "C22H24O7",
+    "mw": "400.4",
+    "inchikey": "ZSECDNBADLTTJC-UHFFFAOYSA-N",
+    "cid": 13939341,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13939341/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013194": {
+    "smiles": "COC1=CC(=CC(=C1OC)OC)C[C@H]2COC(=O)[C@@H]2CC3=CC4=C(C=C3)OCO4",
+    "formula": "C22H24O7",
+    "mw": "400.4",
+    "inchikey": "HHRGVAZECZEYPH-JKSUJKDBSA-N",
+    "cid": 10787153,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10787153/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013195": {
+    "smiles": "COC1=C(C2=C3[C@H](CC4=CC(=C(C=C42)OC)O)NCCC3=C1)OC",
+    "formula": "C19H21NO4",
+    "mw": "327.4",
+    "inchikey": "GVVXPMORGFYVOO-ZDUSSCGKSA-N",
+    "cid": 31415,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/31415/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013197": {
+    "smiles": "C1=CC=C(C=C1)C(=O)OCC2(C=CC(C(C2O)O)OC(=O)C3=CC=CC=C3)O",
+    "formula": "C21H20O7",
+    "mw": "384.4",
+    "inchikey": "PCFGXGDGOLIQTE-UHFFFAOYSA-N",
+    "cid": 14890283,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/14890283/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013199": {
+    "smiles": "COC1=CC(=CC(=C1OC)OC)C[C@@H]2[C@H](COC2=O)CC3=CC4=C(C=C3)OCO4",
+    "formula": "C22H24O7",
+    "mw": "400.4",
+    "inchikey": "GMLDZDDTZKXJLU-JKSUJKDBSA-N",
+    "cid": 442835,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442835/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013200": {
+    "smiles": "C1=CC=C(C=C1)C(=O)OC[C@]2([C@H](C=C[C@H]([C@@H]2O)OC(=O)C3=CC=CC=C3)O)O",
+    "formula": "C21H20O7",
+    "mw": "384.4",
+    "inchikey": "AWCUZBLYCWUTRL-OEMYIYORSA-N",
+    "cid": 10992619,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10992619/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002005": {
+    "smiles": "C1[C@@H]([C@H](C(=O)O1)CC2=CC3=C(C=C2)OCO3)CC4=CC5=C(C=C4)OCO5",
+    "formula": "C20H18O6",
+    "mw": "354.4",
+    "inchikey": "DDWGQGZPYDSYEL-LSDHHAIUSA-N",
+    "cid": 442879,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442879/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008145": {
+    "smiles": "C[C@@H]1C[C@@H]2[C@@H](CC3=CNC4=CC=CC2=C34)N(C1)C",
+    "formula": "C16H20N2",
+    "mw": "240.34",
+    "inchikey": "VLMZMRDOMOGGFA-RIEGTJTDSA-N",
+    "cid": 160462,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/160462/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008146": {
+    "smiles": "C/C=C\\1/CC(=C)[C@@](C(=O)OCC2=CCN3[C@H]2[C@@H](CC3)OC1=O)(CO)O",
+    "formula": "C18H23NO6",
+    "mw": "349.4",
+    "inchikey": "SVCNNZDUGWLODJ-RAYFHMIRSA-N",
+    "cid": 5281744,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281744/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000001": {
+    "smiles": "C1=CC=C(C=C1)C2=[O+]C3=CC=CC=C3C=C2",
+    "formula": "C15H11O+",
+    "mw": "207.25",
+    "inchikey": "NWKFECICNXDNOQ-UHFFFAOYSA-N",
+    "cid": 145858,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/145858/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000004": {
+    "smiles": "C1[C@@H]([C@H](OC2=C1C(=CC(=C2[C@@H]3[C@H]([C@H](OC4=CC(=CC(=C34)O)O)C5=CC(=C(C=C5)O)O)O)O)O)C6=CC(=C(C=C6)O)O)O",
+    "formula": "C30H26O12",
+    "mw": "578.5",
+    "inchikey": "XFZJEEAOWLFHDH-UKWJTHFESA-N",
+    "cid": 11250133,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11250133/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL010482": {
+    "smiles": "CCCCCCOC(=O)C1=CC=CC=C1C(=O)OCCCCCC",
+    "formula": "C20H30O4",
+    "mw": "334.4",
+    "inchikey": "KCXZNSGUUQJJTR-UHFFFAOYSA-N",
+    "cid": 6786,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6786/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL010485": {
+    "smiles": "CC/C=C\\C/C=C\\C/C=C\\C/C=C\\C/C=C\\CCCC(=O)O",
+    "formula": "C20H30O2",
+    "mw": "302.5",
+    "inchikey": "JAZBEHYOTPTENJ-JLNKQSITSA-N",
+    "cid": 446284,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/446284/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL010489": {
+    "smiles": "C1=CC(=C(C=C1C2C(C(C3=C(C=C(C=C3O2)O)O)O)O)O)O",
+    "formula": "C15H14O7",
+    "mw": "306.27",
+    "inchikey": "SBZWTSHAFILOTE-UHFFFAOYSA-N",
+    "cid": 71629,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/71629/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002032": {
+    "smiles": "CCCCCCCCOC(=O)C1=CC=CC=C1C(=O)OCCCCCCCC",
+    "formula": "C24H38O4",
+    "mw": "390.6",
+    "inchikey": "MQIUGAXCHLFZKX-UHFFFAOYSA-N",
+    "cid": 8346,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/8346/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002372": {
+    "smiles": "CC(=CCC/C(=C/CC/C(=C/CC/C=C(\\C)/CC/C=C(/C)\\CCC=C(C)C)/C)/C)C",
+    "formula": "C30H50",
+    "mw": "410.7",
+    "inchikey": "YYGNTYWPHWGJRM-FLHYQJCXSA-N",
+    "cid": 11975273,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11975273/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006861": {
+    "smiles": "C[C@@H]1CC[C@@]2(CC[C@@]3(C(=CC[C@H]4[C@]3(CC[C@@H]5[C@@]4(C[C@H]([C@@H]([C@@]5(C)CO)O)O)C)C)[C@@H]2[C@H]1C)C)C(=O)O",
+    "formula": "C30H48O5",
+    "mw": "488.7",
+    "inchikey": "JXSVIVRDWWRQRT-UYDOISQJSA-N",
+    "cid": 119034,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/119034/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006862": {
+    "smiles": "CC(=O)O[C@@H]1C[C@@H]2CC[C@]1(C2(C)C)C",
+    "formula": "C12H20O2",
+    "mw": "196.29",
+    "inchikey": "KGEKLUUHTZCSIP-HOSYDEDBSA-N",
+    "cid": 93009,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/93009/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006865": {
+    "smiles": "CC(=CCC[C@@](C)([C@H]1CC[C@@]2([C@@H]1CC[C@H]3[C@]2(CC[C@@H]4[C@@]3(CCC(=O)C4(C)C)C)C)C)O)C",
+    "formula": "C30H50O2",
+    "mw": "442.7",
+    "inchikey": "NJICGAVMYWKCMW-GWJXCKMPSA-N",
+    "cid": 441676,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/441676/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006331": {
+    "smiles": "C1=CC(=C2C(=C1)OC(=CC2=O)C3=CC=C(C=C3)O)O",
+    "formula": "C15H10O4",
+    "mw": "254.24",
+    "inchikey": "OKRNDQLCMXUCGG-UHFFFAOYSA-N",
+    "cid": 165521,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/165521/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000096": {
+    "smiles": "C1[C@H]([C@@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)O",
+    "formula": "C15H14O6",
+    "mw": "290.27",
+    "inchikey": "PFTAWBLQPZVEMU-HIFRSBDPSA-N",
+    "cid": 73160,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73160/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011676": {
+    "smiles": "CC(C)CC(=O)O[C@@H]1[C@H]([C@@H]([C@H](O[C@H]1O[C@H]2C[C@]3([C@@H]4CC[C@@H]5C[C@@]4(CC[C@@H]3C(C2)(C(=O)O)C(=O)O)[C@H](C5=C)O)C)CO)OS(=O)(=O)O)OS(=O)(=O)O",
+    "formula": "C31H46O18S2",
+    "mw": "770.8",
+    "inchikey": "AQFATIOBERWBDY-LNQSNDDKSA-N",
+    "cid": 20055804,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/20055804/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008647": {
+    "smiles": "COC1=C(C=CC(=C1)/C=C/C(=O)NCCC2=CC=C(C=C2)O)O",
+    "formula": "C18H19NO4",
+    "mw": "313.3",
+    "inchikey": "NPNNKDMSXVRADT-WEVVVXLNSA-N",
+    "cid": 5280537,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280537/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011169": {
+    "smiles": "C[C@H](/C=C/[C@H](C)C(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@]24C=C[C@@]5([C@@]3(CC[C@@H](C5)O)C)OO4)C",
+    "formula": "C28H44O3",
+    "mw": "428.6",
+    "inchikey": "VXOZCESVZIRHCJ-KGHQQZOUSA-N",
+    "cid": 5351516,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5351516/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000184": {
+    "smiles": "CC[C@H](/C=C/[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@H]4[C@@]3(CCC(=O)C4)C)C)C(C)C",
+    "formula": "C29H48O",
+    "mw": "412.7",
+    "inchikey": "RTLUSWHIKFIQFU-DALQDKCESA-N",
+    "cid": 5356634,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5356634/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000074": {
+    "smiles": "C1=CC(=CC=C1CCC(=O)/C=C/C=C/C2=CC=C(C=C2)O)O",
+    "formula": "C19H18O3",
+    "mw": "294.3",
+    "inchikey": "QIROPQQWKBMABC-ZPUQHVIOSA-N",
+    "cid": 10613719,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10613719/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002397": {
+    "smiles": "CCN1C[C@@]2(CC[C@@H]([C@@]34[C@@H]2C[C@@H](C31)[C@]5(C[C@@H]([C@H]6C[C@@H]4[C@@H]5[C@H]6O)OC)O)O)C",
+    "formula": "C22H35NO4",
+    "mw": "377.5",
+    "inchikey": "HKQZUYOVMYOFIT-VHNBHZRZSA-N",
+    "cid": 441742,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/441742/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004748": {
+    "smiles": "CCN1C[C@@]2(CC[C@@H](C34[C@@H]2[C@H](C(C31)[C@@]5([C@@H]6[C@H]4C[C@@]([C@@H]6OC(=O)C7=CC=CC=C7)([C@H]([C@@H]5O)OC)O)OC(=O)C)OC)OC)COC",
+    "formula": "C34H47NO10",
+    "mw": "629.7",
+    "inchikey": "PHASMOUKYDUAOZ-ZDKSWHTHSA-N",
+    "cid": 78358503,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/78358503/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004749": {
+    "smiles": "CCN1C[C@@]2([C@@H](C[C@@H]([C@@]34[C@@H]2[C@H]([C@@H]([C@H]31)[C@@]5([C@@H]6[C@H]4C[C@@]([C@@H]6OC(=O)C7=CC=CC=C7)([C@H]([C@@H]5O)OC)O)OC(=O)C)OC)OC)OC(=O)C)COC",
+    "formula": "C36H49NO12",
+    "mw": "687.8",
+    "inchikey": "RIPYIJVYDYCPKW-NNSXUSQFSA-N",
+    "cid": 102063144,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/102063144/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004756": {
+    "smiles": "CCN1C[C@@]2(CC[C@@H]([C@@]34[C@@H]2[C@H]([C@@H](C31)[C@]5(C[C@@H]([C@]6(C[C@@H]4[C@@H]5[C@H]6OC(=O)C7=CC=C(C=C7)OC)O)OC)OC(=O)C)OC)OC)COC",
+    "formula": "C35H49NO10",
+    "mw": "643.8",
+    "inchikey": "GAZDXIGXYWVWQX-QVAFJCLZSA-N",
+    "cid": 20055838,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/20055838/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004757": {
+    "smiles": "CCN1C[C@@]2([C@@H](C[C@@H]([C@@]34[C@@H]2[C@H]([C@@H](C31)[C@]5(C[C@@H]([C@]6(C[C@@H]4[C@@H]5[C@H]6OC(=O)C7=CC=C(C=C7)OC)O)OC)OC(=O)C)OC)OC)O)COC",
+    "formula": "C35H49NO11",
+    "mw": "659.8",
+    "inchikey": "LLEMSCWAKNQHHA-SQJQOUDQSA-N",
+    "cid": 6918110,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6918110/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004759": {
+    "smiles": "CCN1C[C@@]2(CC[C@@H]([C@@]34[C@@H]2C[C@@H]([C@H]31)[C@]56[C@H]4C[C@@H]([C@H](C5)C(=C)[C@H]6O)O)O)C",
+    "formula": "C22H33NO3",
+    "mw": "359.5",
+    "inchikey": "AZAZKLKDEOMJBJ-AFJRDBIPSA-N",
+    "cid": 17749282,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/17749282/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004763": {
+    "smiles": "CN1CCC2=CC(=C(C3=C2[C@@H]1CC4=CC(=C(C=C43)OC)O)O)OC",
+    "formula": "C19H21NO4",
+    "mw": "327.4",
+    "inchikey": "LINHZVMHXABQLB-ZDUSSCGKSA-N",
+    "cid": 133323,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/133323/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000538": {
+    "smiles": "CC(=O)O[C@@]12[C@@H]3[C@@H](C[C@@]([C@@H]3OC(=O)C4=CC=CC=C4)([C@H]([C@@H]1O)OC)O)[C@]56[C@H](CC[C@@]7([C@H]5[C@H]([C@H]2[C@H]6N(C7)C)OC)COC)OC",
+    "formula": "C33H45NO10",
+    "mw": "615.7",
+    "inchikey": "FIDOCHXHMJHKRW-FBYRGYIKSA-N",
+    "cid": 91973803,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/91973803/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007034": {
+    "smiles": "CCN1C[C@@]2(CC[C@@H]([C@@]34[C@@H]2[C@H](C(C31)[C@@]5([C@@H]6[C@H]4C[C@@]([C@@H]6OC(=O)C7=CC=CC=C7)([C@H]([C@@H]5O)OC)O)OC(=O)C)OC)OC)COC",
+    "formula": "C34H47NO10",
+    "mw": "629.7",
+    "inchikey": "PHASMOUKYDUAOZ-AUQPBFSASA-N",
+    "cid": 44445634,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/44445634/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004628": {
+    "smiles": "C1C[C@@H]2[C@H]3C[C@@H](CN2C(=O)C1)[C@@H]4C[C@H](CCN4C3)O",
+    "formula": "C15H24N2O2",
+    "mw": "264.36",
+    "inchikey": "JVYKIBAJVKEZSQ-YHQUGGNUSA-N",
+    "cid": 73404,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73404/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004644": {
+    "smiles": "COC1=CC(=C(C=C1)C2=CC3=CC(=C(C=C3O2)OC)O)O",
+    "formula": "C16H14O5",
+    "mw": "286.28",
+    "inchikey": "BVSPXSLCUKWRNP-UHFFFAOYSA-N",
+    "cid": 185034,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/185034/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004648": {
+    "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC[C@@H]2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)OCCO)C5=CC(=C(C=C5)OCCO)OCCO)O)O)O)O)O)O",
+    "formula": "C33H42O19",
+    "mw": "742.7",
+    "inchikey": "IYVFNTXFRYQLRP-VVSTWUKXSA-N",
+    "cid": 5486699,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5486699/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004653": {
+    "smiles": "C/C=C(/C)\\C(=O)OC1C(C(OC2=C1C3=C(C=C2)C=CC(=O)O3)(C)C)OC(=O)/C(=C\\C)/C",
+    "formula": "C24H26O7",
+    "mw": "426.5",
+    "inchikey": "PNTWXEIQXBRCPS-PVRNWPCDSA-N",
+    "cid": 6450453,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6450453/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004718": {
+    "smiles": "CC[C@H](/C=C/[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3C2=CC[C@@H]4[C@@]3(CC[C@@H](C4)O)C)C)C(C)C",
+    "formula": "C29H48O",
+    "mw": "412.7",
+    "inchikey": "JZVFJDZBLUFKCA-FXIAWGAOSA-N",
+    "cid": 5281331,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281331/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000490": {
+    "smiles": "COC1=CC(=CC(=C1O)O)C2=[O+]C3=CC(=CC(=C3C=C2O)O)O.[Cl-]",
+    "formula": "C16H13ClO7",
+    "mw": "352.72",
+    "inchikey": "QULMBDNPZCFSPR-UHFFFAOYSA-N",
+    "cid": 73386,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73386/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008182": {
+    "smiles": "C1CN2CC3=CC=CC=C3C[C@H]2C4=CC=CC=C41",
+    "formula": "C17H17N",
+    "mw": "235.32",
+    "inchikey": "BRLDZKPJJNASGG-KRWDZBQOSA-N",
+    "cid": 164543,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/164543/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008184": {
+    "smiles": "CC(C)([C@@H](COC1=C(C2=C(C=C1)C(=C3C=COC3=N2)OC)OC)O)O",
+    "formula": "C18H21NO6",
+    "mw": "347.4",
+    "inchikey": "FGANMDNHTVJAHL-CYBMUJFWSA-N",
+    "cid": 673465,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/673465/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008187": {
+    "smiles": "C1C[C@H]2[C@H](CC(O2)(CN3C=NC4=CC=CC=C4C3=O)O)NC1",
+    "formula": "C16H19N3O3",
+    "mw": "301.34",
+    "inchikey": "YLYLCQRQSRDSQR-ADTLFGHVSA-N",
+    "cid": 9851693,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9851693/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008188": {
+    "smiles": "CN1C2=C(C=C(C=C2)OC)C(=O)C(=C1C3=CC=CC=C3)OC",
+    "formula": "C18H17NO3",
+    "mw": "295.3",
+    "inchikey": "XTBMLWZKNWXUHV-UHFFFAOYSA-N",
+    "cid": 442915,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442915/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008189": {
+    "smiles": "COC1=C2C=COC2=NC3=C1C=CC4=C3OCO4",
+    "formula": "C13H9NO4",
+    "mw": "243.21",
+    "inchikey": "SDPOFOYJCOPMMV-UHFFFAOYSA-N",
+    "cid": 5318829,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5318829/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008193": {
+    "smiles": "CC(C)C(=O)CC1=C(C2=C(C(=CC=C2)OC)N(C1=O)C)OC",
+    "formula": "C17H21NO4",
+    "mw": "303.35",
+    "inchikey": "DIUJWBJYQHUELV-UHFFFAOYSA-N",
+    "cid": 11278088,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11278088/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008195": {
+    "smiles": "CC(C)C(=O)CC1=C(C2=C(C3=C(C=C2)OCO3)N=C1OC)OC",
+    "formula": "C17H19NO5",
+    "mw": "317.34",
+    "inchikey": "JNSVENVWIBKRQR-UHFFFAOYSA-N",
+    "cid": 5320309,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5320309/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008197": {
+    "smiles": "CC(=CCC1=C(C2=C(C3=C(C=C2)OCO3)N(C1=O)C)OC)C",
+    "formula": "C17H19NO4",
+    "mw": "301.34",
+    "inchikey": "VCWHRRGGVPCIEU-UHFFFAOYSA-N",
+    "cid": 167633,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/167633/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004004": {
+    "smiles": "C1=CC(=C(C=C1C2=CC(=O)C3=C(O2)C=C(C(=C3O)O)O)O)O",
+    "formula": "C15H10O7",
+    "mw": "302.23",
+    "inchikey": "VYAKIUWQLHRZGK-UHFFFAOYSA-N",
+    "cid": 5281642,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281642/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007783": {
+    "smiles": "C1C=C([C@@H]2[C@H]1C=COC2O[C@@H]3[C@@H]([C@H]([C@@H]([C@@](O3)(CO)O)O)O)O)COC(=O)C4=CC=CC=C4",
+    "formula": "C22H26O10",
+    "mw": "450.4",
+    "inchikey": "NYNUGFOKJKFILZ-HKKMPEBQSA-N",
+    "cid": 180531,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/180531/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007796": {
+    "smiles": "CCCCCCCCCCCCCCCC(=O)O[C@H]1CC[C@@]2([C@H]3CC[C@]4([C@H]([C@@H]3CC=C2C1)CC[C@@H]4[C@H](C)/C=C/[C@@H](CC)C(C)C)C)C",
+    "formula": "C45H78O2",
+    "mw": "651.1",
+    "inchikey": "OHLDETMXEXJUDZ-SYYHSBNDSA-N",
+    "cid": 13828740,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13828740/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007813": {
+    "smiles": "C1C(OC2=CC(=CC(=C2C1=O)O)O)C3=CC(=C(C(=C3)O)O)O",
+    "formula": "C15H12O7",
+    "mw": "304.25",
+    "inchikey": "USQXPEWRYWRRJD-UHFFFAOYSA-N",
+    "cid": 5258991,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5258991/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007819": {
+    "smiles": "C1=CC(=C(C=C1C2=CC(=O)C3=C(O2)C(=C(C=C3O)O)O)O)O",
+    "formula": "C15H10O7",
+    "mw": "302.23",
+    "inchikey": "ASOIXDIITRKTOX-UHFFFAOYSA-N",
+    "cid": 5281648,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281648/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL010495": {
+    "smiles": "COC1=C(C=C2C(=C1)C(=O)C=C(O2)CCC3=CC=CC=C3)OC",
+    "formula": "C19H18O4",
+    "mw": "310.3",
+    "inchikey": "MVQOWXHYPYRBOE-UHFFFAOYSA-N",
+    "cid": 5316872,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5316872/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL010496": {
+    "smiles": "COC1=CC=C(C=C1)CCC2=CC(=O)C3=CC(=C(C=C3O2)OC)OC",
+    "formula": "C20H20O5",
+    "mw": "340.4",
+    "inchikey": "WYSWREVQEJRZIQ-UHFFFAOYSA-N",
+    "cid": 195226,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/195226/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL010907": {
+    "smiles": "COC1=C(C=C2C[C@H]3C4=C(C2=C1)C(=C(C=C4CCN3)O)OC)O",
+    "formula": "C18H19NO4",
+    "mw": "313.3",
+    "inchikey": "KYVJVURXKAZJRK-LBPRGKRZSA-N",
+    "cid": 22179,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/22179/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL010913": {
+    "smiles": "C/C/1=C\\CC[C@@]23[C@@H](O2)[C@H](C4=C(C1)OC=C4C)OC3=O",
+    "formula": "C15H16O4",
+    "mw": "260.28",
+    "inchikey": "KBMSVODXFLAQNJ-DXGHHDSJSA-N",
+    "cid": 6915739,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6915739/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL010916": {
+    "smiles": "C1=CC(=CC=C1CC(C(=O)C2=C(C=C(C=C2O)O)O)O)O",
+    "formula": "C15H14O6",
+    "mw": "290.27",
+    "inchikey": "NPOVZMYHKXTUAS-UHFFFAOYSA-N",
+    "cid": 12110863,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12110863/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL010917": {
+    "smiles": "CN1CCC2=CC(=C(C3=C2[C@@H]1CC4=CC(=C(C=C43)OC)O)OC)O",
+    "formula": "C19H21NO4",
+    "mw": "327.4",
+    "inchikey": "LZJRNLRASBVRRX-ZDUSSCGKSA-N",
+    "cid": 10154,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10154/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005100": {
+    "smiles": "COC1=C(C=C(C=C1)[C@H]2CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+    "formula": "C16H14O6",
+    "mw": "302.28",
+    "inchikey": "AIONOLUJZLIMTK-CQSZACIVSA-N",
+    "cid": 676152,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/676152/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005815": {
+    "smiles": "COC1=C(C=C(C=C1)C2CC(=O)C3=C(O2)C(=C(C(=C3OC)OC)OC)OC)OC",
+    "formula": "C21H24O8",
+    "mw": "404.4",
+    "inchikey": "LTRBUBSPQISFFL-UHFFFAOYSA-N",
+    "cid": 12303287,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12303287/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005828": {
+    "smiles": "COC1=C(C=C(C=C1)C2=CC(=O)C3=C(O2)C(=C(C(=C3OC)OC)OC)OC)OC",
+    "formula": "C21H22O8",
+    "mw": "402.4",
+    "inchikey": "MRIAQLRQZPPODS-UHFFFAOYSA-N",
+    "cid": 72344,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72344/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006999": {
+    "smiles": "CC[C@H](CC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3C2=CCC4[C@@]3(CC[C@@H](C4)O)C)C)C(C)C",
+    "formula": "C29H50O",
+    "mw": "414.7",
+    "inchikey": "YSKVBPGQYRAUQO-NEWNUQLJSA-N",
+    "cid": 3080632,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3080632/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007003": {
+    "smiles": "C[C@]12C[C@@]3([C@@H]4C[C@]1([C@@]4([C@H](O2)O3)COC(=O)C5=CC=CC=C5)O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)COC(=O)C7=CC=CC=C7)O)O)O)O",
+    "formula": "C30H32O12",
+    "mw": "584.6",
+    "inchikey": "LATYEZNGPQKAIK-HRCYFWENSA-N",
+    "cid": 21631106,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/21631106/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007004": {
+    "smiles": "C[C@]12C[C@H]([C@@H]3C[C@]1([C@@]3(C(=O)O2)COC(=O)C4=CC=CC=C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O)O",
+    "formula": "C23H28O11",
+    "mw": "480.5",
+    "inchikey": "QQUHMASGPODSIW-ICECTASOSA-N",
+    "cid": 24868421,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/24868421/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007016": {
+    "smiles": "C[C@@]12CC(=O)[C@H]3C[C@@]1(O[C@@H]([C@@H]3COC(=O)C4=CC=CC=C4)O2)O",
+    "formula": "C17H18O6",
+    "mw": "318.32",
+    "inchikey": "BANPEMKDTXIFRE-GMKCAIKYSA-N",
+    "cid": 133475,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/133475/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007025": {
+    "smiles": "C[C@]12C[C@]3([C@@H]4C[C@]1([C@@]4([C@H](O2)O3)COC(=O)C5=CC=CC=C5)O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)COC(=O)C7=CC=CC=C7)O)O)O)O",
+    "formula": "C30H32O12",
+    "mw": "584.6",
+    "inchikey": "LATYEZNGPQKAIK-GWRWBXCRSA-N",
+    "cid": 177827917,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/177827917/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL010415": {
+    "smiles": "CCCCCC/C=C/C=C/CCCCCCCCCC(=O)OC",
+    "formula": "C21H38O2",
+    "mw": "322.5",
+    "inchikey": "QKVKDCGPQOJFNM-BNFZFUHLSA-N",
+    "cid": 5365674,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5365674/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL010421": {
+    "smiles": "C[N+]1=CC2=CC(=C(C=C2C3=C1C4=CC5=C(C=C4C=C3)OCO5)O)OC",
+    "formula": "C20H16NO4+",
+    "mw": "334.3",
+    "inchikey": "LWUFCYZBXMEMKN-UHFFFAOYSA-O",
+    "cid": 6482370,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6482370/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL010425": {
+    "smiles": "CN1C2=C(C=CC3=CC4=C(C=C32)OCO4)C5=CC6=C(C=C5C1=O)OCO6",
+    "formula": "C20H13NO5",
+    "mw": "347.3",
+    "inchikey": "NAFSMPFYCYCHSJ-UHFFFAOYSA-N",
+    "cid": 12313849,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12313849/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001297": {
+    "smiles": "CCCCCCCC/C=C/CCCCCCCCCC(=O)O",
+    "formula": "C20H38O2",
+    "mw": "310.5",
+    "inchikey": "BITHHVVYSMSWAG-MDZDMXLPSA-N",
+    "cid": 5282769,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5282769/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005440": {
+    "smiles": "C/C=C(/CC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)\\C(C)C",
+    "formula": "C29H48O",
+    "mw": "412.7",
+    "inchikey": "OSELKOCHBMDKEJ-WGMIZEQOSA-N",
+    "cid": 5281326,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281326/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004440": {
+    "smiles": "C[C@H]1C[C@@H]2[C@H]([C@H]([C@]3(O2)CC[C@H]4[C@@H]5CC(=O)[C@H]6C[C@H](CC[C@@]6([C@H]5CC4=C3C)C)O)C)NC1",
+    "formula": "C27H41NO3",
+    "mw": "427.6",
+    "inchikey": "KYELXPJVGNZIGC-GKFGJCLESA-N",
+    "cid": 161294,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/161294/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009027": {
+    "smiles": "C[C@H]1C[C@@H]2[C@H]([C@H]([C@]3(O2)CC[C@H]4[C@@H]5CC=C6C[C@H](CC[C@@]6([C@H]5CC4=C3C)C)O)C)NC1",
+    "formula": "C27H41NO2",
+    "mw": "411.6",
+    "inchikey": "QASFUMOKHFSJGL-LAFRSMQTSA-N",
+    "cid": 442972,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442972/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009572": {
+    "smiles": "C[C@H]1CC[C@@H]2[C@@H]([C@@H]3CC[C@@H]4[C@H]([C@@H]3CN2C1)C[C@H]5[C@H]4CC(=O)[C@@H]6[C@@]5(CC[C@@H](C6)O)C)C",
+    "formula": "C27H43NO2",
+    "mw": "413.6",
+    "inchikey": "MWBJDDYEYGDWCZ-BZDKHGNJSA-N",
+    "cid": 21636311,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/21636311/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009586": {
+    "smiles": "C[C@H]1CC[C@H]2[C@@]([C@H]3CC[C@@H]4[C@H]([C@@H]3CN2C1)C[C@H]5[C@H]4C[C@H]([C@@H]6[C@@]5(CC[C@@H](C6)O)C)O)(C)O",
+    "formula": "C27H45NO3",
+    "mw": "431.7",
+    "inchikey": "IUKLSMSEHKDIIP-RZNVUHDWSA-N",
+    "cid": 21573744,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/21573744/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009588": {
+    "smiles": "C[C@@H]1CC[C@H]2[C@@H]([C@H]3CC[C@@]4([C@H]([C@@H]3CN2C1)C[C@H]5[C@H]4C[C@H]([C@@H]6[C@@]5(CC[C@H](C6)O)C)O)O)C",
+    "formula": "C27H45NO3",
+    "mw": "431.7",
+    "inchikey": "NQGYOUYEGZOZBN-QAJIXOGVSA-N",
+    "cid": 16406745,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/16406745/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009593": {
+    "smiles": "C[C@H]1CC[C@H]2[C@@]([C@H]3CC[C@@H]4[C@H]([C@@H]3CN2C1)C[C@H]5[C@H]4CC(=O)[C@@H]6[C@@]5(CC[C@@H](C6)O)C)(C)O",
+    "formula": "C27H43NO3",
+    "mw": "429.6",
+    "inchikey": "IQDIERHFZVCNRZ-YUYPDVIUSA-N",
+    "cid": 167691,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/167691/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002045": {
+    "smiles": "CC[C@H](/C=C/[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)C(C)C",
+    "formula": "C29H48O",
+    "mw": "412.7",
+    "inchikey": "HCXVJBMSMIARIN-PHZDYDNGSA-N",
+    "cid": 5280794,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280794/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002047": {
+    "smiles": "CC1(C2CC=C3C(C2(CCC1=O)C)CCC4(C3(CCC4C5CC(OC5O)C6C(O6)(C)C)C)C)C",
+    "formula": "C30H46O4",
+    "mw": "470.7",
+    "inchikey": "ZWXPNDUTGNVQEU-UHFFFAOYSA-N",
+    "cid": 99981,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/99981/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002053": {
+    "smiles": "CC(=O)OC1CC(C2(C3CCC4(C(CC=C4C3(C(C5C2C1(CO5)C)OC(=O)/C=C/C6=CC=CC=C6)C)C7=COC=C7)C)C)OC(=O)C",
+    "formula": "C39H46O8",
+    "mw": "642.8",
+    "inchikey": "GQNAMBZGINRMBH-NTCAYCPXSA-N",
+    "cid": 6443004,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6443004/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002058": {
+    "smiles": "COC1=CC(=CC(=C1O)OC)[C@@H]2[C@H]3CO[C@@H]([C@H]3CO2)C4=CC(=C(C=C4)O)OC",
+    "formula": "C21H24O7",
+    "mw": "388.4",
+    "inchikey": "VJOBNGRIBLNUKN-BMHXQBNDSA-N",
+    "cid": 181681,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/181681/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012286": {
+    "smiles": "COC1=C2C(=CC3=C1OCO3)OC=C(C2=O)C4=CC=CC=C4O",
+    "formula": "C17H12O6",
+    "mw": "312.27",
+    "inchikey": "NDVRQFZUJRMKKP-UHFFFAOYSA-N",
+    "cid": 442668,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442668/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012298": {
+    "smiles": "C[C@]12CC[C@H]3C(=CC(=O)[C@H]4[C@@]3(C[C@@H]([C@@H](C4)O)O)C)[C@@]1(CCC2=O)O",
+    "formula": "C19H26O5",
+    "mw": "334.4",
+    "inchikey": "OMQCWEJQYPUGJG-DTDIXVHCSA-N",
+    "cid": 12315102,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12315102/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL003759": {
+    "smiles": "COC1=C(C=C(C=C1)C2=COC3=C(C2=O)C(=C(C(=C3)O)OC)O)O",
+    "formula": "C17H14O7",
+    "mw": "330.29",
+    "inchikey": "WRZOUWHPDDOJNR-UHFFFAOYSA-N",
+    "cid": 5488781,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5488781/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005916": {
+    "smiles": "COC1=CC=C(C=C1)C2=COC3=C(C2=O)C(=C(C(=C3)O)OC)O",
+    "formula": "C17H14O6",
+    "mw": "314.29",
+    "inchikey": "VOOFPOMXNLNEOF-UHFFFAOYSA-N",
+    "cid": 5281781,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281781/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002087": {
+    "smiles": "C[C@]12CC[C@H]3[C@H]([C@@H]1CC=C2)CCC4=CC(=O)CC[C@]34C",
+    "formula": "C19H26O",
+    "mw": "270.4",
+    "inchikey": "HNDHDMOSWUAEAW-VMXHOPILSA-N",
+    "cid": 92979,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/92979/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002135": {
+    "smiles": "COC1=C2C=C(CCCCC(=O)CCC3=CC2=C(C=C3)O)C(=C1OC)O",
+    "formula": "C21H24O5",
+    "mw": "356.4",
+    "inchikey": "ZTSNTUQTNQSIDC-UHFFFAOYSA-N",
+    "cid": 161748,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/161748/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002140": {
+    "smiles": "C1=CC=C2C(=C1)C3=C(N2)C(=NC=C3)C4=CC=C(O4)CO",
+    "formula": "C16H12N2O2",
+    "mw": "264.28",
+    "inchikey": "KFUCYPGCMLPUMT-UHFFFAOYSA-N",
+    "cid": 160179,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/160179/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002151": {
+    "smiles": "CC1=CC(=O)C=C(C1=O)C/C=C(\\C)/CC/C=C(\\C)/CCC=C(C)C",
+    "formula": "C22H30O2",
+    "mw": "326.5",
+    "inchikey": "WJKQTIOYPFPGQW-VZRGJMDUSA-N",
+    "cid": 91726743,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/91726743/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002157": {
+    "smiles": "CCCCC(=O)[C@]12CC[C@H](C=C1C(=O)OC)[C@H]3[C@@H]2C4=C(CC3)/C(=C/CCC)/OC4=O",
+    "formula": "C25H32O5",
+    "mw": "412.5",
+    "inchikey": "HADAHVQGKBBPPW-VATMFNGQSA-N",
+    "cid": 10873344,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10873344/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000133": {
+    "smiles": "CC1=C2[C@H](C(=O)[C@@]3([C@@H](C[C@@H]4[C@]([C@H]3[C@@H]([C@@](C2(C)C)(C[C@@H]1OC(=O)[C@@H]([C@H](C5=CC=CC=C5)NC(=O)C6=CC=CC=C6)O)O)OC(=O)C7=CC=CC=C7)(CO4)OC(=O)C)O)C)OC(=O)C",
+    "formula": "C47H51NO14",
+    "mw": "853.9",
+    "inchikey": "RCINICONZNJXQF-LYTKHFMESA-N",
+    "cid": 184492,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/184492/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000138": {
+    "smiles": "CCCCCCCCCCCCCCCC(=O)O[C@H]1CC[C@@]2([C@H]3CC[C@]4([C@H]([C@@H]3CC=C2C1)C[C@H]5[C@@H]4[C@@H]([C@]6(O5)CC[C@H](CO6)C)C)C)C",
+    "formula": "C43H72O4",
+    "mw": "653.0",
+    "inchikey": "UTLFPCHHNIPLBC-PUYSEAGNSA-N",
+    "cid": 21159048,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/21159048/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000139": {
+    "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@H]2C(OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=CC(=C4)O)O)O)O)O",
+    "formula": "C21H22O11",
+    "mw": "450.4",
+    "inchikey": "HBHVCPGEAYWNOG-DIKDMFKNSA-N",
+    "cid": 9889962,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9889962/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002928": {
+    "smiles": "COC1=C(C2=C(C=C1O)OC(=CC2=O)C3=CC=CC=C3)O",
+    "formula": "C16H12O5",
+    "mw": "284.26",
+    "inchikey": "LKOJGSWUMISDOF-UHFFFAOYSA-N",
+    "cid": 5320315,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5320315/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002932": {
+    "smiles": "COC1=C(C2=C(C(=C1)O)C(=O)C=C(O2)C3=CC=CC=C3O)OC",
+    "formula": "C17H14O6",
+    "mw": "314.29",
+    "inchikey": "CZRGNFVQUYWGKP-UHFFFAOYSA-N",
+    "cid": 5320399,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5320399/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008210": {
+    "smiles": "C/C/1=C\\[C@@H]2[C@@H]([C@H](CC3=C[C@@H](C1)OC3=O)OC(=O)C(=C)C)C(=C)C(=O)O2",
+    "formula": "C19H20O6",
+    "mw": "344.4",
+    "inchikey": "JMUOPRSXUVOHFE-GZZMZBIISA-N",
+    "cid": 6325056,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6325056/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008213": {
+    "smiles": "C[C@@]12CC[C@H]([C@@](C1CCC(=C)[C@H]2CC(C3=CCOC3=O)OC)(C)CO)O",
+    "formula": "C21H32O5",
+    "mw": "364.5",
+    "inchikey": "SJKRRZPXYGTAGA-ARXXAYKSSA-N",
+    "cid": 10473975,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10473975/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008215": {
+    "smiles": "CC(=CCCC1=C2[C@H](C[C@@]3([C@H]([C@H]2O)O3)CO)OC1=O)C",
+    "formula": "C15H20O5",
+    "mw": "280.32",
+    "inchikey": "LQGGFVAMWSRTCC-NHULGOKLSA-N",
+    "cid": 101289823,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/101289823/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008216": {
+    "smiles": "CC(=CCCC1=C2[C@H](C[C@@]3([C@H](C2=O)O3)CO)OC1=O)C",
+    "formula": "C15H18O5",
+    "mw": "278.30",
+    "inchikey": "KOAZVDFZCVBRBA-XEGUGMAKSA-N",
+    "cid": 101289824,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/101289824/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008217": {
+    "smiles": "CC1CC(C2(C(C3C(O2)CC4C3(CCC5C4CC(C6C5(CCC(C6)O)C)O)C)C)OC1)O",
+    "formula": "C27H44O5",
+    "mw": "448.6",
+    "inchikey": "GDFVLFBHNREYBP-UHFFFAOYSA-N",
+    "cid": 632450,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/632450/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008218": {
+    "smiles": "CCCCCCCC/C=C\\CCCCCCCC(=O)OCC(CO)O",
+    "formula": "C21H40O4",
+    "mw": "356.5",
+    "inchikey": "RZRNAYUHWVFMIP-KTKRTIGZSA-N",
+    "cid": 5283468,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5283468/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008223": {
+    "smiles": "COC1=C(C2=C(C(=C1)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O)C(=O)C=C(O2)C4=CC=CC=C4)OC",
+    "formula": "C23H24O10",
+    "mw": "460.4",
+    "inchikey": "WGCQDTNINMCFAY-PUIBNRJISA-N",
+    "cid": 5318484,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5318484/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008226": {
+    "smiles": "C[C@@]12CC[C@H]([C@@]([C@H]1CCC(=C)[C@H]2CCC3=CCOC3=O)(C)CO)O",
+    "formula": "C20H30O4",
+    "mw": "334.4",
+    "inchikey": "GVRNTWSGBWPJGS-YSDSKTICSA-N",
+    "cid": 11624161,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11624161/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008228": {
+    "smiles": "COC1=CC=CC=C1C2=CC(=O)C3=C(O2)C(=C(C=C3O)OC)OC",
+    "formula": "C18H16O6",
+    "mw": "328.3",
+    "inchikey": "AJMNTEFGXPRZHG-UHFFFAOYSA-N",
+    "cid": 5318506,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5318506/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008239": {
+    "smiles": "COC1=C(C=C(C=C1)C2=C(C(=O)C3=C(O2)C=C(C=C3OC)OC)O)OC",
+    "formula": "C19H18O7",
+    "mw": "358.3",
+    "inchikey": "AAASNKNLMQBKFV-UHFFFAOYSA-N",
+    "cid": 97142,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/97142/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001507": {
+    "smiles": "CC[C@H](CC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)C)C(C)C",
+    "formula": "C29H48O",
+    "mw": "412.7",
+    "inchikey": "RUVUHIUYGJBLGI-XJZKHKOHSA-N",
+    "cid": 5484202,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5484202/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006277": {
+    "smiles": "CC1[C@@H]2CC(=O)O[C@H]3[C@@]24COC(=O)[C@@]1([C@@H]4[C@@]5([C@@H](C3)C(=CC(=O)[C@H]5O)C)C)O",
+    "formula": "C20H24O7",
+    "mw": "376.4",
+    "inchikey": "XCAPDGKSNAMUQC-SUQAYODVSA-N",
+    "cid": 460534,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/460534/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006279": {
+    "smiles": "CC1C2CC(=O)O[C@H]3[C@@]2(C(=C(C1=O)O)[C@@](C3)(C)[C@@H]4C(=CC(=O)O4)C)CO",
+    "formula": "C19H22O7",
+    "mw": "362.4",
+    "inchikey": "SRNFRTSVHROPLE-MPCVZQMTSA-N",
+    "cid": 3000814,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3000814/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006282": {
+    "smiles": "CCN1C[C@@]2([C@@H](C[C@@H]([C@@]34[C@@H]2[C@H]([C@@H](C31)[C@]5(C[C@@H]([C@]6(C[C@@H]4[C@@H]5[C@H]6OC(=O)C7=CC=C(C=C7)OC)O)OC)OC(=O)C)OC)OC)O)COC",
+    "formula": "C35H49NO11",
+    "mw": "659.8",
+    "inchikey": "LLEMSCWAKNQHHA-SQJQOUDQSA-N",
+    "cid": 6918110,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6918110/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006303": {
+    "smiles": "C1CC(=O)N2C3=CC=CC=C3C4=C2C1=NC=C4",
+    "formula": "C14H10N2O",
+    "mw": "222.24",
+    "inchikey": "KXBQYMQMSNZAKO-UHFFFAOYSA-N",
+    "cid": 76316632,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/76316632/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006311": {
+    "smiles": "C[C@H]1C2[C@H](CC(=C3[C@@H]([C@H]2OC1=O)C(=C(C3=O)O)C)C)O",
+    "formula": "C15H18O5",
+    "mw": "278.30",
+    "inchikey": "WAYMPCOVWDCPAY-RPZHIMRWSA-N",
+    "cid": 3085344,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3085344/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011319": {
+    "smiles": "CCCCCCCCOC(=O)C1=CC=CC=C1C(=O)OCCCC",
+    "formula": "C20H30O4",
+    "mw": "334.4",
+    "inchikey": "MURWRBWZIMXKGC-UHFFFAOYSA-N",
+    "cid": 66540,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/66540/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011628": {
+    "smiles": "C[C@]12CCCC([C@@H]1CC[C@@]34[C@@H]2CC[C@@H](C3)C(=C)C4)(C)C",
+    "formula": "C20H32",
+    "mw": "272.5",
+    "inchikey": "ONVABDHFQKWOSV-GCLMUHHRSA-N",
+    "cid": 10901750,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10901750/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002235": {
+    "smiles": "COC1=C(C=C(C=C1)C2=C(C(=O)C3=C(C(=C(C=C3O2)OC)OC)O)O)O",
+    "formula": "C18H16O8",
+    "mw": "360.3",
+    "inchikey": "ZZEQOHMDRQUMMH-UHFFFAOYSA-N",
+    "cid": 5317287,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5317287/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002251": {
+    "smiles": "CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C=C/C=C(\\C)/C=C/C=C(\\C)/C2C=C3C(CCCC3(O2)C)(C)C)/C)/C",
+    "formula": "C40H56O",
+    "mw": "552.9",
+    "inchikey": "GFPJSSAOISEBQL-FZKBJVJCSA-N",
+    "cid": 5281246,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281246/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002259": {
+    "smiles": "CC1=CC2=C(C(=C1)OC3C(C(C(C(O3)COC4C(C(C(C(O4)CO)O)O)O)O)O)O)C(=O)C5=C(C2=O)C=C(C=C5O)OC",
+    "formula": "C28H32O15",
+    "mw": "608.5",
+    "inchikey": "LHWONDXFTUKXDH-UHFFFAOYSA-N",
+    "cid": 73981703,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73981703/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002268": {
+    "smiles": "C1=CC2=C(C(=C1)O)C(=O)C3=C(C2=O)C=C(C=C3O)C(=O)O",
+    "formula": "C15H8O6",
+    "mw": "284.22",
+    "inchikey": "FCDLCPWAQCPTKC-UHFFFAOYSA-N",
+    "cid": 10168,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10168/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002281": {
+    "smiles": "CC1=CC2=CC3=CC(=CC(=C3C(=C2C(=O)O1)O)O)OC",
+    "formula": "C15H12O5",
+    "mw": "272.25",
+    "inchikey": "WEHXAEGTVPWKDY-UHFFFAOYSA-N",
+    "cid": 5321980,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5321980/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002288": {
+    "smiles": "CC1=CC2=C(C(=C1)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O)C(=O)C4=C(C2=O)C=C(C=C4O)O",
+    "formula": "C21H20O10",
+    "mw": "432.4",
+    "inchikey": "ZXXFEBMBNPRRSI-JNHRPPPUSA-N",
+    "cid": 5319333,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5319333/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002303": {
+    "smiles": "CC1=CC2=C(C(=C1)O)C(=O)C3=C(C2C4C5=C(C(=CC=C5)O)C(=O)C6=C4C=C(C=C6O)CO)C=C(C=C3O)O",
+    "formula": "C30H22O8",
+    "mw": "510.5",
+    "inchikey": "DJTVMANCSQLMCX-UHFFFAOYSA-N",
+    "cid": 5320384,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5320384/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005842": {
+    "smiles": "COC1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C=C(C(=C3O)OC)O",
+    "formula": "C17H14O6",
+    "mw": "314.29",
+    "inchikey": "GPQLHGCIAUEJQK-UHFFFAOYSA-N",
+    "cid": 5320438,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5320438/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005846": {
+    "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC[C@@H]2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=C(C(=C4C(=C3)OC(=CC4=O)C5=CC=C(C=C5)OC)O)OC)O)O)O)O)O)O",
+    "formula": "C29H34O15",
+    "mw": "622.6",
+    "inchikey": "DUXQKCCELUKXOE-CBBZIXHGSA-N",
+    "cid": 168849,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/168849/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000596": {
+    "smiles": "C[C@H]1[C@@H]2[C@H]3CC[C@@H]4[C@]5(CC[C@@H](C([C@@H]5CC[C@]4([C@@]3(CC[C@]2(CCC1=C)C)C)C)(C)C)OC(=O)C)C",
+    "formula": "C32H52O2",
+    "mw": "468.8",
+    "inchikey": "SFEUTIOWNUGQMZ-ZHLOSDGBSA-N",
+    "cid": 13889352,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13889352/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002308": {
+    "smiles": "C1C[C@H]([N+](=C/C=C/2\\C[C@H](NC(=C2)C(=O)O)C(=O)O)C1)C(=O)[O-]",
+    "formula": "C14H16N2O6",
+    "mw": "308.29",
+    "inchikey": "RJIIQBYZGJSODH-QWRGUYRKSA-N",
+    "cid": 6096870,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6096870/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002309": {
+    "smiles": "C1=CC=C2C(=C1)C(=C(N2)O)C3=NC4=CC=CC=C4C3=O",
+    "formula": "C16H10N2O2",
+    "mw": "262.26",
+    "inchikey": "JNLNPCNGMHKCKO-UHFFFAOYSA-N",
+    "cid": 10177,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10177/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002311": {
+    "smiles": "CC(=CCC1=C(C2=C(C=C1O)OC(=O)C3=C2OC4=C3C=CC(=C4)O)OC)C",
+    "formula": "C21H18O6",
+    "mw": "366.4",
+    "inchikey": "LWESBHWAOZORCQ-UHFFFAOYSA-N",
+    "cid": 5320083,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5320083/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002318": {
+    "smiles": "C1=CC=C2C(=C1)C(=CN2)CC(=NOS(=O)(=O)O)S[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O",
+    "formula": "C16H20N2O9S2",
+    "mw": "448.5",
+    "inchikey": "DNDNWOWHUWNBCK-JZYAIQKZSA-N",
+    "cid": 656506,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/656506/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007920": {
+    "smiles": "C[C@H](CC1=CC(=C(C=C1)O)OC)[C@@H](C)CC2=CC(=C(C=C2)O)OC",
+    "formula": "C20H26O4",
+    "mw": "330.4",
+    "inchikey": "ADFOLUXMYYCTRR-OKILXGFUSA-N",
+    "cid": 476856,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/476856/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007923": {
+    "smiles": "C1=CC(=CC=C1CCOC(=O)/C=C/C2=CC=C(C=C2)O)O",
+    "formula": "C17H16O4",
+    "mw": "284.31",
+    "inchikey": "ZCFLGZLKECDZFW-BJMVGYQFSA-N",
+    "cid": 16119626,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/16119626/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012940": {
+    "smiles": "C[C@@]12CCC[C@]34[C@@H]1[C@]5(C[C@]67[C@H]3C(=O)[C@H](CC6C4N5C2)C(=C)C7)O",
+    "formula": "C20H25NO2",
+    "mw": "311.4",
+    "inchikey": "YWJLOJZDBLDKSA-MLJITFGKSA-N",
+    "cid": 441756,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/441756/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012976": {
+    "smiles": "C1=CC2=C(C=C1O)OC3=C2C(=O)OC4=C3C=CC(=C4)O",
+    "formula": "C15H8O5",
+    "mw": "268.22",
+    "inchikey": "ZZIALNLLNHEQPJ-UHFFFAOYSA-N",
+    "cid": 5281707,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281707/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL012992": {
+    "smiles": "CC[C@H](C)[C@H]1C(=O)N/C=C\\C2=CC=C(C=C2)O[C@H]3CCN([C@@H]3C(=O)N1)C(=O)[C@H](CC(C)C)NC(=O)[C@H]([C@@H](C)CC)N(C)C",
+    "formula": "C33H51N5O5",
+    "mw": "597.8",
+    "inchikey": "AOJOFALXLFIDNA-OGIMQRIOSA-N",
+    "cid": 6443026,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6443026/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001522": {
+    "smiles": "COC1=C(C=C2[C@@H](NCCC2=C1)CC3=CC=C(C=C3)O)O",
+    "formula": "C17H19NO3",
+    "mw": "285.34",
+    "inchikey": "LVVKXRQZSRUVPY-HNNXBMFYSA-N",
+    "cid": 160487,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/160487/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000627": {
+    "smiles": "COC1=C(C=C2[C@@H]3CC4=C(CN3CCC2=C1)C(=C(C=C4)O)OC)O",
+    "formula": "C19H21NO4",
+    "mw": "327.4",
+    "inchikey": "JKPISQIIWUONPB-HNNXBMFYSA-N",
+    "cid": 6917970,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6917970/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007213": {
+    "smiles": "CN1CCC2=CC(=C(C3=C2[C@H]1CC4=CC=CC=C43)OC)OC",
+    "formula": "C19H21NO2",
+    "mw": "295.4",
+    "inchikey": "ORJVQPIHKOARKV-OAHLLOKOSA-N",
+    "cid": 10146,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10146/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000783": {
+    "smiles": "CC1=C(C2=CC3=NC(=CC4=NC(=CC5=C(C(=C(N5)C=C1N2)C=C)C)C(=C4CCC(=O)O)C)C(=C3C)CCC(=O)O)C=C",
+    "formula": "C34H34N4O4",
+    "mw": "562.7",
+    "inchikey": "ZCFFYALKHPIRKJ-UHFFFAOYSA-N",
+    "cid": 4971,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/4971/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008034": {
+    "smiles": "CC(=C)[C@@H]1CC[C@]2([C@H]1[C@H]3CC[C@H]4[C@]([C@@]3(CC2)C)(CC[C@@H]5[C@@]4([C@H]([C@@H](C5(C)C)O)C(=O)O)C)C)C(=O)O",
+    "formula": "C30H46O5",
+    "mw": "486.7",
+    "inchikey": "WLCHQSHZHFLMJH-VILVJDKQSA-N",
+    "cid": 161352,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/161352/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006358": {
+    "smiles": "CC[C@H](CC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC(=O)C4=CC(=O)CC[C@]34C)C)C(C)C",
+    "formula": "C29H46O2",
+    "mw": "426.7",
+    "inchikey": "UVFOCYGYACXLAY-ZDQUCUCBSA-N",
+    "cid": 5490007,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5490007/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002222": {
+    "smiles": "CC(C)C1=C(C=C2C(=C1)C(=O)C[C@@H]3[C@@]2(CCCC3(C)C)C)O",
+    "formula": "C20H28O2",
+    "mw": "300.4",
+    "inchikey": "IPEHJNRNYPOFII-AZUAARDMSA-N",
+    "cid": 94162,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/94162/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002651": {
+    "smiles": "CC1=COC2=C1C(=O)C(=O)C3=C2C=CC4=C3C=CCC4(C)C",
+    "formula": "C19H16O3",
+    "mw": "292.3",
+    "inchikey": "PURTYNPVRFEUEN-UHFFFAOYSA-N",
+    "cid": 128994,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/128994/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006824": {
+    "smiles": "C[C@@H]1CC[C@@]2(CC[C@@]3(C(=CC[C@H]4[C@]3(CC[C@@H]5[C@@]4(CC[C@@H](C5(C)C)O)C)C)[C@@H]2[C@H]1C)C)C",
+    "formula": "C30H50O",
+    "mw": "426.7",
+    "inchikey": "FSLPMRQHCOLESF-SFMCKYFRSA-N",
+    "cid": 73170,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73170/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007036": {
+    "smiles": "CC(C)C1=C(C(=C2C(=C1)C=CC3=C2C(=O)CCC3(C)C)O)O",
+    "formula": "C19H22O3",
+    "mw": "298.4",
+    "inchikey": "CEIJAQIIDANFLF-UHFFFAOYSA-N",
+    "cid": 11011966,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11011966/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007041": {
+    "smiles": "CC1=C2C=CC3=C(C2=CC=C1)C(=O)C(=O)C(=C3)C(C)C",
+    "formula": "C18H16O2",
+    "mw": "264.3",
+    "inchikey": "SLTQYODWMZBDPJ-UHFFFAOYSA-N",
+    "cid": 135872,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/135872/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007048": {
+    "smiles": "C1=CC(=C(C=C1C2=CC3=C(C=CC(=C3O2)O)/C=C/C(=O)O)O)O",
+    "formula": "C17H12O6",
+    "mw": "312.27",
+    "inchikey": "KSKIGSUQYGWNAK-ZZXKWVIFSA-N",
+    "cid": 10403222,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10403222/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007049": {
+    "smiles": "CC(C)C1=CC2=C(C3=C(C=C2)C(=C)CCC3)C(=O)C1=O",
+    "formula": "C18H18O2",
+    "mw": "266.3",
+    "inchikey": "LZQLPNKJTUROMD-UHFFFAOYSA-N",
+    "cid": 14609851,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/14609851/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007058": {
+    "smiles": "CC1=COC2=C1C(=O)C(=O)C3=C2C=CC4=C(C=CC=C43)C=O",
+    "formula": "C18H10O4",
+    "mw": "290.3",
+    "inchikey": "QMOPNCBGTRJHHI-UHFFFAOYSA-N",
+    "cid": 14609847,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/14609847/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007061": {
+    "smiles": "CC1=COC2=C1C(=O)C(=O)C3=C2C=CC4=C3CCCC4=C",
+    "formula": "C18H14O3",
+    "mw": "278.3",
+    "inchikey": "QDFFAXSMLUUJSG-UHFFFAOYSA-N",
+    "cid": 105118,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/105118/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007063": {
+    "smiles": "CC(C)C1=CC2=C(C(=O)C(=C1O)C(=O)C)[C@@]34CCCC([C@@H]3[C@H]([C@@H]2O[C@H]4O)O)(C)C",
+    "formula": "C23H30O6",
+    "mw": "402.5",
+    "inchikey": "JBKKPDPDDVIENY-FPQOSCNCSA-N",
+    "cid": 16090911,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/16090911/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007064": {
+    "smiles": "CC(C)C1=C[C@]23CC[C@@H]4C(=CCCC4(C)C)[C@H]2OC(=O)[C@@]3(C1=O)O",
+    "formula": "C20H26O4",
+    "mw": "330.4",
+    "inchikey": "XENNDAKNPKZKFC-BGRCLHOASA-N",
+    "cid": 51002763,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/51002763/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007068": {
+    "smiles": "CC1=C2C=CC3=C(C2=CC=C1)C(=O)C(=O)C4=C3OC=C4CO",
+    "formula": "C18H12O4",
+    "mw": "292.3",
+    "inchikey": "CETREAVXUDHZGK-UHFFFAOYSA-N",
+    "cid": 622085,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/622085/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007069": {
+    "smiles": "CC1=COC2=C1C(=O)C(=O)C3=C2C=CC4=C3CCC[C@]4(C)O",
+    "formula": "C18H16O4",
+    "mw": "296.3",
+    "inchikey": "JVRKHBLVECIWMZ-SFHVURJKSA-N",
+    "cid": 56967683,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/56967683/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007070": {
+    "smiles": "CC1=COC2=C1C(=O)C(=O)C3=C2C=CC4=C3CC[C@H]([C@@]4(C)O)O",
+    "formula": "C18H16O5",
+    "mw": "312.3",
+    "inchikey": "RTKDBIDPGKCZJS-XIKOKIGWSA-N",
+    "cid": 10470747,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10470747/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007071": {
+    "smiles": "CC1=COC2=C1C(=O)C(=O)C3=C2C=CC4=C3CCC(C4CO)O",
+    "formula": "C18H16O5",
+    "mw": "312.3",
+    "inchikey": "OUFIJYAHFBAFBX-UHFFFAOYSA-N",
+    "cid": 126073,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/126073/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007077": {
+    "smiles": "C[C@]12CCCC([C@@H]1CC[C@@]([C@@H]2CC[C@](C)(C=C)O)(C)O)(C)C",
+    "formula": "C20H36O2",
+    "mw": "308.5",
+    "inchikey": "XVULBTBTFGYVRC-HHUCQEJWSA-N",
+    "cid": 163263,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/163263/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007079": {
+    "smiles": "CC1COC2=C1C(=O)C(=O)C3=C2C=CC4=C3CCCC4(C)C=O",
+    "formula": "C19H18O4",
+    "mw": "310.3",
+    "inchikey": "JRMAMBGELPWLSV-UHFFFAOYSA-N",
+    "cid": 124268,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/124268/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007081": {
+    "smiles": "C[C@H]1COC2=C1C(=O)[C@@](C3=C2C=CC4=C3CCCC4(C)C)(CC(=O)C)O",
+    "formula": "C22H26O4",
+    "mw": "354.4",
+    "inchikey": "KZLPKGGMSDHTRS-YTEVENLXSA-N",
+    "cid": 3083515,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3083515/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007082": {
+    "smiles": "C[C@H]1COC2=C1C(=O)[C@@](C3=C2C=CC4=C(C=CC=C43)C)(CC(=O)C)O",
+    "formula": "C21H20O4",
+    "mw": "336.4",
+    "inchikey": "WQYKPUPMMFGHQW-QKVFXAPYSA-N",
+    "cid": 3083514,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3083514/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007085": {
+    "smiles": "CC1=C2C=CC3=C4C2=C(C=C1)C(=O)C(=C4OC3(C)C)C(C)C",
+    "formula": "C20H20O2",
+    "mw": "292.4",
+    "inchikey": "WDBJFWOOWQREKA-UHFFFAOYSA-N",
+    "cid": 389885,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/389885/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007088": {
+    "smiles": "C[C@H]1COC2=C1C(=O)C(=O)C3=C2C=CC4=C3CCCC4(C)C",
+    "formula": "C19H20O3",
+    "mw": "296.4",
+    "inchikey": "GVKKJJOMQCNPGB-JTQLQIEISA-N",
+    "cid": 160254,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/160254/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007098": {
+    "smiles": "CC(C)C1=C(C2=C(C3=C(C=C2)C(CCC3)(C)C)C(=O)C1=O)O",
+    "formula": "C19H22O3",
+    "mw": "298.4",
+    "inchikey": "UPLOJIODCUTBOZ-UHFFFAOYSA-N",
+    "cid": 15690458,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/15690458/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007100": {
+    "smiles": "C[C@H]1COC2=C1OC(=O)C3=C2C=CC4=C(C=CC=C43)C",
+    "formula": "C17H14O3",
+    "mw": "266.29",
+    "inchikey": "ABYLBRBPUQGWOU-JTQLQIEISA-N",
+    "cid": 177827442,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/177827442/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007105": {
+    "smiles": "C[C@H]1C[C@@]2(C3=C(C4=CC=CC(=C4C=C3)C)C(=O)O2)OC1",
+    "formula": "C17H16O3",
+    "mw": "268.31",
+    "inchikey": "DNLNYCCHXAULQA-DYZYQPBXSA-N",
+    "cid": 102004791,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/102004791/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007107": {
+    "smiles": "CC(C)C1=C(C=C2C(=C1)CC[C@@H]3[C@@]2(CCCC3(C)C)C)O",
+    "formula": "C20H30O",
+    "mw": "286.5",
+    "inchikey": "QXNWVJOHUAQHLM-AZUAARDMSA-N",
+    "cid": 442027,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442027/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007111": {
+    "smiles": "CC1=C2C=CC3=C(C2=CC=C1)C4=C(C(=CO4)C)C(=O)C3=O",
+    "formula": "C18H12O3",
+    "mw": "276.3",
+    "inchikey": "ONUSCCKLNWURMA-UHFFFAOYSA-N",
+    "cid": 44425166,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/44425166/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007115": {
+    "smiles": "C[C@]12CCCC([C@@H]1CCC(=C)[C@@H]2CC[C@](C)(C=C)O)(C)C",
+    "formula": "C20H34O",
+    "mw": "290.5",
+    "inchikey": "CECREIRZLPLYDM-QGZVKYPTSA-N",
+    "cid": 3034394,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3034394/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007118": {
+    "smiles": "CC1=C2CCCC([C@@]3(C2=C(C=C1)C=C(C3=O)C(C)C)O)(C)C",
+    "formula": "C20H26O2",
+    "mw": "298.4",
+    "inchikey": "KIXMQGXACFNMEM-FQEVSTJZSA-N",
+    "cid": 403772,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/403772/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007121": {
+    "smiles": "CC1=C(C(=O)C=C2C(=C1)[C@@H]3C[C@@H]4[C@@]2(CCCC4(C)C)CO3)O",
+    "formula": "C19H24O3",
+    "mw": "300.4",
+    "inchikey": "QCERTNNJMAPQRG-BXWFABGCSA-N",
+    "cid": 10086184,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10086184/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007122": {
+    "smiles": "CC(C)C1=CC2=C(C3=C(C=C2)C(CCC3)(C)C)C(=O)C1=O",
+    "formula": "C19H22O2",
+    "mw": "282.4",
+    "inchikey": "FEFAIBOZOKSLJR-UHFFFAOYSA-N",
+    "cid": 160142,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/160142/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007124": {
+    "smiles": "CC(C)C1=C(C2=C(C3=C(C=C2)C(CCC3)(C)C)C(=O)C1=O)O",
+    "formula": "C19H22O3",
+    "mw": "298.4",
+    "inchikey": "UPLOJIODCUTBOZ-UHFFFAOYSA-N",
+    "cid": 15690458,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/15690458/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007125": {
+    "smiles": "C[C@@H](CO)C1=C(C2=C(C3=C(C=C2)C(CCC3)(C)C)C(=O)C1=O)O",
+    "formula": "C19H22O4",
+    "mw": "314.4",
+    "inchikey": "LGZFJHSOBYVDLA-JTQLQIEISA-N",
+    "cid": 389888,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/389888/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007127": {
+    "smiles": "CC1=COC2=C1C(=O)C(=O)C3=C2C=CC4=C3CCCC4=O",
+    "formula": "C17H12O4",
+    "mw": "280.27",
+    "inchikey": "YUFZXVOYNSJPSJ-UHFFFAOYSA-N",
+    "cid": 10062187,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10062187/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007130": {
+    "smiles": "C1=CC(=C(C=C1[C@@H]2[C@H](C3=C(C=CC(=C3O2)O)/C=C/C(=O)O)C(=O)O)O)O",
+    "formula": "C18H14O8",
+    "mw": "358.3",
+    "inchikey": "GJHXGOBGPWPCCK-BPZRLTIMSA-N",
+    "cid": 9841711,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9841711/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007132": {
+    "smiles": "C1=CC(=C(C=C1C[C@H](C(=O)O)OC(=O)/C=C\\C2=CC(=C(C=C2)O)O)O)O",
+    "formula": "C18H16O8",
+    "mw": "360.3",
+    "inchikey": "DOUMFZQKYFQNTF-QQNRWZHASA-N",
+    "cid": 9841799,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9841799/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007140": {
+    "smiles": "C1=CC(=C(C=C1/C=C/C2=C(C=CC(=C2O)O)/C=C\\C(=O)O)O)O",
+    "formula": "C17H14O6",
+    "mw": "314.29",
+    "inchikey": "PULWRMOKQNWQBD-UJURIKRHSA-N",
+    "cid": 11602092,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11602092/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007141": {
+    "smiles": "C1C(C(=O)C2=CC3=C(C(=C(C=C3)O)O)OC4=C(C=CC1=C24)O)C(=O)O",
+    "formula": "C18H12O7",
+    "mw": "340.3",
+    "inchikey": "AMPDZVASNOBSQZ-UHFFFAOYSA-N",
+    "cid": 11530200,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11530200/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007142": {
+    "smiles": "C1=CC(=C(C=C1C[C@@H](C(=O)O)OC(=O)/C=C/C2=CC3=C(C=C2)O[C@H]([C@H](O3)C4=CC(=C(C=C4)O)O)C(=O)O)O)O",
+    "formula": "C27H22O12",
+    "mw": "538.5",
+    "inchikey": "OYJXZGLYUDCECY-VIIBYJDYSA-N",
+    "cid": 177824758,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/177824758/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007145": {
+    "smiles": "CC1=C(C(=O)C=C2C3=C(C=CC2=C1)C(CCC3)(C)C)O",
+    "formula": "C18H20O2",
+    "mw": "268.3",
+    "inchikey": "QATRODNHXVHGNU-UHFFFAOYSA-N",
+    "cid": 10355691,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10355691/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007149": {
+    "smiles": "CC(C)C1=C(C=C2C(=C1)C(=O)C[C@@H]3[C@@]2(CCCC3(C)C)C)O",
+    "formula": "C20H28O2",
+    "mw": "300.4",
+    "inchikey": "IPEHJNRNYPOFII-AZUAARDMSA-N",
+    "cid": 94162,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/94162/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007151": {
+    "smiles": "CC1=COC2=C1C(=O)C(=O)C3=C2C=CC4=C3CC[C@@H]([C@]4(C)O)O",
+    "formula": "C18H16O5",
+    "mw": "312.3",
+    "inchikey": "RTKDBIDPGKCZJS-KPZWWZAWSA-N",
+    "cid": 5321620,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5321620/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007152": {
+    "smiles": "CC1=COC2=C1C(=O)C(=O)C3=C2C=CC4=C3CC[C@H]([C@]4(C)O)O",
+    "formula": "C18H16O5",
+    "mw": "312.3",
+    "inchikey": "RTKDBIDPGKCZJS-KZULUSFZSA-N",
+    "cid": 126072,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/126072/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011691": {
+    "smiles": "COC1=C(C=C2C(=C1)C(=O)C(=CO2)C3=CC=C(C=C3)O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)COC(=O)CC(=O)O)O)O)O",
+    "formula": "C25H24O13",
+    "mw": "532.4",
+    "inchikey": "OWMHCYFEIJPHFB-GOZZSVHWSA-N",
+    "cid": 23724657,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/23724657/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001006": {
+    "smiles": "CC[C@H](/C=C/[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3C2=CC[C@@H]4[C@@]3(CC[C@@H](C4)O)C)C)C(C)C",
+    "formula": "C29H48O",
+    "mw": "412.7",
+    "inchikey": "JZVFJDZBLUFKCA-FXIAWGAOSA-N",
+    "cid": 5281331,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281331/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004492": {
+    "smiles": "CC1=C[C@@H](CC([C@H]1/C=C/C(=C/C=C/C(=C/C=C/C=C(\\C)/C=C/C=C(\\C)/[C@@H]2C=C3[C@](O2)(C[C@H](CC3(C)C)O)C)/C)/C)(C)C)O",
+    "formula": "C40H56O3",
+    "mw": "584.9",
+    "inchikey": "JRHJXXLCNATYLS-SOOLLQOPSA-N",
+    "cid": 21160900,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/21160900/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005321": {
+    "smiles": "C1=CC=C2C(=C1)C3=C(C(=O)C4=CC=CC=C4O3)C(=O)O2",
+    "formula": "C16H8O4",
+    "mw": "264.23",
+    "inchikey": "RFWULRHBGYKEEZ-UHFFFAOYSA-N",
+    "cid": 441965,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/441965/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006554": {
+    "smiles": "C[C@]12CCC(C[C@H]1[C@@]3(CC[C@@H]4[C@]5(CC[C@@H](C([C@@H]5CC[C@]4(C3=CC2)C)(C)C)O)C)C)(C)C",
+    "formula": "C30H50O",
+    "mw": "426.7",
+    "inchikey": "GGGUGZHBAOMSFJ-GADYQYKKSA-N",
+    "cid": 92097,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/92097/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006774": {
+    "smiles": "CC[C@H](CC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3C2=CCC4[C@@]3(CC[C@@H](C4)O)C)C)C(C)C",
+    "formula": "C29H50O",
+    "mw": "414.7",
+    "inchikey": "YSKVBPGQYRAUQO-NEWNUQLJSA-N",
+    "cid": 3080632,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3080632/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008391": {
+    "smiles": "CC[C@H](CC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC(=O)[C@@H]4[C@@]3(CCC(=O)C4)C)C)C(C)C",
+    "formula": "C29H48O2",
+    "mw": "428.7",
+    "inchikey": "HMMVBUVVQLUGQA-UMQMBAGDSA-N",
+    "cid": 13992092,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13992092/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008397": {
+    "smiles": "C[C@]12CCC3[C@H](C1CC[C@@H]2[C@@H]4CO[C@@]5(CC4OC(=O)C5=C)C)CC=C6[C@@]3(C(=O)C=CC6)C",
+    "formula": "C28H36O4",
+    "mw": "436.6",
+    "inchikey": "QUGZOXCXHGEACS-FQDQDRJXSA-N",
+    "cid": 177826063,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/177826063/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008406": {
+    "smiles": "CC(=O)O[C@H]1CO[C@H]([C@@H]([C@H]1O)OC(=O)C)O[C@@H]2C[C@]3([C@@H]4CC=C5[C@H]([C@@]4(CC[C@@]3([C@H]2[C@](C)(C(=O)/C=C/C(C)(C)O)O)C)C)C=C(C(=O)C5(C)C)O)C",
+    "formula": "C39H56O12",
+    "mw": "716.9",
+    "inchikey": "UODJOGKPOAZZHT-OCCINUARSA-N",
+    "cid": 5281325,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281325/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008411": {
+    "smiles": "C/C=C/1\\CNC2CC3(C4CC1C2CO4)C5=C(C=C(C=C5)O)N(C3=O)OC",
+    "formula": "C20H24N2O4",
+    "mw": "356.4",
+    "inchikey": "FALAMCOLIJTCTR-QDEBKDIKSA-N",
+    "cid": 5318332,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5318332/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000296": {
+    "smiles": "C[C@]12CC[C@@H]([C@@]([C@@H]1CC[C@@]3([C@@H]2CC=C4[C@]3(CC[C@@]5([C@H]4CC(CC5)(C)C)C(=O)O)C)C)(C)CO)O",
+    "formula": "C30H48O4",
+    "mw": "472.7",
+    "inchikey": "PGOYMURMZNDHNS-MYPRUECHSA-N",
+    "cid": 73299,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73299/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007898": {
+    "smiles": "CC1=C(C=CC2=C1CCC3=C2C(=CC(=C3C)O)C=C)O",
+    "formula": "C18H18O2",
+    "mw": "266.3",
+    "inchikey": "SHERRMHZTJGNCS-UHFFFAOYSA-N",
+    "cid": 10038556,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10038556/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007904": {
+    "smiles": "CC1=C(C=CC2=C1C=CC3=CC(=CC(=C32)C=O)O)O",
+    "formula": "C16H12O3",
+    "mw": "252.26",
+    "inchikey": "VTKYCHCADSWEBT-UHFFFAOYSA-N",
+    "cid": 101191858,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/101191858/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007910": {
+    "smiles": "CC1=C(C=CC2=C1CCC3=C2C(=CC(=C3)O)C=C)O",
+    "formula": "C17H16O2",
+    "mw": "252.31",
+    "inchikey": "GEXAPRXWKRZPCK-UHFFFAOYSA-N",
+    "cid": 100801,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/100801/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007911": {
+    "smiles": "CC1=CC2=C(C3=C(CC2)C(=C(C=C3)O)C)C(=C1)C=C",
+    "formula": "C18H18O",
+    "mw": "250.3",
+    "inchikey": "DOVVPEXQMTVYAG-UHFFFAOYSA-N",
+    "cid": 101115367,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/101115367/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007912": {
+    "smiles": "CC1=CC2=C(C3=C(CC2)C(=C(C=C3)O)C)C(=C1O)C(=O)C",
+    "formula": "C18H18O3",
+    "mw": "282.3",
+    "inchikey": "KDADJLHRXRSXQU-UHFFFAOYSA-N",
+    "cid": 21728333,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/21728333/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007879": {
+    "smiles": "COC1=C(C=C(C=C1)C2=CC(=O)C3=C(O2)C=C(C=C3OC)OC)OC",
+    "formula": "C19H18O6",
+    "mw": "342.3",
+    "inchikey": "CLXVBVLQKLQNRQ-UHFFFAOYSA-N",
+    "cid": 631170,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/631170/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000214": {
+    "smiles": "C[C@H](CC/C=C(\\C)/C(=O)O)[C@H]1CC[C@@]2([C@@]1(CC[C@]34[C@H]2CC[C@@H]5[C@]3(C4)CCC(=O)C5(C)C)C)C",
+    "formula": "C30H46O3",
+    "mw": "454.7",
+    "inchikey": "MZPNVEOVZSHYMZ-NTXGJNAHSA-N",
+    "cid": 14034474,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/14034474/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001552": {
+    "smiles": "CN1[C@@H]2CC[C@H]1CC(C2)OC(=O)[C@H](CO)C3=CC=CC=C3",
+    "formula": "C17H23NO3",
+    "mw": "289.4",
+    "inchikey": "RKUNBYITZUJHSG-VFSICIBPSA-N",
+    "cid": 154417,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/154417/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002218": {
+    "smiles": "COC1=C(C=C2C(=C1)C=CC(=O)O2)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O",
+    "formula": "C16H18O9",
+    "mw": "354.31",
+    "inchikey": "SGTCGCCQZOUMJJ-YMILTQATSA-N",
+    "cid": 439514,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/439514/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002219": {
+    "smiles": "CN1[C@@H]2CC[C@H]1CC(C2)OC(=O)C(CO)C3=CC=CC=C3",
+    "formula": "C17H23NO3",
+    "mw": "289.4",
+    "inchikey": "RKUNBYITZUJHSG-PJPHBNEVSA-N",
+    "cid": 174174,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/174174/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002224": {
+    "smiles": "CC(=O)OC[C@H](CC1=CC=CC=C1)NC(=O)[C@H](CC2=CC=CC=C2)NC(=O)C3=CC=CC=C3",
+    "formula": "C27H28N2O4",
+    "mw": "444.5",
+    "inchikey": "VZPAURMDJZOGHU-DQEYMECFSA-N",
+    "cid": 10026486,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10026486/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002228": {
+    "smiles": "CC(=CCC[C@@H]1[C@@H]2[C@H](C[C@]3([C@]2(CC[C@H]4C3=CC[C@@H]5[C@@]4(CCC(=O)C5(C)C)C)C)C)OC1=O)C",
+    "formula": "C30H44O3",
+    "mw": "452.7",
+    "inchikey": "ZIVZDNPCRURPNL-QCWHEMHRSA-N",
+    "cid": 15560423,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/15560423/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006326": {
+    "smiles": "CC1=C(C(=O)OC2=CC(=C(C=C12)OCCCN3CCN(CC3)C4=CC=CC=C4OC)OC)C",
+    "formula": "C26H32N2O5",
+    "mw": "452.5",
+    "inchikey": "FQELZLMTAPJJOL-UHFFFAOYSA-N",
+    "cid": 208923,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/208923/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005858": {
+    "smiles": "COC1=C(C2=C3C(=C1)C(=O)OC4=C3C(=CC(=C4OC)O)C(=O)O2)OC",
+    "formula": "C17H12O8",
+    "mw": "344.3",
+    "inchikey": "LXEQIOGTMDLLEC-UHFFFAOYSA-N",
+    "cid": 5281860,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281860/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005862": {
+    "smiles": "COC1C(C(C(C(O1)COC(=O)C2=CC(=C(C(=C2)O)O)O)OC(=O)C3=CC(=C(C(=C3)O)O)O)O)O",
+    "formula": "C21H22O14",
+    "mw": "498.4",
+    "inchikey": "BTSUIPCMGZHMNV-UHFFFAOYSA-N",
+    "cid": 73157785,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73157785/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008998": {
+    "smiles": "C[C@H](/C=C/[C@H](C)C(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3C2=C[C@H]([C@@]4([C@@]3(CC[C@@H](C4)O)C)O)O)C",
+    "formula": "C28H46O3",
+    "mw": "430.7",
+    "inchikey": "ARXHRTZAVQOQEU-BRVLHLJYSA-N",
+    "cid": 10181133,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10181133/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008999": {
+    "smiles": "CCCCCCCCCCCCCCCC(=O)O[C@H]1CC[C@@]2([C@H]3CC[C@]4([C@H]([C@@H]3CC=C2C1)CC[C@@H]4[C@H](C)CCCC(C)C)C)C",
+    "formula": "C43H76O2",
+    "mw": "625.1",
+    "inchikey": "BBJQPKLGPMQWBU-JADYGXMDSA-N",
+    "cid": 246520,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/246520/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000224": {
+    "smiles": "C1=CC(=C(C=C1CCC(=O)/C=C/C=C/C2=CC(=C(C=C2)O)O)O)O",
+    "formula": "C19H18O5",
+    "mw": "326.3",
+    "inchikey": "VJJPCEDEDJXHHK-ZPUQHVIOSA-N",
+    "cid": 10426520,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10426520/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000228": {
+    "smiles": "COC1=CC(=CC2=C1C(=O)C[C@@H](O2)C3=CC=CC=C3)O",
+    "formula": "C16H14O4",
+    "mw": "270.28",
+    "inchikey": "QQQCWVDPMPFUGF-CYBMUJFWSA-N",
+    "cid": 821279,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/821279/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000230": {
+    "smiles": "C1[C@H](OC2=CC(=CC(=C2C1=O)O)O)C3=CC=CC=C3",
+    "formula": "C15H12O4",
+    "mw": "256.25",
+    "inchikey": "URFCJEUYXNAHFI-ZDUSSCGKSA-N",
+    "cid": 68071,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/68071/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000238": {
+    "smiles": "C1=CC=C(C=C1)CCC(=O)CC(C=CC2=CC=CC=C2)O",
+    "formula": "C19H20O2",
+    "mw": "280.4",
+    "inchikey": "NEQGOKAKPXXESR-UHFFFAOYSA-N",
+    "cid": 73180991,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73180991/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000239": {
+    "smiles": "COC1=CC(=C2C(=C1)OC(=C(C2=O)OC)C3=CC=C(C=C3)O)O",
+    "formula": "C17H14O6",
+    "mw": "314.29",
+    "inchikey": "BJBUTJQYZDYRMJ-UHFFFAOYSA-N",
+    "cid": 5318869,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5318869/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000242": {
+    "smiles": "COC1=CC(=C2C(=O)C[C@H](OC2=C1)C3=CC(=C(C=C3)O)O)O",
+    "formula": "C16H14O6",
+    "mw": "302.28",
+    "inchikey": "DSAJORLEPQBKDA-AWEZNQCLSA-N",
+    "cid": 1268276,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1268276/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000258": {
+    "smiles": "C/C=C/C1=CC2=C(C(=C1)OC)OC(C2C)C3=CC(=C(C=C3)O)OC",
+    "formula": "C20H22O4",
+    "mw": "326.4",
+    "inchikey": "ITDOFWOJEDZPCF-AATRIKPKSA-N",
+    "cid": 5379033,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5379033/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000260": {
+    "smiles": "C/C=C/C1=CC2=C(C(=C1)OC)O[C@H]([C@@H]2C)C3=CC4=C(C=C3)OCO4",
+    "formula": "C20H20O4",
+    "mw": "324.4",
+    "inchikey": "DMMQXURQRMNSBM-YZAYTREXSA-N",
+    "cid": 6441061,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6441061/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL003608": {
+    "smiles": "CC(=O)OC(C)(C)[C@@H]1CC2=C(O1)C=CC3=C2OC(=O)C=C3",
+    "formula": "C16H16O5",
+    "mw": "288.29",
+    "inchikey": "IQTTZQQJJBEAIM-ZDUSSCGKSA-N",
+    "cid": 161409,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/161409/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004777": {
+    "smiles": "C/C=C(\\C)/C(=O)OC(C(C1=C(C=C2C(=C1)C=CC(=O)O2)OC)O)C(C)(C)O",
+    "formula": "C20H24O7",
+    "mw": "376.4",
+    "inchikey": "GFMYIOGFYYHKLA-IZZDOVSWSA-N",
+    "cid": 6313865,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6313865/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004778": {
+    "smiles": "C/C=C(/C)\\C(=O)O[C@H](C1=C(C=C2C(=C1)C=CC(=O)O2)OC)[C@H](C(C)(C)O)O",
+    "formula": "C20H24O7",
+    "mw": "376.4",
+    "inchikey": "BAHUBXAYVOCLNA-FNYRBRLGSA-N",
+    "cid": 10362168,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10362168/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004780": {
+    "smiles": "CC(=CC(=O)C1=C(C=C(C2=C1OC(=O)C=C2)OC)OC)C",
+    "formula": "C16H16O5",
+    "mw": "288.29",
+    "inchikey": "JEDBBFHVVHKMKS-UHFFFAOYSA-N",
+    "cid": 616303,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/616303/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004792": {
+    "smiles": "CC(C)([C@H]1CC2=C(O1)C=C3C(=C2)C=CC(=O)O3)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O",
+    "formula": "C20H24O9",
+    "mw": "408.4",
+    "inchikey": "HXCGUCZXPFBNRD-DNLMCPORSA-N",
+    "cid": 73191,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73191/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004367": {
+    "smiles": "COC1=C(C=CC(=C1)C[C@@]2(CO[C@H]([C@@H]2CO)C3=CC(=C(C=C3)O)OC)O)O",
+    "formula": "C20H24O7",
+    "mw": "376.4",
+    "inchikey": "BVHIKUCXNBQDEM-GKCIPKSASA-N",
+    "cid": 44566587,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/44566587/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000443": {
+    "smiles": "CO[C@@H]1C[C@@]23C(=CCN2CCC4=CC5=C(C=C34)OCO5)C=C1",
+    "formula": "C18H19NO3",
+    "mw": "297.3",
+    "inchikey": "TVOFUERNMZTYRM-KSSFIOAISA-N",
+    "cid": 5317205,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5317205/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005922": {
+    "smiles": "COC1=CC(=CC(=C1O)OC)[C@H]2[C@@H]3CO[C@H]([C@@H]3CO2)C4=CC(=C(C(=C4)OC)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O)OC",
+    "formula": "C28H36O13",
+    "mw": "580.6",
+    "inchikey": "WEKCEGQSIIQPAQ-FKLBZQFOSA-N",
+    "cid": 45482321,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/45482321/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL007563": {
+    "smiles": "COC1=CC(=CC(=C1OC)OC)[C@@H]2[C@H]3CO[C@@H]([C@H]3CO2)C4=CC(=C(C(=C4)OC)OC)OC",
+    "formula": "C24H30O8",
+    "mw": "446.5",
+    "inchikey": "HRLFUIXSXUASEX-RZTYQLBFSA-N",
+    "cid": 443028,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/443028/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009007": {
+    "smiles": "COC1=CC(=CC(=C1O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)O)OC)[C@@H]3[C@H]4CO[C@@H]([C@H]4CO3)C5=CC(=C(C=C5)O)OC",
+    "formula": "C27H34O12",
+    "mw": "550.6",
+    "inchikey": "GLGVEKKQPFRBAS-UOVCOODASA-N",
+    "cid": 442836,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442836/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009015": {
+    "smiles": "CC[C@@H]1CN([C@H]2CC3=C(C(=O)C[C@@H]1[C@@H]2C(=O)OC)NC4=CC=CC=C34)C",
+    "formula": "C21H26N2O3",
+    "mw": "354.4",
+    "inchikey": "FFVRRQMGGGTQRH-DTPILHQWSA-N",
+    "cid": 12309360,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12309360/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009030": {
+    "smiles": "COC1=CC(=CC(=C1O)C2=C(C(=CC(=C2)CC=C)OC)O)CC=C",
+    "formula": "C20H22O4",
+    "mw": "326.4",
+    "inchikey": "KETPSFSOGFKJJY-UHFFFAOYSA-N",
+    "cid": 165225,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/165225/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009031": {
+    "smiles": "COC1=CC2=C(C=CN=C2C=C1)[C@H]([C@H]3C[C@@H]4CCN3C[C@@H]4C=C)O",
+    "formula": "C20H24N2O2",
+    "mw": "324.4",
+    "inchikey": "LOUPRKONTZGTKE-AFHBHXEDSA-N",
+    "cid": 94175,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/94175/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009038": {
+    "smiles": "COC(=O)C1=CO[C@H]([C@H]2[C@@H]1CC=C2CO)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)O)O)O",
+    "formula": "C23H34O15",
+    "mw": "550.5",
+    "inchikey": "FYZYXYLPBWLLGI-AUOPOVQUSA-N",
+    "cid": 3082301,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3082301/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009042": {
+    "smiles": "C[C@@H]1C[C@@H]2[C@H]([C@@H]([C@]3([C@H]1C=CC3=O)C)O)C(=C)C(=O)O2",
+    "formula": "C15H18O4",
+    "mw": "262.30",
+    "inchikey": "ZVLOPMNVFLSSAA-XEPQRQSNSA-N",
+    "cid": 23205,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/23205/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL009047": {
+    "smiles": "COC1=C(C=C(C=C1)[C@@H]2[C@H]3CO[C@@H]([C@H]3CO2)C4=CC(=C(C=C4)OC)OC)OC",
+    "formula": "C22H26O6",
+    "mw": "386.4",
+    "inchikey": "PEUUVVGQIVMSAW-RZTYQLBFSA-N",
+    "cid": 73117,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73117/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011604": {
+    "smiles": "COC1=CC(=CC(=C1O)OC)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O",
+    "formula": "C17H14O8",
+    "mw": "346.3",
+    "inchikey": "UZMAPBJVXOGOFT-UHFFFAOYSA-N",
+    "cid": 5281953,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281953/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL005849": {
+    "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC[C@@H]2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=CC(=C4C(=O)C[C@H](OC4=C3)C5=CC=C(C=C5)OC)O)O)O)O)O)O)O",
+    "formula": "C28H34O14",
+    "mw": "594.6",
+    "inchikey": "RMCRQBAILCLJGU-HIBKWJPLSA-N",
+    "cid": 16760075,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/16760075/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000906": {
+    "smiles": "C[C@]12CC[C@H]3[C@](O3)(C[C@]4(/C(=C\\[C@H]1O2)/C(OO4)(C)C)O)C",
+    "formula": "C15H22O5",
+    "mw": "282.33",
+    "inchikey": "KQFWIVNLLMSUTP-LDYQCGSLSA-N",
+    "cid": 101603568,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/101603568/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000940": {
+    "smiles": "C1=CC(=CC=C1/C=C/C(=O)CC(=O)/C=C/C2=CC=C(C=C2)O)O",
+    "formula": "C19H16O4",
+    "mw": "308.3",
+    "inchikey": "PREBVFJICNPEKM-YDWXAUTNSA-N",
+    "cid": 5315472,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5315472/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011694": {
+    "smiles": "C[C@@H]1C[C@@H]2[C@@H]([C@@H](C(=O)O2)C)[C@@H]([C@]3([C@H]1C=CC3=O)C)O",
+    "formula": "C15H20O4",
+    "mw": "264.32",
+    "inchikey": "ICKWITMQEROMDG-ZIXXKTFOSA-N",
+    "cid": 442294,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442294/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011716": {
+    "smiles": "CC1=CC(=C(C=C1)C(COC(=O)C(C)C)(COC(=O)C(C)C)O)O",
+    "formula": "C18H26O6",
+    "mw": "338.4",
+    "inchikey": "OQYPKKAXTUWISE-UHFFFAOYSA-N",
+    "cid": 16196971,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/16196971/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011718": {
+    "smiles": "C[C@@H]1C[C@@H]2[C@@H]([C@@H](C(=O)O2)C)[C@@H]([C@]3([C@H]1C=CC3=O)C)OC(=O)C(=C)C",
+    "formula": "C19H24O5",
+    "mw": "332.4",
+    "inchikey": "NZESEVTYUVXOTC-APDQSUQKSA-N",
+    "cid": 182199,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/182199/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011722": {
+    "smiles": "C[C@@H]1C[C@@H]2[C@@H]([C@@H](C(=O)O2)C)[C@@H]([C@]3([C@H]1C=CC3=O)C)OC(=O)C(C)C",
+    "formula": "C19H26O5",
+    "mw": "334.4",
+    "inchikey": "WKUOPGZYLRFCHJ-APDQSUQKSA-N",
+    "cid": 14656910,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/14656910/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011726": {
+    "smiles": "C[C@@H]1C[C@@H]2[C@@H]([C@@H](C(=O)O2)C)[C@@H]([C@]3([C@H]1C=CC3=O)C)OC(=O)C=C(C)C",
+    "formula": "C20H26O5",
+    "mw": "346.4",
+    "inchikey": "WUJIVXGLPLDVMY-QUQQNCTQSA-N",
+    "cid": 9997745,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9997745/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004961": {
+    "smiles": "COC1=C(C=CC(=C1)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)OC)O",
+    "formula": "C17H14O7",
+    "mw": "330.29",
+    "inchikey": "FMEHGPQTMOPUGM-UHFFFAOYSA-N",
+    "cid": 5316900,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5316900/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002914": {
+    "smiles": "C1[C@@H](OC2=CC(=CC(=C2C1=O)O)O)C3=CC(=C(C=C3)O)O",
+    "formula": "C15H12O6",
+    "mw": "288.25",
+    "inchikey": "SBHXYTNGIZCORC-CYBMUJFWSA-N",
+    "cid": 373261,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/373261/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008426": {
+    "smiles": "COC1=CC(=CC2=C1C(=O)[C@](O2)(CC3=CC=C(C=C3)O)O)O",
+    "formula": "C16H14O6",
+    "mw": "302.28",
+    "inchikey": "IQTGAKWQIFFPQX-MRXNPFEDSA-N",
+    "cid": 127256329,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/127256329/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL008432": {
+    "smiles": "C1[C@@H]([C@H](OC2=C1C=CC(=C2)O)C3=CC(=C(C=C3)O)O)O",
+    "formula": "C15H14O5",
+    "mw": "274.27",
+    "inchikey": "VFZYLYJWCROVLO-DZGCQCFKSA-N",
+    "cid": 442397,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442397/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002369": {
+    "smiles": "C1=CC2=C(C(=C1)O)C(=O)C3=C([C@@H]2[C@@H]4C5=C(C(=CC=C5)O)C(=O)C6=C4C=C(C=C6O)C(=O)O)C=C(C=C3O)C(=O)O",
+    "formula": "C30H18O10",
+    "mw": "538.5",
+    "inchikey": "JPMRHWLJLNKRTJ-FGZHOGPDSA-N",
+    "cid": 92826,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/92826/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011732": {
+    "smiles": "C/C=C(/C)\\C(=O)O[C@H]1[C@H](C(OC2=C1C3=C(C=C2)C=CC(=O)O3)(C)C)OC(=O)/C(=C\\C)/C",
+    "formula": "C24H26O7",
+    "mw": "426.5",
+    "inchikey": "PNTWXEIQXBRCPS-IOWUNYDSSA-N",
+    "cid": 10251869,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10251869/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011737": {
+    "smiles": "CC(C)([C@@H]1CC2=C(O1)C=C3C(=C2OC)C(=O)C=C(O3)C(=O)O)O",
+    "formula": "C16H16O7",
+    "mw": "320.29",
+    "inchikey": "YJHFCJWBLAJYRN-LBPRGKRZSA-N",
+    "cid": 163024660,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/163024660/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011740": {
+    "smiles": "CC(=O)O[C@H]1CC2=C(C=C3C(=C2O)C(=O)C=C(O3)CO)OC1(C)C",
+    "formula": "C17H18O7",
+    "mw": "334.3",
+    "inchikey": "DJEFKGJBMQEDCR-AWEZNQCLSA-N",
+    "cid": 9974111,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9974111/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011747": {
+    "smiles": "C/C=C(/C)\\C(=O)O[C@H]1CC2=C(C=C3C(=C2O)C(=O)C=C(O3)CO)OC1(C)C",
+    "formula": "C20H22O7",
+    "mw": "374.4",
+    "inchikey": "KKDRQZCQNSHBHY-AVFOEOQDSA-N",
+    "cid": 5318962,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5318962/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011749": {
+    "smiles": "CC(=CCOC1=C2C(=C(C3=C1OC(=O)C=C3)OC)C=CO2)C",
+    "formula": "C17H16O5",
+    "mw": "300.30",
+    "inchikey": "BMLZFLQMBMYVHG-UHFFFAOYSA-N",
+    "cid": 98608,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/98608/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011753": {
+    "smiles": "CC1=CC(=O)C2=C(C3=C(C=C2O1)O[C@@H](C3)C(C)(C)O)OC",
+    "formula": "C16H18O5",
+    "mw": "290.31",
+    "inchikey": "DGFLRNOCLJGHLY-ZDUSSCGKSA-N",
+    "cid": 441970,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/441970/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013077": {
+    "smiles": "CC(=CC(=O)O[C@H]1CC2=C(C=C3C(=C2)C=CC(=O)O3)OC1(C)C)C",
+    "formula": "C19H20O5",
+    "mw": "328.4",
+    "inchikey": "CUKSFECWKQBVED-INIZCTEOSA-N",
+    "cid": 442126,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/442126/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002333": {
+    "smiles": "CC(=O)OC[C@H]1CC[C@@H]2[C@H]([C@]3([C@]1(CCC3=O)O)C)OC(=O)C2=C",
+    "formula": "C17H22O6",
+    "mw": "322.4",
+    "inchikey": "DKYQYDPTWYXAFT-BEANVFONSA-N",
+    "cid": 174868,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/174868/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013233": {
+    "smiles": "C[C@@H]1CC[C@@]2([C@H]([C@H]3[C@@H](O2)C[C@@H]4[C@@]3(CC[C@H]5[C@H]4CC=C6[C@@]5(CC[C@@H](C6)OC(=O)C)C)C)C)OC1",
+    "formula": "C29H44O4",
+    "mw": "456.7",
+    "inchikey": "CZCROZIJKBXZDP-IKEOEMBBSA-N",
+    "cid": 101952,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/101952/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL006346": {
+    "smiles": "CCC(C)N1C(=O)N(C=N1)C2=CC=C(C=C2)N3CCN(CC3)C4=CC=C(C=C4)OC[C@H]5CO[C@](O5)(CN6C=NC=N6)C7=C(C=C(C=C7)Cl)Cl",
+    "formula": "C35H38Cl2N8O4",
+    "mw": "705.6",
+    "inchikey": "VHVPQPYKVGDNFY-ZPGVKDDISA-N",
+    "cid": 55283,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/55283/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001004": {
+    "smiles": "C1=CC(=CC=C1C2=[O+]C3=CC(=CC(=C3C=C2O)O)O)O",
+    "formula": "C15H11O5+",
+    "mw": "271.24",
+    "inchikey": "XVFMGWDSJLBXDZ-UHFFFAOYSA-O",
+    "cid": 440832,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/440832/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004798": {
+    "smiles": "C1=C(C=C(C(=C1O)O)O)C2=[O+]C3=CC(=CC(=C3C=C2O)O)O",
+    "formula": "C15H11O7+",
+    "mw": "303.24",
+    "inchikey": "JKHRCGUTYDNCLE-UHFFFAOYSA-O",
+    "cid": 128853,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/128853/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL004800": {
+    "smiles": "C1=CC(=CC=C1C2=[O+]C3=CC(=CC(=C3C=C2O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)O)O)O.[Cl-]",
+    "formula": "C21H21ClO10",
+    "mw": "468.8",
+    "inchikey": "CAHGSEFWVUVGGL-UBNZBFALSA-N",
+    "cid": 3080714,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3080714/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL001323": {
+    "smiles": "C/C=C(/CC[C@@H](C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3C2=CC[C@@H]4[C@@]3(CC[C@@H]([C@H]4C)O)C)C)\\C(C)C",
+    "formula": "C30H50O",
+    "mw": "426.7",
+    "inchikey": "LPZCCMIISIBREI-JXMPMKKESA-N",
+    "cid": 9548595,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9548595/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL013253": {
+    "smiles": "COC1=C(C(=C2C(=C1O)C(=O)C=C(O2)C3=C(C=CC(=C3)O)O)OC)OC",
+    "formula": "C18H16O8",
+    "mw": "360.3",
+    "inchikey": "PVSHCMCDBFRZFY-UHFFFAOYSA-N",
+    "cid": 21721900,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/21721900/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002917": {
+    "smiles": "COC1=C(C2=C(C(=C1)O)C(=O)C=C(O2)C3=C(C=CC=C3O)O)OC",
+    "formula": "C17H14O7",
+    "mw": "330.29",
+    "inchikey": "GWRFNPJGKCUUSJ-UHFFFAOYSA-N",
+    "cid": 5322059,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5322059/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000273": {
+    "smiles": "CC(=CCC[C@H]([C@H]1[C@@H](C[C@@]2([C@@]1(CC=C3C2=CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C)O)C(=O)O)C",
+    "formula": "C30H46O4",
+    "mw": "470.7",
+    "inchikey": "XSLKAKROJKMHIT-WIUKAADNSA-N",
+    "cid": 10743008,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10743008/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000283": {
+    "smiles": "C[C@H](/C=C/[C@H](C)C(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@]24C=C[C@@]5([C@@]3(CC[C@@H](C5)O)C)OO4)C",
+    "formula": "C28H44O3",
+    "mw": "428.6",
+    "inchikey": "VXOZCESVZIRHCJ-KGHQQZOUSA-N",
+    "cid": 5351516,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5351516/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000287": {
+    "smiles": "CC(C)C(=C)CC[C@H]([C@H]1CC[C@@]2([C@@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C)C(=O)O",
+    "formula": "C31H50O3",
+    "mw": "470.7",
+    "inchikey": "UGMQOYZVOPASJF-OXUZYLMNSA-N",
+    "cid": 73402,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73402/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000289": {
+    "smiles": "CC(C)C(=C)CC[C@H]([C@H]1[C@@H](C[C@@]2([C@@]1(CCC3=C2CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)OC(=O)C)C)C)C)O)C(=O)O",
+    "formula": "C33H52O5",
+    "mw": "528.8",
+    "inchikey": "VDYCLYGKCGVBHN-DRCQUEPLSA-N",
+    "cid": 5484385,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5484385/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000290": {
+    "smiles": "CC(C)C(=C)CC[C@H]([C@H]1[C@@H](C[C@@]2([C@@]1(CC=C3C2=CC[C@H]([C@]3(C)CCC(=O)O)C(=C)C)C)C)O)C(=O)O",
+    "formula": "C31H46O5",
+    "mw": "498.7",
+    "inchikey": "KVAQLXUMUVEKGR-SMFZDKLCSA-N",
+    "cid": 5471851,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5471851/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000291": {
+    "smiles": "CC(=CCC[C@H]([C@H]1[C@@H](C[C@@]2([C@@]1(CC=C3C2=CC[C@H]([C@]3(C)CCC(=O)O)C(=C)C)C)C)O)C(=O)O)C",
+    "formula": "C30H44O5",
+    "mw": "484.7",
+    "inchikey": "NXAZWYWJZDFISF-KXGBKNTBSA-N",
+    "cid": 5471852,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5471852/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000292": {
+    "smiles": "CC(C)C(=C)CC[C@H]([C@H]1CC[C@@]2([C@@]1(CC=C3C2=CC[C@H]([C@]3(C)CCC(=O)O)C(=C)C)C)C)C(=O)O",
+    "formula": "C31H46O4",
+    "mw": "482.7",
+    "inchikey": "QFVFCBZDUKVXLR-PKSIZLAPSA-N",
+    "cid": 56668247,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/56668247/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL000300": {
+    "smiles": "CC(C)C(=C)CC[C@H]([C@H]1CC[C@@]2([C@@]1(CC=C3C2=CC[C@@H]4[C@@]3(CC[C@@H](C4(C)C)O)C)C)C)C(=O)O",
+    "formula": "C31H48O3",
+    "mw": "468.7",
+    "inchikey": "ONFPYGOMAADWAT-OXUZYLMNSA-N",
+    "cid": 15250826,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/15250826/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL011764": {
+    "smiles": "CC(=CCC/C(=C/CC/C(=C/CC/C(=C/CC/C=C(/CC/C=C(/CC/C=C(/CCC=C(C)C)\\C)\\C)\\C)/C)/C)/C)C",
+    "formula": "C40H66",
+    "mw": "547.0",
+    "inchikey": "BGVXBZXEFXMRGJ-DPOFWPLISA-N",
+    "cid": 5365816,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5365816/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002392": {
+    "smiles": "C/C=C(\\C)/C(=O)OC(C)(C)[C@@H]1CC2=C(O1)C=C3C(=C2)C=CC(=O)O3",
+    "formula": "C19H20O5",
+    "mw": "328.4",
+    "inchikey": "HHNCJFKRMZDTHW-WQRDJFRPSA-N",
+    "cid": 906525,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/906525/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002393": {
+    "smiles": "CCN1C[C@@]2(CC[C@@H]([C@@]34[C@@H]2[C@H]([C@](C31)([C@]5(C[C@@H]([C@]6(C[C@@H]4[C@@H]5[C@H]6OC)O)OC)O)OC)O)OC)COC(=O)C7=CC=CC=C7NC(=O)C(C)CC(=O)O",
+    "formula": "C37H52N2O12",
+    "mw": "716.8",
+    "inchikey": "JQAMTWLFCOSMLO-DNDQHOMDSA-N",
+    "cid": 177827612,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/177827612/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002394": {
+    "smiles": "CCN1C[C@@]2(CC[C@@H]([C@@]34[C@@H]2[C@H]([C@](C31)([C@]5(C[C@@H]([C@]6(C[C@@H]4[C@@H]5[C@H]6OC)O)OC)O)OC)O)OC)COC(=O)C7=CC=CC=C7NC(=O)C(C)CC(=O)O",
+    "formula": "C37H52N2O12",
+    "mw": "716.8",
+    "inchikey": "JQAMTWLFCOSMLO-DNDQHOMDSA-N",
+    "cid": 177827612,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/177827612/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002395": {
+    "smiles": "C[C@@]12CC[C@H]([C@@]([C@H]1CCC(=C)[C@H]2CCC3=CCOC3=O)(C)CO)O",
+    "formula": "C20H30O4",
+    "mw": "334.4",
+    "inchikey": "GVRNTWSGBWPJGS-YSDSKTICSA-N",
+    "cid": 11624161,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11624161/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002398": {
+    "smiles": "COC1=C(OC2=C(C1=O)C=CC3=C2C=CO3)C4=CC=CC=C4",
+    "formula": "C18H12O4",
+    "mw": "292.3",
+    "inchikey": "LKPQNZRGGNOPPU-UHFFFAOYSA-N",
+    "cid": 100633,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/100633/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002401": {
+    "smiles": "C[C@H](CC/C=C(/C)\\C(=O)O)[C@H]1CC[C@@]2([C@H](C1=C)CC3=C2CC[C@@H]4[C@@]3(CCC(=O)C4(C)C)C)C",
+    "formula": "C30H44O3",
+    "mw": "452.7",
+    "inchikey": "KXZSCUWAMZKCDF-KNVDJFKXSA-N",
+    "cid": 145709631,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/145709631/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002416": {
+    "smiles": "CCN1C[C@@]2(CC[C@@H]([C@@]34[C@@H]2[C@H](C(C31)[C@@]5([C@@H]6[C@H]4C[C@@]([C@@H]6OC(=O)C7=CC=CC=C7)([C@H]([C@@H]5O)OC)O)OC(=O)C)OC)OC)COC",
+    "formula": "C34H47NO10",
+    "mw": "629.7",
+    "inchikey": "PHASMOUKYDUAOZ-AUQPBFSASA-N",
+    "cid": 44445634,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/44445634/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002419": {
+    "smiles": "C1CN[C@@H](C2=CC(=C(C=C21)O)O)CC3=CC=C(C=C3)O",
+    "formula": "C16H17NO3",
+    "mw": "271.31",
+    "inchikey": "WZRCQWQRFZITDX-CQSZACIVSA-N",
+    "cid": 440988,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/440988/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002421": {
+    "smiles": "C[C@]12CN3[C@@H]4[C@H]1[C@@]5([C@H]3[C@H]6C[C@H]7C[C@@]5([C@]6(C4)[C@@H](C7=C)O)O)C[C@H]([C@@H]2O)OC(=O)C8=CC=CC=C8",
+    "formula": "C27H31NO5",
+    "mw": "449.5",
+    "inchikey": "FOIZZXKAYVIZQC-GRPOQJKGSA-N",
+    "cid": 163068108,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/163068108/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002422": {
+    "smiles": "CCN1C[C@@]2(CC[C@@H]([C@@]34[C@@H]2C[C@@H](C31)[C@]5(C[C@@H]([C@H]6C[C@@H]4[C@@H]5[C@H]6O)OC)O)O)COC",
+    "formula": "C23H37NO5",
+    "mw": "407.5",
+    "inchikey": "RBSZCNOWHDHRFZ-JPAZAREGSA-N",
+    "cid": 16401028,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/16401028/PNG?image_size=large",
+    "source": "PubChem"
+  },
+  "MOL002423": {
+    "smiles": "CCN1C[C@@]2([C@@H](C[C@@H]([C@@]34[C@@H]2[C@H]([C@@H]([C@H]31)[C@@]5([C@@H]6[C@H]4C[C@@]([C@@H]6OC(=O)C7=CC=C(C=C7)OC)([C@H]([C@@H]5O)OC)O)OC(=O)C)OC)OC)O)COC",
+    "formula": "C35H49NO12",
+    "mw": "675.8",
+    "inchikey": "MGTJNQWIXFSPLC-DMCHUPBKSA-N",
+    "cid": 76963334,
+    "img_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/76963334/PNG?image_size=large",
+    "source": "PubChem"
   }
 }

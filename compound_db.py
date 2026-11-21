@@ -12,7 +12,9 @@
 from __future__ import annotations
 
 import json
+import threading
 import time
+from functools import lru_cache
 from pathlib import Path
 from urllib.parse import quote
 
@@ -20,6 +22,36 @@ import requests
 
 HERE = Path(__file__).parent
 PROPS_CACHE = HERE / "pubchem_props.json"
+
+# 多用户并发保护：进程内缓存 + 文件读写锁。
+# Streamlit 每位访客是独立线程，多个会话同时读写 pubchem_props.json
+# 可能互相覆盖甚至写坏文件，故统一经锁与内存缓存访问。
+_PROPS_LOCK = threading.Lock()
+_PROPS_MEM: dict[str, dict] | None = None
+
+
+def _read_props_cache() -> dict[str, dict]:
+    """读属性缓存（优先进程内存，其次磁盘文件）。"""
+    global _PROPS_MEM
+    with _PROPS_LOCK:
+        if _PROPS_MEM is None:
+            try:
+                _PROPS_MEM = json.loads(PROPS_CACHE.read_text(encoding="utf-8"))
+            except Exception:
+                _PROPS_MEM = {}
+        return _PROPS_MEM
+
+
+def _write_props_cache(cache: dict[str, dict]) -> None:
+    """写属性缓存（同时刷新进程内存与磁盘文件）。"""
+    global _PROPS_MEM
+    with _PROPS_LOCK:
+        try:
+            PROPS_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=0),
+                                   encoding="utf-8")
+        except Exception:
+            pass  # 云端文件系统可能只读；不影响应用，仅失去磁盘缓存
+        _PROPS_MEM = cache
 PUG_BASE = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound"
 PROP_FIELDS = ("IUPACName,ExactMass,TPSA,XLogP,HBondDonorCount,"
                "HBondAcceptorCount,RotatableBondCount,HeavyAtomCount")
@@ -54,12 +86,7 @@ def fetch_pubchem_props(cids: list[int],
     PubChem PUG REST 支持一次查询多个 CID（上限约 100），故 53 个成分
     只需一次请求；失败不影响应用（缺失字段显示为 —）。
     """
-    cache: dict[str, dict] = {}
-    if cache_path.exists():
-        try:
-            cache = json.loads(cache_path.read_text(encoding="utf-8"))
-        except Exception:
-            cache = {}
+    cache: dict[str, dict] = dict(_read_props_cache())
 
     missing = [str(c) for c in cids if str(c) not in cache]
     if not missing:
@@ -75,14 +102,18 @@ def fetch_pubchem_props(cids: list[int],
         if resp.status_code == 200:
             for row in resp.json().get("PropertyTable", {}).get("Properties", []):
                 cache[str(row["CID"])] = row
-            cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=0),
-                                  encoding="utf-8")
+            _write_props_cache(cache)
         time.sleep(0.3)  # 遵守 PubChem 速率限制（≤5 次/秒）
     return cache
 
 
+@lru_cache(maxsize=1024)
 def fetch_synonyms(cid: int) -> list[str]:
-    """取 PubChem 同义词（贸易名、俗名等），失败返回空列表。"""
+    """取 PubChem 同义词（贸易名、俗名等），失败返回空列表。
+
+    结果按 CID 进程内缓存（lru_cache）：同一成分被不同访客查看时
+    只请求一次 PubChem，避免多用户下重复外网请求拖慢页面。
+    """
     try:
         resp = requests.get(f"{PUG_BASE}/cid/{cid}/synonyms/JSON", timeout=30)
         if resp.status_code != 200:
